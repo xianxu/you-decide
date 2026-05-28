@@ -37,6 +37,24 @@ The conversational mode used during M0-M3 development. User names a specific rac
 | Current polling | Fresh WebSearch each cycle | Not persisted — moving target. Used for the strategic-vote analysis. |
 | Race scope | Conversation with the user | Office, jurisdiction, voting system (top-2, ranked-choice, plurality), date, hard filters. |
 
+## Cache-first by default
+
+Every stage that has a cached artifact reuses it rather than regenerating. The skill re-dispatches research subagents (which cost AI cycles + burn web-fetch budget) only when:
+
+- The cached artifact is **missing**
+- The cached artifact is **stale** per its owning sub-skill's rules (e.g., proximity-to-election triggers in [[resolve-ballot]])
+- The user **explicitly requests a refresh** (*"re-research Becerra; the AP article I just read contradicts the cached profile"*)
+
+| Stage | Artifact | Cache location | Refresh trigger |
+|---|---|---|---|
+| 1 | Election manifest | `elections/<year>/<date>-<state>-<type>.md` | Per proximity-to-election rules in [[resolve-ballot]] |
+| 2 | Candidate profile | `candidates/<year>/<state>/<race>/<slug>.md` | Candidate position changes (post-debate, post-major-news); otherwise indefinite reuse |
+| 3 | Per-axis read | `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` | Philosophy / calibration-skill / candidate-profile newer than the read |
+| — | Controversy map | `controversies/<year>/<state>.md` | Per cycle; refresh as new controversies surface |
+| — | Source registry | `sources/<state>.md` | Rarely changes; manual maintenance |
+
+The typical returning-user invocation (*"help me vote in Menlo Park, CA 2026"* with everything already populated) does ~zero new work in Stages 1-3 — they all hit cache. Stages 4 (disagreement loop) and 5 (aggregate + present) are where the actual deliberation happens.
+
 ## Algorithm
 
 ### Stage 0 — User-state detection
@@ -59,7 +77,9 @@ For each candidate in the resolved ballot:
 Dispatch missing-candidate research subagents in parallel.
 
 ### Stage 3 — Per-axis read
-For each candidate, generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`). Score each axis from **-2** (strong conflict) to **+2** (strong alignment); institutionalist axis extends to **-4** per [[trump-era-cater-discount]] for action-tier violations. Cite source fact + any calibration skill that influenced the read.
+**Cache-first**: if `<slug>-read.md` already exists and is newer than (a) the user's philosophy file, (b) the relevant calibration-skill files, and (c) the candidate profile it scored against, **reuse it**. The read is a pure function of those three inputs; nothing changed → re-running produces the same output.
+
+Otherwise — first run, or one of the inputs changed — generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`). Score each axis from **-2** (strong conflict) to **+2** (strong alignment); institutionalist axis extends to **-4** per [[trump-era-cater-discount]] for action-tier violations. Cite source fact + any calibration skill that influenced the read.
 
 ### Stage 4 — Disagreement loop
 Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `you-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
