@@ -11,14 +11,66 @@ Producing subagents are fast and reasonable but make mistakes — score-scale dr
 
 This sub-skill is the institutional check on AI-curated content. **Fresh context, different stack** are the two requirements that make it actually independent. Without them it's just re-running the same biases.
 
-## Inputs
+## Parameters
 
 | Field | Required | Notes |
 |---|---|---|
-| `batch` | yes | Identifies what's under review: `<state>-<jurisdiction>-<date>` (e.g. `CA-Palo-Alto-2026-05-28`) or commit SHA range |
-| `scope` | yes | `candidates` / `elections` / `controversies` / `reads` / `all` |
-| `reviewer-stack` | recommended | AI provider running the review. **Must differ from the producing stack.** If producing was Claude/Anthropic → review with Codex/OpenAI or Gemini |
-| `target-files` | optional | Specific file globs; defaults to everything new in the batch |
+| `batch` | yes | Logical name for the review report. Becomes the filename in `reviews/<year>/<date>-<batch>.md`. Conventional shape: `<state>-<jurisdiction>-<date>` (e.g. `CA-Palo-Alto-2026-05-28`) or `<producing-skill>-<date>` |
+| `reviewer-stack` | recommended | AI provider running the review. **Must differ from the producing stack.** If producing was Claude/Anthropic → review with Codex/OpenAI or Gemini. Recorded in the review report's frontmatter; later audited via `rg 'reviewer-stack:' reviews/` |
+| `producing-stack` | annotation | Which AI made the substrate being reviewed (Claude / Codex / Gemini / mixed). Recorded for cross-stack-coverage tracking |
+| `scope` | optional, default `all-shared` | Categorical filter: `candidates` / `elections` / `controversies` / `reads` / `all-shared` (= candidates+elections+controversies) / `all` (= shared + reads). User-private reads are usually reviewed via a personal-brain pass, not the public-substrate flow |
+
+### Breadth selection (which files exactly)
+
+One of the following mode-selectors. Precedence is top-down — first one given wins.
+
+| Mode | When to use | Resolves to |
+|---|---|---|
+| `target-files: [<glob>, ...]` | Spot-check a specific list; explicit overrides everything | Just those files |
+| `since-commit: <ref>` | Pre-commit gate; review what changed since a known-good ref | `git diff --name-only <ref> HEAD` ∩ scope-filter (+ unstaged if `include-uncommitted: true`) |
+| `since-date: YYYY-MM-DD` | Time-window batch (e.g. "everything I produced this morning") | Files modified after the date ∩ scope-filter |
+| `older-than-review: <duration>` | Periodic freshness audit | Files whose frontmatter `last-reviewed` is older than e.g. `30d` / `3mo` / `1y`, OR never reviewed ∩ scope-filter |
+| *(default — none of the above given)* | Most common: review uncommitted changes before committing | All uncommitted (modified + untracked) files in the working tree ∩ scope-filter |
+
+All modes are intersected with the `scope` filter as the final narrowing step.
+
+### Examples
+
+Post-research batch (most common — fix the Palo Alto case):
+```
+review:
+  batch: CA-Palo-Alto-2026-05-28
+  reviewer-stack: codex
+  producing-stack: claude
+  scope: candidates
+  # no breadth selector → default to all uncommitted under candidates/
+```
+
+Pre-commit gate:
+```
+review:
+  batch: pre-commit-2026-05-29
+  reviewer-stack: gemini
+  since-commit: HEAD
+  scope: all-shared
+```
+
+Periodic freshness audit (annual sweep):
+```
+review:
+  batch: freshness-audit-2027-01
+  reviewer-stack: codex
+  older-than-review: 1y
+  scope: all-shared
+```
+
+Spot-check:
+```
+review:
+  batch: spot-2026-06-15
+  reviewer-stack: codex
+  target-files: [candidates/2026/CA/governor/xavier-becerra.md]
+```
 
 ## Algorithm
 
