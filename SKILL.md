@@ -79,7 +79,24 @@ Dispatch missing-candidate research subagents in parallel.
 ### Stage 3 — Per-axis read
 **Cache-first**: if `<slug>-read.md` already exists and is newer than (a) the user's philosophy file, (b) the relevant calibration-skill files, and (c) the candidate profile it scored against, **reuse it**. The read is a pure function of those three inputs; nothing changed → re-running produces the same output.
 
-Otherwise — first run, or one of the inputs changed — generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`). Score each axis from **-2** (strong conflict) to **+2** (strong alignment); institutionalist axis extends to **-4** per [[trump-era-cater-discount]] for action-tier violations. Cite source fact + any calibration skill that influenced the read.
+Otherwise — first run, or one of the inputs changed — generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`).
+
+**Scoring contract** (use this exact shape; [[review]] checks it):
+
+- Score each axis as integer in **[−2, +2]**
+- Exception: institutionalist axis extends to **−4** when [[trump-era-cater-discount]] action-tier applies (cite the calibration skill explicitly)
+- Apply per-office template weights: **heavy = ×2, medium = ×1, light = ×0.5**
+- Compute `weighted-total = Σ (axis_score × template_weight)` as a scalar (no `/N` or `/max` framings — those drift across subagents)
+- Frontmatter `weighted-total:` field MUST equal the body math
+- Body math shown explicitly:
+  ```
+  Heavy:  (a + b + c + ...) × 2 = X
+  Medium: a + b + c + ...       = Y
+  Light:  (a + b + c + ...) × 0.5 = Z
+  Total: X + Y + Z
+  ```
+
+Cite source fact + any calibration skill that influenced the read for each axis score.
 
 ### Stage 4 — Disagreement loop
 Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `you-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
@@ -89,6 +106,9 @@ Apply hard filters from the user's philosophy (auto-reject). Weight axes per the
 
 ### Stage 6 — Final write
 When disagreement loop converges, write `who-to-vote-for/<year>/<state>/<race>/vote.md` per race — captures conscience vote, strategic vote, general-election scenarios, parked open questions, and calibration skills active for this race.
+
+### Review gate (before committing shared substrate)
+Before any commit to the shared `candidates/`, `elections/`, `controversies/` directories, dispatch [[review]] — a fresh-context, ideally-different-AI-stack check on source-hygiene + genesis tracking + math correctness + disambiguation + internal consistency. Output goes to `reviews/<year>/<date>-<batch>.md`; per-file frontmatter gets `last-reviewed:` + `review-pass:` + `review-stack:` updates. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but can be reviewed by the same mechanism to catch arithmetic errors.
 
 ## Axis taxonomy (five tiers)
 
