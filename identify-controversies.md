@@ -1,6 +1,9 @@
 ---
 name: identify-controversies
 description: Use when designing a voter-philosophy survey or wanting to understand what issues actually differentiate candidates in a given election cycle. Input (year, state, optionally sub-jurisdictions). Output a ranked map of controversies with framings, evidence of candidate disagreement, and which races they drive. Feeds the bootstrap-survey skill so questions probe real fault-lines instead of generic civics.
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # identify-controversies

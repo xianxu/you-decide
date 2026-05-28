@@ -4,6 +4,9 @@ party: Republican
 race: 2026-us-house-d15
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Charles Hoelter — 2026 US House CA-D15

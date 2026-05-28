@@ -4,6 +4,9 @@ scope: state
 applies-to: [state-assembly, ca-state-assembly]
 first-populated: 2026-05-28
 populated-from: 2026 CA Assembly D21
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — California State Assembly

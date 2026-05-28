@@ -1,6 +1,9 @@
 ---
 name: review
 description: Use after research-subagents produce facts or scoring subagents produce per-axis reads, AND before any commit to the shared substrate (candidates/, elections/, controversies/). Runs in fresh context (no shared session memory) and ideally a different AI stack to independently check (a) source-tier compliance per source-hygiene-tier-list, (b) genesis tracking — every claim has source URL, (c) math correctness in weighted totals, (d) internal consistency, (e) disambiguation of common names. Outputs a review report to `reviews/<year>/<date>-<batch>.md` and updates per-file `last-reviewed:` + `review-pass:` frontmatter.
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # review
@@ -10,6 +13,48 @@ description: Use after research-subagents produce facts or scoring subagents pro
 Producing subagents are fast and reasonable but make mistakes — score-scale drift (some report X/14, some report weighted -2/+2 totals), arithmetic errors in weighted totals, weak-source citations slipping through, candidate-name disambiguation failures (Kevin Johnson the law student vs Kevin Johnson the former Sacramento mayor). An independent review catches these *before* committed substrate becomes content downstream users trust.
 
 This sub-skill is the institutional check on AI-curated content. **Fresh context, different stack** are the two requirements that make it actually independent. Without them it's just re-running the same biases.
+
+## Per-file frontmatter contract (the greppable part)
+
+**Every markdown artifact in this repo + in users' private brains carries explicit review state in frontmatter.** Unreviewed state is *named explicitly* (`review: not-done`), not implied by absence — that way "what hasn't been reviewed" is a positive grep: `rg '^review: not-done' .` rather than a negated one. Operators and CI can audit coverage trivially.
+
+Required fields on every artifact:
+
+```yaml
+---
+# ... (existing schema fields for the file type)
+
+generated-by: claude | codex | gemini | human | mixed
+generated-on: YYYY-MM-DD
+review: not-done | passed | issues-flagged | failed
+reviewed-by:           # set when review ≠ not-done; must differ from generated-by for cross-stack independence
+reviewed-on:           # ISO date; set when review ≠ not-done
+review-ref:            # path to the review report; required when review ≠ passed
+---
+```
+
+Conventions:
+
+- **Producing skills MUST set** `generated-by` + `generated-on` + `review: not-done` at write time. Never omit the `review:` field, even on first write.
+- **Review skill updates** `review:`, `reviewed-by`, `reviewed-on`, `review-ref` after a fresh-stack pass.
+- **Author-curated algorithm files** (templates, calibration-skills, sub-skill markdown, README, sources/) can use `generated-by: human` + `review: passed` since they go through git-PR review rather than AI-mediated review. Still carry the fields for consistency.
+- **Cross-stack-independence check**: a hook or audit script flags any file where `generated-by == reviewed-by` (same-stack review doesn't count).
+
+Audit queries:
+
+```bash
+# Anything that hasn't been reviewed yet (the most important grep)
+rg '^review: not-done' .
+
+# Anything reviewed-with-issues that needs follow-up
+rg '^review: (issues-flagged|failed)' .
+
+# Cross-stack coverage: producing-stack distribution
+rg '^generated-by:' . | sort | uniq -c
+
+# Same-stack reviews (invalid — should be empty)
+# (requires per-file check; one-liner only approximates)
+```
 
 ## Parameters
 
@@ -162,13 +207,13 @@ status: pass | issues-flagged | fail
 
 ### Stage 4 — Update per-file frontmatter
 
-For each file checked, add/update:
-- `last-reviewed: YYYY-MM-DD`
-- `review-pass: true` | `issues-flagged` | `false`
-- `review-stack: <reviewer-stack>`
-- `review-ref: <relative path to review report>` (if not pass)
+For each file checked, update the [per-file contract](#per-file-frontmatter-contract-the-greppable-part) fields:
+- `review: passed` | `issues-flagged` | `failed` (replace the prior `not-done`)
+- `reviewed-by: <reviewer-stack>` (must differ from `generated-by`)
+- `reviewed-on: <date>`
+- `review-ref: reviews/<year>/<date>-<batch>.md` (required if review ≠ passed; nice-to-have if passed)
 
-This makes review status queryable: `rg '^review-pass: false' candidates/` finds anything blocking.
+Makes coverage queryable: `rg '^review: not-done' .` returns the unreviewed set.
 
 ## State tracking
 

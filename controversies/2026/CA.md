@@ -11,6 +11,9 @@ sources:
   - candidates/2026/CA/{assembly-d21,boe-d2,supt-public-instruction,us-house-d15}/*.md
   - https://calmatters.org/california-voter-guide-2026/
   - https://www.kqed.org/voterguide/california
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Controversies — California 2026 cycle

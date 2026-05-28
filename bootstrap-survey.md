@@ -1,6 +1,9 @@
 ---
 name: bootstrap-survey
 description: Use when a cold-start user (no philosophy file yet) needs to generate one. Runs a curated short survey (~8-12 questions) drawn from the cycle's actual controversies, then synthesizes responses into a `philosophy-<user>.md` that matches the shape of `philosophy-xian.md`. Each question offers typical-position force-choices, an outlier alternative, and free-form input — captures real stances without leading the user.
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # bootstrap-survey

@@ -4,6 +4,9 @@ party: Democrat
 race: 2026-ca-governor
 last-updated: 2026-05-27
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Xavier Becerra — 2026 CA Governor candidate

@@ -1,6 +1,9 @@
 ---
 name: you-decide
 description: Use when deciding how to vote in an election. Takes (address, year) or operates race-by-race. Auto-detects cold-start vs returning user; bootstraps philosophy via survey if needed. Resolves ballot, dispatches per-candidate research, applies user's philosophy via per-axis reads, aggregates with race-aware weighting to produce conscience + strategic votes with inference chains visible. Calibrates over time via the disagreement loop.
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # you-decide

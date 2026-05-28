@@ -4,6 +4,9 @@ party: Democrat
 race: 2026-ca-boe-d2
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Sally Lieber — 2026 CA Board of Equalization D2

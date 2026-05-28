@@ -4,6 +4,9 @@ slug: us-federal
 generated: 2026-05-28
 last-verified: 2026-05-28
 scope: Federal races (US House, US Senate, presidential) and cross-state national coverage
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # US (federal-level) — authoritative sources

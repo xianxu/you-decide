@@ -13,6 +13,9 @@ sources:
   - https://www.kqed.org/voterguide/sanmateo
   - https://www.kqed.org/voterguide/california
   - https://www.smdailyjournal.com/news/local/roster-for-san-mateo-county-s-june-ballot-closed/article_040038b2-2cb3-42ba-af1f-5244e07f47f8.html
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # California Primary — June 2, 2026

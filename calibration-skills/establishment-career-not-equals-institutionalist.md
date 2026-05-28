@@ -2,6 +2,9 @@
 rule: Long establishment career does not auto-grant +2 institutionalist; assess actual institutional-defense behavior
 applies-to: [institutionalist axis, all offices]
 born-from: 2026-05-27 | 2026 CA governor | Becerra (initially scored +2; Codex peer review corrected)
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Long career ≠ institutionalist virtue

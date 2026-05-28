@@ -2,6 +2,9 @@
 rule: For decisive candidate claims, prefer Tier A (primary / official) and Tier B (authoritative-secondary) sources over Wikipedia and AI aggregators. Tier classification is principle-based; concrete per-jurisdiction outlet lists live in `sources/<jurisdiction>.md`.
 applies-to: [research-subagents, profile-generation, all races]
 born-from: 2026-05-27 | 2026 CA governor | Codex peer review flagged Wikipedia and Factually.co as weak source choices, and noted LLM-generation artifacts ("WebSearch" literal text, typo "franding") in final profile text
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Source-hygiene tier list

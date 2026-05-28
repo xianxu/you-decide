@@ -4,6 +4,9 @@ party: Nonpartisan
 race: 2026-sm-county-supervisor-d3
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Joaquin Jiménez — 2026 SM County Supervisor D3

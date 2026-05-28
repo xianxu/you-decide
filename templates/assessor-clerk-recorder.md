@@ -4,6 +4,9 @@ scope: county
 applies-to: [assessor, clerk-recorder, chief-elections-officer, registrar-of-voters]
 first-populated: 2026-05-28
 populated-from: 2026 SM County Assessor / Clerk-Recorder / Chief Elections Officer
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — Assessor / Clerk-Recorder / Chief Elections Officer

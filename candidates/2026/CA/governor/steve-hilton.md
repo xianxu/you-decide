@@ -4,6 +4,9 @@ party: Republican
 race: 2026-ca-governor
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Steve Hilton — 2026 CA Governor candidate

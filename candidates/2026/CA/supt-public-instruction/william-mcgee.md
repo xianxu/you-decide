@@ -4,6 +4,9 @@ party: No Party Preference (office is nonpartisan; party preference not declared
 race: 2026-ca-supt-public-instruction
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # William L. McGee — 2026 CA Superintendent of Public Instruction

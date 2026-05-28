@@ -1,6 +1,9 @@
 ---
 name: question-bank
 description: Universal (cycle-independent) question pool used by bootstrap-survey. Covers the timeless axes — character, fiscal disposition, social orientation, institutional integrity, builder-vs-regulator, plus deeper nuance. Cycle-specific issue questions and outliers are NOT here — they're composed at runtime from `controversies/<year>/<state>.md`.
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Question bank — universal

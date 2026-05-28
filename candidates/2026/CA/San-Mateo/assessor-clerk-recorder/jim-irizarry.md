@@ -4,6 +4,9 @@ party: Nonpartisan (registered Democrat; formerly American Independent Party for
 race: 2026-sm-county-assessor-clerk-recorder
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Jim Irizarry — 2026 SM County Assessor / Clerk-Recorder / Chief Elections Officer

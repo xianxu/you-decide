@@ -1,6 +1,9 @@
 ---
 name: resolve-ballot
 description: Use when discovering what's on a voter's ballot for an upcoming or specified election. Input (address, optionally date or year). Output structured ballot manifest of all races and measures the voter can vote on at that election. Composes election-day manifests; dispatches research subagents to enumerate any election that hasn't been scoped yet.
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # resolve-ballot

@@ -2,6 +2,9 @@
 rule: "Abolish-X" positions (abolish ICE, defund police, etc.) score on TWO axes — leave-people-alone (+) for civil-liberties intent, institutionalist (−) for agency-dismantling method. Don't collapse into one.
 applies-to: [leave-people-alone axis, institutionalist axis, all offices]
 born-from: 2026-05-27 | 2026 CA governor | Katie Porter's abolish-ICE-adjacent positioning (Codex peer review flagged the framing as too harsh on a single axis)
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Abolish-X positions — score on dual axes

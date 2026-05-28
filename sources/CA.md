@@ -4,6 +4,9 @@ slug: ca-state
 generated: 2026-05-28
 last-verified: 2026-05-28
 scope: California state, county, city, school, and special-district races
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # California — authoritative sources

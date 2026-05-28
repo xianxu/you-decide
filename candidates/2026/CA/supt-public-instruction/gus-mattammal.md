@@ -4,6 +4,9 @@ party: No Party Preference (filed NPP; prior races run as Republican with CA GOP
 race: 2026-ca-supt-public-instruction
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Gus Mattammal — 2026 CA Superintendent of Public Instruction

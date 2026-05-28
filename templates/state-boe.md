@@ -4,6 +4,9 @@ scope: state
 applies-to: [state-board-of-equalization, ca-boe]
 first-populated: 2026-05-28
 populated-from: 2026 CA BOE District 2
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — California Board of Equalization

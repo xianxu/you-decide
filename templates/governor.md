@@ -4,6 +4,9 @@ scope: state
 applies-to: [governor, state-executive]
 first-populated: 2026-05-27
 populated-from: 2026 CA governor race
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — Governor

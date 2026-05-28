@@ -4,6 +4,9 @@ scope: county
 applies-to: [county-supervisor, county-board-of-supervisors]
 first-populated: 2026-05-28
 populated-from: 2026 SM County Supervisor D3
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — County Supervisor

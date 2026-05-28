@@ -4,6 +4,9 @@ scope: federal
 applies-to: [us-house, us-representative, us-congress]
 first-populated: 2026-05-28
 populated-from: 2026 US House CA-D15
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — US House Representative

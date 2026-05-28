@@ -4,6 +4,9 @@ party: Democrat
 race: 2026-ca-assembly-d21
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Diane Papan — 2026 CA Assembly D21

@@ -4,6 +4,9 @@ scope: state
 applies-to: [state-superintendent-of-public-instruction, ca-superintendent]
 first-populated: 2026-05-28
 populated-from: 2026 CA Superintendent of Public Instruction
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — State Superintendent of Public Instruction

@@ -4,6 +4,9 @@ party: Peace and Freedom Party (on ballot as No Party Preference)
 race: 2026-ca-supt-public-instruction
 last-updated: 2026-05-28
 status: active
+generated-by: claude
+generated-on: 2026-05-28
+review: not-done
 ---
 
 # Frank Lara — 2026 CA Superintendent of Public Instruction

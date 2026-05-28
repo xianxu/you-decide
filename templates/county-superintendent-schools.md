@@ -4,6 +4,9 @@ scope: county
 applies-to: [county-superintendent-of-schools, county-office-of-education]
 first-populated: 2026-05-28
 populated-from: 2026 SM County Superintendent of Schools
+generated-by: human
+generated-on: 2026-05-28
+review: passed
 ---
 
 # Office template — County Superintendent of Schools
