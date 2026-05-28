@@ -1,0 +1,159 @@
+---
+date: 2026-06-02
+type: primary
+state: CA
+slug: 2026-06-02-CA-primary
+generated: 2026-05-28
+last-verified: 2026-05-28
+coverage: SM County voter ballot (other CA counties' US House + Assembly slices pending)
+sources:
+  - https://www.sos.ca.gov/elections
+  - https://smcacre.gov/elections/county-offices
+  - https://calmatters.org/california-voter-guide-2026/
+  - https://www.kqed.org/voterguide/sanmateo
+  - https://www.kqed.org/voterguide/california
+  - https://www.smdailyjournal.com/news/local/roster-for-san-mateo-county-s-june-ballot-closed/article_040038b2-2cb3-42ba-af1f-5244e07f47f8.html
+---
+
+# California Primary — June 2, 2026
+
+Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's actual ballot is a filtered slice based on their resolved districts (see [[resolve-ballot]] for the filter algorithm). Each race below carries a `District:` tag — the voter sees the race iff their resolved districts include that tag.
+
+## Statewide races
+*Tag: STATEWIDE — visible to every CA voter.*
+
+### Governor
+- Seats: 1 (top-2 advances to general)
+- District: STATEWIDE
+- CONTESTED — 8 viable candidates:
+  - Xavier Becerra (D) [[xavier-becerra]]
+  - Katie Porter (D) [[katie-porter]]
+  - Tom Steyer (D) [[tom-steyer]]
+  - Antonio Villaraigosa (D) [[antonio-villaraigosa]]
+  - Tony Thurmond (D) [[tony-thurmond]]
+  - Matt Mahan (D) [[matt-mahan]]
+  - Steve Hilton (R) [[steve-hilton]]
+  - Chad Bianco (R) [[chad-bianco]]
+
+### Superintendent of Public Instruction (nonpartisan)
+- Seats: 1 (top-2 advances)
+- District: STATEWIDE
+- CONTESTED:
+  - Frank Lara [[frank-lara]]
+  - Gus Mattammal [[gus-mattammal]]
+  - William L. McGee [[william-mcgee]]
+
+### Board of Equalization, District 2
+- Seats: 1 (top-2 advances)
+- District: CA-BOE-D2 (covers Bay Area counties)
+- CONTESTED:
+  - Sally Lieber (D, incumbent) [[sally-lieber]]
+  - John Pimentel [[john-pimentel]]
+  - William Shireman [[william-shireman]]
+
+## Federal — US House
+
+### US House, District 15
+- Seats: 1 (top-2 advances)
+- District: US-House-D15 (most of San Mateo County including Menlo Park)
+- CONTESTED:
+  - Kevin Mullin (D, incumbent) [[kevin-mullin]]
+  - Mantosh Kumar (D) [[mantosh-kumar]]
+  - Anthony Van Dang (D) [[anthony-van-dang]]
+  - Charles Hoelter (R) [[charles-hoelter]]
+  - James B. Garrity (NPP) [[james-garrity]]
+
+### US House, District 16
+- Seats: 1 (top-2 advances)
+- District: US-House-D16 (southern SM County + parts of Santa Clara)
+- CONTESTED:
+  - Sam Liccardo (D, incumbent)
+  - Jotham Stein (NPP)
+- *Coverage: candidate profiles not yet researched in this batch — pending*
+
+## State Legislative
+
+### State Assembly, District 21
+- Seats: 1 (top-2 advances)
+- District: CA-Assembly-D21 (most of SM County including northern Menlo Park; ZIP 94025 primarily here)
+- CONTESTED:
+  - Diane Papan (D, incumbent) [[diane-papan]]
+  - Jabra J. Muhawieh (R) [[jabra-muhawieh]]
+
+### State Assembly, District 23
+- Seats: 1 (top-2 advances)
+- District: CA-Assembly-D23 (parts of SM County + Santa Clara)
+- CONTESTED:
+  - Marc Berman (D, incumbent)
+  - Rick Giorgetti (R)
+- *Coverage: not yet researched in this batch — pending*
+
+## San Mateo County
+
+### County Superintendent of Schools (nonpartisan)
+- Seats: 1
+- District: SM-COUNTY
+- CONTESTED:
+  - Chelsea Bonini [[chelsea-bonini]]
+  - Héctor Camacho Jr [[hector-camacho-jr]]
+
+### Assessor / County Clerk-Recorder / Chief Elections Officer (nonpartisan)
+- Seats: 1
+- District: SM-COUNTY
+- CONTESTED:
+  - Clinton Eric Freeman [[clinton-freeman]]
+  - David Canepa [[david-canepa]]
+  - Jim Irizarry [[jim-irizarry]]
+
+### County Controller (nonpartisan)
+- Seats: 1
+- District: SM-COUNTY
+- CONTESTED:
+  - Thomas Royal Morgan II [[thomas-morgan]]
+  - Juan Raigoza (incumbent) [[juan-raigoza]]
+
+### Coroner (nonpartisan)
+- Seats: 1
+- District: SM-COUNTY
+- UNCONTESTED: Robert J. Foucrault (incumbent)
+
+### Treasurer / Tax Collector (nonpartisan)
+- Seats: 1
+- District: SM-COUNTY
+- UNCONTESTED: Sandie Arnott (incumbent)
+
+### Board of Supervisors, District 2 (nonpartisan)
+- Seats: 1
+- District: SM-SUPERVISOR-D2
+- UNCONTESTED: Noelia Corzo (incumbent)
+
+### Board of Supervisors, District 3 (nonpartisan)
+- Seats: 1
+- District: SM-SUPERVISOR-D3
+- CONTESTED:
+  - Ray Mueller (incumbent) [[ray-mueller]]
+  - Joaquin Jiménez [[joaquin-jimenez]]
+
+### Board of Supervisors, District 5 (nonpartisan)
+- Seats: 1 — OPEN (Canepa vacating to run for Assessor)
+- District: SM-SUPERVISOR-D5
+- *Status TBD as of 2026-05-28; verify against SM County official roster before 6/2*
+
+## Sub-county ballot measures
+
+- **Measure A** — Ravenswood City School District $70M bond for new classrooms (55% threshold) — *District: RAVENSWOOD-CSD voters only*
+- **Measure B** — Brisbane School District parcel tax (2/3 threshold) — *District: BRISBANE-USD voters only*
+- **Measure C** — Redwood City Elementary School District 8-year parcel tax ~17.5¢/sq ft (≈$12.2M/yr, 2/3 threshold) — *District: REDWOOD-CITY-ESD voters only*
+
+## Other CA counties
+
+Not yet enumerated in this manifest. Each county that has races appearing on the 6/2 ballot would add a section parallel to "San Mateo County" above. Extending this manifest to cover other counties is a follow-up; the schema accommodates it.
+
+## Sources
+
+- [CA Secretary of State — Elections](https://www.sos.ca.gov/elections)
+- [SM County ACRE — County Offices](https://smcacre.gov/elections/county-offices)
+- [CalMatters — 2026 voter guide](https://calmatters.org/california-voter-guide-2026/)
+- [KQED — San Mateo voter guide](https://www.kqed.org/voterguide/sanmateo)
+- [KQED — California voter guide](https://www.kqed.org/voterguide/california)
+- [SM Daily Journal — roster closed (Feb 28 2026)](https://www.smdailyjournal.com/news/local/roster-for-san-mateo-county-s-june-ballot-closed/article_040038b2-2cb3-42ba-af1f-5244e07f47f8.html)

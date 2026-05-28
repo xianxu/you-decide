@@ -1,0 +1,227 @@
+---
+name: voter-decide
+description: Use when deciding how to vote in an election. Takes (address, year) or operates race-by-race. Auto-detects cold-start vs returning user; bootstraps philosophy via survey if needed. Resolves ballot, dispatches per-candidate research, applies user's philosophy via per-axis reads, aggregates with race-aware weighting to produce conscience + strategic votes with inference chains visible. Calibrates over time via the disagreement loop.
+---
+
+# voter-decide
+
+Help the user decide how to vote in an upcoming election. The deliberation happens in their private brain; the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
+
+## Entry points
+
+### Address-driven (recommended)
+
+Invoke with the voter's address and (optionally) a year:
+
+- `/voter-decide 123 Main St, Menlo Park, CA` — auto-finds upcoming election
+- `/voter-decide 123 Main St, Menlo Park, CA 2026` — year explicit
+
+The skill auto-detects:
+- Whether the user has a `philosophy-<user>.md` (cold-start → triggers [[bootstrap-survey]] first)
+- The upcoming election for the user's state (via [[resolve-ballot]])
+- The user's districts (address → district mapping)
+- Which candidates need research vs. already cached in shared brain
+
+### Race-by-race (manual mode)
+
+The conversational mode used during M0-M3 development. User names a specific race; the skill walks the algorithm for that one race. Useful when address resolution isn't needed, when running a focused refresh on a single race, or for development / acceptance testing.
+
+## Inputs
+
+| Input | Location | Role |
+|---|---|---|
+| Philosophy | `philosophy-<user>.md` | Values and axes substrate. The source of truth for what the user believes. |
+| Calibration skills | `calibration-skills/*.md` | Accumulated judgments from prior disagreement loops. Apply automatically. |
+| Per-office axis template | `templates/<office>.md` | Reusable axis weighting for a given office shape (governor, mayor, judge, etc.). |
+| Candidate profiles | `<year>/<state>/<office>/<candidate>.md` | Genesis-tracked, with inline source URLs. Generate via research subagents if absent. |
+| Current polling | Fresh WebSearch each cycle | Not persisted — moving target. Used for the strategic-vote analysis. |
+| Race scope | Conversation with the user | Office, jurisdiction, voting system (top-2, ranked-choice, plurality), date, hard filters. |
+
+## Algorithm
+
+### Stage 0 — User-state detection
+- Look for `who-to-vote-for/philosophy-<user>.md` in the user's private brain.
+- **Exists** (returning user): proceed to Stage 1.
+- **Missing** (cold-start): invoke [[bootstrap-survey]], which:
+  - Loads cycle controversies via [[identify-controversies]]
+  - Runs the Headline 5 (always); offers Rounds 2/3/4 opt-in
+  - Synthesizes `philosophy-<user>.md`
+  - Returns control here once a philosophy exists
+
+### Stage 1 — Resolve ballot
+Invoke [[resolve-ballot]] with `(address, year)`. Returns a structured ballot manifest — every race and measure on the user's actual ballot for the resolved election day, filtered to contested by default. The manifest references candidate slugs that live in `candidates/<year>/<state>/<race>/<slug>.md`.
+
+### Stage 2 — Per-candidate research (gap-fill from shared cache)
+For each candidate in the resolved ballot:
+- **Cached** (`candidates/<year>/<state>/<race>/<slug>.md` exists in shared brain): reuse — another user already researched this candidate.
+- **Missing**: dispatch a research subagent that produces a candidate profile following the schema (Background, Stated positions, Record, Endorsements & donors, Controversies, Sources). Output goes to the shared `candidates/` location so future users (or future runs) benefit.
+
+Dispatch missing-candidate research subagents in parallel.
+
+### Stage 3 — Per-axis read
+For each candidate, generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `voter-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`). Score each axis from **-2** (strong conflict) to **+2** (strong alignment); institutionalist axis extends to **-4** per [[trump-era-cater-discount]] for action-tier violations. Cite source fact + any calibration skill that influenced the read.
+
+### Stage 4 — Disagreement loop
+Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `voter-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
+
+### Stage 5 — Aggregate + present
+Apply hard filters from the user's philosophy (auto-reject). Weight axes per the office template. Surface ranked recommendation with inference chain visible. Two outputs by default — **conscience vote** (best-fit across all axes) and **strategic vote** (best-fit among top-N polling). Note divergence (often the most decision-relevant signal). Frame as **risk-mode** not scorecard (see "Recommendation framing" below).
+
+### Stage 6 — Final write
+When disagreement loop converges, write `who-to-vote-for/<year>/<state>/<race>/vote.md` per race — captures conscience vote, strategic vote, general-election scenarios, parked open questions, and calibration skills active for this race.
+
+## Axis taxonomy (five tiers)
+
+Tiers 1, 2, 5 carry uniform weight across races. Tiers 3 and 4 weighting depends on the office (see templates).
+
+**Tier 1 — Character & temperament** (universal)
+- *Smart and logically consistent* — preference for coherent thinkers
+- *Anti-hypocrisy / prefer flawed-honest* — trusts visible motives over politically-correct surface; willing to work with someone whose flaws are known
+- *Anti-personalist-strongman* — Trump-on-character is current instance; tolerates pragmatic cater but rejects personalist mode
+
+**Tier 2 — Institutional posture** (universal)
+- *Institutionalist / procedural-justice* — respects election results, court orders, due process; substantive justice is a moving target
+- *Leave-people-alone* — libertarian default on social regulation
+- *Secular-pluralist* — religious-nuts-in-power breaks the system
+
+**Tier 3 — Economic philosophy** (heavy for executive/legislative; minor for judicial)
+- *Fiscally-conservative / grow-pie-before-spending* — skeptical of cause-bonds, tax-and-spend
+- *Builder-mentality* — regulation cost is real; fix-forward, don't stop
+- *Anti-union, pro-ownership-floor* — protect workers structurally (S&P 500 baby fund), not via collective bargaining
+
+**Tier 4 — Issue positions** (weights vary by office; see templates)
+- *Housing*: zoning-realism, root-cause-before-bonds
+- *Energy*: cost-down-not-just-green, climate-adapt-not-alarmism
+- *Public safety*: strict-rules + mentally-ill-need-help-not-jail + cost-aware-geography
+- *Immigration*: legal-pathway + humane-on-residence + incentives-against-illegal
+- *Healthcare*: basic-tier-for-population-health + no-heroic-end-of-life + allow-rich-to-spend-drives-innovation
+- *Crypto*: scam-on-coins + blockchain-fine + sovereign-finality-needed
+
+**Tier 5 — Social values** (universal)
+- *Socially-liberal* (extension of leave-people-alone)
+- *Education-investment* (especially early)
+- *Work + opportunity belief*
+
+When `philosophy-<user>.md` evolves, update this taxonomy. The taxonomy is the *interface*; the philosophy file is the *implementation*.
+
+## Hard filters
+
+Auto-reject conditions that override aggregation. Declared in the philosophy file's "Hard limits" section (append as they accumulate).
+
+Currently established:
+- *Promotes 2020-election-fraud claims* — violates institutionalist
+- *Attempted to seize ballots or interfere with election machinery* — violates institutionalist
+- *Personalist-strongman support* (not pragmatic cater) — violates anti-Trump-on-character
+
+When the user confirms a new hard filter mid-race, append to `philosophy-<user>.md` under "## Hard limits" so it persists for future races.
+
+## Strategic posture
+
+By default produce both:
+
+- **Conscience vote** — best fit across all axes from the full surviving candidate pool. "Who the user would actually prefer."
+- **Strategic vote** — best fit among top-N candidates in current polling (default N=4). For top-2 primaries, focuses on influencing which two advance. For ranked-choice, conscience-vote framing applies (rank by alignment).
+
+If conscience and strategic diverge, flag explicitly — that gap is often the most important thing to discuss.
+
+## Recommendation framing — risk-mode, not scorecard-mode
+
+The aggregated per-axis score is an analytic substrate, **not** the recommendation. When presenting, frame as *"which risk are you choosing to accept"* rather than *"candidate X scored +N on the matrix."* Codex peer review (2026-05-27) pushed back on the original mechanical-scorecard framing — it obscured the actual decision the user was making.
+
+The risk inventory for any race typically includes:
+- **Institutional risk** — candidates that fail hard filters or stewardship axis
+- **Fiscal risk** — tax-and-spend trajectory; donor concentration; cause-bond defaults
+- **Capture risk** — donor / faction / agency capture once in office
+- **Hypocrisy risk** — documented inconsistency between rhetoric and behavior
+- **Viability risk** — strategic vote landing on a candidate who can't make it
+- **Establishment risk** — long-career candidates as system-defenders vs. system-creatures (see [[establishment-career-not-equals-institutionalist]])
+
+When conscience and strategic recommendations diverge, present as: *"Conscience vote accepts risk profile A; strategic vote accepts risk profile B; the gap means X."* User picks which risk to take; the algorithm doesn't paper over the choice.
+
+## Disagreement loop → calibration skills
+
+When the user pushes back on a per-axis read:
+
+1. Capture the rule he applied (e.g., *"for CA Democrats, oil-industry money is signal not deal-breaker unless paired with explicit denial"*).
+2. Write to `calibration-skills/<slug>.md`:
+
+```markdown
+---
+rule: <short statement>
+applies-to: <office types, party, axis>
+born-from: <date> | <race> | <which candidate triggered it>
+---
+
+# <Rule title>
+
+<Rule in full prose, with the disagreement context.>
+
+## When it applies
+<Office types, candidate types, axes affected.>
+
+## Don't confuse with
+<Adjacent rules; when this one does NOT fire.>
+```
+
+3. Update the affected candidate profile's alignment section.
+4. Subsequent reads apply the skill automatically — pull all `calibration-skills/*.md` into context at stage 4.
+
+These skills are the user's interpretation function accumulating over cycles. Load-bearing.
+
+## Output format
+
+When the disagreement loop converges, write `<year>/<state>/<office>/vote.md`:
+
+```markdown
+---
+race: <slug>
+date: <decision-date>
+final-vote: <candidate name | undecided>
+strategic-vote: <candidate name | conscience-aligned>
+---
+
+# Vote rationale — <race>
+
+## Hard-filter pass
+Who was eliminated and why (cite the philosophy clause).
+
+## Per-axis matrix
+Candidates × dominant axes. Cell: score + one-line rationale.
+
+## Conscience vote
+<Candidate>. Inference chain.
+
+## Strategic vote (top-N polling)
+Polling citations. <Candidate>. Inference chain.
+
+## Divergence
+If conscience ≠ strategic, what the gap means.
+
+## Calibration skills created this race
+List of new `calibration-skills/<slug>.md` files born from this race's disagreements.
+```
+
+## Address-driven flow (short version)
+
+```
+0. User-state detection  → cold-start? → bootstrap-survey → philosophy-<user>.md
+                         → returning?  → proceed
+1. Resolve ballot        → resolve-ballot(address, year) → race+candidate manifest
+2. Candidate research    → gap-fill missing from shared candidates/ cache
+3. Per-axis reads        → philosophy × template × calibration-skills per candidate
+4. Disagreement loop     → user pushback → calibration-skills/ → re-score
+5. Aggregate + present   → hard filters → weights → conscience + strategic + risk-frame
+6. Final write           → vote.md per race
+```
+
+The race-by-race manual mode collapses Stage 1 (uses user-named race instead of resolver) and runs everything else identically.
+
+## When NOT to use
+
+- Races where the user already has a confident pick and just wants to vote.
+- Races outside his jurisdiction.
+- Symbolic / write-in choices where analysis adds nothing.
+
+## Publishing (later, not now)
+
+The polished `vote.md` is the candidate for publication as "the user's voter guide" — markdown out of brain → public repo → Astro renders, following the `xianxu.dev` pattern. The private workshop (disagreement loop, intermediate reads) stays here.
