@@ -32,13 +32,13 @@ The algorithm (see [SKILL.md](./SKILL.md)):
 ```bash
 cd ~/workspace
 git clone https://github.com/xianxu/you-decide
-cd you-decide && make bootstrap
+cd you-decide && ./bootstrap.sh
 
 # Configure where your private state (philosophy, votes) lives
 export YOU_DECIDE_PRIVATE_DIR=~/voting
 ```
 
-`make bootstrap` sets up the [ariadne](https://github.com/xianxu/ariadne) development environment. Always-latest by convention; artifacts dated by git.
+`./bootstrap.sh` sets up the [ariadne](https://github.com/xianxu/ariadne) development environment. Always-latest by convention; artifacts dated by git.
 
 ### Usage
 
