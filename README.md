@@ -2,18 +2,28 @@
 
 AI-driven voter advisor. Clone, run against your address, decide.
 
+## Preamble
+
+In a democracy, voter has the final say. However, everyone has a busy life, how do you actually decide who to vote for? Do you know them, and their positions? How do you tease out what's real, from all the partisan media and social media? It is a daunting task. 
+
+AI is particular great at running processes based on description in natural language. Properly leveraged, it can pierce through all the partisan messages, expose the bare core of candidates, positions and controversies, to allow you the user to decide on your own. 
+
+How to avoid partisan propaganda? All the "algorithms" here are open and transparent. You tweak it, run with different AI providers. All the opinions are traceable in logic and we strive to offer genesis of references that you can also verify yourselves. 
+
+Let there be light, democracy dies in darkness. 
+
 ## What this is
 
-A Claude Code skill bundle that helps you decide how to vote by applying *your* philosophy to candidate research it generates from authoritative sources.
+An AI skill bundle that helps you decide how to vote by applying *your* view and philosophy to candidate research it generates from authoritative sources. Your view is yours to keep private, no one would see it. 
 
 The algorithm (see [SKILL.md](./SKILL.md)):
 
-1. **Discover what's on your ballot** from your address — federal, state, county, city, special districts
-2. **Research candidates** via parallel research subagents pulling from primary and authoritative-secondary sources (CalMatters, AP, official sites, court filings, FPPC, etc.) — every claim has an inline source URL
+1. **Discover what's on your ballot** from your address — federal, state, county, city, special districts, ballot initiatives
+2. **Research candidates** via parallel research subagents pulling from primary and authoritative-secondary sources (CalMatters, AP, official sites, court filings, FPPC, etc.) — every claim has an inline source URL. MVP is constructed to Menlo Park, CA, but will be expanded to whole country
 3. **Identify controversies** that actually differentiate this cycle's candidates (vs. civics-textbook generic issues)
-4. **Bootstrap your philosophy** via a short survey (~5–15 questions, progressive disclosure — stop whenever) if you don't already have one
-5. **Score candidates** against your philosophy, surfacing both a conscience vote (best policy fit) and a strategic vote (best polling-viable option)
-6. **Walk a disagreement loop** — when you push back on a read, the system crystallizes the rule into a calibration skill that fires automatically in future races
+4. **Bootstrap your philosophy** via a short survey (~5–15 questions, progressive disclosure — stop whenever) if you don't already have one. Those are conversation starters, best to type your thoughts in
+5. **Score candidates** against your philosophy, surfacing both a conscience vote (best fit) and a strategic vote (best polling-viable option among top 4)
+6. **Walk a disagreement loop** — when you push back on AI's read, the system crystallizes the rule into a calibration skill that fires automatically in future races
 
 ## AI transparency manifesto
 
@@ -23,7 +33,7 @@ What that means:
 
 - **You can re-run the algorithm yourself.** Every run is reproducible — clone the repo, dispatch the same skill against the same sources, get equivalent results.
 - **Every factual claim has an inline source URL.** No genesis-untracked assertions; every line of candidate research links back to where it came from.
-- **Source preferences are stated.** Authoritative-primary (campaign sites, FPPC filings, court documents, candidate social media) and authoritative-secondary (CalMatters, AP, KQED, LA Times, local broadsheets, EdSource for education) are preferred over Wikipedia and AI aggregators for decisive claims. See [`calibration-skills/source-hygiene-tier-list.md`](./calibration-skills/source-hygiene-tier-list.md).
+- **Source preferences are stated.** Authoritative-primary (campaign sites, official campaign-finance filings, court documents, candidate social media) and authoritative-secondary (nonpartisan + mainstream regional outlets) are preferred over Wikipedia and AI aggregators for decisive claims. The tier-classification principle lives in [`calibration-skills/source-hygiene-tier-list.md`](./calibration-skills/source-hygiene-tier-list.md); the concrete per-jurisdiction outlet lists live in [`sources/<state>.md`](./sources/) (currently `US.md` for federal, `CA.md` for California; more states added as coverage expands).
 - **The algorithm doesn't pick winners.** It applies *your* philosophy — your hard limits, your axis weights, your interpretation skills accumulated over cycles. The repo ships with algorithm + machinery; you bring your values.
 - **Contributions are algorithm-only, not facts.** PRs to the skill, sub-skills, templates, general calibration skills, and question bank are welcome. PRs to candidate research / controversy maps / ballot manifests are NOT accepted — to avoid the Wikipedia bias dynamic where contributors smuggle in their preferred framings. If you want a different read on a candidate, clone the repo and re-run the algorithm with your own philosophy.
 
@@ -90,6 +100,8 @@ you-decide/
 │   └── <year>/<YYYY-MM-DD>-<state>-<type>.md
 ├── controversies/                 AI-curated controversy maps per cycle
 │   └── <year>/<state>.md
+├── sources/                       Per-jurisdiction authoritative-source registries
+│   └── US.md (federal) + <state>.md per state
 └── scripts/                       Batch research drivers (per-jurisdiction populate)
 ```
 
