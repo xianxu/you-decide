@@ -1,6 +1,6 @@
 ---
 name: bootstrap-survey
-description: Use when a cold-start user (no philosophy file yet) needs to generate one. Runs a curated short survey (~8-12 questions) drawn from the cycle's actual controversies, then synthesizes responses into a `philosophy-<user>.md` that matches the shape of `philosophy-xian.md`. Each question offers typical-position force-choices, an outlier alternative, and free-form input — captures real stances without leading the user.
+description: Use when a cold-start user (no philosophy file yet) needs to generate one. Orchestrates one of several named survey designs (see `surveys/<slug>.md`), then synthesizes the user's responses into a `philosophy-<user>.md` matching the shape of `philosophy-xian.md`. Designs vary in question count, shape (force-choice vs essay), and target user; pick per user / cycle / experiment.
 generated-by: human
 generated-on: 2026-05-28
 review: passed
@@ -8,13 +8,18 @@ review: passed
 
 # bootstrap-survey
 
-Generate a voter's philosophy file from a short interactive survey. Designed for cold-start users who don't have a `philosophy-<user>.md` yet but want to use `you-decide` to evaluate this cycle's ballot.
+Generate a voter's philosophy file from an interactive survey. Designed for cold-start users who don't have a `philosophy-<user>.md` yet but want to use `you-decide` to evaluate this cycle's ballot.
 
-## Why this exists
+This skill is an **orchestrator** — it picks among several survey designs in `surveys/<slug>.md`, runs the chosen one, and synthesizes the result. The designs themselves carry the question content + chat-follow-up rules.
 
-A returning user has `philosophy-<user>.md` and the algorithm scores candidates against it. A cold-start user has nothing — we need to elicit their values fast enough that they actually finish the survey, and well enough that the result captures their real positions rather than a sanitized centrist version.
+## Available survey designs
 
-The survey is *short* (~8-12 questions, not 40), *focused* on this cycle's actual controversies (no questions about settled issues), and *force-choice-with-escape-hatch* (typical positions + outlier option + free-form). Each question is drawn from [[question-bank]] and curated by [[identify-controversies]].
+| Slug | Description | Status | Target user |
+|---|---|---|---|
+| `progressive` | 5+5+5+3 questions across Headline + Issues + Deeper + Outliers rounds; force-choice options + outlier + free-form; progressive disclosure with stop points | stable | Prefers structured questions, comfortable with 5-15 questions |
+| `essay` | 3 essay-style questions (fiscal/social/era) seeded with concrete examples + 3 cycle-specific outliers; intuition-first, no canned options | experimental | Prefers writing freely; willing to write a paragraph or two per question |
+
+Adding a new design: drop a new `surveys/<slug>.md` following the shape of the existing two. The orchestrator picks it up automatically.
 
 ## Inputs
 
@@ -24,141 +29,106 @@ The survey is *short* (~8-12 questions, not 40), *focused* on this cycle's actua
 | `year` | yes | Election cycle year (drives controversy selection) |
 | `state` | yes | 2-letter state code |
 | `sub-jurisdictions` | no | County/city slugs for local controversies |
-| `mode` | no | `interactive` (default — present questions one by one) or `batch` (present all at once for user to fill in) |
+| `design` | no | Survey design slug (default: `progressive`). Pick from `surveys/`. |
+| `mode` | no | `interactive` (default) or `batch` |
 
 ## Output
 
-`who-to-vote-for/philosophy-<user>.md` in the user's private brain, mirroring the shape of `philosophy-xian.md`:
-- Frontmatter (date, topic, status: starting-point)
-- Overarching posture (prose paragraphs synthesized from Tier 1/2/5 answers)
-- Issue positions (from Tier 4 answers — drawn from cycle's controversies)
-- What I look for in a candidate (from Tier 1 character answers)
-- Hard limits (auto-reject conditions — only if user explicitly designates one in the survey)
+`who-to-vote-for/philosophy-<user>.md` in the user's private brain, matching the shape of `philosophy-xian.md`:
+- Frontmatter (date, topic, status: starting-point, design-used: <slug>)
+- Overarching posture (prose synthesized from user's answers)
+- Issue positions (from Tier 4 answers)
+- What I look for in a candidate (from character / disqualifier answers)
+- Hard limits (auto-reject conditions, opt-in only)
 
 ## Algorithm
 
-### Stage 1 — Load context
+### Stage 1 — Pick + load the design
 
-Two sources:
-- [[question-bank]] → **universal** (cycle-stable) questions: Headline (5) + Round 3 deeper (~5-6). These probe timeless axes like Trump-personalist-posture (era-parameterized), fiscal disposition, social orientation, institutional integrity.
-- [[identify-controversies]] output for `(year, state, sub-jurisdictions)` → **cycle-specific** questions: each High-salience controversy entry has a `Survey-ready stance:` line + candidate-side-A/B summaries that compose into a question at runtime. Tier-4 controversies → Round 2 (Issues). Non-Tier-4 controversies → Round 4 (Outliers).
+- If `design` parameter given, load `surveys/<design>.md`.
+- Otherwise default to `progressive` (the stable baseline).
+- The design file's frontmatter + intro + question list + chat-follow-up rules + synthesis hints are the protocol for this run.
 
-### Stage 2 — Compose rounds + present (progressive disclosure)
+### Stage 2 — Compose with cycle data
 
-Survey is structured as **rounds**. Each round is presented, then user is asked whether to continue or stop. The philosophy file is synthesized from whatever's been answered — partial is fine.
+For designs that reference cycle-specific composition (Round 2 and 4 in `progressive`, the 3 outliers in `essay`):
+- Load `controversies/<year>/<state>.md` (per `[[identify-controversies]]`)
+- Compose questions from `Survey-ready stance:` entries + candidate-side summaries
+- Skip if cycle has no matching entries
 
-**Composition** (which source feeds which round):
+### Stage 3 — Run the design
 
-| Round | Source | Content |
-|---|---|---|
-| **Round 1 — Headline** | [[question-bank]] Headline | 5 universal questions: personalist-posture, fiscal disposition, social orientation, institutional integrity, builder-vs-regulator |
-| **Round 2 — Issues** | [[identify-controversies]] Tier-4 High-salience entries | ~5 cycle-specific issue questions: each Tier-4 controversy generates one question (text = `Survey-ready stance:`; options = sides-A/B/middle/outlier from candidate-position summaries) |
-| **Round 3 — Deeper** | [[question-bank]] Round 3 | ~5-6 universal questions on character, economic mechanism, social values |
-| **Round 4 — Outliers** | [[identify-controversies]] non-Tier-4 High-salience entries | Cycle-specific outliers (anti-hypocrisy meta, capture-risk, etc.); composed same as Round 2 |
+Follow the design file's question flow:
+- `interactive`: present one question at a time
+- `batch`: present a round at once
 
-**Between rounds, prompt:** *"Want to keep going? Next round is ~N questions on [topic]. Or stop here — you can always come back later in `augment mode` to add more."*
+Apply the design's chat-follow-up rules. For `progressive`: continue-or-stop prompts between rounds. For `essay`: branch-on-surprise and branch-on-empty, bounded probes.
 
-User can stop after any round. Headline alone produces a coarse-but-usable philosophy (overarching posture + character + hard-limits are solid; issue-positions section will be sparse and gets filled in per-race as needed).
-
-### Stage 3 — Present each question
-
-For each question, present:
-1. The question text (specific, concrete — not "do you support criminal-justice reform")
-2. 3-4 typical-stance options (drawn from the actual sides in cycle's debate — see [[identify-controversies]])
-3. An "outlier / less common" option that captures common-but-non-mainstream views (libertarian, socialist, religious-traditionalist, etc., as appropriate)
-4. "Other" with free-form text input
-
-**Mode `interactive`**: present one question at a time within a round, wait for response, move on. Allows clarifying questions. Between rounds, prompt for continue/stop.
-**Mode `batch`**: present whole round at once with response slots, user fills in. Between rounds, same continue/stop prompt.
-
-Collect: per-question (round, option-selected, optional free-form text).
+Collect responses (per-question or per-essay, plus any free-form text and follow-up exchanges).
 
 ### Stage 4 — Detect hard limits
 
-If user picks an option phrased as a deal-breaker (e.g., *"I'd disqualify any candidate who has actively interfered with election machinery"*), flag it as a candidate hard-filter for the philosophy's "Hard limits" section. Confirm with user before encoding (hard filters auto-reject; user should opt-in explicitly).
+If user expresses something that reads as a deal-breaker (*"I'd never vote for X"*, *"automatically disqualifying"*), flag it. Confirm with user before encoding as a hard-limit in the philosophy file — hard filters auto-reject; user should opt-in explicitly.
 
 ### Stage 5 — Synthesize philosophy-<user>.md
 
-Generate prose that reads like the user wrote it, not like a template fill-in. Steps:
+Per the design's synthesis hints + the general principles:
 
-1. **Overarching posture prose**: From Tier 1/2/5 answers, generate 3-5 paragraphs of values prose. Use the user's free-form text where present (captures their voice). Don't sanitize edge — if user picked sharp positions, prose should reflect that.
+1. **Capture voice.** If user wrote free-form (essay design always; progressive's E options), preserve their specific phrasings ("game of playing favorite", "AI for bureaucracy"). Don't sanitize edge.
+2. **Generate overarching-posture prose** from Tier 1/2/5 signals (3-5 paragraphs in user's voice if essays; tighter if force-choice).
+3. **Generate issue-positions section** from Tier 4 signals (Round 2 in progressive; fiscal/social essays + cycle outliers in essay).
+4. **Generate what-I-look-for** from character-axis + disqualifier signals.
+5. **Generate hard-limits** section from explicit opt-ins (Stage 4).
+6. **Frontmatter**: date, topic: political philosophy, status: starting-point, design-used: <slug>.
 
-2. **Issue positions section**: From Tier 4 answers, generate one paragraph per issue area. Cite the user's chosen stance verbatim where possible.
-
-3. **What I look for in a candidate**: From Tier 1 answers, generate the closing posture statement (e.g., for Xian: *"Generally I favor smart, logically consistent people"*).
-
-4. **Hard limits**: Encode any deal-breakers the user opted into (Stage 4).
-
-5. **Frontmatter**: date, topic: political philosophy, status: starting-point.
-
-Output written to `who-to-vote-for/philosophy-<user>.md`.
+Output to `who-to-vote-for/philosophy-<user>.md`.
 
 ### Stage 6 — Confirm + iterate
 
-Present the synthesized philosophy to the user. They can:
+Present the synthesized philosophy. User can:
 - **Accept as-is** → done
-- **Edit specific paragraphs** → re-synthesize with corrections
-- **Add positions** → if a Tier 4 issue the user cares about wasn't asked (because it wasn't a cycle controversy), add it manually as a paragraph
+- **Edit specific paragraphs** → re-synthesize affected sections
+- **Add positions** → manual paragraph for an axis the design didn't cover
 
-This iteration is light — major positions should be right from the answers; only fine-tuning needed.
-
-## Question format (from [[question-bank]])
-
-```markdown
-### Q<N>: <axis-tag> — <topic>
-
-**Probes**: <which axis from the taxonomy>
-**Cycle-relevance**: <which controversies trigger this; "universal" if always asked>
-
-> <Question text — concrete and specific, not abstract>
-
-**Stance options:**
-- A. <Typical stance A — one of the sides in the cycle's actual debate>
-- B. <Typical stance B — the other side>
-- C. <Middle / nuanced position>
-- D. <Outlier — less common but real view>
-- E. Other — _free-form text_
-
-**Synthesis hint**: <one line on how to convert the answer into philosophy prose>
-```
+This iteration should be light if the design + synthesis worked. If positions are systematically wrong, the design (or specific questions) needs iteration — file an issue against `surveys/<slug>.md`.
 
 ## Cache / persistence + augment mode
 
-The survey **doesn't cache the result for re-use** — it's a one-time bootstrap. The output (`philosophy-<user>.md`) IS the persistent artifact and lives in the user's private brain.
+The survey doesn't cache results for re-use — `philosophy-<user>.md` IS the persistent artifact, in the user's private brain.
 
-**Re-running** (two cases):
+**Re-running**:
+1. Views shifted → user deletes/renames existing philosophy, runs from scratch (optionally a different design).
+2. Augment → user stopped early in `progressive`, wants more rounds; re-run with `mode: augment` + same `design: progressive` — survey loads existing answers, presents only unanswered rounds.
 
-1. **Views shifted**: user deletes or renames existing `philosophy-<user>.md` and runs from scratch. Old one stays as `philosophy-<user>-<date>.md` for reference.
+## Picking a design (guidance)
 
-2. **Augment**: user stopped early (e.g., after Headline only) and wants to answer more rounds later. Re-run with `mode: augment` — the survey loads existing philosophy, skips questions already answered, presents next round(s).
+| Situation | Recommended design |
+|---|---|
+| First-time user, no prior signal about preferences | `progressive` (safer default; canned options anchor) |
+| User says "I just want to talk about this" or "I don't like multiple-choice" | `essay` |
+| A/B testing the two designs against each other | one user gets each; compare synthesized philosophies for accuracy |
+| Cycle with sparse controversies map (cold-start jurisdiction) | `progressive` (uses universal Round 3 even if Round 2/4 thin) |
+| User has limited time / wants <5 questions | `essay` (3 + 3 max) |
 
-## Acceptance test (from issue 000011)
+When in doubt, ask the user before starting: *"Two question styles available — would you rather pick from canned options (5-15 questions) or write a few short essays (~6 questions)?"*
 
-Run on Xian (the existing user with hand-written `philosophy-xian.md`). For the 2026 CA cycle, the curated survey should ask ~8-12 questions covering housing-CEQA, energy-cost, public-safety-strict-but-care, Trump-cater discount, election-integrity-as-hard-filter, billionaire-self-funding, charter-vs-union, healthcare-basic-tier.
+## Acceptance test (from brain#11 M3)
 
-Xian's answers from his existing philosophy:
-- Housing-CEQA: reform-not-eliminate (matches Tier 4 housing-zoning-realism +)
-- Energy-cost: cost-down-not-just-green (climate-adapt)
-- Public-safety: strict-but-care
-- Trump-cater: tolerate cater-mode, won't vote Trump-personalist
-- Billionaire-self-funding: would need to ask (no explicit philosophy text)
-- Healthcare: basic-tier, not heroic
-- etc.
+For the existing user Xian (hand-written `philosophy-xian.md` as ground truth), run a chosen design and compare reconstructed philosophy to hand-written. Acceptance = major positions on heavy axes match; voice differences are expected; gaps where the design didn't cover an axis are diagnostic of the design, not of the user.
 
-Acceptance: reconstructed philosophy from these answers should match major positions in hand-written `philosophy-xian.md`. Voice will differ (synthesis output won't have Xian's specific phrasings like *"defund police people are idiots"* unless he uses free-form). **Positions are the test, not voice.**
-
-Iteration: if a position is missed or wrong, refine the question bank — the question for that axis was bad, not the user.
+The first run completed 2026-05-28 used the `progressive` design with Headline 5 + Round 2 (skipped Rounds 3-4): 7 axes captured cleanly, 0 real divergences (one apparent divergence on H1 was a measurement artifact — user clarified they didn't engage seriously with the question), 5 axes uncaptured because Round 3 was skipped, 3 new dimensions surfaced via free-form. This finding drove the `essay` design — intuition-first, no force-choice that can be clicked-through-casually.
 
 ## When NOT to use
 
-- User already has `philosophy-<user>.md` — skip; use [[SKILL]] directly
-- User wants comprehensive philosophy regardless of cycle (e.g., for general self-knowledge, not voting) — use a longer survey not constrained by cycle controversies
-- User has strong views and wants to write their philosophy by hand — skip; just have them write it
+- User already has `philosophy-<user>.md` → skip; use [[SKILL]] directly
+- User wants comprehensive philosophy regardless of cycle → use `essay` (cycle-agnostic by design) or write by hand
+- User has strong views + writing chops → skip survey; have them write `philosophy-<user>.md` directly
 
 ## Cross-references
 
-- Controversy input: [[identify-controversies]]
-- Question bank: [[question-bank]]
+- Available designs: `surveys/<slug>.md`
+- Cycle data input: [[identify-controversies]]
+- Universal question pool + anti-patterns + schema: [[question-bank]] (used by `progressive` design)
 - Main algorithm consumes the output: [[SKILL]]
 - Philosophy file shape: see existing `philosophy-xian.md` in `who-to-vote-for/`
 - Hard-limits convention: declared in philosophy file; loaded by [[SKILL]]
