@@ -8,7 +8,9 @@ review: passed
 
 # you-decide
 
-Help the user decide how to vote in an upcoming election. The deliberation happens in their private brain; the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
+Help the user decide how to vote in an upcoming election. The deliberation happens in their private brain; the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]], [[review]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
+
+**Path conventions in this file** are repo-root-relative — `candidates/<year>/...`, `elections/<year>/...`, etc. describe where files live in the overall system. The skill files themselves live in the inner `you-decide/` folder (the skill bundle); substrate at repo root. A brain-integrated install resolves paths via the symlink at `brain/data/life/politics/you-decide/`; standalone via the repo root.
 
 ## Entry points
 
