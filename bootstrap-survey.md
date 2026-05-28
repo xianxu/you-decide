@@ -5,7 +5,7 @@ description: Use when a cold-start user (no philosophy file yet) needs to genera
 
 # bootstrap-survey
 
-Generate a voter's philosophy file from a short interactive survey. Designed for cold-start users who don't have a `philosophy-<user>.md` yet but want to use `voter-decide` to evaluate this cycle's ballot.
+Generate a voter's philosophy file from a short interactive survey. Designed for cold-start users who don't have a `philosophy-<user>.md` yet but want to use `you-decide` to evaluate this cycle's ballot.
 
 ## Why this exists
 

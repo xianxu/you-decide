@@ -119,7 +119,7 @@ Dispatch when the controversy map is missing or stale:
 > - Cite media coverage (Tier A/B sources per [[source-hygiene-tier-list]]) that confirms public salience
 > - Draft 1-2 force-choice stance statements that probe the dimension (for use in M3 survey)
 >
-> Output: structured markdown matching the controversies-output schema in `voter-decide/identify-controversies.md`. Rank High / Medium / Low salience.
+> Output: structured markdown matching the controversies-output schema in `you-decide/identify-controversies.md`. Rank High / Medium / Low salience.
 >
 > Budget: 8-12 web operations for media cross-referencing. The bulk of work is reading existing candidate profiles — positions are already in them.
 

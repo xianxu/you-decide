@@ -1,9 +1,9 @@
 ---
-name: voter-decide
+name: you-decide
 description: Use when deciding how to vote in an election. Takes (address, year) or operates race-by-race. Auto-detects cold-start vs returning user; bootstraps philosophy via survey if needed. Resolves ballot, dispatches per-candidate research, applies user's philosophy via per-axis reads, aggregates with race-aware weighting to produce conscience + strategic votes with inference chains visible. Calibrates over time via the disagreement loop.
 ---
 
-# voter-decide
+# you-decide
 
 Help the user decide how to vote in an upcoming election. The deliberation happens in their private brain; the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
 
@@ -13,8 +13,8 @@ Help the user decide how to vote in an upcoming election. The deliberation happe
 
 Invoke with the voter's address and (optionally) a year:
 
-- `/voter-decide 123 Main St, Menlo Park, CA` — auto-finds upcoming election
-- `/voter-decide 123 Main St, Menlo Park, CA 2026` — year explicit
+- `/you-decide 123 Main St, Menlo Park, CA` — auto-finds upcoming election
+- `/you-decide 123 Main St, Menlo Park, CA 2026` — year explicit
 
 The skill auto-detects:
 - Whether the user has a `philosophy-<user>.md` (cold-start → triggers [[bootstrap-survey]] first)
@@ -59,10 +59,10 @@ For each candidate in the resolved ballot:
 Dispatch missing-candidate research subagents in parallel.
 
 ### Stage 3 — Per-axis read
-For each candidate, generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `voter-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`). Score each axis from **-2** (strong conflict) to **+2** (strong alignment); institutionalist axis extends to **-4** per [[trump-era-cater-discount]] for action-tier violations. Cite source fact + any calibration skill that influenced the read.
+For each candidate, generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`). Score each axis from **-2** (strong conflict) to **+2** (strong alignment); institutionalist axis extends to **-4** per [[trump-era-cater-discount]] for action-tier violations. Cite source fact + any calibration skill that influenced the read.
 
 ### Stage 4 — Disagreement loop
-Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `voter-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
+Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `you-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
 
 ### Stage 5 — Aggregate + present
 Apply hard filters from the user's philosophy (auto-reject). Weight axes per the office template. Surface ranked recommendation with inference chain visible. Two outputs by default — **conscience vote** (best-fit across all axes) and **strategic vote** (best-fit among top-N polling). Note divergence (often the most decision-relevant signal). Frame as **risk-mode** not scorecard (see "Recommendation framing" below).

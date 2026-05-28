@@ -200,7 +200,7 @@ Dispatch this when an election manifest is missing or stale:
 > 2. State/local nonpartisan voter guides (e.g., CalMatters, KQED for CA)
 > 3. Local newspaper coverage of the closed candidate filing roster
 >
-> **Output:** markdown matching the per-election manifest schema in `voter-decide/resolve-ballot.md`. Skip uncontested races UNLESS posture is `all`.
+> **Output:** markdown matching the per-election manifest schema in `you-decide/resolve-ballot.md`. Skip uncontested races UNLESS posture is `all`.
 >
 > Budget: 10-15 web operations for a state primary or general. Flag uncertainties explicitly (especially races where filing isn't yet closed).
 
