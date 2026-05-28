@@ -56,50 +56,33 @@ you-decide/                              ← repo root
 
 The inner `you-decide/` folder is the [agentskills.io](https://agentskills.io)-style skill bundle. Substrate at repo root is reusable across users.
 
-## Installation
+## How to use it
 
-### As a peer to your brain (recommended for brain users; brain is a prototype based on [Nous](https://github.com/xianxu/nous), not a requirement per se)
-
-```bash
-cd ~/workspace
-git clone https://github.com/xianxu/you-decide
-cd you-decide && make bootstrap
-
-# In your brain, symlink data/life/politics/you-decide → ../../../../you-decide
-cd ../brain/data/life/politics
-ln -s ../../../../you-decide you-decide
-```
-
-The skill bundle is accessible from brain as `data/life/politics/you-decide/you-decide/SKILL.md`; substrate as `data/life/politics/you-decide/candidates/` etc.
-
-### Standalone (as a Claude Code skill)
+### Installation
 
 ```bash
 cd ~/workspace
 git clone https://github.com/xianxu/you-decide
 cd you-decide && make bootstrap
-
-# Install the skill bundle into Claude Code's skill discovery path
-ln -s ~/workspace/you-decide/you-decide ~/.claude/skills/you-decide
 
 # Configure where your private state (philosophy, votes) lives
 export YOU_DECIDE_PRIVATE_DIR=~/voting
+```
+
+`make bootstrap` sets up the [ariadne](https://github.com/xianxu/ariadne) development environment. Always-latest by convention; artifacts dated by git.
+
+### Usage
+
+In a Claude Code session inside your brain (or with the standalone path configured):
+
+```
+Load ./you-decide/ skill, and help me vote in Menlo Park, CA, 2026
 ```
 
 ### Updates
 
 ```bash
 cd ~/workspace/you-decide && git pull
-```
-
-`make bootstrap` sets up the [ariadne](https://github.com/xianxu/ariadne) development environment. Always-latest by convention; artifacts dated by git.
-
-## Usage
-
-In a Claude Code session inside your brain (or with the standalone path configured):
-
-```
-Load SKILL.md, and help me vote in Menlo Park, CA, 2026
 ```
 
 The skill auto-detects:
