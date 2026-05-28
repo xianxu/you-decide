@@ -10,6 +10,8 @@ review: passed
 
 Help the user decide how to vote in an upcoming election. The deliberation happens in their private brain; the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]], [[review]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
 
+**Goal posture: decision-help, not profile-building.** We do not try to capture the user's complete political identity upfront. The philosophy file starts sparse — enough to differentiate this cycle's candidates — and accumulates organically across cycles via (a) the Stage 4 disagreement loop, (b) just-in-time disambiguation in Stage 3 when an axis is load-bearing for a race but silent in the philosophy. After several cycles the user ends up with a richer self-portrait, but only as a side effect of getting decisions made. The user's trust in the tool and the tool's understanding of the user grow together — through use, not through more exhaustive surveys.
+
 **Path conventions in this file** are repo-root-relative — `candidates/<year>/...`, `elections/<year>/...`, etc. describe where files live in the overall system. The skill files themselves live in the inner `you-decide/` folder (the skill bundle); substrate at repo root. A brain-integrated install resolves paths via the symlink at `brain/data/life/politics/you-decide/`; standalone via the repo root.
 
 ## Entry points
@@ -102,6 +104,19 @@ Otherwise — first run, or one of the inputs changed — generate `who-to-vote-
   ```
 
 Cite source fact + any calibration skill that influenced the read for each axis score.
+
+**Just-in-time disambiguation** (in-line during read generation):
+
+While scoring, if an axis is **load-bearing for this race** (two viable candidates differ substantively on it, and the difference would move the recommendation) AND **silent in the user's philosophy** (neither `philosophy-<user>.md` nor any calibration skill gives a clear signal), pause and ask the user a focused essay-style question — the same shape as `surveys/essay.md` questions: concrete framing, concrete examples to ground it, paragraph response invited. Keep stakes-implicit (do *not* say "this measures axis X" — that pushes toward considered-policy mode; see anti-pattern in [[question-bank]]).
+
+Their answer:
+- Drives the per-axis score for THIS read immediately
+- Gets appended to `philosophy-<user>.md` as a new paragraph in the relevant section (or a new section if the axis didn't exist yet)
+- Becomes permanent — applies to all future races and re-reads
+
+This is just-in-time elicitation, not upfront-comprehensive. **Only ask if the disambiguation would significantly move the read between two real candidates** — don't probe for general philosophy completeness. The bar: "would knowing this change the recommendation?" If not, score 0 for that axis and move on.
+
+Across cycles, just-in-time disambiguation + the Stage 4 disagreement loop are how the philosophy file grows. The user's philosophy becomes richer as they use the tool more, without ever sitting through an exhaustive survey.
 
 ### Stage 4 — Disagreement loop
 Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `you-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.

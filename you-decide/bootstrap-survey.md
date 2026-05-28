@@ -8,9 +8,11 @@ review: passed
 
 # bootstrap-survey
 
-Generate a voter's philosophy file from an interactive survey. Designed for cold-start users who don't have a `philosophy-<user>.md` yet but want to use `you-decide` to evaluate this cycle's ballot.
+Help cold-start users vote in their first cycle by eliciting *just enough* philosophy to differentiate this cycle's candidates.
 
-This skill is an **orchestrator** — it picks among several survey designs in `surveys/<slug>.md`, runs the chosen one, and synthesizes the result. The designs themselves carry the question content + chat-follow-up rules.
+**The goal is decision-help, not profile-building.** We don't try to capture every political preference upfront. Across multiple cycles, the user's philosophy accumulates organically through (a) the disagreement loop when they push back on per-axis reads (Stage 4 of [[SKILL]]), (b) just-in-time disambiguation when [[SKILL]] Stage 3 hits an axis that's load-bearing for the current race but silent in the philosophy. The bootstrap survey just seeds the file enough to make the first cycle useful. Over time the philosophy becomes a richer mirror of the user's political identity — but always via *use*, not via more exhaustive surveys.
+
+This skill is an **orchestrator** — it picks among several survey designs in `surveys/<slug>.md`, runs the chosen one, and synthesizes the result. The designs carry the question content + chat-follow-up rules.
 
 ## Available survey designs
 
@@ -43,11 +45,23 @@ Adding a new design: drop a new `surveys/<slug>.md` following the shape of the e
 
 ## Algorithm
 
-### Stage 1 — Pick + load the design
+### Stage 0 — Design selection
 
-- If `design` parameter given, load `surveys/<design>.md`.
-- Otherwise default to `progressive` (the stable baseline).
-- The design file's frontmatter + intro + question list + chat-follow-up rules + synthesis hints are the protocol for this run.
+Present the user with the choice of survey design before starting. **Soft-push toward `essay`** — it's simpler (3+3 questions vs 5+5+5+3), the intuition-first framing captures more nuance, and chat-style follow-up is the strength of AI-based systems.
+
+Suggested prompt:
+
+> *"Two survey shapes are available — pick what fits your style:*
+> - *`essay` (recommended): 3 open-ended questions seeded with concrete examples + 3 cycle-specific debates. Write a paragraph or two per question — say what comes to mind, no need to be consistent or considered. ~6 questions total.*
+> - *`progressive`: 5 quick multiple-choice questions on major axes, then offer more rounds if you want to go deeper. ~5-15 questions depending on how far you go.*
+>
+> *Default is essay — easier and works better for catching nuances. Pick one, or list other designs in `surveys/`."*
+
+If user picks explicitly, use that. If user defers, use `essay`.
+
+### Stage 1 — Load the design
+
+Read `surveys/<chosen-design>.md`. Its frontmatter + intro + question list + chat-follow-up rules + synthesis hints are the protocol for this run.
 
 ### Stage 2 — Compose with cycle data
 
