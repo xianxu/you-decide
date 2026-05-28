@@ -59,6 +59,7 @@ For state-level CA races and below. Composes with `sources/US.md` for federal ra
 
 ## Specialized
 
+- **Ballotpedia per-jurisdiction-per-year pages** (e.g., `ballotpedia.org/San_Mateo_County,_California,_elections,_2026`) — the most comprehensive non-partisan aggregator for *ballot scoping* (what races, who's running). Tier B for scoping; verify decisive candidate-position claims against primary sources. Same applies state-by-state: see `sources/US.md` for general Ballotpedia notes.
 - **Howard Jarvis Taxpayers Association** (HJTA-PAC) — useful for fiscal-conservative endorsement tracking
 - **CA League of Women Voters** — Smart Voter ballot summaries
 - **CA Teachers Association** — endorsement tracking for education-relevant races

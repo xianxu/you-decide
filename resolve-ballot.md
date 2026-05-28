@@ -196,9 +196,10 @@ Dispatch this when an election manifest is missing or stale:
 > - Approval threshold (50% / 55% / 2/3)
 >
 > **Sources** (priority order):
-> 1. State Secretary of State + county registrar official sites
-> 2. State/local nonpartisan voter guides (e.g., CalMatters, KQED for CA)
-> 3. Local newspaper coverage of the closed candidate filing roster
+> 1. State Secretary of State + county registrar official sites (authoritative for filing rosters + dates)
+> 2. **Ballotpedia** per-jurisdiction-per-year election pages (e.g., `ballotpedia.org/<County>,_<State>,_elections,_<year>`) — the most comprehensive non-partisan aggregator for ballot scoping; verify decisive candidate-position claims against primary sources
+> 3. State/local nonpartisan voter guides (e.g., CalMatters, KQED for CA; Texas Tribune for TX)
+> 4. Local newspaper coverage of the closed candidate filing roster
 >
 > **Output:** markdown matching the per-election manifest schema in `you-decide/resolve-ballot.md`. Skip uncontested races UNLESS posture is `all`.
 >
