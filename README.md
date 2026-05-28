@@ -45,6 +45,7 @@ What that means:
 ```bash
 cd ~/workspace
 git clone https://github.com/xianxu/you-decide
+cd you-decide; make bootstrap
 
 # In your brain, symlink data/life/politics/you-decide → ../../../../you-decide
 cd brain/data/life/politics
@@ -55,7 +56,7 @@ ln -s ../../../../you-decide you-decide
 
 ```bash
 git clone https://github.com/xianxu/you-decide
-cd you-decide
+cd you-decide; make bootstrap
 # Configure where your private state (philosophy, votes) lives
 export YOU_DECIDE_PRIVATE_DIR=~/voting
 ```
@@ -65,6 +66,8 @@ export YOU_DECIDE_PRIVATE_DIR=~/voting
 ```bash
 cd you-decide && git pull
 ```
+
+The `make bootstrap` is there to bootstrap [ariadne](https://github.com/xianxu/ariadne) development environment. 
 
 Always-latest by convention. All artifacts are dated by git.
 
