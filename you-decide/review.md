@@ -276,7 +276,7 @@ A long-running `reviews/COVERAGE.md` maintained by hand can track which jurisdic
 
 ## Commit-gate convention — one commit per handoff
 
-Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews, Claude produced + fixes), and **each turn ends in a commit**. Git history *is* the review's audit trail — what was flagged, what was fixed, what was re-checked — each turn attributed to the stack that did it. Because the two sessions share one working tree, they MUST take turns (one stack live at a time); each turn starts from the other's commit (`git pull`/fresh checkout first).
+Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews, Claude produced + fixes), and **each turn ends in a commit — never a push**. Git history *is* the review's audit trail — what was flagged, what was fixed, what was re-checked — each turn attributed to the stack that did it. Because the two sessions share one working tree, they MUST take turns (one stack live at a time); each turn starts from the other's commit (`git pull`/fresh checkout first).
 
 ### The loop
 
@@ -292,6 +292,7 @@ Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews,
 
 ### Boundaries that keep it converging
 
+- **Commit, never push.** Every turn (review, fix, re-review) `git commit`s its handoff and stops — it does **not** `git push`. Pushing publishes substrate to origin (outward-facing, hard to walk back), so it is a separate, deliberate step the **operator** decides once the arc is at a clean state — not a side effect of any agent's turn. This also keeps the whole loop inspectable locally before anything is published. (When spawning the other stack — see below — say "commit only, do not push" in the prompt; some stacks push by default.)
 - **Reviewer write-surface = the report + review-state frontmatter, nothing else.** The reviewer never edits the body/facts of a file under review — content corrections are the fixer's turn, so every fix stays independently attributable and re-reviewable. (Updating `review:`/`reviewed-by`/`reviewed-on`/`review-ref` is review *metadata*, not content — that IS the reviewer's job, per Stage 4.)
 - **Deferral is a valid outcome, not a failure.** A finding you can't close by verification (a 403'd campaign-finance source, a search-result-only citation) is legitimately cleared by **demoting the claim to an explicit "Data gap"** — the file stops *asserting* the unverified thing. Never invent facts to satisfy a finding.
 - **Disputes escalate, capped.** Disagree with a finding? Dispute it in the fix commit body with rationale — never silently skip it. If reviewer and fixer still disagree after ~2 rounds, escalate to the operator as tiebreaker. Two stacks must not ping-pong indefinitely.
@@ -327,7 +328,7 @@ claude -p "<REVIEW PROMPT>" --dangerously-skip-permissions --add-dir <repo-root>
 
 ### Prompt skeleton (either reviewer)
 
-> Read `you-decide/review.md` in full — it defines your procedure, write-surface (report + `review:` frontmatter ONLY, never the body/facts), and the DATA-GAP/DATA-FIXME + severity-governs-blocking rules. You are the **<reviewer-stack>** reviewer. [If re-review:] This is round N — **diff-scoped**; `git log`/`git diff` the fix commits since the prior report (`reviews/.../…-r{N-1}.md`); verify only those findings + check for regressions, do not re-audit untouched files. Write `reviews/<year>/<date>-<batch>[-rN].md`, flip cleared files `issues-flagged → passed` (severity governs: low debt is passable), and commit `review: <stack> rN — <batch> (<status>)` with the `Co-Authored-By` trailer above.
+> Read `you-decide/review.md` in full — it defines your procedure, write-surface (report + `review:` frontmatter ONLY, never the body/facts), and the DATA-GAP/DATA-FIXME + severity-governs-blocking rules. You are the **<reviewer-stack>** reviewer. [If re-review:] This is round N — **diff-scoped**; `git log`/`git diff` the fix commits since the prior report (`reviews/.../…-r{N-1}.md`); verify only those findings + check for regressions, do not re-audit untouched files. Write `reviews/<year>/<date>-<batch>[-rN].md`, flip cleared files `issues-flagged → passed` (severity governs: low debt is passable), and **commit** `review: <stack> rN — <batch> (<status>)` with the `Co-Authored-By` trailer above — **commit only; do NOT `git push`** (the operator pushes deliberately once the arc is clean).
 
 When wrapping in a sub-agent, also have the sub-agent **verify** afterward (`git log`, the new report's status, `git show --stat` to confirm the commit is report + frontmatter only) and return a digest — never let the wrapping agent edit substrate itself.
 
