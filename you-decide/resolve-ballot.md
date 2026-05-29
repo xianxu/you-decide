@@ -17,10 +17,10 @@ The primary key is **election day** (one specific date when polls are open). An 
 Election manifests live at:
 
 ```
-data/life/politics/elections/<YYYY>/<YYYY-MM-DD>-<state>-<type>.md
+elections/<YYYY>/<YYYY-MM-DD>-<state>-<type>.md
 ```
 
-The year folder keeps each year's elections grouped (a long-running brain accumulates many years of manifests).
+The year folder keeps each year's elections grouped (a long-running install accumulates many years of manifests).
 
 Examples:
 - `2026/2026-06-02-CA-primary.md`
@@ -38,7 +38,7 @@ Examples:
 
 ## Output
 
-A ballot manifest in markdown — see [Output schema](#output-schema). Returned in-conversation and optionally written to the user's private brain at `who-to-vote-for/<year>/<state>/<address-slug>-<date>-ballot.md`.
+A ballot manifest in markdown — see [Output schema](#output-schema). Returned in-conversation and optionally written to the user's private dir at `who-to-vote-for/<year>/<state>/<address-slug>-<date>-ballot.md`.
 
 ## Algorithm
 
@@ -176,7 +176,7 @@ Election manifests are tied to a specific election day. Within the run-up to an 
 
 Track via `last-verified:` field in frontmatter. If `last-verified` is older than the threshold for the current proximity, refresh by re-running the research subagent.
 
-After the election day passes, the manifest becomes a historical artifact (useful for "what did Xian vote on in 2026?" queries; don't delete).
+After the election day passes, the manifest becomes a historical artifact (useful for "what did I vote on in 2026?" queries; don't delete).
 
 ## Research prompt template
 
@@ -228,6 +228,6 @@ Baseline encoded at `elections/2026/2026-06-02-CA-primary.md` — should be exac
 ## Cross-references
 
 - Main algorithm: [[SKILL]]
-- Per-candidate research files: `data/life/politics/candidates/<year>/<state>/<race>/<slug>.md`
+- Per-candidate research files: `candidates/<year>/<state>/<race>/<slug>.md`
 - Per-office axis-weighting templates: [[templates]]
 - Calibration skills: [[calibration-skills]] (shared) + the user's private calibration-skills

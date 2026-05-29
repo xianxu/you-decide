@@ -156,7 +156,7 @@ After whichever rounds the user completed:
 2. Generate prose overarching-posture from Tier 1/2/5 answers
 3. Generate issue-positions section from Tier 4 (Round 2) answers
 4. Detect any hard-limit opt-ins (e.g., H4-A) and surface for confirmation
-5. Write `philosophy-<user>.md` matching the shape of `philosophy-xian.md`
+5. Write `philosophy-<user>.md` matching the documented philosophy shape (`atlas/survey-and-philosophy.md`)
 
 ## Anti-patterns
 

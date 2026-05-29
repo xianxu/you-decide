@@ -78,26 +78,6 @@ An organized RecallRosen.org campaign exists, citing prosecutorial misconduct an
 
 **Fundraising:** Rosen raised ~$437,000 (2025–2026), spent ~$109,000. Challenger Chung raised ~$127,000, mostly self-funded loans. Rosen holds a significant financial advantage. [(Palo Alto Online — May 2026 finance report)](https://www.paloaltoonline.com/election/2026/05/18/dollars-flow-into-santa-clara-county-da-supervisor-races/) [(San José Spotlight)](https://sanjosespotlight.com/dollars-flow-into-santa-clara-county-da-supervisor-races/)
 
-## Scoring (against county-district-attorney template)
-
-Template weights: **Institutionalist** (×2 heavy), **Public-safety-strict-but-care** (×2 heavy), **Smart/logically-consistent** (×2 heavy), **Anti-hypocrisy** (×2 heavy); **Anti-personalist** (×1), **Immigration** (×1); **Anti-tax-spend** (×1).
-
-| Axis | Score | Evidence |
-|---|---|---|
-| **Institutionalist** (×2) | **+1** | Conviction Integrity Unit, Brady Committee, Open File Discovery — genuine structural reforms. But: Stanford prosecution used as political fundraising tool = active conflict-of-interest norm violation. Pays subordinate $314K not to work after reinstatement order. Brady disclosure failures persist. Calibration rule: career ≠ +2; these are actual institutional-defense failings. |
-| **Public-safety-strict-but-care** (×2) | **+2** | Strong on violent/sex/gang crime (Brock Turner, Tyree, trafficking). Parallel mental health diversion courts, expungements, jail-pop reduction. Death penalty abolition. Matches the template's ideal profile. |
-| **Smart/logically-consistent** (×2) | **+1** | Brock Turner legislative fix (smart) vs. endorsing lenient judge in recall (inconsistent). Stanford overcharging looks politically motivated. Death penalty policy shift coherently explained. Net: able lawyer with visible lapse in judgment when politics intrude. |
-| **Anti-hypocrisy** (×2) | **-1** | Framed Stanford prosecution as "fighting antisemitism" while fundraising off an active case. Publicly called defendants "un-American" while supposedly neutral. Endorsed Persky post-conviction despite opposing his leniency. Judge found this bad enough to recuse entire office. |
-| **Anti-personalist-strongman** (×1) | **0** | No strongman brand-building beyond normal incumbency. Some personalist flavor in the Chung feud, but not dominant. |
-| **Immigration** (×1) | **0** | No documented ICE-cooperation or sanctuary posture. Neutral. |
-| **Anti-tax-spend** (×1) | **-1** | Accused of using public-safety threats to protect office budget during county deficit. Not decisive on its own. |
-
-**Weighted composite:** (1×2) + (2×2) + (1×2) + (−1×2) + (0×1) + (0×1) + (−1×1) = 2 + 4 + 2 − 2 + 0 + 0 − 1 = **+5 / 14 possible**
-
-Normalized: moderate positive. The Stanford fundraising-off-prosecution scandal is the decisive liability — it is exactly the kind of anti-hypocrisy and institutionalist failure the DA template flags as potentially career-defining. However, his 15-year public-safety-strict-but-care record is genuinely strong, and police/fire union support (including former critics) is wide.
-
-**Tentative recommendation:** Lean yes (primary — no better vetted alternative visible). The Stanford recusal is damaging but not disqualifying in a race where the challenger (Chung) is a subordinate with minimal vetting and a David-and-Goliath fundraising disadvantage. The concern is real; a no-vote would be defensible on anti-hypocrisy grounds alone.
-
 ## Sources
 
 1. [Jeff Rosen — campaign site home](https://www.jeffrosen.org/) — **primary**

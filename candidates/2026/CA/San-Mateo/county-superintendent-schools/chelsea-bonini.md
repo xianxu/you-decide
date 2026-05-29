@@ -76,7 +76,7 @@ Bonini's response: university mentors assured her she was on the correct track; 
 Camacho obtained his PASC in May 2025 — just before filing. The timing is noted but not itself a controversy.
 
 **Anti-hypocrisy read:**
-Bonini ran for an office she may not legally be credentialed to hold, and when confronted, shifted blame to mentors and implied insider favoritism against her. This is a self-accountability failure, even if the credential gap was inadvertent. The defense ("my program was more rigorous") does not address the statutory requirement; it deflects. For Xian's anti-hypocrisy axis this is a meaningful ding — the equity-and-accountability platform coexists with declining accountability for her own credential status.
+Bonini ran for an office she may not legally be credentialed to hold, and when confronted, shifted blame to mentors and implied insider favoritism against her. This is a self-accountability failure, even if the credential gap was inadvertent. The defense ("my program was more rigorous") does not address the statutory requirement; it deflects. The equity-and-accountability platform coexists with declining accountability for her own credential status.
 
 **No other controversies** surfaced (no financial misconduct, no ethics complaints, no board-vote controversies in available Tier A/B sources).
 

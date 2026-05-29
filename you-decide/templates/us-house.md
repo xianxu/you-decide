@@ -19,8 +19,8 @@ One of 435 House members. Federal scope activates axes that don't matter at stat
 - **Institutionalist** — federal-level election integrity, impeachment votes, certification, oversight
 - **Anti-tax-spend** — federal budget and tax legislation
 - **Anti-personalist-strongman / anti-Trump-character** — *elevated to heavy at federal level* (House votes on impeachment, censure, certifying elections — personalism actively load-bearing)
-- **Immigration** — federal jurisdiction; Xian's legal-pathway / humane-on-residence framework applies
-- **Foreign policy** — Israel/Gaza stance as proxy per Xian's framework (idealist-vs-pragmatist tell); broader FP commitments matter
+- **Immigration** — federal jurisdiction; apply the user's immigration framework
+- **Foreign policy** — Israel/Gaza stance as proxy per the user's framework (idealist-vs-pragmatist tell); broader FP commitments matter
 
 ### Medium (×1)
 - **Housing** — federal housing policy (HUD, LIHTC, mortgage)

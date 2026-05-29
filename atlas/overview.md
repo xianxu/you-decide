@@ -4,18 +4,18 @@
 
 ## Origin
 
-Externalized from `brain/data/life/politics/who-to-vote-for/` in May 2026. Internal-tracking history (M0–M6) lives at `brain#11`; ongoing development tracked in `workshop/issues/`.
+Extracted from a private brain into this standalone public repo in May 2026 — which is why no user-specific paths or identities are baked into the substrate (see [[substrate]] on the private dir). Internal-tracking history (M0–M6) lives at `brain#11`; ongoing development tracked in `workshop/issues/`.
 
 ## Install models
 
-Two ways to use the skill bundle:
+Two ways to use the skill bundle. In both, **private deliberation lives outside the repo** — the difference is only *where* outside. The private dir is resolved by `scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR` if set, else `<repo-root>/../who-to-vote-for`.
 
-| Mode | Use case | Substrate location |
+| Mode | Use case | Private dir |
 |---|---|---|
-| **Standalone** | Single user, no brain integration | Repo root; user creates their own `who-to-vote-for/` privately |
-| **Brain-integrated** | User has an ariadne-styled `brain/` with private encrypted directories | Symlink at `brain/data/life/politics/you-decide/` → this repo; private deliberations in `brain/data/life/politics/who-to-vote-for/` |
+| **Standalone** | Single user, no brain integration | `../who-to-vote-for` (sibling of the repo), or `$YOU_DECIDE_PRIVATE_DIR` |
+| **Brain-integrated** | User has an ariadne-styled `brain/` with private encrypted directories | `brain/data/life/politics/who-to-vote-for/` (set `$YOU_DECIDE_PRIVATE_DIR` to it; repo reached via the symlink at `brain/data/life/politics/you-decide/`) |
 
-The brain-integrated path keeps **shared substrate** (candidates, controversies, sources) in this repo's git history, **private deliberation** (the user's philosophy file, per-axis reads, vote.md) in the user's encrypted brain. Standalone collapses both into the user's local tree without the privacy boundary.
+Both keep **shared substrate** (candidates, controversies, sources) in this repo's git history and **private deliberation** (the user's philosophy file, per-axis reads, vote.md) in the resolved private dir. The standalone default is a *sibling* of the repo, not inside it, so the privacy boundary holds either way — a `git push` of this repo can never carry private state.
 
 Brain integration via `go.mod` replace directive (parsed by ariadne's `construct/` setup script, not Go itself — convention borrowed from `nous/construct/go.mod`).
 

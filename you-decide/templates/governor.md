@@ -42,10 +42,10 @@ Scale: **heavy** (×2), **medium** (×1), **light** (×0.5). Hard filters are st
 
 ## Notes from first population (2026 CA governor)
 
-- The agent-produced candidate profiles over-weighted **anti-hypocrisy** in their initial alignment reads because the other Tier 4 axes weren't first-class in `philosophy-xian.md` at the time. Re-applying with this template gives a meaningfully different ranking — Villaraigosa and Mahan jump on housing/energy/builder/fiscal alignment despite hypocrisy hits; Steyer collapses on builder + anti-tax-and-spend; Becerra's institutionalist credential is heavy at this office.
+- The agent-produced candidate profiles over-weighted **anti-hypocrisy** in their initial alignment reads because the other Tier 4 axes weren't first-class in the user's philosophy file at the time. Re-applying with this template gives a meaningfully different ranking — Villaraigosa and Mahan jump on housing/energy/builder/fiscal alignment despite hypocrisy hits; Steyer collapses on builder + anti-tax-and-spend; Becerra's institutionalist credential is heavy at this office.
 - Hard filters were initially set to (2020-fraud, ballot-seizure), which would have eliminated the entire viable GOP field in CA-2026 (Hilton and Bianco). Demoted 2026-05-27 to strong-negative scoring under [[calibration-skills/trump-era-cater-discount]]. With discount applied, both candidates re-enter the matrix; institutional concerns substantially discount their totals but no longer auto-reject. The action-vs-rhetoric distinction (Bianco's executive action vs. Hilton's commentary) is the open meta-question of the discount framework.
 - **CEQA reform stance** emerged as a strong proxy for housing-zoning-realism + builder-mentality simultaneously. Candidates with explicit CEQA-reform records score on both axes from the same fact.
-- **"All-of-the-above" energy positioning** is a strong positive proxy for energy-cost-not-just-green; candidates who use this phrase tend to align with Xian's energy axis.
+- **"All-of-the-above" energy positioning** is a strong positive proxy for energy-cost-not-just-green; candidates who use this phrase tend to align with the energy-cost axis.
 
 ## Template maintenance
 

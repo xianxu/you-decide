@@ -1,6 +1,6 @@
 # Substrate
 
-The data the algorithm operates on. All shared substrate lives at the repo root (committed); user-private deliberation lives in the user's brain (encrypted, not in this repo).
+The data the algorithm operates on. All shared substrate lives at the repo root (committed); user-private deliberation lives in the user's private dir, resolved by `scripts/private-dir.sh` (outside this repo — never committed).
 
 ## Public substrate (this repo)
 
@@ -38,9 +38,9 @@ Composed at runtime: `sources/US.md` always loaded; `sources/<state>.md` loaded 
 
 Review session output — see [review](review.md).
 
-## Private substrate (user's brain, not this repo)
+## Private substrate (user's private dir, not this repo)
 
-Path inside brain: `data/life/politics/who-to-vote-for/`.
+Location: the user's private dir, resolved by `scripts/private-dir.sh` — `$YOU_DECIDE_PRIVATE_DIR` if set, else `<repo-root>/../who-to-vote-for` (a sibling of the repo). In a brain install, point `$YOU_DECIDE_PRIVATE_DIR` at `data/life/politics/who-to-vote-for/`.
 
 - `philosophy-<user>.md` — the user's political philosophy file. Source of truth for what the user believes. Grows organically across cycles via [[SKILL]] Stage 3 disambiguation + Stage 4 disagreement-loop corrections.
 - `calibration-skills/*.md` — user-specific corrections that don't generalize (the shared ones live in `you-decide/calibration-skills/` in this repo).
@@ -67,5 +67,5 @@ review-ref: reviews/<year>/<date>-<batch>.md  # link to the session
 ## Why split public / private
 
 - **Shared substrate is reusable** — every user benefits from one well-researched candidate profile + one well-mapped cycle controversy file. Sharing it amortizes the AI research cost.
-- **Deliberation is personal** — `philosophy-<user>.md` and `vote.md` contain identifying preferences. Stays in the user's encrypted brain, never the public repo.
+- **Deliberation is personal** — `philosophy-<user>.md` and `vote.md` contain identifying preferences. Stays in the user's private dir, never the public repo.
 - **Privacy boundary is at the directory level** — not at the field level inside a file. Makes the rule simple: "if it's in `who-to-vote-for/`, it's private; if it's in this repo, it's shareable."

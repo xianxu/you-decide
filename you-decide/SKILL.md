@@ -8,11 +8,16 @@ review: passed
 
 # you-decide
 
-Help the user decide how to vote in an upcoming election. The deliberation happens in their private brain; the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]], [[review]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
+Help the user decide how to vote in an upcoming election. The deliberation happens in the user's private dir (see Path conventions); the polished output is publishable ("the user's voter guide" format) once stable. This file is the **top-level algorithm**; it composes sub-skills ([[resolve-ballot]], [[identify-controversies]], [[bootstrap-survey]], [[review]]) and runs on a substrate of templates, calibration skills, candidate profiles, and the user's philosophy file.
 
 **Goal posture: decision-help, not profile-building.** We do not try to capture the user's complete political identity upfront. The philosophy file starts sparse — enough to differentiate this cycle's candidates — and accumulates organically across cycles via (a) the Stage 4 disagreement loop, (b) just-in-time disambiguation in Stage 3 when an axis is load-bearing for a race but silent in the philosophy. After several cycles the user ends up with a richer self-portrait, but only as a side effect of getting decisions made. The user's trust in the tool and the tool's understanding of the user grow together — through use, not through more exhaustive surveys.
 
-**Path conventions in this file** are repo-root-relative — `candidates/<year>/...`, `elections/<year>/...`, etc. describe where files live in the overall system. The skill files themselves live in the inner `you-decide/` folder (the skill bundle); substrate at repo root. A brain-integrated install resolves paths via the symlink at `brain/data/life/politics/you-decide/`; standalone via the repo root.
+**Path conventions in this file.** Two roots:
+
+- **Shared substrate** — `candidates/<year>/...`, `elections/<year>/...`, `controversies/...`, `sources/...`, `templates/...`, `you-decide/calibration-skills/` — is **repo-root-relative** (committed, reusable across users). The skill files live in the inner `you-decide/` folder (the skill bundle); the shared substrate sits at repo root.
+- **Private substrate** — every `who-to-vote-for/...` path (the user's `philosophy-<user>.md`, per-axis `-read.md` files, `vote.md`, user-private `calibration-skills/`) — lives in the **user's private dir**, resolved by `scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR` if set, otherwise `<repo-root>/../who-to-vote-for` (a sibling of the repo, so it's never inside the repo and a `git push` can't leak it). Read `who-to-vote-for/X` in this file as `<private-dir>/X`. Resolve once per session via the script; announce the resolved location to the user the first time you write there.
+
+A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`; invoked through that symlink the default resolves to the brain's own `brain/data/life/politics/who-to-vote-for/`. Brain installs should set `$YOU_DECIDE_PRIVATE_DIR` to that path explicitly (the brain's private tree is not beside the *physical* repo checkout).
 
 ## Entry points
 
@@ -27,7 +32,7 @@ The skill auto-detects:
 - Whether the user has a `philosophy-<user>.md` (cold-start → triggers [[bootstrap-survey]] first)
 - The upcoming election for the user's state (via [[resolve-ballot]])
 - The user's districts (address → district mapping)
-- Which candidates need research vs. already cached in shared brain
+- Which candidates need research vs. already cached in the shared `candidates/` substrate
 
 ### Race-by-race (manual mode)
 
@@ -65,7 +70,7 @@ The typical returning-user invocation (*"help me vote in Menlo Park, CA 2026"* w
 ## Algorithm
 
 ### Stage 0 — User-state detection
-- Look for `who-to-vote-for/philosophy-<user>.md` in the user's private brain.
+- Resolve the private dir via `scripts/private-dir.sh` (see Path conventions). Look for `philosophy-<user>.md` there.
 - **Exists** (returning user): proceed to Stage 1.
 - **Missing** (cold-start): invoke [[bootstrap-survey]], which:
   - Loads cycle controversies via [[identify-controversies]]
@@ -78,7 +83,7 @@ Invoke [[resolve-ballot]] with `(address, year)`. Returns a structured ballot ma
 
 ### Stage 2 — Per-candidate research (gap-fill from shared cache)
 For each candidate in the resolved ballot:
-- **Cached** (`candidates/<year>/<state>/<race>/<slug>.md` exists in shared brain): reuse — another user already researched this candidate.
+- **Cached** (`candidates/<year>/<state>/<race>/<slug>.md` exists in the shared substrate): reuse — another user already researched this candidate.
 - **Missing**: dispatch a research subagent that produces a candidate profile following the schema (Background, Stated positions, Record, Endorsements & donors, Controversies, Sources). Output goes to the shared `candidates/` location so future users (or future runs) benefit.
 
 Dispatch missing-candidate research subagents in parallel.
@@ -86,7 +91,7 @@ Dispatch missing-candidate research subagents in parallel.
 ### Stage 3 — Per-axis read
 **Cache-first**: if `<slug>-read.md` already exists and is newer than (a) the user's philosophy file, (b) the relevant calibration-skill files, and (c) the candidate profile it scored against, **reuse it**. The read is a pure function of those three inputs; nothing changed → re-running produces the same output.
 
-Otherwise — first run, or one of the inputs changed — generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private brain. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`).
+Otherwise — first run, or one of the inputs changed — generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private dir. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`).
 
 **Scoring contract** (use this exact shape; [[review]] checks it):
 
@@ -119,7 +124,7 @@ This is just-in-time elicitation, not upfront-comprehensive. **Only ask if the d
 Across cycles, just-in-time disambiguation + the Stage 4 disagreement loop are how the philosophy file grows. The user's philosophy becomes richer as they use the tool more, without ever sitting through an exhaustive survey.
 
 ### Stage 4 — Disagreement loop
-Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private) or proposed for `you-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
+Present per-axis reads + per-race aggregated recommendation. When the user pushes back, each correction crystallizes as a calibration skill — written to `who-to-vote-for/calibration-skills/` (user-private dir) or proposed for `you-decide/calibration-skills/` (shared) if the rule is generic. Update affected `-read.md` files and re-score.
 
 ### Stage 5 — Aggregate + present
 Apply hard filters from the user's philosophy (auto-reject). Weight axes per the office template. Surface ranked recommendation with inference chain visible. Two outputs by default — **conscience vote** (best-fit across all axes) and **strategic vote** (best-fit among top-N polling). Note divergence (often the most decision-relevant signal). Frame as **risk-mode** not scorecard (see "Recommendation framing" below).
@@ -284,4 +289,4 @@ The race-by-race manual mode collapses Stage 1 (uses user-named race instead of 
 
 ## Publishing (later, not now)
 
-The polished `vote.md` is the candidate for publication as "the user's voter guide" — markdown out of brain → public repo → Astro renders, following the `xianxu.dev` pattern. The private workshop (disagreement loop, intermediate reads) stays here.
+The polished `vote.md` is the candidate for publication as "the user's voter guide" — markdown out of the private dir → public repo → Astro renders, following the `xianxu.dev` pattern. The private workshop (disagreement loop, intermediate reads) stays in the private dir.

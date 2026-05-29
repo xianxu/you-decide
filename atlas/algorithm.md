@@ -16,7 +16,7 @@ We don't try to capture the user's complete political identity upfront. The phil
 | **3** Per-axis read | (inline) | `<slug>-read.md` per candidate: axis scores + weighted total. **Just-in-time disambiguation** fires here when an axis is load-bearing for the race but silent in the philosophy. |
 | **4** Disagreement loop | (inline) | User corrections crystallize as calibration skills; affected reads re-scored |
 | **5** Aggregate + present | (inline) | Conscience vote + strategic vote, with divergence surfaced; risk-frame not scorecard |
-| **6** Final write | (inline) | `who-to-vote-for/<year>/<state>/<race>/vote.md` in user's private brain |
+| **6** Final write | (inline) | `who-to-vote-for/<year>/<state>/<race>/vote.md` in user's private dir |
 
 Plus the **Review gate** before any commit to shared substrate (see [review](review.md)).
 
@@ -52,7 +52,7 @@ Documented in `SKILL.md` Stage 3, enforced by [[review]]:
 User corrections from the Stage 4 disagreement loop crystallize as calibration skills — small markdown files that adjust how axes are scored. Two locations:
 
 - `you-decide/calibration-skills/` — **shared**, applies to all users (e.g., `trump-era-cater-discount`, `expressive-primary-strategic-general`)
-- `<private brain>/who-to-vote-for/calibration-skills/` — **user-specific** (e.g., a user's personal weighting on a particular axis)
+- `<private-dir>/calibration-skills/` — **user-specific** (e.g., a user's personal weighting on a particular axis)
 
 Stage 3 loads both sets automatically when generating a per-axis read. Calibration skills accumulate over cycles; they're a primary mechanism (alongside the philosophy file itself) by which the tool becomes more accurate for the specific user across time.
 

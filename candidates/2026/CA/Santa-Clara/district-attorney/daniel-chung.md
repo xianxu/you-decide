@@ -76,24 +76,6 @@ Source: campaign website [(chungforchange.com/issues)](https://www.chungforchang
 - Rosen: ~$437,000 raised; ~$109,000 spent [(San José Spotlight)](https://sanjosespotlight.com/dollars-flow-into-santa-clara-county-da-supervisor-races/)
 - Funding ratio approximately 3.4:1 in Rosen's favor; Chung's campaign is essentially self-financed
 
-## Scoring (county-district-attorney template)
-
-Weights: heavy ×2 = institutionalist, public-safety-strict-but-care, smart/logically-consistent, anti-hypocrisy; medium ×1 = anti-personalist-strongman, immigration; light ×0.5 = all others.
-
-**Institutionalist (heavy):** Mixed. Chung's Brady-compliance critique and transparency proposals are institutionalist in the prosecutorial-restraint sense. His willingness to use arbitration and personnel boards to check an overreaching boss shows he works within institutional channels rather than around them. The three active lawsuits against his employer are also institutional-channel use, not vigilante action. However, the feud dimension means his institutional claims are entangled with personal grievance — harder to score cleanly. Score: **+1** (genuine substantive record, discounted for feud complication and lack of external validation through endorsements from institutional actors).
-
-**Public-safety-strict-but-care (heavy):** Reasonably well-defined. Pro-Prop 36, anti-$950-threshold (strict on repeat property crime). Vertical prosecution teams for violent crimes. Misdemeanor diversion (care axis). Mental health expertise embedded in prosecution teams (care axis). Young-offender brain-development consideration (care). The mix is coherent — stricter than Rosen on repeat offenders, not purely punitive. Score: **+1.5** (strong on both axes, but positions are stated-not-demonstrated given he's not been DA).
-
-**Smart/logically-consistent (heavy):** The pattern of the two firings gives pause — visiting a mass shooting scene without authorization and attending a conference against explicit orders are both lapses in institutional judgment, whatever the underlying merits. A sharp lawyer doesn't create two separate grounds for firing. The Brady/transparency analysis in the Davis Vanguard interview is substantive and specific. Score: **+0.5** (capable but impulsive; judgment under friction is weak).
-
-**Anti-hypocrisy (heavy):** Consistent record: criticized Rosen's progressive posture before he announced any campaign, took professional consequences for it. No evidence of flip-flops on core positions. Score: **+1.5**.
-
-**Anti-personalist-strongman (medium):** The personal-feud dimension is a liability here — three lawsuits against one person, paid administrative leave while campaigning, creates a narrative that this is about Chung vs. Rosen, not the office. Somewhat offset by the fact that the dispute started from substantive policy disagreement. Score: **0** (the feud colors everything; can't give positive score).
-
-**Immigration (medium):** No position found. Score: **0** (no signal).
-
-**Summary read:** Chung is a genuine substantive challenger with a coherent public-safety platform to Rosen's left-of-center prosecutorial posture. The internal-challenger signal is real — this is not a vanity run, evidenced by two consecutive races and significant personal financial commitment. The core critique (Brady violations, case backlogs, over-reach on Stanford protesters) appears grounded. The liabilities are (1) the personal feud makes it hard to disentangle principle from grievance; (2) total institutional isolation — zero major endorsements — is notable for someone who claims the office is badly run, as even critics of Rosen haven't rallied behind Chung; (3) the two firings, even if overturned, suggest impulsivity in professional settings that matters for a chief prosecutor. For a Palo Alto voter who values prosecutorial restraint, Brady compliance, and mental-health diversion: Chung's platform aligns better than a pure read of his law-and-order framing might suggest. The concern is whether he has the institutional judgment and coalition-building to run a large office.
-
 ## Controversies / liabilities
 
 - **Fired twice, reinstated twice:** Both firings were overturned by independent arbitrators/personnel boards, which validates that the firings were disproportionate — but the underlying conduct (unauthorized presence at crime scene, defying direct orders on conference attendance) is its own signal about professional discipline.

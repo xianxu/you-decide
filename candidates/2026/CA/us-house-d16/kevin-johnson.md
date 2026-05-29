@@ -21,7 +21,7 @@ Current law student; ballot designation per CA SOS is "law student." No prior po
 
 ## Stated positions
 
-**Economy / taxes:** Lowering cost of living through tax reductions; investigating government fraud and spending waste. Fiscal discipline framed as prerequisite for infrastructure investment (crumbling roads). Broadly aligned with Xian's "grow the pie before spending it" frame.
+**Economy / taxes:** Lowering cost of living through tax reductions; investigating government fraud and spending waste. Fiscal discipline framed as prerequisite for infrastructure investment (crumbling roads).
 
 **Foreign policy:** Self-described "American imperialist with a smile." Supports active US global engagement — "America World Police," ensuring safe global commons. Advocates English as primary hemispheric language with Spanish/Portuguese secondary. Hawkish, exceptionalist frame; more policy-substantive than typical empty-rhetoric challenger.
 
@@ -46,27 +46,6 @@ None documented. Thin record is expected for a law-student first-time challenger
 ## Viability assessment
 
 Zero. D16 (Liccardo incumbent) is a strong Democratic hold. R in a top-two primary in D+20+ territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
-
-## Trump-era-cater-discount application
-
-Johnson's explicit policy-independence framing ("disagree with the president where warranted") distinguishes him from MAGA-convert posture. No documented 2020-fraud claims. No institutional-violation actions. Cater-discount does not need to be invoked — there is nothing to discount. Mild positive relative to baseline GOP challenger. Anti-personalist-strongman axis: neutral-to-positive (policy-first framing is consistent); no personalist red flags.
-
-## Axis scores (challenger, low-data)
-
-| Axis | Score | Weight | Notes |
-|---|---|---|---|
-| Institutionalist | 0 | ×2 | No 2020-denial; no anti-institutional actions; policy-independence framing is mild positive, but insufficient signal for +1 |
-| Anti-tax-spend | +1 | ×2 | Tax cuts + fraud investigation is consistent; no detail on specifics |
-| Anti-personalist-strongman | +1 | ×2 | Explicitly policy-over-person; voted Trump but not deferential |
-| Immigration | n/a | ×2 | No documented position |
-| Foreign policy | 0 | ×2 | America-World-Police is hawkish exceptionalism; consistent but not distinctive for Xian's framework |
-| Housing | n/a | ×1 | No position |
-| Healthcare | n/a | ×1 | No position |
-| Energy-cost | +1 | ×1 | Tax/cost-reduction framing broadly compatible |
-| Smart/logically-consistent | +1 | ×1 | Policy-focus framing; AI nuance suggests some analytic depth |
-| Anti-hypocrisy | 0 | ×1 | Insufficient data |
-
-**Summary:** Thin data, zero viability. Scoring is illustrative only — D16 voters' strategic question is Liccardo vs. Stein (independent), not Johnson.
 
 ## Sources
 

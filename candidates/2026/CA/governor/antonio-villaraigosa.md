@@ -72,7 +72,7 @@ All positions are from the candidate's own campaign site unless noted.
 
 ## Controversies / liabilities
 
-1. **Extramarital affair (2007)**: His marriage to Corina Raigosa ended after his affair with television reporter Mirthala Salinas became public during his mayoral tenure. He remarried (Patricia Govea, 2016) and separated again in 2018. Relevant to Xian's "anti-hypocrisy" axis — he was publicly Catholic and family-values-adjacent while conducting the affair. [(NBCNews — Telemundo suspension)](https://www.nbcnews.com/id/wbna20100417)
+1. **Extramarital affair (2007)**: His marriage to Corina Raigosa ended after his affair with television reporter Mirthala Salinas became public during his mayoral tenure. He remarried (Patricia Govea, 2016) and separated again in 2018. He was publicly Catholic and family-values-adjacent while conducting the affair. [(NBCNews — Telemundo suspension)](https://www.nbcnews.com/id/wbna20100417)
 
 2. **Ethics violations (2007, 2010)**: LA Ethics Commission investigated him for 31 campaign finance violations related to his 2003 city council campaign. Separately, he was fined a record $41,849 combined by the FPPC and LA Ethics Commission for failing to report 81 event tickets (Lakers games, Oscars, American Idol finals, etc.). [(LAist — ticket probe)](https://laist.com/news/villaraigosa-ticket-gate-district-a) [(NBC Los Angeles / AP — fine)](https://www.nbclosangeles.com/news/politics/mayor-antonio-villaraigosa-fine/1920348/) [(FPPC stipulation — Tier A)](https://www.fppc.ca.gov/content/dam/fppc/documents/Stipulations/2011/April/30-Villarigosa.pdf)
 

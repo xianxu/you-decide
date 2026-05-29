@@ -17,17 +17,17 @@ Retired UPS supervisor. Resident of San Mateo County for 30+ years. Married 31 y
 
 ## Stated positions
 
-**Energy / economy:** Supports domestic American energy production to lower costs and reduce foreign dependence. Aligns with Xian's "lower the cost" energy frame, though no detail on whether this means fossil-fuel expansion, nuclear, or both.
+**Energy / economy:** Supports domestic American energy production to lower costs and reduce foreign dependence. No detail on whether this means fossil-fuel expansion, nuclear, or both.
 
 **Immigration:** Legal, fair, controlled immigration; secure border as national security issue. No documented stance on the "ten years here, turn the page" humane-enforcement dimension.
 
 **Public safety:** Supports law enforcement and holding criminals accountable. No defund-adjacent positions.
 
-**Gender / social:** Opposes gender-affirming care for minors; restricts sports by biological sex. Standard social-conservative positions, not Xian's axis of concern.
+**Gender / social:** Opposes gender-affirming care for minors; restricts sports by biological sex. Standard social-conservative positions.
 
 **Election integrity:** Supports voter ID, voter-roll cleanup in all states. No documented 2020-fraud claim on record; "voter-roll cleanup" is GOP boilerplate but not the same as election-denial.
 
-**Term limits:** Supports. Mildly consistent with Xian's skepticism of career politicians.
+**Term limits:** Supports.
 
 **Veterans:** Supports improved healthcare and respect for service.
 

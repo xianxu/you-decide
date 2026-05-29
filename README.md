@@ -34,11 +34,19 @@ cd ~/workspace
 git clone https://github.com/xianxu/you-decide
 cd you-decide && ./bootstrap.sh
 
-# Configure where your private state (philosophy, votes) lives
+# Optional: choose where your private state (philosophy, reads, votes) lives.
+# Default is ../who-to-vote-for (a sibling of the repo). Set this to override.
 export YOU_DECIDE_PRIVATE_DIR=~/voting
 ```
 
 `./bootstrap.sh` sets up the [ariadne](https://github.com/xianxu/ariadne) development environment. Always-latest by convention; artifacts dated by git.
+
+**Where your private state lives.** The repo is read-only substrate; your philosophy, per-candidate reads, and votes are written to a **private dir outside the repo**, resolved by `scripts/private-dir.sh`:
+
+1. `$YOU_DECIDE_PRIVATE_DIR` if set, else
+2. `../who-to-vote-for` — a sibling of the repo root.
+
+Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. Brain users: set `YOU_DECIDE_PRIVATE_DIR` to `…/brain/data/life/politics/who-to-vote-for`.
 
 ### Usage
 
@@ -118,7 +126,7 @@ you-decide/                              ← repo root
 └── workshop/, construct/, atlas/        ariadne base layer
 ```
 
-**Note on paths in skill files:** path references inside `you-decide/SKILL.md` and sub-skills (e.g., `candidates/<year>/...`) are **repo-root-relative**, describing where files live in the overall system — not relative to the skill folder's filesystem position. A brain-integrated install resolves these via the symlink at `brain/data/life/politics/you-decide/`; a standalone install resolves via the repo root.
+**Note on paths in skill files:** the skill files distinguish two roots. **Shared substrate** paths (e.g., `candidates/<year>/...`, `elections/...`, `templates/...`) are **repo-root-relative** — committed, reusable across users. **Private** paths (every `who-to-vote-for/...`: the user's philosophy, per-axis reads, votes) resolve to the **private dir** described above (`scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR`, else `../who-to-vote-for`), which is always *outside* the repo. A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`.
 
 ## Coverage status
 

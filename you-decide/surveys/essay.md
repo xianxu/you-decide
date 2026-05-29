@@ -85,7 +85,7 @@ After all 3 essays + outliers collected:
 2. Map concrete-example references in user's prose to specific axis positions (e.g., "rent control is theft" → housing-zoning-realism +, anti-tax-spend +)
 3. Capture novel framings verbatim in synthesized philosophy (e.g., "game of playing favorite", "AI for bureaucracy") — preserve voice
 4. Detect hard-limit signals (e.g., "I'd never vote for X") and surface for confirmation
-5. Write `philosophy-<user>.md` matching the shape of `philosophy-xian.md`
+5. Write `philosophy-<user>.md` matching the documented philosophy shape (`atlas/survey-and-philosophy.md`)
 
 ## What this design is for
 

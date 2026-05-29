@@ -16,7 +16,7 @@ County-level education leadership. SM has independent K-12 districts (MPCSD, SUH
 ## Weights
 
 ### Heavy (×2)
-- **Education-investment** — especially early-education (per Xian's stated values). Candidate stance on universal pre-K, ECE access, special-ed adequacy matters most
+- **Education-investment** — especially early-education (per the user's stated values). Candidate stance on universal pre-K, ECE access, special-ed adequacy matters most
 - **Anti-hypocrisy** — equity-rhetoric-vs-record gap is common in this role; check substance vs talking points
 
 ### Medium (×1)

@@ -54,7 +54,7 @@ Sources: [Clerk.house.gov profile](https://clerk.house.gov/members/L000607) [Tie
 
 ### San Jose Mayor (2015–2022)
 
-- **Police rebuild:** Added 200+ officers via voter-approved ballot measures; lowest major-city homicide rate at term end. Aligns with Xian's "strict rules" posture.
+- **Police rebuild:** Added 200+ officers via voter-approved ballot measures; lowest major-city homicide rate at term end.
 - **Pension reform (Measure B, 2012, as councilmember):** Pushed voter-approved pension cut for police and firefighters — reduced city's pension debt but drew labor backlash. Fiscally disciplined but politically costly.
 - **Housing:** Admits insufficient progress on homelessness despite innovations. Street homelessness declined but "crisis persists." [San José Spotlight 2024](https://sanjosespotlight.com/election-2024-former-san-jose-mayor-ready-to-step-into-higher-office/) [Tier B]
 - **Minimum wage:** Led regional minimum wage effort ($17.55/hour in SJ). [samliccardo.com] [Tier A]
@@ -90,71 +90,6 @@ Sources: [Clerk.house.gov profile](https://clerk.house.gov/members/L000607) [Tie
 **Homelessness record as mayor:** Self-admitted insufficient progress; used as attack line by challengers. [San José Spotlight 2024] [Tier B]
 
 **Pension cut (Measure B 2012):** Damaged relationship with public safety unions; courts later struck down key provisions as unconstitutional. Tactically fiscally prudent, procedurally controversial. [San José Spotlight background] [Tier B]
-
----
-
-## Reading against philosophy-xian.md
-
-### Axis scores (us-house.md template)
-
-**Heavy (×2)**
-
-| Axis | Score | Rationale |
-|---|---|---|
-| Institutionalist | +1 | War powers resolution assertion (positive institutional check on executive). Public records violation as mayor cuts against: directed constituent to personal email, wrote "delete this from my government account" — opacity norm-bending. Long career doesn't auto-grant +2 (calibration-skill). Net: reform posture in Congress, but a documented transparency violation. +1. |
-| Anti-tax-and-spend | 0 | Tech-moderate Democrat on fiscal policy. Authored housing legislation (spending direction) but also pushed market-friendly approaches. Minimum wage advocacy is labor-left. Pension reform as mayor showed fiscal discipline. Insufficient evidence for strong + or − at federal level. 0. |
-| Anti-personalist-strongman / anti-Trump-character | +1 | No Trump-cater signals. Strong critic of executive overreach (war powers push). Not a fire-breather either. Clean institutional posture, no documented sycophancy. +1 (not +2 — no documented moments of resisting significant pressure). |
-| Immigration | +1 | Two-state / pragmatist on immigration. No abolish-ICE rhetoric (no dual-axis trigger). Legal pathway orientation. No strong deportation hawkishness. Moderate, humane-leaning. Aligns with Xian's "welcome legal, enforce humanely, turn the page on long-timers." +1. |
-| Foreign policy — Israel/Gaza | +1 | J Street PAC endorsed (not AIPAC). Publicly criticized US military support for Israel's conduct of the war. Co-signed humanitarian aid resolution. Called for hostage deal + Hamas replacement. Simultaneously affirmed Israel alliance post-Iran attack and supports two-state solution. This is the pragmatist-idealist middle ground — not reflexively pro-Israel, not anti-Israel. Xian's proxy test: J Street vs. AIPAC affiliation is an idealist-leaning signal. +1 (not +2 — doesn't take a sharper stand, no documented vote against weapons transfers). |
-
-**Heavy subtotal (×2): (1+0+1+1+1) × 2 = 8**
-
-**Medium (×1)**
-
-| Axis | Score | Rationale |
-|---|---|---|
-| Housing | +2 | Flagship issue. Five bipartisan bills in first term. Mayoral innovations adopted statewide. Strong track record, not just rhetoric. +2. |
-| Healthcare | 0 | Committee on Financial Services (not Health). No documented position beyond vague "affordable." Insufficient signal. 0. |
-| Energy-cost | 0 | Clean energy orientation (SJ Clean Energy, 95% renewable). Xian wants *cost down*, not just green. No evidence Liccardo focuses on affordability of energy specifically. 0. |
-| Education-investment | +1 | Expanded after-school programs, broadband, coding as mayor. No documented federal education-bill work. +1 for demonstrated commitment but limited federal signal. |
-| Smart / logically-consistent | +1 | Bipartisan housing approach, AI "conditional preemption" framework show systematic thinking. War powers assertion is principled and specific. +1. |
-| Anti-hypocrisy | -1 | Public records violation: directing constituent to personal email and writing "I'll delete this from my government account" while serving as a public official who launched transparency reforms. Classic "rules for thee" hypocrisy. Aged-flaws discount applies: 2022–2024 court ruling, fully aired — not decades old, but now public. -1 (not -2 because it's been litigated and his true motivations are now knowable; Xian can model this type). |
-
-**Medium subtotal (×1): (2+0+0+1+1−1) = 3**
-
-**Light (×0.5)**
-
-| Axis | Score | Rationale |
-|---|---|---|
-| Builder-mentality | +1 | NEPA/permitting reform is likely aligned; housing bill work implies regulatory pragmatism. Insufficient specific federal signal. +1 lean. |
-| Crypto | 0 | No documented position. Financial Services committee (relevant jurisdiction). 0. |
-| State-level issues | n/a | Not scored at federal level. |
-
-**Light subtotal (×0.5): (1+0) × 0.5 = 0.5**
-
-### Weighted total: 8 + 3 + 0.5 = **11.5 / ~26 possible**
-
-Normalized: roughly 44% of maximum, which maps to **above average for a Democratic incumbent in a safe seat** — solid institutionalist posture, strong housing, J Street alignment on Israel, tempered by the transparency hypocrisy and fiscal/energy ambiguity.
-
-### Israel/Gaza explicit summary
-
-Liccardo occupies a coherent pragmatist-with-idealist leanings position: affirms Israel alliance and two-state solution, simultaneously criticizes US military support for Israel's wartime conduct, co-signs humanitarian aid resolutions, supports hostage deal + Hamas replacement as path to peace. J Street (not AIPAC) endorsed. No documented vote against weapons transfers. This is not the reflexive AIPAC line; it's the "critical friend" position. For Xian's proxy (idealist-vs-pragmatist tell), this reads as **moderate idealist lean** — not full idealist (which would require sharper stands), but clearly not the blank-check Israel position.
-
-### Calibration skill applications
-
-- **establishment-career-not-equals-institutionalist:** Applied — long SJ mayoral career does not auto-grant +2. The public records violation is an actual institutional-stewardship data point, cutting against.
-- **aged-flaws-discount:** Applied at -1 (not -2) for public records hypocrisy — 2024 ruling, fully aired, pattern now knowable.
-- **enforcement-needs-heart:** Partially applicable — SJPD rebuild paired with low homicide rate is positive; no documented abuse or "put mentally ill in jail" pattern. Pension cut (2012) was fiscally pragmatic, not punitive. Score held at face value.
-- **trump-era-cater-discount:** Not triggered — Liccardo is a Democrat and has not made Trump-cater concessions.
-- **expressive-primary-strategic-general:** No tension here — no viable progressive challenger in primary. Vote is functionally strategic in the primary already.
-
-### Bottom line for Palo Alto voter (Xian's profile)
-
-Liccardo is a competent, non-ideological-left Democratic incumbent. Fiscally moderate, institutionally clean in Congress, housing-focused, AI-engaged, and on Israel/Gaza takes a position that is critical-friend rather than blank-check — all aligned with Xian's framework. The transparency violation as mayor is a real mark against his "I'll know your true color" filter, but it's now litigated and public — Xian can model what kind of politician Liccardo is. In a safe D+20 seat with weak challengers, the only interesting question is whether a primary protest vote against him (for the transparency record) sends a signal worth sending. With no credible progressive alternative, that signal has no vehicle.
-
-**Recommendation: Vote Liccardo in the June 2 primary.** No credible alternative; he meets the bar on the axes that matter at federal level.
-
----
 
 ## Sources
 

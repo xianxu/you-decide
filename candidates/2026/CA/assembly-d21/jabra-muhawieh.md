@@ -15,7 +15,7 @@ review: not-done
 
 Jabra J. Muhawieh is an Enrolled Agent (IRS-licensed tax practitioner) and small business owner based in Millbrae, CA 94030. He attended Arizona State University, earning a 4.0 in communication studies and completing business coursework. He is of Palestinian heritage and identifies as a Trump voter. No prior public office or documented civic leadership roles found in available sources. He is the sole Republican on the AD-21 ballot challenging incumbent Assemblymember Diane Papan (D-San Mateo), who won the 2024 race easily.
 
-**Viability note:** D21 is a safe-D seat. Papan won 2024 without serious challenge. GOP challenger path to top-2 is essentially nil. This is an expressive-primary context for Xian; this profile documents positions and character signals, not a competitive-viability assessment.
+**Viability note:** D21 is a safe-D seat. Papan won 2024 without serious challenge. GOP challenger path to top-2 is essentially nil. This is an expressive-primary context; this profile documents positions and character signals, not a competitive-viability assessment.
 
 ## Stated positions
 

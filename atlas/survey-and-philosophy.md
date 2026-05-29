@@ -31,7 +31,7 @@ Adding a new design: drop `you-decide/surveys/<slug>.md` following the shape of 
 
 ## Philosophy file shape
 
-User-private, lives at `<brain>/data/life/politics/who-to-vote-for/philosophy-<user>.md`. Sections:
+User-private, lives in the user's private dir (resolved by `scripts/private-dir.sh`): `<private-dir>/philosophy-<user>.md`. Sections:
 
 - Overarching posture (prose, in the user's voice if essays were used)
 - Issue positions (one paragraph per tier-4 axis the user has a position on)

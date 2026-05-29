@@ -25,7 +25,7 @@ A voter-philosophy survey that asks *"do you support criminal justice reform?"* 
 
 ## Output
 
-A controversy map at `data/life/politics/controversies/<year>/<state>.md` (cached in shared brain, reusable across users and races in the same cycle).
+A controversy map at `controversies/<year>/<state>.md` (shared substrate, reusable across users and races in the same cycle).
 
 ## Algorithm
 

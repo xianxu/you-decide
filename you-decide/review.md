@@ -16,7 +16,7 @@ This sub-skill is the institutional check on AI-curated content. **Fresh context
 
 ## Per-file frontmatter contract (the greppable part)
 
-**Every markdown artifact in this repo + in users' private brains carries explicit review state in frontmatter.** Unreviewed state is *named explicitly* (`review: not-done`), not implied by absence — that way "what hasn't been reviewed" is a positive grep: `rg '^review: not-done' .` rather than a negated one. Operators and CI can audit coverage trivially.
+**Every markdown artifact in this repo + in users' private dirs carries explicit review state in frontmatter.** Unreviewed state is *named explicitly* (`review: not-done`), not implied by absence — that way "what hasn't been reviewed" is a positive grep: `rg '^review: not-done' .` rather than a negated one. Operators and CI can audit coverage trivially.
 
 Required fields on every artifact:
 

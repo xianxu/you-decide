@@ -3,3 +3,8 @@
 .openshell/.base-image-digest
 .DS_Store
 bin/
+
+# Private voting deliberation never belongs in the repo. The default private
+# dir is ../who-to-vote-for (a sibling, outside the repo); this guards the case
+# where YOU_DECIDE_PRIVATE_DIR is mis-set to a path inside the checkout.
+who-to-vote-for/

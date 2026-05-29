@@ -1,6 +1,6 @@
 ---
 name: bootstrap-survey
-description: Use when a cold-start user (no philosophy file yet) needs to generate one. Orchestrates one of several named survey designs (see `surveys/<slug>.md`), then synthesizes the user's responses into a `philosophy-<user>.md` matching the shape of `philosophy-xian.md`. Designs vary in question count, shape (force-choice vs essay), and target user; pick per user / cycle / experiment.
+description: Use when a cold-start user (no philosophy file yet) needs to generate one. Orchestrates one of several named survey designs (see `surveys/<slug>.md`), then synthesizes the user's responses into a `philosophy-<user>.md` matching the documented philosophy shape (see `atlas/survey-and-philosophy.md`). Designs vary in question count, shape (force-choice vs essay), and target user; pick per user / cycle / experiment.
 generated-by: human
 generated-on: 2026-05-28
 review: passed
@@ -36,7 +36,7 @@ Adding a new design: drop a new `surveys/<slug>.md` following the shape of the e
 
 ## Output
 
-`who-to-vote-for/philosophy-<user>.md` in the user's private brain, matching the shape of `philosophy-xian.md`:
+`who-to-vote-for/philosophy-<user>.md` in the user's private dir (see [[SKILL]] Path conventions), matching the documented philosophy shape (`atlas/survey-and-philosophy.md`):
 - Frontmatter (date, topic, status: starting-point, design-used: <slug>)
 - Overarching posture (prose synthesized from user's answers)
 - Issue positions (from Tier 4 answers)
@@ -95,7 +95,7 @@ Per the design's synthesis hints + the general principles:
 5. **Generate hard-limits** section from explicit opt-ins (Stage 4).
 6. **Frontmatter**: date, topic: political philosophy, status: starting-point, design-used: <slug>.
 
-Output to `who-to-vote-for/philosophy-<user>.md`.
+Output to `who-to-vote-for/philosophy-<user>.md` (in the user's private dir).
 
 ### Stage 6 — Confirm + iterate
 
@@ -108,7 +108,7 @@ This iteration should be light if the design + synthesis worked. If positions ar
 
 ## Cache / persistence + augment mode
 
-The survey doesn't cache results for re-use — `philosophy-<user>.md` IS the persistent artifact, in the user's private brain.
+The survey doesn't cache results for re-use — `philosophy-<user>.md` IS the persistent artifact, in the user's private dir.
 
 **Re-running**:
 1. Views shifted → user deletes/renames existing philosophy, runs from scratch (optionally a different design).
@@ -128,7 +128,7 @@ When in doubt, ask the user before starting: *"Two question styles available —
 
 ## Acceptance test (from brain#11 M3)
 
-For the existing user Xian (hand-written `philosophy-xian.md` as ground truth), run a chosen design and compare reconstructed philosophy to hand-written. Acceptance = major positions on heavy axes match; voice differences are expected; gaps where the design didn't cover an axis are diagnostic of the design, not of the user.
+When a hand-written ground-truth philosophy exists for a user, run a chosen design and compare the reconstructed philosophy to the hand-written one. Acceptance = major positions on heavy axes match; voice differences are expected; gaps where the design didn't cover an axis are diagnostic of the design, not of the user.
 
 The first run completed 2026-05-28 used the `progressive` design with Headline 5 + Round 2 (skipped Rounds 3-4): 7 axes captured cleanly, 0 real divergences (one apparent divergence on H1 was a measurement artifact — user clarified they didn't engage seriously with the question), 5 axes uncaptured because Round 3 was skipped, 3 new dimensions surfaced via free-form. This finding drove the `essay` design — intuition-first, no force-choice that can be clicked-through-casually.
 
@@ -144,5 +144,5 @@ The first run completed 2026-05-28 used the `progressive` design with Headline 5
 - Cycle data input: [[identify-controversies]]
 - Universal question pool + anti-patterns + schema: [[question-bank]] (used by `progressive` design)
 - Main algorithm consumes the output: [[SKILL]]
-- Philosophy file shape: see existing `philosophy-xian.md` in `who-to-vote-for/`
+- Philosophy file shape: see `atlas/survey-and-philosophy.md` ("Philosophy file shape")
 - Hard-limits convention: declared in philosophy file; loaded by [[SKILL]]

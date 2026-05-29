@@ -71,7 +71,7 @@ SM Daily Journal editorial board ("the right person to take the helm"); Palo Alt
 
 3. **Short tenure as Equity ED:** Only ~17 months in the role before launching. The practical record in that role is thin — the role itself is new to SMCOE (created or elevated recently). Supporters argue his 11-year trustee tenure compensates; critics (notably Bonini) argue operational experience matters more than governance experience.
 
-4. **No documented program outcomes:** Available Tier B sources contain no measurable results from Camacho-led initiatives. Endorsers cite his experience and potential, not demonstrated outcomes. This is the anti-hypocrisy red flag under Xian's framework: equity-rhetoric-rich title, outcome-evidence poor.
+4. **No documented program outcomes:** Available Tier B sources contain no measurable results from Camacho-led initiatives. Endorsers cite his experience and potential, not demonstrated outcomes. Equity-rhetoric-rich title, outcome-evidence poor.
 
 ## Sources
 

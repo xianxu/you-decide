@@ -66,32 +66,9 @@ All from [souleforcongress.com/issues](https://souleforcongress.com/issues) unle
 **Trump / 2020 election:**
 - No statements found. Not mentioned on campaign site. No media record.
 
-## Axis scoring
-
-Per [us-house.md template](../../../templates/us-house.md): heavy axes (×2) are institutionalist, anti-tax-spend, anti-personalist-strongman/anti-Trump-character, immigration, foreign policy.
-
-| Axis | Score | Notes |
-|---|---|---|
-| **Institutionalist** (×2) | 0 | No record of election-fraud claims or anti-democratic action. No data to score positively either. Default neutral under trump-era-cater-discount framework — no evidence of action-tier violations. |
-| **Anti-tax-spend** (×2) | +1 | Wasteful-spending critique (HSR, federal dollars) consistent with fiscal-conservative framing; no specific tax cut proposals found. Modest positive. |
-| **Anti-personalist-strongman** (×2) | 0 | No Trump-adjacent rhetoric visible. No sycophancy. Also no independence signal. Neutral. |
-| **Immigration** (×2) | −1 | Sanctuary-city defunding and H-1B prioritization are enforcement-heavy; no legal-pathway / humane-on-long-term-residents framing. Misses Xian's "people need a heart" test for existing residents. |
-| **Foreign policy** (×2) | 0 | Essentially absent. China-farmland position is domestic security, not FP. No Israel/Gaza stance found. |
-| **Housing** (×1) | +1 | Ban on institutional single-family purchases is a real supply-side / anti-financialization position; senior cap-gains shield is reasonable. Misses root-cause / zoning reform analysis but not wrong. |
-| **Healthcare** (×1) | 0 | No position found. |
-| **Energy-cost** (×1) | +1 | Drilling + refinery expansion aligns with Xian's "lower the cost, not just green energy" framing. |
-| **Education-investment** (×1) | 0 | Parental choice + basic skills: not opposed; savings accounts interesting. But federal Title I / Pell focus absent. Neutral. |
-| **Smart / logically-consistent** (×1) | 0 | Too sparse to score. |
-| **Anti-hypocrisy** (×1) | 0 | No record to assess. |
-| **Builder-mentality** (×0.5) | +1 | HSR waste critique and HSR-as-boondoggle reading align loosely. |
-
-**Weighted estimate:** Positive on energy, anti-waste fiscal, housing (minor). Negative on immigration. Heavy axes mostly neutral due to insufficient data. Net approximately 0 to slightly positive on issues — but the profile is almost entirely empty.
-
 ## Viability
 
 **Effectively zero.** R in a safe-D seat. No endorsements, no fundraising signal, no media presence. Top-2 jungle primary makes it likely Liccardo advances with a D or independent. Even if Soule advances to general, CA-16 PVI makes a Republican win implausible in 2026.
-
-**For Palo Alto voter:** CA-16 is the district. Soule is on the June 2 primary ballot. Xian's vote should go to Sam Liccardo (incumbent D) or the most palatable challenger. Soule's issue mix has some alignment (energy cost, anti-waste, housing) but the thin record and viability-zero status make him a protest vote at best.
 
 ## Controversies / liabilities
 

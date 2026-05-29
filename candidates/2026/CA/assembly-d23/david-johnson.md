@@ -63,25 +63,6 @@ No prior elected office. Record is his SCC GOP party leadership.
 3. **No governing record to evaluate:** Party chair role and business background are the only evidence base. Assertions about "fighting Sacramento" are untested.
 4. **D+25 district dynamics:** Santa Clara / Menlo Park / Cupertino area is overwhelmingly Democratic. Johnson's candidacy is a base-consolidation / protest-vote exercise; strategic viability as a general-election winner is near-zero.
 
-## Axis reads (preliminary — for per-axis read file)
-
-| Axis | Score | Notes |
-|---|---|---|
-| Smart / logically consistent | 0 | "Common sense" self-framing; no public policy record to test coherence against |
-| Anti-hypocrisy | 0 | No documented hypocrisy signals; no governing record to contradict |
-| Anti-personalist-strongman | +1 | Trump-supportive but distances from Trump-reaction mode; pragmatic cater framing plausible |
-| Institutionalist | -1 | Voter-ID / one-day-voting positioning; no confirmed 2020 fraud claims. Trump-era cater discount applies; score is -1 not -2 |
-| Leave-people-alone | -1 | Parents'-rights framing on gender-transitioning notification is state-coercive toward schools; cuts against leave-people-alone |
-| Secular-pluralist | -1 | "God-fearing" self-ID; parental-rights + school-choice combo is religious-conservative-coded |
-| Fiscally-conservative | +1 | Anti-tax-and-spend rhetoric is consistent; flat-fee VLF proposal is specific (if low-impact) |
-| Builder-mentality | +1 | Construction background; regulatory-cost framing genuine; but no specific build-enabling proposals found |
-| Housing (×2 per template) | 0 | Cost-of-living framing without actionable CEQA/zoning specifics; placeholder +0 pending more research |
-| Energy | +1 | Cost-down framing; no climate-alarmism posture |
-| Public safety | 0 | No public-safety platform items found; absence of signal |
-| Education | 0 | School choice and parental rights are on-axis but the trans-notification specific cuts against leave-people-alone |
-
-**Preliminary weighted total:** Modest positive on fiscal/builder; negatives on institutionalist and leave-people-alone. Not a viable recommendation in a D+25 district regardless of scores — strategic and conscience vote both land on Berman or abstain.
-
 ## Sources
 
 | URL | Tier | Type | Partisan tilt |

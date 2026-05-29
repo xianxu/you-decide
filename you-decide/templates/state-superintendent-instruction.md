@@ -16,7 +16,7 @@ Statewide elected. Heads CA Department of Education. Powers limited by local-con
 ## Weights
 
 ### Heavy (×2)
-- **Education-investment** — especially early-ed (per Xian's stated values); state-level vote shapes K-12 budget proposals
+- **Education-investment** — especially early-ed (per the user's stated values); state-level vote shapes K-12 budget proposals
 - **Anti-hypocrisy** — equity-rhetoric-vs-record common gap; substance over slogans
 - **Smart/logically-consistent** — administrative complexity at scale
 
