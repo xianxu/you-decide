@@ -8,9 +8,9 @@ generated-by: claude
 generated-on: 2026-05-28
 review: issues-flagged
 reviewed-by: codex
-reviewed-on: 2026-05-28
-review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate-r2.md
-review-note: re-opened 2026-05-29 — round-2 corrected a Ballotpedia source-table tier label (B→C) after the pass; pending re-verification
+reviewed-on: 2026-05-29
+review-ref: reviews/2026/2026-05-29-ca-2026-final-batch2.md
+review-note: final batch2 verified Ballotpedia source-table label is now Tier C/background-only; remaining issue is malformed DATA-GAP marker for FEC finance note
 ---
 
 # Sam Liccardo — 2026 US House CA-D16
