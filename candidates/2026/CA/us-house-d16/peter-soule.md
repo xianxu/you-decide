@@ -9,10 +9,11 @@ last-updated: 2026-05-28
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: passed
+review: issues-flagged
 reviewed-by: codex
 reviewed-on: 2026-05-29
 review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
+review-note: re-opened 2026-05-29 — PVI D+26→D+25 correction, pending re-verification
 ---
 
 # Peter Soule — 2026 CA-16 US House (Republican challenger)
@@ -32,7 +33,7 @@ review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
 
 ## Race context
 
-CA-16 (Silicon Valley / South Bay — Palo Alto, Sunnyvale, parts of San Jose) is a safe Democratic seat — Cook PVI D+26, the 27th most-Democratic district nationally. [(Ballotpedia / Cook PVI — CA-16 2026)](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) Incumbent Sam Liccardo (D, first term) is favored heavily. Challenger field: Soule (R), Kevin Johnson (R, law student), Jotham Stein (independent, lawyer). [(SM Daily Journal)](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html) General jungle-primary: top-2 advance, almost certainly both Liccardo and one of the challengers — viability for any Republican in the general is effectively zero.
+CA-16 (Silicon Valley / South Bay — Palo Alto, Sunnyvale, parts of San Jose) is a safe Democratic seat — Cook PVI D+25, Solid Democratic. [(Cook Political Report — 2025 Cook PVI, district list)](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list) Incumbent Sam Liccardo (D, first term) is favored heavily. Challenger field: Soule (R), Kevin Johnson (R, law student), Jotham Stein (independent, lawyer). [(SM Daily Journal)](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html) General jungle-primary: top-2 advance, almost certainly both Liccardo and one of the challengers — viability for any Republican in the general is effectively zero.
 
 ## Stated positions
 
@@ -71,7 +72,7 @@ All from [souleforcongress.com/issues](https://souleforcongress.com/issues) unle
 
 ## Viability
 
-**Effectively zero.** R in a safe-D seat. No endorsements, no fundraising signal, no media presence. Top-2 jungle primary makes it likely Liccardo advances with a D or independent. Even if Soule advances to general, CA-16's Cook PVI of D+26 makes a Republican win implausible in 2026. [(Ballotpedia / Cook PVI — CA-16 2026)](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026)
+**Effectively zero.** R in a safe-D seat. No endorsements, no fundraising signal, no media presence. Top-2 jungle primary makes it likely Liccardo advances with a D or independent. Even if Soule advances to general, CA-16's Cook PVI of D+25 makes a Republican win implausible in 2026. [(Cook Political Report — 2025 Cook PVI, district list)](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list)
 
 ## Controversies / liabilities
 
@@ -87,5 +88,5 @@ None found — no media coverage, no documented controversies. The absence of co
 | [SM Daily Journal — CA-16 race overview](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html) | B | Local journalism | Neutral |
 | [BallotReady — Peter Sundin Soule](https://www.ballotready.org/people/peter-sundin-soule) | C | Secondary aggregator | Neutral |
 | [Ballotpedia — CA US House 2026](https://ballotpedia.org/United_States_House_of_Representatives_elections_in_California,_2026) | C | Secondary (aggregator, scoping only) | Neutral |
-| [Ballotpedia / Cook PVI — CA-16 2026](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) | C→cites Cook (B) | Source for D+26 partisan-lean figure | Neutral |
+| [Cook Political Report — 2025 Cook PVI, district list](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list) | B | Source for D+25 partisan-lean figure | Neutral |
 | [FEC CA-16 2026](https://www.fec.gov/data/elections/house/CA/16/2026/) | A | Official (no filings found) | Neutral |
