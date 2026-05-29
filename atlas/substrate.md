@@ -64,6 +64,8 @@ review-ref: reviews/<year>/<date>-<batch>.md  # link to the session
 
 `scripts/audit-review.sh` greps for `review: not-done` and `review:` omissions to surface unreviewed files. See [review](review.md).
 
+**Tolerated data debt** is logged inline with visible `DATA-GAP` / `DATA-FIXME` markers (`rg 'DATA-GAP|DATA-FIXME'`), each tagging the axis it bears on, a severity, and a `last-attempt` date for retry cadence. Scoring impact is recorded per-user in the read, not the shared profile. A file with documented gaps and no unsupported claims can still be `review: passed`. Convention in [review](review.md#data-gaps--data-gap--data-fixme).
+
 ## Why split public / private
 
 - **Shared substrate is reusable** — every user benefits from one well-researched candidate profile + one well-mapped cycle controversy file. Sharing it amortizes the AI research cost.

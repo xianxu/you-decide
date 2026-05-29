@@ -56,6 +56,37 @@ rg '^generated-by:' . | sort | uniq -c
 # (requires per-file check; one-liner only approximates)
 ```
 
+## Data gaps — DATA-GAP / DATA-FIXME
+
+Some data quality issues are permanent fixtures, not transient bugs: a campaign-finance source that 403s, a claim no Tier A/B source confirms, a stale count. The substrate must **tolerate** these — the failure modes to avoid are (a) asserting an unverified fact anyway, and (b) parking a file in `issues-flagged` forever because one gap can't be closed. The convention: log the gap **inline, visibly, next to the fact it concerns**, and move on.
+
+Two tokens (visible markdown, never HTML comments — transparency is the point):
+
+- **`DATA-GAP`** — a fact is **missing or unverified** (couldn't fetch / no source confirms).
+- **`DATA-FIXME`** — a fact is **present but known-wrong** and needs correction (stale count, contradicted claim).
+
+Shape:
+
+```
+**DATA-GAP** [axis: <axis-slug | none>; severity: low|med|high; last-attempt: YYYY-MM-DD]: <what is missing/wrong> — <why (e.g. 403, no source)> — <how it's handled now>.
+```
+
+- **axis** — the scoring axis the gap bears on (`capture-risk`, `institutionalist`, …), or `none` for cosmetic/biographical gaps that touch no score.
+- **severity** — potential to move a read: `low` (unlikely to change the rec), `med`, `high` (could flip conscience/strategic).
+- **last-attempt** — the date resolution was last tried. This drives retry cadence: a sweep greps for gaps whose `last-attempt` is older than a threshold (transient 403s often recover) and re-attempts; `severity: high` can retry sooner. Update it on every retry, whether or not it succeeded.
+
+### Scoring impact lives in the read, not the profile
+
+The candidate profile is **shared** (one file, all users); a gap's *impact* depends on the user's axis weights, so it can't be a single number in the shared profile. The profile marker carries only the **handle** — which `axis` the gap touches. The **realized impact** is recorded in the per-user read (`who-to-vote-for/.../<slug>-read.md`): score the axis low-confidence and name the gap, e.g. *"capture-risk: 0 (low-confidence) — DATA-GAP in profile; if donor concentration is high this moves to −1."* Filling the gap updates the profile, which invalidates the read under the Stage-3 cache rule (profile newer than read → re-score) — so resolution propagates to the decision automatically.
+
+### Gaps are orthogonal to review-state
+
+A file with **honestly-marked `DATA-GAP`s and no unsupported claims can be `review: passed`.** The review verified everything verifiable; a documented, unfillable gap is logged debt, not a review failure. Do **not** hold a file in `issues-flagged` solely for a `DATA-GAP`. (A **`DATA-FIXME`** is different — a known-wrong fact blocks `passed` until corrected.)
+
+### Rollup
+
+`rg 'DATA-GAP|DATA-FIXME' candidates/` is the live debt list. Optionally generate `reviews/DATA-GAPS.md` tabulating by severity × axis × staleness (a script greps + sorts). Individual gaps stay inline; only **systemic** remediation (e.g. "build an FPPC/FEC fetcher to close finance gaps in bulk") belongs in `workshop/issues/` as tooling work.
+
 ## Parameters
 
 | Field | Required | Notes |
