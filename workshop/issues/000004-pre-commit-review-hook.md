@@ -1,10 +1,11 @@
 ---
 id: 000004
-status: open
+status: working
 deps: []
 github_issue: xianxu/you-decide#3
 created: 2026-05-28
 updated: 2026-05-28
+estimate_hours: 1.0
 ---
 
 # Pre-commit review hook + reviews/COVERAGE.md tracking
