@@ -235,17 +235,29 @@ rg '^reviewer-stack:' reviews/ | sort -u
 
 A long-running `reviews/COVERAGE.md` maintained by hand can track which jurisdictions × cycles have been reviewed and by which stacks — useful for deciding "is the CA 2026 substrate trustworthy enough to publish."
 
-## Commit-gate convention
+## Commit-gate convention — one commit per handoff
 
-Every commit to `candidates/`, `elections/`, `controversies/` should have a corresponding review report. Suggested workflow:
+Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews, Claude produced + fixes), and **each turn ends in a commit**. Git history *is* the review's audit trail — what was flagged, what was fixed, what was re-checked — each turn attributed to the stack that did it. Because the two sessions share one working tree, they MUST take turns (one stack live at a time); each turn starts from the other's commit (`git pull`/fresh checkout first).
 
-1. Run research → write files (uncommitted)
-2. Dispatch `review` skill with different stack
-3. Read review report; fix any blockers
-4. Re-review if blockers fixed
-5. Commit, referencing review report in commit message (`Review: reviews/2026/2026-06-02-CA-Palo-Alto.md status=pass`)
+### The loop
 
-A pre-commit hook can enforce this, but for MVP it's a convention — relies on the operator running review before commit.
+1. **Review** (reviewer stack). Run this skill's checklist (Stage 1–2). Commit **only** the report (Stage 3) + per-file review-state frontmatter (Stage 4).
+   - Commit msg: `review: <stack> r1 — <batch> (<status>: N blockers)`; trailer `Reviewed-by: <stack>`.
+   - Flag: `not-done → issues-flagged` (or `passed` if the round is clean).
+2. **Fix** (producer/fixer stack). Read the report; correct the **content** of flagged files. The commit body classifies every finding as **fixed**, **deferred** (with reason), or **disputed** (with rationale).
+   - Commit msg: `fix: address <stack> rN review — <summary>`.
+   - Flag: **leave at `issues-flagged`.** The fixer does NOT set `passed` — self-certifying a fix you authored defeats the independent check. The commit *sequence* (your fix between two review commits) already records "fix pending re-check."
+3. **Re-review** (reviewer stack). **Diff-scoped:** check only (a) were the flagged findings addressed, (b) did the fixes regress anything — NOT a fresh full audit (round 1 was that). Commit a new report (`…-rN.md`) + flag flips.
+   - Flag: `issues-flagged → passed` when cleared. **Only the re-reviewer flips to `passed`.**
+4. **Repeat 2–3** until the re-review passes. Cap at ~3 rounds.
+
+### Boundaries that keep it converging
+
+- **Reviewer write-surface = the report + review-state frontmatter, nothing else.** The reviewer never edits the body/facts of a file under review — content corrections are the fixer's turn, so every fix stays independently attributable and re-reviewable. (Updating `review:`/`reviewed-by`/`reviewed-on`/`review-ref` is review *metadata*, not content — that IS the reviewer's job, per Stage 4.)
+- **Deferral is a valid outcome, not a failure.** A finding you can't close by verification (a 403'd campaign-finance source, a search-result-only citation) is legitimately cleared by **demoting the claim to an explicit "Data gap"** — the file stops *asserting* the unverified thing. Never invent facts to satisfy a finding.
+- **Disputes escalate, capped.** Disagree with a finding? Dispute it in the fix commit body with rationale — never silently skip it. If reviewer and fixer still disagree after ~2 rounds, escalate to the operator as tiebreaker. Two stacks must not ping-pong indefinitely.
+
+A pre-commit hook can enforce "no commit to `candidates/`/`elections/`/`controversies/` without a current `review-ref`" (see `workshop/issues/000004`), but for MVP it's a convention.
 
 ## When NOT to use
 
