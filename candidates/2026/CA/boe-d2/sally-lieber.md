@@ -51,33 +51,30 @@ Self-described priorities: transparency/accountability, affordable housing, envi
 - 2025: Submitted memo on AB 53 (Ramos) regarding legislative position. [(BOE memo)](https://boe.ca.gov/meetings/pdf/2025/202502-MI-Leg-AB53-Ramos.pdf)
 
 **CA Assembly 2002–2008:**
-- Key bills authored: CA Trafficking Victims Protection Act (AB 22, trafficking a felony); Sexual Assault Victim's Bill of Rights; expanded Assault Weapons Ban; hate crime "panic defense" ban; women inmate protections; Bay Restoration Authority (created San Francisco Bay restoration levy); minimum wage increases; expanded Cal Grants; supportive housing expansion.
-- Speaker pro Tempore 2007–2008.
-- Revenue and Taxation Committee: three terms, relevant background for BOE role.
-- Controversial 2004 emissions bill (AB — vehicle smog exemption fixed at 1976 cutoff, overriding prior rolling 30-year exemption). Criticized by car collectors including Jay Leno as imposing severe penalties for negligible environmental benefit. Signed by Schwarzenegger. [(Ballotpedia)](https://ballotpedia.org/Sally_Lieber)
-- 2007: Announced legislation to ban spanking of children under 3. Bill attracted intense national media attention and criticism for government overreach; the bill was ultimately dropped.
+- Authored laws (per BOE official bio) that: made human trafficking a felony in California; established the Sexual Assault Victim's Bill of Rights; expanded the California Assault Weapons Ban; banned the "panic defense" in hate-crime cases; instituted protections for women inmates; established the San Francisco Bay Restoration Authority and Ocean Protection Council; raised the minimum wage; expanded Cal Grants; and increased supportive/low-income housing. [(BOE about page)](https://www.boe.ca.gov/lieber/about.htm) — Tier A (self-bio)
+- Speaker pro Tempore 2007–2008 — third woman to hold the office. [(BOE about page)](https://www.boe.ca.gov/lieber/about.htm) — Tier A
+- **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: a 2004 vehicle smog-exemption change (fixing the rolling 30-year exemption at a 1976 cutoff), and the "Jay Leno / car collectors" criticism of it, appear only in Wikipedia/Ballotpedia (Tier C) with no bill number; no leginfo/Tier-A or Tier-B source ties this specific bill to Lieber. The recent "Leno's Law" (SB 712, Sen. Grove, 2025) is a different, unrelated bill. Claim removed from the record pending primary confirmation.
+- 2007: Introduced **AB 755** (amending Penal Code §273a, child abuse), which she initially announced as targeting spanking of children under three. As introduced, the bill established a *rebuttable presumption* of unjustifiable harm for enumerated acts (use of an implement; striking a child under three on the face or head; vigorous shaking of a child under three; etc.) rather than a flat ban on spanking. [(leginfo — AB 755 (2007), introduced text)](http://www.leginfo.ca.gov/pub/07-08/bill/asm/ab_0751-0800/ab_755_bill_20070222_introduced.html) — Tier A The initial announcement drew intense national media attention and overreach criticism. [(NPR — "California Lawmaker Pushes Anti-Spanking Bill")](https://www.npr.org/transcripts/6939415) — Tier B **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: the bill's final disposition (commonly reported as not enacted) not confirmed against a leginfo status/history page this pass.
 
 **Mountain View local:**
 - Implemented local tobacco control legislation, green energy initiatives, affordable housing efforts. [(BOE about page)](https://www.boe.ca.gov/lieber/about.htm)
 
 ## Endorsements & donors
 
-- **Democratic Party of California** (official endorsement)
-- **Sierra Club** (noted by Progressive Voters Guide)
-- **Equality California**
-- Campaign raised **$338,427** — described as not funded by fossil fuel, law enforcement, real estate, or corporate donors. [(Progressive Voters Guide)](https://www.progressivevotersguide.com/california/2026/primary/sally-lieber)
+- Endorsed by the **California Democratic Party**, **SEIU California**, and the **California Teachers Association**. [(CalMatters — BOE voter guide)](https://calmatters.org/california-voter-guide-2026/board-of-equalization/) — Tier B
+- Also lists **Sierra Club** and **Equality California** endorsements per the Progressive Voters Guide. [(Progressive Voters Guide)](https://www.progressivevotersguide.com/california/2026/primary/sally-lieber) — Tier C, progressive advocacy aggregator; not independently triangulated
+- Campaign described (by partisan aggregator) as not funded by fossil-fuel, law-enforcement, real-estate, or corporate donors. [(Progressive Voters Guide)](https://www.progressivevotersguide.com/california/2026/primary/sally-lieber) — Tier C
+- **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: precise fundraising total unconfirmed against Tier-A primary. Progressive Voters Guide (Tier C) cites ~$338,427 raised, but secondary aggregators returned internally inconsistent figures (e.g. $266,377 contributions / $830,484 cash-on-hand as of 2026-04-18); Cal-Access/TransparencyUSA primary not reachable this pass (403). Do not assert a single figure as fact.
 
-**Notable opposition within Democratic Party**: State Treasurer Fiona Ma and San Jose Mayor Matt Mahan are backing challenger John Pimentel (San Mateo Community College District Trustee) over Lieber. No public rationale from Ma or Mahan stated in available sources. [(CalMatters)](https://calmatters.org/politics/2026/05/board-of-equalization-election/) [(LAist)](https://laist.com/news/education/lawmakers-stripped-the-board-of-equalization-of-power-now-theyre-fighting-to-join-it)
-
-FPPC detailed donor filings not pulled; $338K total is from Progressive Voters Guide secondary sourcing (Tier B).
+**Notable opposition within Democratic Party**: State Treasurer Fiona Ma and San José Mayor Matt Mahan are backing challenger John Pimentel over Lieber; no public rationale from Ma or Mahan stated in available sources. [(CalMatters — BOE election)](https://calmatters.org/politics/2026/05/board-of-equalization-election/) [(LAist)](https://laist.com/news/education/lawmakers-stripped-the-board-of-equalization-of-power-now-theyre-fighting-to-join-it) — both Tier B
 
 ## Controversies / liabilities
 
-1. **2007 spanking ban bill**: Proposed criminalizing spanking of under-3s — widely criticized as government overreach into family/parenting. Bill was dropped before a vote. Aged 19 years; qualifies for aged-flaws discount but signals a nanny-state interventionist instinct.
+1. **2007 AB 755 (child corporal-punishment bill)**: Lieber initially announced it as targeting spanking of under-3s, drawing national overreach criticism; the introduced text was narrower (a rebuttable presumption of harm for enumerated acts under Penal Code §273a). Aged 19 years; qualifies for aged-flaws discount but the announcement signals an interventionist instinct. [(leginfo — AB 755)](http://www.leginfo.ca.gov/pub/07-08/bill/asm/ab_0751-0800/ab_755_bill_20070222_introduced.html) [(NPR)](https://www.npr.org/transcripts/6939415)
 
-2. **2004 emissions exemption cutoff**: Changed rolling 30-year smog exemption to a fixed 1976 cutoff, affecting classic car owners with negligible environmental benefit. Aged 22 years; not a character flaw per se, but evidence of preference for regulatory expansion over cost-benefit analysis.
+2. *(Removed — the previously listed "2004 emissions exemption cutoff" controversy was sourced only to Tier-C Wikipedia/Ballotpedia with no bill number and could not be confirmed against primary sources; see the DATA-GAP in the Record section.)*
 
-3. **December 2024 FTB "Safety Net" hearing**: Used BOE platform to convene an activist hearing on income inequality, well outside the board's post-2017 mandate. Not a scandal but a documented tendency to treat the office as a policy advocacy platform rather than a narrow tax-administration body.
+3. **December 2024 FTB "Safety Net" hearing**: Used BOE platform to convene a hearing on income inequality, beyond the board's post-2017 mandate. Not a scandal but a documented tendency to treat the office as a policy-advocacy platform. [(BOE press release)](https://www.boe.ca.gov/lieber/24-01.htm) — Tier A
 
 4. **Lost Santa Clara County supervisor race 2024**: While serving on BOE, she ran simultaneously for a different office and lost. Signals political ambition over focus; may reflect institutional commitment issues.
 
@@ -97,5 +94,8 @@ No documented ethics violations, corruption, or institutional norm-violations fo
 | [GrowSF voter guide](https://growsf.org/voter-guide/san-francisco-voter-guide-june-2026-election/contests/board-of-equalization/) | B | Endorsement reasoning, office assessment |
 | [CalMatters — BOE election](https://calmatters.org/politics/2026/05/board-of-equalization-election/) | B | Challenger Pimentel, intra-party split |
 | [LAist — BOE power](https://laist.com/news/education/lawmakers-stripped-the-board-of-equalization-of-power-now-theyre-fighting-to-join-it) | B | Ma/Mahan backing Pimentel, Lieber quotes |
+| [CalMatters — BOE voter guide](https://calmatters.org/california-voter-guide-2026/board-of-equalization/) | B | Endorsements (CADem / SEIU / CTA) |
+| [leginfo — AB 755 (2007)](http://www.leginfo.ca.gov/pub/07-08/bill/asm/ab_0751-0800/ab_755_bill_20070222_introduced.html) | A | 2007 corporal-punishment bill actual text |
+| [NPR — anti-spanking bill](https://www.npr.org/transcripts/6939415) | B | 2007 bill announcement + national reaction |
 | [Ballotpedia](https://ballotpedia.org/Sally_Lieber) | C | Background cross-check only; no decisive claims sourced here |
-| [Progressive Voters Guide](https://www.progressivevotersguide.com/california/2026/primary/sally-lieber) | B | Endorsements, campaign finance ($338K, donor profile) |
+| [Progressive Voters Guide](https://www.progressivevotersguide.com/california/2026/primary/sally-lieber) | C | Progressive advocacy aggregator; Sierra Club/Equality CA endorsements + donor-profile claim (not triangulated) |
