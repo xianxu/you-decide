@@ -102,7 +102,7 @@ Signed 60+ bills; highlight legislation: all-vote-by-mail (AB 2584, 2020), dark-
 
 2. **Israel/Gaza record gap**: Verbally pro-ceasefire but did not sign the formal ceasefire letter; abstained on IHRA definition; voted against the $17.6B aid package. The record is mixed enough to draw criticism from both pro-Israel and pro-Palestinian sides. AJP Action score of 27% (out of 100%) signals he is viewed as insufficiently pro-Palestinian by that advocacy org.
 
-3. **No notable independence from caucus**: Appears to be a reliable party-line vote. No documented case of voting against Democratic caucus on a high-profile measure.
+3. **Caucus independence — DATA GAP**: No party-unity score retrieved (GovTrack 403; no fetched Tier A/B source supports a characterization). Do not score voting independence until a fetched source supports it. No documented case of voting against the Democratic caucus surfaced in fetched sources — but absence in this snapshot is not evidence of a party-line record.
 
 4. **Not AIPAC-funded this cycle** (self-stated, SM Daily Journal — Tier B): Relevant given the district's Silicon Valley progressive lean and 2024 cycle national attention to AIPAC spending.
 
@@ -112,16 +112,15 @@ Signed 60+ bills; highlight legislation: all-vote-by-mail (AB 2584, 2020), dark-
 - [Congressman Kevin Mullin — official House site](https://kevinmullin.house.gov/) — committee assignments, press releases
 - [Kevin Mullin for Congress — campaign site](https://www.kevinmullinforcongress.com/) — biography, positions, endorsements
 - [CA Dem 2026 Primary Consent Calendar (PDF)](https://cadem.org/wp-content/uploads/2026/02/Final-RATIFIED-2026-Primary-Election-Consent-Calendar.pdf) — CA Dem endorsement
-- [Congress.gov — Kevin Mullin member page](https://www.congress.gov/member/kevin-mullin/M001225) — bill sponsorships (accessed via search; direct fetch 403)
 
 **Tier B:**
 - [AJP Action — Kevin Mullin Democratic Scorecard](https://ajpaction.org/democratic-scorecard/kevin-mullin/) — Israel/Gaza votes, letters, scorecard 27%
 - [The Almanac — "Mullin far outraises CA-15 challengers as PACs fuel campaign" (5/27/2026)](https://www.almanacnews.com/election/2026/05/27/mullin-far-outraises-ca-15-challengers-as-pacs-fuel-campaign/) — fundraising, PAC donors, OpenSecrets quote
 - [SM Daily Journal — "Kevin Mullin faces four challengers" (2026)](https://www.smdailyjournal.com/news/local/kevin-mullin-faces-four-challengers-for-district-15-us-house-of-representatives-seat/article_ed5e9f4e-3413-4317-b878-25f34039aad9.html) — challenger positions, Israel/Gaza stance, AIPAC statement
 - [The Almanac — "Five candidates up to bat for Congressional D-15" (5/18/2026)](https://www.almanacnews.com/redwood-city/2026/05/18/five-candidates-up-to-bat-for-congressional-d-15/) — background, district context
-- [GovTrack — Kevin Mullin member page](https://www.govtrack.us/congress/members/kevin_mullin/456883) — general record (direct fetch 403; used search summary)
 
-**Note — gaps:**
-- GovTrack direct fetch blocked (403); party-unity score not retrieved
+**Note — not fetched / gaps (not used as evidence):**
+- [Congress.gov — Kevin Mullin member page](https://www.congress.gov/member/kevin-mullin/M001225) — direct fetch 403; bill-sponsorship detail not retrieved (lead only, not a used source)
+- [GovTrack — Kevin Mullin member page](https://www.govtrack.us/congress/members/kevin_mullin/456883) — direct fetch 403; party-unity score not retrieved (lead only, not a used source)
 - kevinmullin.house.gov/issues pages blocked (403); democracy/protecting-democracy page not retrieved
 - Challenger profiles (Kumar, Dang) not researched — budget exhausted; recommend follow-up before finalizing vote
