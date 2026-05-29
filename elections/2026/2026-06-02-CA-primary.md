@@ -15,10 +15,11 @@ sources:
   - https://www.smdailyjournal.com/news/local/roster-for-san-mateo-county-s-june-ballot-closed/article_040038b2-2cb3-42ba-af1f-5244e07f47f8.html
 generated-by: claude
 generated-on: 2026-05-28
-review: passed
+review: issues-flagged
 reviewed-by: codex
 reviewed-on: 2026-05-28
 review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate-r2.md
+review-note: re-opened 2026-05-29 — edited after pass to mark Freeman + Morgan as not-qualified (absent from final May 4 roster); pending re-review
 ---
 
 # California Primary — June 2, 2026
@@ -115,16 +116,16 @@ For ballot truth, cross-check the [CA SoS certified candidate list](https://www.
 - Seats: 1
 - District: SM-COUNTY
 - CONTESTED:
-  - Clinton Eric Freeman [[clinton-freeman]]
   - David Canepa [[david-canepa]]
   - Jim Irizarry [[jim-irizarry]]
+  - *Clinton Eric Freeman [[clinton-freeman]] — DID NOT QUALIFY: "Pending" on the March 11 roster, absent from the final [May 4, 2026 qualified roster](https://smcacre.gov/system/files/2026-05/51_candidateroster05042026.pdf). Not on the ballot.*
 
 ### County Controller (nonpartisan)
 - Seats: 1
 - District: SM-COUNTY
-- CONTESTED:
-  - Thomas Royal Morgan II [[thomas-morgan]]
+- **UNCONTESTED** (only one qualified candidate):
   - Juan Raigoza (incumbent) [[juan-raigoza]]
+  - *Thomas Royal Morgan II [[thomas-morgan]] — DID NOT QUALIFY: "Pending" on the March 11 roster, absent from the final [May 4, 2026 qualified roster](https://smcacre.gov/system/files/2026-05/51_candidateroster05042026.pdf) (Controller lists only Raigoza). Not on the ballot.*
 
 ### Coroner (nonpartisan)
 - Seats: 1
