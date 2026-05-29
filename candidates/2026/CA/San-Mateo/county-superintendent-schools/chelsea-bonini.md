@@ -16,11 +16,11 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch2.md
 
 ## Background
 
-Current San Mateo County Board of Education Area 4 Trustee (sworn December 2020; unseated incumbent). Reelected 2024. Now serving as Board President and chairs the Legislative, Policy, Superintendent's Salary, and Gateway subcommittees.
+Current San Mateo County Board of Education Area 4 Trustee (sworn December 2020). Now serving as Board President and chairs multiple subcommittees. ([campaign site, re-fetched 2026-05-29](https://www.votebonini.com/about-chelsea.html))
 
-Career arc: kindergarten/1st grade teacher in South San Francisco Unified (starting 1994); San Mateo-Foster City School District Board of Trustees (2013–2017); SMCOE Personnel Commissioner (2018–2020); practicing attorney (20+ years); adjunct law professor at Santa Clara University Entrepreneurs Law Clinic; currently teaching 2nd grade in Los Altos. Founder of "Not Without Us" (disability rights/education nonprofit). Liaison to Juvenile Justice and Delinquency Prevention Commission. Commissioner on SM County Commission on Disabilities and Behavioral Health Commission.
+Career arc: former kindergarten/1st-grade teacher in South San Francisco Unified; San Mateo-Foster City School District Board of Trustees (2013–2017); SMCOE Personnel Commissioner (2018–2020); practicing attorney (20+ years); adjunct law professor at Santa Clara University Entrepreneurs Law Clinic; currently teaching 2nd grade in Los Altos. Founder of "Not Without Us" (disability-rights / education nonprofit). ([campaign site, re-fetched 2026-05-29](https://www.votebonini.com/about-chelsea.html))
 
-Education: B.S. Elementary Education & Psychology (Russell Sage, magna cum laude); J.D. (UC Hastings, Editor-in-Chief of law journal, judicial externships at US District Court and CA Court of Appeals); M.A. in Education Administration and Leadership + Preliminary Administrative Services Credential (completed ~end of 2024).
+Education: B.S. (Russell Sage); J.D. (UC Hastings); M.A. in Education Administration and Leadership + credential requirements (completed ~end of 2024). ([campaign site, re-fetched 2026-05-29](https://www.votebonini.com/about-chelsea.html)) **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: "magna cum laude," law-journal Editor-in-Chief, US District Court / CA Court of Appeals externships, "Reelected 2024," and the specific subcommittee names (Legislative, Policy, Superintendent's Salary, Gateway) and the Juvenile Justice / Disabilities / Behavioral Health commission seats appeared in an earlier capture but are not stated on the 2026-05-29 live campaign-site bio — biographical color, not decision-relevant; left unbound.
 
 ## Stated positions
 
@@ -49,37 +49,35 @@ Net: thin documented record of *initiated* programmatic wins. The board role is 
 
 ## Endorsements & donors
 
-**Key endorsements (Tier A sources):**
-- California Teachers Association (umbrella union endorsement — significant)
-- Tony Thurmond, State Superintendent of Public Instruction
+**Key endorsements** ([campaign site, re-fetched 2026-05-29](https://www.votebonini.com/endorsements.html)):
+- Tony Thurmond, State Superintendent of Public Instruction (& candidate for Governor)
 - State Senator Josh Becker
 - Fiona Ma, State Treasurer
 - Sally Lieber, State Board of Equalization
-- 19 local school board trustees and commissioners
-- Virtually all SM County teacher union locals (Bayshore, Belmont-Redwood Shores, Brisbane, Burlingame, Cabrillo, Laguna Salada, Las Lomitas, Menlo Park, Millbrae, Portola Valley, Ravenswood, Redwood City, San Bruno, San Carlos, San Mateo County Educators, San Mateo Elementary, SMUHSD, Woodside, Unite Summit)
-- 9 mayors/council members; 8 county supervisors/commissioners
+- Numerous SM County teacher-union locals (Bayshore, Belmont-Redwood Shores, Brisbane, Burlingame, Cabrillo, La Honda-Pescadero, Laguna Salada, Las Lomitas, Menlo Park, Millbrae, Portola Valley, Ravenswood, Redwood City, San Bruno, San Carlos, Woodside, San Mateo County Educators Association, San Mateo Elementary Teachers Association, SMUHSD Teachers Association) — a broad CTA-affiliated-local sweep
+- Multiple school-board trustees; mayors (Adam Loraine / San Mateo, Anders Fung / Millbrae) and other local officials; SM County Supervisor David Canepa (D5)
+- **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: an earlier capture asserted an explicit "California Teachers Association (umbrella) endorsement," "Unite Summit" local, and precise counts ("19 trustees," "9 mayors/council members," "8 county supervisors/commissioners" — SM County has only 5 supervisors). The live page lists the CTA-affiliated locals above and many officials but does not state the umbrella CTA endorsement, "Unite Summit," or those exact counts — characterized qualitatively above rather than counted.
 
-**Fundraising (July–December 2025):**
-- Raised $21,974 vs. Camacho's $102,432 (roughly 1:5 ratio)
-- Top donors: Katherine Welch $1,000, Jared Bobrow (attorney) $1,000, Josh Becker committee $500; otherwise individual professionals $25–$500
-- In-kind: husband Matthew Bonini $625 (window signs/subscriptions)
-- Expenditures: $6,765 total, $6,000 to Axial Media and Communications (Oakland media consultant)
+**Fundraising (Jul–Dec 2025; FPPC via Almanac, Tier A data):**
+- Raised $21,974 vs. Camacho's $102,432 (~1:4.7 ratio). ([The Almanac, FPPC-sourced](https://www.almanacnews.com/san-mateo-county/2026/02/11/in-county-superintendent-of-school-race-camacho-leads-in-campaign-fundraising/))
+- Largest contributions: $1,000 each from Katherine Welch (Piedmont) and Jared Bobrow (attorney, Orrick Herrington & Sutcliffe); otherwise individual professionals. ([The Almanac](https://www.almanacnews.com/san-mateo-county/2026/02/11/in-county-superintendent-of-school-race-camacho-leads-in-campaign-fundraising/))
+- **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: "Josh Becker committee $500," in-kind "husband Matthew Bonini $625," and expenditure detail ("$6,765 total, $6,000 to Axial Media") appeared in an earlier capture; not confirmed in the cited Almanac piece and direct FPPC filing not accessed.
 
-Donor base: individual professionals + political network. No large institutional donors or PAC money apparent. The teacher union endorsements are organizational rather than financial in the filings reviewed.
+Donor base: individual professionals + political network. No large institutional donors or PAC money apparent in the reported figures. The teacher-union-local endorsements are organizational rather than financial in the filings reviewed.
 
 ## Controversies / liabilities
 
-**Credential controversy (central and active):**
-Bonini holds a "certificate of eligibility" — she has completed the credentialing coursework but has not held an administrative position, which is required to convert the certificate into a full Preliminary Administrative Services Credential (PASC). California Education Code requires county superintendent candidates to hold the actual credential, not just eligibility. The California County Superintendents Association (via Senior Director Derick Lennox) stated her candidacy is legally non-compliant: "State law only allows candidates with a credential to run for county superintendent."
+**Credential controversy (central and active):** ([PA Daily Post, 2026-04-16](https://padailypost.com/2026/04/16/candidate-for-county-school-superintendent-doesnt-have-the-required-credentials-to-run/))
+Bonini holds a "certificate of eligibility" — she has completed the state's credentialing program but has not received the proper administrative credential. The California County Superintendents Association (via its Senior Director) stated her candidacy is non-compliant: "State law only allows candidates with a credential [to] run for county superintendent."
 
-San Mateo County Elections Officer Mark Church approved her for the ballot, noting his office does not verify qualifications and that a court order would be required to remove her. No court challenge was filed before the ballot was set.
+San Mateo County Elections Officer Mark Church approved her for the ballot, noting that she "turned in the same paperwork as her opponent," that the certificates are "nearly identical and do not differentiate," that his office "doesn't verify candidate certifications," and that "only a court order can remove someone from the ballot." No court challenge was filed before the ballot was set.
 
-Bonini's response: university mentors assured her she was on the correct track; her training program was more rigorous than "simply passing a test"; alleged Camacho received insider support ("He's getting a little push from the inside"). She did not withdraw after the credential gap became public, which the Palo Alto Daily Post editorial board criticized as a missed opportunity to model integrity for students.
+Bonini's response: she "was not told she needed a proper credential before running," and her mentors at San Francisco State University indicated she was "on the right path to run for superintendent." She did not withdraw after the credential gap became public, which the Palo Alto Daily Post editorial board criticized.
 
-Camacho obtained his PASC in May 2025 — just before filing. The timing is noted but not itself a controversy.
+Camacho obtained his administrative credential in May 2025 — months before the election. The timing is noted but not itself a controversy. ([PA Daily Post, 2026-04-16](https://padailypost.com/2026/04/16/candidate-for-county-school-superintendent-doesnt-have-the-required-credentials-to-run/)) **DATA-GAP** [axis: anti-hypocrisy; severity: low; last-attempt: 2026-05-29]: an earlier capture quoted Bonini alleging Camacho got "a little push from the inside" and arguing her program was "more rigorous than simply passing a test"; those exact quotes were not surfaced in the cited PA Daily Post piece on re-fetch — the verified mentor/"not told" framing is used instead.
 
 **Anti-hypocrisy read:**
-Bonini ran for an office she may not legally be credentialed to hold, and when confronted, shifted blame to mentors and implied insider favoritism against her. This is a self-accountability failure, even if the credential gap was inadvertent. The defense ("my program was more rigorous") does not address the statutory requirement; it deflects. The equity-and-accountability platform coexists with declining accountability for her own credential status.
+Bonini ran for an office she may not be fully credentialed to hold, and when confronted, attributed the gap to not having been told and to mentor guidance. Even if the credential gap was inadvertent, the "I wasn't told" framing locates responsibility outside herself, which sits in tension with her equity-and-accountability platform. (Note: this read leans on verified facts only; the sharper "insider favoritism" / "more rigorous program" framing from an earlier capture is gapped above pending re-confirmation.)
 
 **No other controversies** surfaced (no financial misconduct, no ethics complaints, no board-vote controversies in available Tier A/B sources).
 
