@@ -2,8 +2,8 @@
 name: Clinton Eric Freeman
 party: Nonpartisan
 race: 2026-sm-county-assessor-clerk-recorder
-last-updated: 2026-05-28
-status: active
+last-updated: 2026-05-29
+status: not-qualified
 generated-by: claude
 generated-on: 2026-05-28
 review: issues-flagged
