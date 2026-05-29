@@ -15,11 +15,11 @@ sources:
   - https://www.smdailyjournal.com/news/local/roster-for-san-mateo-county-s-june-ballot-closed/article_040038b2-2cb3-42ba-af1f-5244e07f47f8.html
 generated-by: claude
 generated-on: 2026-05-28
-review: issues-flagged
+review: passed
 reviewed-by: codex
-reviewed-on: 2026-05-28
-review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate-r2.md
-review-note: re-opened 2026-05-29 — edited after pass to mark Freeman + Morgan as not-qualified (absent from final May 4 roster); pending re-review
+reviewed-on: 2026-05-29
+review-ref: reviews/2026/2026-05-29-ca-2026-rebind-batch1.md
+review-note: Freeman/Morgan not-qualified corrections confirmed 2026-05-29; candidate-slug links resolve.
 ---
 
 # California Primary — June 2, 2026
