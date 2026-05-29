@@ -9,7 +9,7 @@ generated-on: 2026-05-28
 review: issues-flagged
 reviewed-by: codex
 reviewed-on: 2026-05-28
-review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
+review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch2.md
 ---
 
 # David G. Johnson — 2026 CA Assembly District 23 (Republican challenger)
