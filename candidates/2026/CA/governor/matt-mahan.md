@@ -99,17 +99,15 @@ Between January–May 2026, Mahan missed more than one-third of San Jose city co
 - Michael Moritz (venture capitalist, Sequoia) ([Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/))
 - Joe Lonsdale (Palantir co-founder) ([NBC LA](https://www.nbclosangeles.com/news/local/matt-mahan-what-to-know-about-california-governor-candidate/3884556/))
 - Steve Huffman (Reddit CEO) ([Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/))
-- Reed Hastings (Netflix CEO) — donated $1M to a pro-Mahan IE, later refunded ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan))
-- Garry Tan (Y Combinator CEO), Arjun Sethi (Kraken co-CEO), Mike Solana (Founders Fund CMO) voiced public support ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan))
+- Reed Hastings (Netflix co-founder) — donated $1M on May 15 to the pro-Mahan IE "California Back to Basics," refunded five days later; Hastings said he did not request the refund and still backs Mahan ([San José Spotlight](https://sanjosespotlight.com/san-jose-mayors-bid-for-ca-governor-fizzles-out/), [AOL](https://www.aol.com/articles/netflix-founder-reed-hastings-issues-230349600.html))
+- Garry Tan (Y Combinator CEO) among prominent backers ([San José Spotlight](https://sanjosespotlight.com/san-jose-mayors-bid-for-ca-governor-fizzles-out/))
 
 **Fundraising scale:**
 Raised nearly $40 million by May 2026; independent expenditure groups spent $18M+ on his behalf. Only ~730 donations were under $250, indicating thin grassroots base ([Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/)).
 
 **Notable absence:** No major labor union endorsements (he fought union wage deals as mayor). No prominent statewide elected official endorsements documented in sources reviewed.
 
-**Polling:** Despite $40M raised, polling 4–10% among likely voters as of May 2026 ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)).
-
-**DATA-FIXME** [axis: capture-risk/viability; severity: med; last-attempt: 2026-05-28]: donor details (Hastings $1M refunded; Tan/Sethi/Solana support) and the polling figure are cited only to Wikipedia (Tier C) but feed capture-risk and the strategic-vote/viability call — med severity because polling drives the strategic recommendation. Upgrade donors to FEC/FPPC and polling to a named aggregator (e.g. CalMatters/Politico tracker). Bio-orientation Wikipedia cites may remain.
+**Polling:** Despite the heavy spending, Mahan polls in the mid-single digits — 7% (PPIC, May 2026), 8% (Emerson, May 2026), 5% (Emerson, April 2026) among likely primary voters — middle of the Democratic field ([PPIC May 2026](https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-may-2026/), [Emerson May 2026](https://emersoncollegepolling.com/california-2026-poll-becerra-continues-to-surge-steyer-and-hilton-compete-for-second-spot/)).
 
 ## Controversies / liabilities
 
