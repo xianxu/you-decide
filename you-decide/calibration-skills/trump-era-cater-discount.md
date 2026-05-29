@@ -4,7 +4,10 @@ applies-to: [institutionalist axis, GOP candidates, Trump-era races 2025-2030]
 born-from: 2026-05-27 | 2026 CA governor | hard filters on 2020-fraud claims + ballot-seizure interference would have eliminated the entire viable GOP field (Hilton, Bianco); relaxed to a scoring discount
 generated-by: human
 generated-on: 2026-05-28
-review: not-done
+review: passed
+reviewed-by: codex
+reviewed-on: 2026-05-28
+review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate-r2.md
 ---
 
 # Trump-era cater-mode discount
