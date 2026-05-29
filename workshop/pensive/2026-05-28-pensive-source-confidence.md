@@ -4,7 +4,7 @@ date: 2026-05-28
 topic: Source × claim-type reliability and confidence-aware scoring
 mode: ideas
 description: Data-quality suspicion belongs in a confidence interval, not a discount multiplier; source reliability is really source × claim-type; Wikipedia is good at facts, contested at framing.
-references: [review.md, calibration-skills/source-hygiene-tier-list.md, SKILL.md]
+references: [you-decide/review.md, you-decide/calibration-skills/source-hygiene-tier-list.md, you-decide/SKILL.md]
 ---
 
 # Pensive: Source × claim-type reliability and confidence-aware scoring
@@ -29,6 +29,6 @@ Which points at the richer model: reliability isn't a flat per-source tier, it's
 
 ## References
 
-- `review.md` — the DATA-GAP/DATA-FIXME convention, severity-governs-blocking, source-hygiene checklist.
-- `calibration-skills/source-hygiene-tier-list.md` — the current flat-tier rule (the diagonal of the matrix).
-- `SKILL.md` — the −2..+2 scoring contract and the "risk-mode, not scorecard" recommendation framing where fragile margins should surface.
+- `you-decide/review.md` — the DATA-GAP/DATA-FIXME convention, severity-governs-blocking, source-hygiene checklist.
+- `you-decide/calibration-skills/source-hygiene-tier-list.md` — the current flat-tier rule (the diagonal of the matrix).
+- `you-decide/SKILL.md` — the −2..+2 scoring contract and the "risk-mode, not scorecard" recommendation framing where fragile margins should surface.
