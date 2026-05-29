@@ -24,7 +24,7 @@ Democrat. Menlo Park resident. First-generation college graduate (San Joaquin De
 
 **BOE race context:** Challenging incumbent Sally Lieber (Democratic Assemblymember). Six candidates total in primary; two advance to November. Pimentel raised ~$250K as of late March 2026, slightly exceeding Lieber's ~$225K — the competitive fundraising signal in this race.
 
-No Foster City planning commissioner role confirmed — user's framing may be approximate. Menlo Park Housing Commissioner is the documented land-use board role. [Source A: campaign site]
+No Foster City planning commissioner role confirmed; the documented land-use board role is Menlo Park Housing Commissioner. [Source A: campaign site]
 
 ## Stated positions
 
@@ -58,7 +58,7 @@ GrowSF: Did not respond to questionnaire (missed April 7 deadline). GrowSF endor
 - No documented controversies surfaced from Tier A/B sources.
 - Did not respond to GrowSF questionnaire — minor engagement-gap signal; not disqualifying in isolation.
 - Clean-energy private sector background: no tax-administration experience proper. BOE post-2017 is technically narrow (property-tax uniformity, fuel/tobacco/alcohol tax, appeals). Pimentel's credentials are government-management and clean-energy business — adjacent but not direct.
-- "User's framing was Foster City planning commissioner" — not confirmed. May reflect an earlier or informal civic role not indexed.
+- **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-28]: a "Foster City planning commissioner" role is unconfirmed in sources — may reflect an earlier or informal civic role not indexed. Documented land-use role is Menlo Park Housing Commissioner (above).
 
 ## Sources
 

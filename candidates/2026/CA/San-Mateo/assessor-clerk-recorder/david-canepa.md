@@ -93,7 +93,7 @@ Source: [davidcanepa.com/endorsements](https://www.davidcanepa.com/endorsements)
 **Media:**
 - SM Daily Journal editorial board endorsement
 
-**FPPC/donor data:** Not retrieved in this session. California Secretary of State Power Search (powersearch.sos.ca.gov) is the Tier A source; query "David Canepa" under state-level filings for 2025–2026. FEC profile exists from 2018 Congress run (H2CA14170) but irrelevant to county race.
+**DATA-GAP** [axis: capture-risk; severity: med; last-attempt: 2026-05-28]: FPPC/donor data not retrieved. No donor-composition claim is asserted. Tier A source: CA SoS Power Search (powersearch.sos.ca.gov) — query "David Canepa" under state-level filings for 2025–2026. (FEC profile H2CA14170 from a 2018 Congress run exists but is irrelevant to this county race.) Med severity: donor/capture data can materially affect this office read.
 
 ## Controversies / liabilities
 

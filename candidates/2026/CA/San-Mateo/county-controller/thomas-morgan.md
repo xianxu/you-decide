@@ -16,6 +16,8 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch2.md
 
 ## Background
 
+**DATA-FIXME** [axis: strategic-viability; severity: high; last-attempt: 2026-05-28]: Morgan's presence on the 6/2/2026 ballot is in doubt. He appears on the **March 11** roster (qualification *pending*), but the **May 5 "Qualified Candidates Only"** SM County Controller roster lists only Canepa, Irizarry, and Raigoza — Morgan is **absent**. He may not have qualified. Verify against the latest SMCACRE roster; if he did not qualify, change `status:`/scope accordingly. Until verified, treat the active-ballot premise of this profile as unconfirmed.
+
 Thomas Royal Morgan II is a Certified Public Accountant (CPA) practicing in San Mateo, CA. He has previously sought San Mateo County elected office — a 2015 smartvoter.org biography page exists (now defunct/unreachable: ECONNREFUSED on fetch), suggesting at least one prior county-level race. No campaign website was found. He carries no ballot designation on the official June 2026 county roster (confirmed by SM County Clerk PDF: smcacre.gov/system/files/2026-03/51_candidateroster03112026.pdf), consistent with a low-profile self-funded or unfunded run. No candidate statement filed as of the March 2026 roster snapshot.
 
 **Financial credential finding:** CPA license confirmed via taxbuzz.com listing ("Thomas Royal Morgan II, CPA — San Mateo"). CPA is directly relevant to the Controller role; this is the single positive competence signal uncovered.
@@ -39,7 +41,7 @@ None found — consistent with a candidate who has left almost no public footpri
 ## Sources
 
 - [Tier A] SM County Clerk Candidate Roster (March 2026): https://smcacre.gov/system/files/2026-03/51_candidateroster03112026.pdf — confirms no ballot designation, qualification status pending
-- [Tier A] SM County Clerk Candidate Roster (May 2026 PDF): https://smcacre.gov/system/files/2026-05/51_candidateroster05042026.pdf — fetched but binary; consistent with March roster data
+- [Tier A] SM County Clerk Candidate Roster (May 2026 "Qualified Candidates Only"): https://smcacre.gov/system/files/2026-05/51_candidateroster05042026.pdf — lists Canepa, Irizarry, Raigoza for Controller; Morgan NOT listed (see DATA-FIXME in Background — possible non-qualification)
 - [Tier B] taxbuzz.com listing (secondary aggregator of CA CPA license data): https://www.taxbuzz.com/find-the-best-cpa/california/san-mateo/thomas-morgan — CPA credential
 - [Tier B] smartvoter.org 2015 bio page (unreachable): http://www.smartvoter.org/2015/11/03/ca/sm/vote/morgan_t/bio.html — prior candidacy signal only; content not retrieved
 - [Tier B] KQED voter guide San Mateo: https://www.kqed.org/voterguide/sanmateo — no Morgan coverage found

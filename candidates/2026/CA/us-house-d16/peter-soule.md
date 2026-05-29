@@ -2,7 +2,7 @@
 name: Peter Soule
 full-name: Peter Sundin Soulé
 party: Republican
-race: 2026-ca-us-house-d16
+race: 2026-us-house-d16
 office: us-house
 district: CA-16
 last-updated: 2026-05-28

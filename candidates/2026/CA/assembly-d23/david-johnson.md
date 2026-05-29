@@ -16,6 +16,8 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch2.md
 
 ## Background
 
+**Disambiguation:** this is **David G. Johnson** — chairman of the Santa Clara County Republican Party and 2026 Assembly District 23 candidate — not other public figures named David Johnson. (Identity tie to the CA SoS certified list + campaign source is a pending genesis-binding item.)
+
 Santa Clara County native. 40 years in commercial construction in the South Bay — marketing, estimating, and project management for high-tech companies. Operates two small firms (founded 1994 and 2010). No prior elected office. Current chairman of the Santa Clara County Republican Party — party-establishment R, not an outsider. Running as challenger to incumbent Democrat Marc Berman (Menlo Park). A second Republican challenger (Rick Giorgetti) is also in the race; Johnson is the more prominent, given his SCC GOP chair role.
 
 ## Stated positions
