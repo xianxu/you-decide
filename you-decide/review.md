@@ -81,11 +81,13 @@ The candidate profile is **shared** (one file, all users); a gap's *impact* depe
 
 ### Gaps are orthogonal to review-state
 
-A file with **honestly-marked `DATA-GAP`s and no unsupported claims can be `review: passed`.** The review verified everything verifiable; a documented, unfillable gap is logged debt, not a review failure. Do **not** hold a file in `issues-flagged` solely for a `DATA-GAP`. (A **`DATA-FIXME`** is different — a known-wrong fact blocks `passed` until corrected.)
+A file with **honestly-marked gaps and no unsupported claims can be `review: passed`.** The review verified everything verifiable; documented debt is not a review failure. **Severity, not the token, governs blocking:** a med/high marker (an actually-wrong fact, or a missing fact a decisive claim silently leans on) blocks `passed` until resolved; a `low` marker (an unfillable `DATA-GAP`, or a `DATA-FIXME` for a claim that is plausibly correct but under-tier-sourced) is tolerable debt — log it and pass. Do not hold a file in `issues-flagged` solely for a `low` marker.
 
 ### Rollup
 
 `rg 'DATA-GAP|DATA-FIXME' candidates/` is the live debt list. Optionally generate `reviews/DATA-GAPS.md` tabulating by severity × axis × staleness (a script greps + sorts). Individual gaps stay inline; only **systemic** remediation (e.g. "build an FPPC/FEC fetcher to close finance gaps in bulk") belongs in `workshop/issues/` as tooling work.
+
+**Routing rule (where does a follow-up live?):** *data-content* debt — a missing/unverified/under-sourced fact in a substrate file — is an inline `DATA-GAP`/`DATA-FIXME`, tracked by grep. *Schema / tooling / convention* work — file-format conformance, a script, an algorithm change — is a `workshop/issues/` item. Litmus: "is this a property of a specific fact, or a thing to build/decide?"
 
 ## Parameters
 
