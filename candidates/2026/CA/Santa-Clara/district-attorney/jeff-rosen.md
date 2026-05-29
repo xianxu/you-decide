@@ -113,5 +113,5 @@ An organized RecallRosen.org campaign exists, citing prosecutorial misconduct an
 24. [Davis Vanguard — ACLU accuses DA of withholding racial bias records (Nov 2025)](https://davisvanguard.org/2025/11/aclu-lawsuit-prosecutorial-transparency/) — **secondary** (Tier C — flag tilt; ACLU underlying complaint is Tier A)
 25. [Davis Vanguard — 2022 debate recap](https://davisvanguard.org/2022/05/santa-clara-da-jeff-rosen-trips-challenger-after-first-in-person-debate/) — **secondary** (Tier C — flag tilt)
 26. [Palo Alto Online — DA endorses Judge Persky facing recall (2017)](https://www.paloaltoonline.com/news/2017/04/10/district-attorney-endorses-judge-facing-recall/) — **secondary** (Tier B)
-27. [Ballotpedia — Jeff Rosen](https://ballotpedia.org/Jeff_Rosen) — **secondary** (Tier B for scoping; verify decisive claims against primary)
+27. [Ballotpedia — Jeff Rosen](https://ballotpedia.org/Jeff_Rosen) — **secondary** (Tier C — aggregator, scoping only; verify decisive claims against primary)
 28. [Recall Rosen — recallrosen.org](https://www.recallrosen.org/) — **partisan** (opposition; Tier C — use for framing, not facts)
