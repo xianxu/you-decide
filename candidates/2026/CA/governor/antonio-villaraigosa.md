@@ -6,10 +6,10 @@ last-updated: 2026-05-27
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: issues-flagged
+review: passed
 reviewed-by: codex
 reviewed-on: 2026-05-28
-review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
+review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate-r3.md
 ---
 
 # Antonio Villaraigosa — 2026 CA Governor candidate
