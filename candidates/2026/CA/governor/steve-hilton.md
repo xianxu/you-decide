@@ -30,24 +30,24 @@ Stephen Glenn Charles Hilton was born August 25, 1969, in London, to Hungarian-J
 
 All positions drawn from his official campaign site ([stevehiltonforgovernor.com](https://stevehiltonforgovernor.com/)) and KPBS voter guide coverage ([KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor)) unless noted. His framing slogan is "Califordable."
 
-**Tax / fiscal:**
-- No income tax on earnings under $100K; 7.5% flat tax above $100K. ([campaign site](https://stevehiltonforgovernor.com/))
+**Tax / fiscal:** (all bullets [campaign site](https://stevehiltonforgovernor.com/))
+- No income tax on earnings under $100K; 7.5% flat tax above $100K.
 - No property tax increases; explicit "Protect Prop. 13!" pledge.
-- Return state spending to pre-pandemic levels (from current ~$322B budget).
-- Regulatory sunset: all regulations expire unless explicitly renewed; agencies must remove existing rules before adding new ones.
+- Return state spending to pre-pandemic levels (campaign cites growth from $161B in 2015/16 to ~$322B in 2025/26).
+- Regulatory sunset: "regulations go away unless explicitly renewed."
 
-**Housing:**
-- Cap "impact fees" (which he says constitute ~20% of new home price).
-- Eliminate anti-housing CEQA abuse (he claims ~70% of CEQA suits block housing).
-- Oppose Coastal Commission and CARB restrictions on housing zones.
+**Housing:** (all bullets [campaign site](https://stevehiltonforgovernor.com/))
+- Cap "impact fees" (which he says "can now make up nearly 20% of the typical house price").
+- Eliminate anti-housing CEQA abuse (he claims "around 70% of CEQA lawsuits are used to block housing").
+- Oppose Coastal Commission and CARB restrictions on housing development.
 
-**Education:**
-- Target 100% of students meeting math and English standards (current: 35% math, 47% English).
-- "A grade for every school, a grade for every teacher"; fire worst-performing teachers.
-- Restore parent-trigger laws.
-- Expand charter schools and school choice.
-- Oppose "social and political indoctrination"; protect parental rights on sex/gender questions.
-- Oppose transgender girls competing in girls' sports.
+**Education:** (all bullets [campaign site](https://stevehiltonforgovernor.com/))
+- Target 100% of students meeting math and English standards (site cites current baselines of 35% math, 47% English).
+- "A grade for every school, a grade for every teacher"; "reward the best teachers, fire the worst."
+- Restore parents' power to force change (parent-trigger).
+- Protect and, where parents want, expand charter schools; introduce school choice.
+- Detailed "sex, gender and identity" section asserting parental rights.
+- Opposes "biological boys (or men)" competing in girls'/women's sports.
 
 **Energy / climate:**
 - Self-identifies as "an environmentalist" but questions whether California climate policies "actually help the climate" or just inflict costs on families. ([KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor))
