@@ -16,34 +16,32 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch2.md
 
 ## Background
 
-**Disambiguation:** this is **David G. Johnson** — chairman of the Santa Clara County Republican Party and 2026 Assembly District 23 candidate — not other public figures named David Johnson. (Identity tie to the CA SoS certified list + campaign source is a pending genesis-binding item.)
+**Disambiguation:** this is **David G. Johnson** — chairman of the Santa Clara County Republican Party and 2026 Assembly District 23 candidate — not other public figures named David Johnson. He is on the CA Secretary of State's certified candidate list for State Assembly Member District 23 as "David G. Johnson" (Republican). ([CA SoS June 2, 2026 certified district candidates](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/prop34-report-leg.pdf)) ([campaign site](https://davidjohnsonad23.com/meet_david))
 
-Santa Clara County native. 40 years in commercial construction in the South Bay — marketing, estimating, and project management for high-tech companies. Operates two small firms (founded 1994 and 2010). No prior elected office. Current chairman of the Santa Clara County Republican Party — party-establishment R, not an outsider. Running as challenger to incumbent Democrat Marc Berman (Menlo Park). A second Republican challenger (Rick Giorgetti) is also in the race; Johnson is the more prominent, given his SCC GOP chair role.
+40 years in commercial construction in the South Bay. Operates two firms (founded 1994 and 2010). No prior elected office. Current chairman of the Santa Clara County Republican Party — party-establishment R, not an outsider. ([campaign site](https://davidjohnsonad23.com/meet_david)) Running as challenger to incumbent Democrat Marc Berman. A second Republican challenger (Rick Giorgetti) is also on the AD-23 ballot. ([CA SoS certified list](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/prop34-report-leg.pdf))
 
 ## Stated positions
 
-**Tax / fiscal:**
-- Opposes "Sacramento's endless taxes and regulations" — central campaign theme.
-- Proposes vehicle license fees as a flat fee distributed directly to county and state.
-- Uses Herbert Spencer quote "Excessive Taxation Is The Pathway to Slavery" as rhetorical anchor; populist fiscal framing.
+**Tax / fiscal:** ([campaign site](https://davidjohnsonad23.com/meet_david))
+- Campaign theme is to "stop the endless tax-and-spend cycle" and "slash job-killing regulations."
+- Uses the Herbert Spencer quote "Excessive Taxation Is The Pathway to Slavery" (1888) as rhetorical anchor; populist fiscal framing.
+- **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: an earlier capture asserted a specific "vehicle license fees as a flat fee distributed directly to county and state" proposal; not found on the re-fetched campaign site or in the SM Daily Journal forum coverage — dropped pending a source. (The VLF "I'll fix it" line belongs to opponent Giorgetti, not Johnson.)
 
 **Housing / regulations:**
-- Advocates reducing state government's regulatory role to address cost-of-living. No specific CEQA or zoning-reform proposals documented from available sources.
+- Champions cutting regulation generally; "Parents' Rights and School Choice" sit alongside deregulation as headline themes. No specific CEQA or zoning-reform proposal documented. ([campaign site](https://davidjohnsonad23.com/meet_david))
 
 **Education:**
-- "Parents' rights" and school choice are central platform items.
-- Explicit: parents must be informed if a child considers gender transitioning or social transitioning at school — anti-trans-student-policy framing.
+- "Parents' Rights" and School Choice are central platform items. ([campaign site](https://davidjohnsonad23.com/meet_david))
+- Supports parents' right "to be informed by schools if a child is thinking of transitioning genders or socially transitioning" — parental-notification framing. ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **Elections / voting:**
-- Advocates "one-day, in-person voting" (voter ID / election-integrity framing). Third-party search characterizes this as promoting "Jim Crow-era voter ID laws." No direct 2020-election-fraud claim found in available sources; voter-ID positioning is consistent with MAGA-base cater-mode.
+- Advocates "one-day, in-person voting, targeting fraud" (election-integrity framing). ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)) No direct 2020-election-fraud claim found in available sources. **DATA-GAP** [axis: institutionalist; severity: low; last-attempt: 2026-05-29]: an earlier capture said a "third-party search characterizes this as promoting 'Jim Crow-era voter ID laws'" — that characterization could not be re-grounded to a citable source and is dropped; the verified position is the "one-day, in-person voting" quote above.
 
 **AI regulation:**
-- Skeptical of state-level AI regulation; prefers federal oversight.
+- Skeptical of state-level AI regulation: "I really don't want the state to regulate it... I might defer to the federal government, who has a bigger picture." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
-**Trump:**
-- Supportive of Trump but frames himself as primarily focused on local issues: "I'm far more concerned with local issues and his own values than reacting to the president's most recent statements." — closer to pragmatic cater than personalist mode.
-
-**Self-description:** "God-fearing, country-loving" conservative; "common sense" and "fairly nonpartisan" framing in conversations with voters.
+**Trump / partisanship:**
+- Describes himself as running "a fairly nonpartisan campaign," talking "truth and reality, common sense" as "a father, as a business owner." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)) **DATA-GAP** [axis: institutionalist; severity: low; last-attempt: 2026-05-29]: the specific quote attributed to him in an earlier capture ("I'm far more concerned with local issues and his own values than reacting to the president's most recent statements") and the "God-fearing, country-loving" self-description were not found on the re-fetched campaign site or in the SMDJ piece — dropped pending a source.
 
 ## Record / past performance
 
@@ -72,7 +70,8 @@ No prior elected office. Record is his SCC GOP party leadership.
 
 | URL | Tier | Type | Partisan tilt |
 |---|---|---|---|
-| [davidjohnsonad23.com/meet_david](https://davidjohnsonad23.com/meet_david) | A | Primary (campaign site) | Right / pro-Johnson |
+| [CA SoS — June 2 2026 certified district candidates (AD-23)](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/prop34-report-leg.pdf) | A | Official / primary (identity + ballot tie) | N/A |
+| [davidjohnsonad23.com/meet_david](https://davidjohnsonad23.com/meet_david) | A | Primary (campaign site, re-fetched 2026-05-29) | Right / pro-Johnson |
 | [SM Daily Journal — Berman defends D23](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html) | B | Journalism | Moderate / neutral |
 | [Ballotpedia — David G. Johnson (CA State Assembly candidate)](https://ballotpedia.org/David_G._Johnson_(California_State_Assembly_candidate)) | C | Secondary / encyclopedic | Neutral |
 | [payamjavan.com — candidacy announcement](https://payamjavan.com/david-g-johnson-declares-candidacy-for-state-assembly-district-23/) | C | Persian-community press | Neutral |
