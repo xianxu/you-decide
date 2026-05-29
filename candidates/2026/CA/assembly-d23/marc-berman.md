@@ -28,19 +28,19 @@ From official Assembly site and campaign site unless noted.
 
 **Housing**: Identifies housing supply as the core California affordability problem. Explicitly supports state-mandated housing requirements even when locally controversial. Endorsed by California YIMBY and YIMBY Action — the highest-signal pro-housing endorsement available in CA. Notes support for SB 35 (Wiener, 2017), ADU reform, and SB 79 (transit-oriented housing) — all pro-supply bills he co-authored or actively supported. [(Garry's Guide)](https://garrysguide.org/elections/races/1859)
 
-**CEQA**: Authored AB 1804 (2018) — narrow CEQA exemption for multi-family infill residential housing in urbanized areas. Authored AB 2199 (2024) — extends county infill CEQA exemption to 2032. Also AB 782 (2019) — CEQA exemption for open-space land acquisition. Consistent incremental CEQA-exemption author, not a wholesale CEQA-reform lead (that's been Wiener/Wicks). [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944) [(campaign site)](https://www.voteberman.com/priorities)
+**CEQA**: Authored AB 1804 (2018) — statutory CEQA exemption for multi-family infill residential/mixed-use housing in urbanized areas (modeled on the Class 32 categorical exemption; sunset Jan 1 2025). [(leginfo AB 1804)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB1804) Authored AB 2199 (2024) — extends the unincorporated-county infill CEQA exemption to 2032 (signed Sept 19 2024). [(leginfo AB 2199)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2199) Also AB 782 (2019) — CEQA exemption for public-agency land transfers preserving open space/habitat/historical resources (signed Aug 30 2019). [(leginfo AB 782)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB782) Consistent incremental CEQA-exemption author, not a wholesale CEQA-reform lead (that's been Wiener/Wicks).
 
-**Fiscal**: Publicly opposed a proposed California wealth tax, casting what was characterized as a deciding vote against it and calling the bill "very misleading." CalChamber alignment: 0% — standard Dem caucus. HJTA: 0%. Fiscally progressive on most issues; the wealth-tax deviation is a notable independent moment. [(Garry's Guide)](https://garrysguide.org/elections/races/1859)
+**Fiscal**: CalChamber alignment 0%; HJTA 0% — standard Dem-caucus profile. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944) **DATA-FIXME** [axis: institutionalist; severity: med; last-attempt: 2026-05-29]: an earlier capture claimed Berman "cast what was characterized as a deciding vote against" a California wealth tax and called the bill "very misleading," sourced only to Garry's Guide (Tier C). The 2021–22 wealth-tax bill (AB 2289) died in committee with no floor vote ([leginfo AB 2289 history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202120220AB2289)) — so a "deciding vote against it" could not have occurred as described; the "very misleading" quote appears in searches tied to Prop 19 (property tax), not a wealth tax. Claim removed pending a Tier A/B source for any actual Berman wealth-tax position.
 
 **Public safety**: Opposed Proposition 36 (2024, drug/theft penalty increases) — actively, not silently. Argued against cost to state/county and diversion program defunding. His opponent Lydia Kou (2024 primary) explicitly supported Prop 36 and used Berman's opposition as a campaign wedge. District-level Prop 36 sentiment was not counted by Berman. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
 
 **AI regulation**: Supports state regulation of AI, citing California's leadership role. [(SM Daily Journal)](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)
 
-**Energy/Climate**: Authored AB 1346 (2021) banning new gas-powered small off-road engines (leaf blowers etc.) starting 2024 — a real-cost-to-consumers regulation framed as climate. Authored AB 1219 (2021) restoring Natural Heritage Preservation Tax Credit. [(campaign site)](https://www.voteberman.com/priorities)
+**Energy/Climate**: Authored AB 1346 (2021) directing CARB to prohibit new gas-powered small off-road engines (leaf blowers, generators, chainsaws, etc.), with the prohibition effective by 2024 — a real-cost-to-consumers regulation framed as climate; regulates new-equipment purchase, not existing equipment, with farmer/emergency exceptions (signed Oct 9 2021). [(leginfo AB 1346)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB1346) **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: AB 1219 (2021) "restoring Natural Heritage Preservation Tax Credit" attributed to Berman in an earlier capture — not confirmed on leginfo as a Berman-authored bill on this re-fetch; left as a low gap pending bill-record confirmation.
 
-**Voting rights / elections**: Authored California's permanent vote-by-mail law; established Office of Elections Cybersecurity (2017); authored AB 2019 cracking down on electoral deepfakes. Currently chairs Assembly Committee on Elections.
+**Voting rights / elections**: Wrote California's permanent vote-by-mail law and the law creating California's Office of Elections Cybersecurity. ([campaign priorities](https://www.voteberman.com/priorities)) On deepfakes: authored AB 730 (2019), described as the first-in-the-country law cracking down on election deepfakes ([campaign priorities](https://www.voteberman.com/priorities)), and authored AB 2655 (2024), the "Defending Democracy from Deepfake Deception Act," requiring large platforms to remove deceptive altered election content (signed Sept 2024). [(leginfo AB 2655)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2655) Currently chairs Assembly Committee on Elections. (Correction: an earlier capture cited "AB 2019" for the deepfake law — there is no such Berman deepfake bill; the deepfake bills are AB 730 (2019) and AB 2655 (2024).)
 
-**Reproductive rights**: Principal co-author of Proposition 1 (2022, constitutional abortion protection). 100% Planned Parenthood voting record.
+**Reproductive rights**: Principal co-author of Proposition 1 (2022, constitutional reproductive-freedom amendment). ([campaign priorities](https://www.voteberman.com/priorities)) 100% Planned Parenthood voting record. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944)
 
 ## Record / voting (Assembly 2016–present — voting record is substrate)
 
@@ -50,7 +50,7 @@ From official Assembly site and campaign site unless noted.
 
 **Independent/notable cross-caucus votes**:
 - Opposed Prop 36 (2024) — vocal, not silent; progressive-caucus position, diverged from ~70% statewide support. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
-- Voted against a California wealth-tax bill (described as "very misleading") — cross-caucus break toward fiscal restraint. Notable for a Dem in a tech-heavy district. [(Garry's Guide)](https://garrysguide.org/elections/races/1859)
+- (The previously listed "voted against a California wealth-tax bill / 'very misleading'" item is removed — see the DATA-FIXME under **Fiscal** above; the bill died in committee with no floor vote.)
 
 **Committee assignments**: Chairs Assembly Committee on Elections; previously chaired Higher Education Committee. Also sits on Business and Professions (chair), Governmental Organization, Insurance. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944)
 
@@ -69,13 +69,20 @@ From official Assembly site and campaign site unless noted.
 ## Controversies / liabilities
 
 1. **Prop 36 opposition**: Actively opposed the overwhelmingly popular public-safety measure (passed ~70% statewide). Progressive-caucus solidarity over constituent alignment. In a Palo Alto/Menlo Park district where tech-moderate sentiment often exceeds state-Dem averages, this is a meaningful disconnect. [Tier B: KQED]
-2. **Gas-engine ban AB 1346**: Cost-imposing regulation on landscaping and small-business workers; framed as climate. Likely no political cost in D23 but signals regulatory-first instincts over cost-consciousness. [Tier A: official bill record]
+2. **Gas-engine ban AB 1346**: Cost-imposing regulation on landscaping and small-business workers; framed as climate. Likely no political cost in D23 but signals regulatory-first instincts over cost-consciousness. [(leginfo AB 1346)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB1346)
 3. **0% CalChamber**: Consistent across full tenure; no business-side alignment on any economic votes found. [Tier A: CalMatters Digital Democracy]
 4. **Final-term post-Assembly positioning**: Running a final-term campaign; what comes next (statewide race? lobbying? nonprofit?) shapes current-term incentives. No announced post-Assembly plans found as of research date. This is a structural flag, not a documented controversy.
 
 ## Sources
 
 **Tier A:**
+- [CA SoS — June 2 2026 certified district candidates (AD-23 roster)](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/prop34-report-leg.pdf)
+- [leginfo — AB 1804 (2018, CEQA infill exemption)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB1804)
+- [leginfo — AB 2199 (2024, CEQA exemption to 2032)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2199)
+- [leginfo — AB 782 (2019, CEQA open-space land transfers)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB782)
+- [leginfo — AB 1346 (2021, small off-road engines)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB1346)
+- [leginfo — AB 2655 (2024, Defending Democracy from Deepfake Deception Act)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2655)
+- [leginfo — AB 2289 (2021–22 wealth tax, died in committee)](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202120220AB2289)
 - [CalMatters Digital Democracy — Marc Berman legislator tracker](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944)
 - [Assembly official page — Marc Berman, District 23](https://www.assembly.ca.gov/assemblymembers/23)
 - [Marc Berman campaign priorities page](https://www.voteberman.com/priorities)
