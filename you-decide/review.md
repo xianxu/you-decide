@@ -292,6 +292,39 @@ Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews,
 
 A pre-commit hook can enforce "no commit to `candidates/`/`elections/`/`controversies/` without a current `review-ref`" (see `workshop/issues/000004`), but for MVP it's a convention.
 
+## Spawning the other stack (cross-stack review mechanics)
+
+The review's independence requirement is **a different AI stack than `generated-by`** (Stage 1). The driver — whichever stack is running the main session — spawns the *other* stack one-shot to do (or take) a review turn. Either direction works; the mechanics are symmetric.
+
+The driver may either (a) shell out to the other stack's CLI directly, or (b) wrap that CLI call in one of its own sub-agents (keeps the reviewer's verbose output out of the driver's context — the sub-agent runs the CLI, verifies the result, returns a digest). (b) is preferred for a clean main context.
+
+Both CLIs run agentically and may take minutes — give the call a long timeout (≈600s) or run it detached. Both invocations below **skip approval/sandbox prompts** so the one-shot doesn't stall; that's safe *because the driver is already running inside its own sandbox* (the external-sandbox case these flags are built for). The reviewer must read this file first, then write only the report + `review:` frontmatter and commit its own turn signed per `AGENTS.md` §12.
+
+### Claude driving → spawn Codex (reviewer)
+
+```bash
+codex exec --dangerously-bypass-approvals-and-sandbox -C <repo-root> "<REVIEW PROMPT>"
+# or pipe a long prompt via stdin:  codex exec --dangerously-bypass-approvals-and-sandbox -C <repo-root> - < prompt.txt
+```
+- Config lives in `.codex/config.toml` (`sandbox_mode = workspace-write`); the bypass flag overrides approval pauses for the one-shot.
+- Commit trailer: `Co-Authored-By: <Codex model> <noreply@openai.com>`.
+
+### Codex driving → spawn Claude (reviewer)
+
+```bash
+claude -p "<REVIEW PROMPT>" --dangerously-skip-permissions --add-dir <repo-root>
+# scope tools if you prefer least-privilege instead of the blanket bypass:
+#   claude -p "…" --permission-mode acceptEdits --allowedTools Read Edit Write Bash Grep
+```
+- `-p/--print` is headless mode; `--dangerously-skip-permissions` is the analogue of Codex's bypass (lets the reviewer Edit/Write the report+frontmatter and run `git` without prompts).
+- Commit trailer: `Co-Authored-By: <Claude model> <noreply@anthropic.com>`.
+
+### Prompt skeleton (either reviewer)
+
+> Read `you-decide/review.md` in full — it defines your procedure, write-surface (report + `review:` frontmatter ONLY, never the body/facts), and the DATA-GAP/DATA-FIXME + severity-governs-blocking rules. You are the **<reviewer-stack>** reviewer. [If re-review:] This is round N — **diff-scoped**; `git log`/`git diff` the fix commits since the prior report (`reviews/.../…-r{N-1}.md`); verify only those findings + check for regressions, do not re-audit untouched files. Write `reviews/<year>/<date>-<batch>[-rN].md`, flip cleared files `issues-flagged → passed` (severity governs: low debt is passable), and commit `review: <stack> rN — <batch> (<status>)` with the `Co-Authored-By` trailer above.
+
+When wrapping in a sub-agent, also have the sub-agent **verify** afterward (`git log`, the new report's status, `git show --stat` to confirm the commit is report + frontmatter only) and return a digest — never let the wrapping agent edit substrate itself.
+
 ## When NOT to use
 
 - Re-reviewing a batch that's already passed (idempotent but unnecessary cost)
