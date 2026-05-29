@@ -6,7 +6,10 @@ last-updated: 2026-05-28
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: not-done
+review: issues-flagged
+reviewed-by: codex
+reviewed-on: 2026-05-28
+review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
 ---
 
 # James B. Garrity — 2026 US House CA-D15

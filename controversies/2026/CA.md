@@ -13,7 +13,10 @@ sources:
   - https://www.kqed.org/voterguide/california
 generated-by: claude
 generated-on: 2026-05-28
-review: not-done
+review: issues-flagged
+reviewed-by: codex
+reviewed-on: 2026-05-28
+review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
 ---
 
 # Controversies — California 2026 cycle

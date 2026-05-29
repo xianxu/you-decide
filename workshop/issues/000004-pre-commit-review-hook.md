@@ -63,3 +63,6 @@ Building our own review tool. We use Claude / Codex / Gemini / etc. as the revie
 
 ### 2026-05-28
 Ported from GH#3 per the ariadne in-repo-first convention. GH#3 remains as the public-visibility stub pointing here.
+
+### 2026-05-28
+Ran formal `you-decide/review.md` pass over `candidates/2026/CA/`, `elections/2026/`, and `controversies/2026/`. Output: `reviews/2026/2026-05-28-ca-2026-shared-substrate.md`, status `fail`, with blocker findings around CA ballot-scope completeness, stale candidate manifest entries, a missing `trump-era-cater-discount` calibration skill, and source-gap leakage. Updated reviewed shared-substrate frontmatter from `review: not-done` to `review: issues-flagged` with `review-ref` pointing at the report.

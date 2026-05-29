@@ -12,7 +12,10 @@ opponent: Daniel Chung
 primary-date: 2026-06-02
 generated-by: claude
 generated-on: 2026-05-28
-review: not-done
+review: issues-flagged
+reviewed-by: codex
+reviewed-on: 2026-05-28
+review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
 ---
 
 # Jeff Rosen — 2026 Santa Clara County District Attorney (Incumbent)
