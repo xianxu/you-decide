@@ -11,7 +11,7 @@ generated-on: 2026-05-28
 review: issues-flagged
 reviewed-by: codex
 reviewed-on: 2026-05-29
-review-ref: reviews/2026/2026-05-29-ca-2026-rebind-batch3.md
+review-ref: reviews/2026/2026-05-29-ca-2026-final-batch3.md
 ---
 
 # Marc Berman — 2026 CA Assembly D23
