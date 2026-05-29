@@ -21,22 +21,25 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch3.md
 - Education: BS Business Management + MPA, San Francisco State University
 - Family: married to Lorrie; three children; one grandchild; coached children's sports
 - No prior elected office
-- Ran in this district before: June 7, 2022 primary as independent — lost (did not advance)
+- Ran in this district before: June 7, 2022 primary as independent — lost (did not advance) ([Ballotpedia: CA-15 2022 primary](https://ballotpedia.org/California's_15th_Congressional_District_election,_2022_(June_7_top-two_primary)); [Voter's Edge 2022](https://votersedge.org/en/ca/ballot/election/2022-06-07/u.s.-house-of-representatives-district-15/jim-garrity))
+- Certified on the 2026 ballot as "Jim Garrity — No Party Preference, Retired Police Inspector" ([CA SoS Certified List of Candidates, June 2 2026 primary](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf))
 - FEC committee: JIM GARRITY FOR CONGRESS (C00814095); candidate ID H2CA15144
 
 ## Stated positions
 
-**Cost of living / federal spending:** Pledges to "lower costs and stop policies that raise prices" — housing, groceries, healthcare, childcare, gas. Calls current federal spending "reckless."
+Position detail is from local-press candidate coverage ([Patch — Meet Jim Garrity](https://patch.com/california/redwoodcity-woodside/meet-jim-garrity-candidate-ca-congress)); the campaign homepage ([jimgarrityforcongress.com](https://jimgarrityforcongress.com/), re-fetched live 2026-05-29) now carries only the partisan-posture framing, not the detailed policy planks — those are grounded to Patch/Almanac below.
 
-**Immigration:** Two-track: deport undocumented criminals; leave alone immigrants "trying to better themselves / contributing positively." Quote: "I do not and will not support targeting them. They need to be left alone." Fentanyl crisis response as law-enforcement issue.
+**Cost of living / federal spending:** Pledges to "work to lower costs and stop policies that raise prices"; commits to fighting "reckless" federal spending. ([Patch](https://patch.com/california/redwoodcity-woodside/meet-jim-garrity-candidate-ca-congress))
 
-**Housing:** Opposes institutional investors treating housing "primarily as a profit engine." Advocates federal affordable-housing incentives, reduced permitting barriers, single-family construction support, local zoning control, public-private partnerships.
+**Immigration:** Two-track: deport undocumented criminals; leave law-abiding immigrants alone. Quote: "If someone is here unlawfully but is working hard, might be raising a family, contributing to the community, and has no arrest record, I do not and will not support targeting them. They need to be left alone." ([Patch](https://patch.com/california/redwoodcity-woodside/meet-jim-garrity-candidate-ca-congress))
 
-**Healthcare:** "No one should go broke because they got sick." Protect Social Security and Medicare as earned benefits. Cross-aisle cooperation on long-term program funding.
+**Housing:** Opposes institutional investors treating housing "primarily as a profit engine, communities pay the price, that's exploitation, not a healthy market." Advocates cutting permitting delays, protecting local zoning control, public-private partnerships. ([Patch](https://patch.com/california/redwoodcity-woodside/meet-jim-garrity-candidate-ca-congress))
 
-**Public safety:** Advocates law-enforcement funding; fentanyl / drug crisis as central concern.
+**Healthcare:** "No one should go broke because they got sick or have to choose between care and bills." Cross-aisle cooperation on long-term Social Security / Medicare funding. ([Patch — San Mateo](https://patch.com/california/sanmateo/meet-jim-garrity-candidate-15th-congressional-district-seat))
 
-**Partisan posture:** "Congress is fractured. Elected representatives too often vote strictly along party lines." Commits to supporting good legislation regardless of which party introduced it — "cooperation, not division."
+**Public safety:** Advocates law-enforcement funding; fentanyl / drug crisis and repeat-offender policy as central concern. ([Patch](https://patch.com/california/redwoodcity-woodside/meet-jim-garrity-candidate-ca-congress))
+
+**Partisan posture:** Campaign homepage: "Congress today is fractured. Elected representatives too often vote strictly along party lines." Commits to working across the aisle to support good legislation "regardless of which party it comes from. Cooperation, not division." ([jimgarrityforcongress.com](https://jimgarrityforcongress.com/), re-fetched live 2026-05-29)
 
 **Israel/Gaza:** No position stated on campaign site or in any sourced coverage.
 
@@ -53,8 +56,7 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch3.md
 ## Endorsements & donors
 
 - No endorsements found in any sourced coverage (Almanac, Patch, campaign site)
-- FEC data not yet processed / not itemized in available filings; no PAC money or major donor patterns identified
-- Self-funded / grassroots signature by default given absence of disclosed support
+- **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: No 2026-cycle financial summary on the FEC candidate page ([H2CA15144](https://www.fec.gov/data/candidate/H2CA15144/) shows committee C00814095 but "We don't have GARRITY, JAMES for 2021–2022" — no itemized receipts/disbursements available yet). No PAC money or major-donor pattern identifiable; treated as self-funded / grassroots by default.
 
 ## Controversies / liabilities
 
