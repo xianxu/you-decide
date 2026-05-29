@@ -69,7 +69,7 @@ His house.gov "Protecting Democracy" page exists but was inaccessible for this s
 
 ### Independence from Democratic caucus
 
-**DATA GAP:** no party-unity / independence score retrieved (GovTrack direct fetch 403; not available from any fetched Tier A/B source). No voting-independence characterization is asserted here. The 2026 campaign framing (per fetched campaign/news sources) leans on energy/consumer advocacy.
+**DATA-GAP** [axis: smart-consistent; severity: low; last-attempt: 2026-05-28]: no party-unity / caucus-independence score retrieved (GovTrack direct fetch 403; no fetched Tier A/B source confirms one). No independence characterization is asserted. Low severity — safe-D incumbent, so this signal doesn't move the rec. The 2026 campaign framing (per fetched campaign/news sources) leans on energy/consumer advocacy.
 
 ### Bill authorship (119th Congress, Tier A — official press releases)
 
@@ -102,7 +102,7 @@ Signed 60+ bills; highlight legislation: all-vote-by-mail (AB 2584, 2020), dark-
 
 2. **Israel/Gaza record gap**: Verbally pro-ceasefire but did not sign the formal ceasefire letter; abstained on IHRA definition; voted against the $17.6B aid package. The record is mixed enough to draw criticism from both pro-Israel and pro-Palestinian sides. AJP Action score of 27% (out of 100%) signals he is viewed as insufficiently pro-Palestinian by that advocacy org.
 
-3. **Caucus independence — DATA GAP**: No party-unity score retrieved (GovTrack 403; no fetched Tier A/B source supports a characterization). Do not score voting independence until a fetched source supports it. No documented case of voting against the Democratic caucus surfaced in fetched sources — but absence in this snapshot is not evidence of a party-line record.
+3. **Caucus independence** (see the data-gap note in the voting-record section): no party-unity score retrieved; voting-independence is not characterized here. No case of voting against the Democratic caucus surfaced in fetched sources — but absence in this snapshot is not evidence of a party-line record.
 
 4. **Not AIPAC-funded this cycle** (self-stated, SM Daily Journal — Tier B): Relevant given the district's Silicon Valley progressive lean and 2024 cycle national attention to AIPAC spending.
 
