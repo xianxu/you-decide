@@ -24,9 +24,11 @@ Attorney and disaster-management professional. UC Berkeley (bioresource sciences
 
 ## Stated Positions
 
-**Housing.** Supported the county's Housing Element Update (adopted March 2025) but opposed a specific April 2026 Housing Element amendment, explicitly stating: "I can't support the amount of density that's with" [it]. Expressed skepticism on the regional housing bond timing (December 2023), citing inadequate community outreach phase rather than opposition to the bond itself ("We are committed to this effort"). Requires city collaboration/buy-in before pursuing county-level affordable housing ballot measures: "I can't see myself doing this without a formal acknowledgement of some sort by the cities that they are supportive." Backed $1M for farmworker housing (Measure K funds, Half Moon Bay Farmworker Project — 45–50 manufactured units). [Sources: SM Daily Journal, smcgov.org, CBS SF — Tier A/B]
+**Housing.** Supported the county's Housing Element Update (adopted March 2025) but voted no on a specific April 2026 Housing Element amendment over density, stating: "I can't support the amount of density that's within this currently at the El Granada sites." He subsequently voted yes on a Bayside-only rezoning ordinance after being assured it did not include the El Granada sites. [[Tier B — Coastside News, BOS 4/21/2026](https://www.coastsidenews.com/coastie/san-mateo-county-board-of-supervisors-4-21-2026---locunity-reports/article_6fc2b562-a8d3-458e-89f3-962b8847e151.html)] Expressed skepticism on the regional housing bond timing (December 2023), citing inadequate community outreach phase rather than opposition to the bond itself ("We are committed to this effort"). Requires city collaboration/buy-in before pursuing county-level affordable housing ballot measures: "I can't see myself doing this without a formal acknowledgement of some sort by the cities that they are supportive." Backed $1M for farmworker housing (Measure K funds, Half Moon Bay Farmworker Project — 45–50 manufactured units). [Sources: SM Daily Journal, smcgov.org, CBS SF — Tier A/B]
 
-**Public safety / Sheriff oversight.** Led the board's effort to remove Sheriff Christina Corpus after documented misconduct. Co-authored statements (with Supervisor Noelia Corzo) calling out possible retaliation when Corpus fired a cooperating deputy. Launched county's first Residential Burglary Reward Program ($10,000 for information leading to arrest). Established urgent care pilot clinic on the coast after the region's only ER closed. [Sources: Redwood City Pulse, smcgov.org official statements, Local News Matters — Tier A/B]
+**Public safety / Sheriff oversight.** Co-led the board's effort to remove Sheriff Christina Corpus, pressing publicly for the board to act efficiently on the removal process ("Fairness doesn't just apply to the Sheriff, it applies to those who work in the Sheriff's office and the residents of this County"). [[Tier B — Redwood City Pulse 2025-05-20](https://www.rwcpulse.com/san-mateo-county/2025/05/20/san-mateo-county-supervisor-calls-on-board-to-act-on-removing-sheriff/)] He co-authored (with Supervisor Noelia Corzo) the official statement on the Measure A charter-amendment vote that created the removal authority. [[Tier A — smcgov.org](https://www.smcgov.org/ceo/news/statements-supervisors-ray-mueller-and-noelia-corzo-regarding-vote-measure)] Launched county's first Residential Burglary Reward Program ($10,000 for information leading to arrest); established an urgent-care pilot clinic on the coast after the region's only ER closed. [Sources: Local News Matters, smcgov.org — Tier A/B]
+
+**DATA-GAP** [axis: institutionalist; severity: low; last-attempt: 2026-05-29]: The specific claim that Mueller/Corzo "called out possible retaliation when Corpus fired a cooperating deputy" was not found in the cited smcgov.org Measure A statement or the Redwood City Pulse removal coverage; removed from the asserted text pending a Tier-A/B source. The broader Corpus-removal-leadership claim is verified.
 
 **Budget / tax.** One of two supervisors who declined to support studying a county sales tax increase. Proposed prioritizing Measure K-funded services by most-to-least essential (6-month vs. 18-month funding tiers for least vs. most critical services). [Sources: SM Daily Journal — Tier B]
 
@@ -58,16 +60,17 @@ Attorney and disaster-management professional. UC Berkeley (bioresource sciences
 
 ## Endorsements & Donors
 
-**Endorsements confirmed:**
-- Governor Gavin Newsom (noted in SM Daily Journal — Tier B)
-- Congresswoman Anna Eshoo (former SM County Supervisor — Tier A, campaign site)
-- Dave Pine (SM County Supervisor, Vice President — Tier A, campaign site)
-- Palo Alto Daily Post editorial (May 2026, "Reelect Mueller" — Tier B)
+**Endorsements confirmed** (all listed on the campaign's [endorsements page](https://www.voteraymueller.com/endorsements), re-fetched live — Tier A, candidate-published; cross-noted where independent reporting confirms):
+- Governor Gavin Newsom (on campaign endorsements page; also reported by SM Daily Journal — Tier A/B)
+- Congresswoman Anna Eshoo (with quote: "Working with Ray Mueller, I saw firsthand his deep commitment to serving our communities with integrity, compassion and results")
+- Dave Pine, San Mateo County Supervisor (ret.) — listed as retired on the campaign page (correcting an earlier "Vice President" note)
+- San Mateo County Democratic Party
+- Fire-protection-district officials: JB Cockrell & Cynthia Sherrill (Coastside Fire PD); Robert Jones, Rob Silano & Chuck Bernstein (Menlo Park Fire PD); Dan Ghiorso (Woodside Fire Dist. Chief, ret.)
+- County/school officials: SM County Superintendent Nancy Magee plus numerous district trustees (Cabrillo, Las Lomitas, Menlo Park, San Carlos, others)
+- [[Tier B — Palo Alto Daily Post editorial "Reelect Mueller," 2026-05-09](https://padailypost.com/2026/05/09/editorial-reelect-mueller-to-board-of-supervisors/)]
 - SM Daily Journal editorial (May 2026 — Tier B)
-- San Mateo County Democratic Party (listed as member/associated — Tier A, smcdems.org)
-- Fire protection district officials and county school officials cited in prior search result (specific names not confirmed in sourced text — partial gap)
 
-**Campaign finance:** Specific FPPC donor amounts and top contributors not retrieved within budget. Campaign site active at voteraymueller.com. SMCACRE election finance database would have formal filings. Gap flagged — check netfile.com or smcacre.gov directly.
+**Campaign finance:** **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: 2026-cycle FPPC donor amounts and top contributors not retrieved in a Tier-A/B source (only the 2022 cycle surfaced in search; NetFile portal requires interactive search). Official filings are at [smcacre.gov campaign-finance portal](https://smcacre.gov/elections/campaign-finance-information). No 2026 donor-composition claim is asserted. Severity low: capture-risk read would refine with the data but Mueller's clean record and broad institutional backing are otherwise documented.
 
 ---
 
@@ -87,7 +90,8 @@ Attorney and disaster-management professional. UC Berkeley (bioresource sciences
 
 | Tier | Source |
 |---|---|
-| A | Mueller campaign site — [voteraymueller.com](https://www.voteraymueller.com/) |
+| A | Mueller campaign site — [voteraymueller.com](https://www.voteraymueller.com/) (re-fetched live 2026-05-29, no scrub) |
+| A | Mueller campaign endorsements — [voteraymueller.com/endorsements](https://www.voteraymueller.com/endorsements) (Newsom, Eshoo, Dave Pine, SM County Dems, named fire/school officials) |
 | A | smcgov.org — [Supervisor Mueller's Policies & Priorities](https://www.smcgov.org/third-district/supervisor-ray-muellers-policies-priorities) |
 | A | smcgov.org — [Statements from Supervisors Mueller and Corzo Regarding Vote on Measure A](https://www.smcgov.org/ceo/news/statements-supervisors-ray-mueller-and-noelia-corzo-regarding-vote-measure) |
 | A | smcgov.org — [About the Supervisor](https://www.smcgov.org/third-district/about-supervisor) |
