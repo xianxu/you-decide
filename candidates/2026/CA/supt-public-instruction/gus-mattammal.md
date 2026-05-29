@@ -8,8 +8,8 @@ generated-by: claude
 generated-on: 2026-05-28
 review: issues-flagged
 reviewed-by: codex
-reviewed-on: 2026-05-28
-review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch3.md
+reviewed-on: 2026-05-29
+review-ref: reviews/2026/2026-05-29-ca-2026-rebind-batch2.md
 ---
 
 # Gus Mattammal — 2026 CA Superintendent of Public Instruction
