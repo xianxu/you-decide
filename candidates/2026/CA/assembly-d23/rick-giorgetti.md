@@ -16,7 +16,7 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch3.md
 
 ## Background
 
-Rick Giorgetti is a businessman and community volunteer. Beyond those descriptors from the San Mateo County candidate roster, no detailed professional biography is publicly documented — no campaign website found, no LinkedIn or company affiliation surfaced in research. He is one of two Republicans on the AD-23 ballot alongside David G. Johnson; the incumbent is Democrat Marc Berman (Menlo Park).
+Rick Giorgetti is on the CA Secretary of State's certified candidate roster for State Assembly Member District 23 (Republican). ([CA SoS June 2 2026 certified district candidates](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/prop34-report-leg.pdf)) Beyond the "businessman / community volunteer" descriptors from candidate-roster materials, no detailed professional biography is publicly documented — no campaign website found, no LinkedIn or company affiliation surfaced in research. He is one of two Republicans on the AD-23 ballot alongside David G. Johnson; the incumbent is Democrat Marc Berman (Menlo Park). **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: professional background, employer, and any prior civic roles are unverified — no Tier A/B biographical source located.
 
 District 23 covers southern San Mateo County and northern Santa Clara County: Half Moon Bay, Redwood City (south), Menlo Park, Atherton, Palo Alto, Mountain View, Los Altos, and parts of Sunnyvale and Cupertino.
 
@@ -27,19 +27,19 @@ District 23 covers southern San Mateo County and northern Santa Clara County: Ha
 *Drawn from SM Daily Journal coverage of a candidates' forum ([smdailyjournal.com](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)). No campaign website or voter-guide filing was found. Source depth is thin; positions below are the full public record as of 2026-05-28.*
 
 **Housing / regulation:**
-Giorgetti said the breadth of regulation required to build a house in San Mateo County is "untenable" and the solution is to "reduce regulations." No specifics on CEQA reform, density bonuses, or by-right zoning.
+Giorgetti argued that California regulation makes building untenable: "You've got to reduce regulations... You can't, because this freaking state and most bureaucracies, they put so much whammy around it." No specifics on CEQA reform, density bonuses, or by-right zoning. ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **Fiscal / cost-of-living:**
-Both Giorgetti and Johnson argued that reducing state regulation and taxation would address California's cost-of-living crisis. Framing is fiscal-conservative / deregulatory. No specific tax proposals documented.
+Argued, alongside Johnson, that reducing state regulation and taxation would address California's cost-of-living crisis. Framing is fiscal-conservative / deregulatory. No specific tax proposals documented. ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **Vehicle License Fee (VLF):**
-When asked about a local VLF funding issue (the prior governor's vehicle-fee rebate that disrupted local transportation funding), Giorgetti said "I'll fix it. That's what I do" — no elaboration on mechanism.
+Asked about a VLF funding issue, Giorgetti said only "I'll fix it. That's what I do" — no elaboration on mechanism. ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **AI regulation:**
-Opposes state regulatory role in AI; prefers criminal-prosecution route for misuse rather than preemptive regulation.
+On a state role in AI regulation, said "No role." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)) **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: the more specific "prefers criminal-prosecution route for misuse rather than preemptive regulation" framing from an earlier capture was not in the re-fetched SMDJ coverage — reduced to the verified "No role" quote.
 
 **Trump alignment:**
-Identified as a Trump supporter. Argued against "reflexive opposition based on political personalities" — i.e., urged evaluating Trump policies on merits. No documented 2020-fraud claims, ballot-interference, or strongman rhetoric.
+Identified as a Trump supporter; urged evaluating policies on merits rather than "reflexive opposition based on political personalities." No documented 2020-fraud claims, ballot-interference, or strongman rhetoric. ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **Public safety, immigration, healthcare, energy:** Not documented in available sources.
 
@@ -49,9 +49,9 @@ No elective or appointive public office found. No legislation, committee work, o
 
 ## Endorsements & donors
 
-- No California Republican Assembly (CRA) endorsement for AD-23 (CRA endorsed Ricardo Benitez in a different race; no AD-23 pick listed).
+- No California Republican Assembly (CRA) endorsement for AD-23: the CRA 2026 primary list contains no AD-23 pick (its only Assembly-Benitez entry is "District 43 – Ricardo Benitez," a different race). ([CRA 2026 primary endorsements](https://cragop.org/2026-primary-election-endorsements/))
 - No other endorsements found.
-- No Cal-Access campaign finance data surfaced in research.
+- No Cal-Access campaign finance data surfaced in research. **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: no FPPC/Cal-Access committee located for Giorgetti — may indicate minimal fundraising or a not-yet-filed committee; not decision-moving given the safe-D top line.
 
 ## Controversies / liabilities
 
