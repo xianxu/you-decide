@@ -25,10 +25,10 @@ In 2014, Mahan founded **Brigade**, a nonpartisan social platform for civic enga
 He is 43, married to Silvia-Wedad Scandar (met at Harvard), two children, lives in San Jose's Almaden Valley ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)).
 
 **Political timeline:**
-- 2021: Elected San Jose City Council, District 10 (58% of vote), succeeding Johnny Khamis ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan))
+- 2021: Took office on San Jose City Council, District 10 — won the open seat outright in the March 2020 primary with nearly 58% of the vote, succeeding term-limited Johnny Khamis ([San Jose Inside](https://www.sanjoseinside.com/the-fly/matt-mahan-pulls-off-decisive-victory-in-san-joses-d10/))
 - November 2022: Elected Mayor of San Jose, defeating labor-backed supervisor Cindy Chavez ([Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/))
 - January 1, 2023: Became 67th Mayor of San Jose
-- November 2024: Re-elected with 86.6% of the vote ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan))
+- November 2024: Re-elected with 86.6% of the vote (144,701 to Tyrone Wade's 22,363 in the final official count) ([San Jose Inside — final official vote count](https://www.sanjoseinside.com/politics/sj-mayor-matt-mahan-wins-easily-as-trio-battles-in-16th-congressional-district/))
 - January 29, 2026: Announced candidacy for California governor ([CalMatters](https://calmatters.org/politics/2026/01/governors-race-matt-mahan/))
 
 ## Stated positions
@@ -91,7 +91,7 @@ Between January–May 2026, Mahan missed more than one-third of San Jose city co
 ## Endorsements & donors
 
 **Notable political endorsements:**
-- Sam Liccardo (U.S. Representative, former San Jose mayor and his predecessor) ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan))
+- Sam Liccardo (U.S. Representative, former San Jose mayor and his predecessor) — listed on the campaign endorsements page ([Mahan for Governor — endorsements](https://www.mahanforcalifornia.com/endorsements))
 - Thrive LA ([CalMatters voter guide](https://calmatters.org/california-voter-guide-2026/governor/))
 
 **Major donors / financial backers:**
@@ -145,3 +145,6 @@ Raised nearly $40 million by May 2026; independent expenditure groups spent $18M
 | 14 | [San José Spotlight — Mayor's bid for CA governor fizzles out](https://sanjosespotlight.com/san-jose-mayors-bid-for-ca-governor-fizzles-out/) | B | Covers missed council meetings (7 of 19) and salary detail |
 | 15 | [San José Spotlight — Editorial: San Jose mayor should not run for governor](https://sanjosespotlight.com/editorial-san-jose-mayor-should-not-run-for-governor/) | B | January 2026 editorial; direct source for editorial criticism claim |
 | 16 | [Mission Local — Ethics complaint alleges pro-Mahan PAC, campaign illegally coordinated](https://missionlocal.org/2026/04/matt-mahan-fppc-complaint-moritz-caruso/) | B | Investigative nonprofit; primary source for FPPC complaint details |
+| 17 | [San Jose Inside — Mahan pulls off decisive victory in D10](https://www.sanjoseinside.com/the-fly/matt-mahan-pulls-off-decisive-victory-in-san-joses-d10/) | B | 2020 D10 result (~58%); succeeding term-limited Khamis — rebound off Wikipedia |
+| 18 | [San Jose Inside — final official vote count (2024 mayoral)](https://www.sanjoseinside.com/politics/sj-mayor-matt-mahan-wins-easily-as-trio-battles-in-16th-congressional-district/) | B | 2024 re-election final count (144,701 vs 22,363 = 86.6%) — rebound off Wikipedia |
+| 19 | [Mahan for Governor — endorsements](https://www.mahanforcalifornia.com/endorsements) | A | Campaign endorsement list; source for Liccardo endorsement — rebound off Wikipedia |
