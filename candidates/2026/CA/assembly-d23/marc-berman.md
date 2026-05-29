@@ -26,7 +26,7 @@ Marc Berman (raised in Palo Alto) is a five-term Democratic incumbent representi
 
 From official Assembly site and campaign site unless noted.
 
-**Housing**: Identifies housing supply as the core California affordability problem. Explicitly supports state-mandated housing requirements even when locally controversial. Endorsed by California YIMBY and YIMBY Action — the highest-signal pro-housing endorsement available in CA. Notes support for SB 35 (Wiener, 2017), ADU reform, and SB 79 (transit-oriented housing) — all pro-supply bills he co-authored or actively supported. [(Garry's Guide)](https://garrysguide.org/elections/races/1859)
+**Housing**: Identifies housing supply as the core California affordability problem. Explicitly supports state-mandated housing requirements even when locally controversial. Endorsed by California YIMBY and YIMBY Action — the highest-signal pro-housing endorsement available in CA — confirmed against each org's own 2026 endorsement list ([California YIMBY — 2026 endorsements](https://cayimby.org/endorsements/): "Assembly District 23 Marc Berman" — Tier A; [YIMBY Action — June 2026 CA primary voter guide](https://yimbyaction.org/endorsements/2026/june-2026-california-primary-election-voter-guide/): Berman endorsed under "California State Assembly District 23" — Tier A). Notes support for SB 35 (Wiener, 2017), ADU reform, and SB 79 (transit-oriented housing) — all pro-supply bills he co-authored or actively supported. [(Garry's Guide)](https://garrysguide.org/elections/races/1859) — Tier C, aggregator
 
 **CEQA**: Authored AB 1804 (2018) — statutory CEQA exemption for multi-family infill residential/mixed-use housing in urbanized areas (modeled on the Class 32 categorical exemption; sunset Jan 1 2025). [(leginfo AB 1804)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB1804) Authored AB 2199 (2024) — extends the unincorporated-county infill CEQA exemption to 2032 (signed Sept 19 2024). [(leginfo AB 2199)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2199) Also AB 782 (2019) — CEQA exemption for public-agency land transfers preserving open space/habitat/historical resources (signed Aug 30 2019). [(leginfo AB 782)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB782) Consistent incremental CEQA-exemption author, not a wholesale CEQA-reform lead (that's been Wiener/Wicks).
 
@@ -60,7 +60,7 @@ From official Assembly site and campaign site unless noted.
 
 ## Endorsements & donors
 
-**Pro-housing orgs**: California YIMBY, YIMBY Action, BAJC-Action. These are genuine pro-supply endorsements — not endorsements from anti-density developer interests. [(Garry's Guide)](https://garrysguide.org/elections/races/1859)
+**Pro-housing orgs**: California YIMBY and YIMBY Action (both confirmed against the endorsing orgs' own 2026 lists — [California YIMBY](https://cayimby.org/endorsements/) Tier A; [YIMBY Action](https://yimbyaction.org/endorsements/2026/june-2026-california-primary-election-voter-guide/) Tier A). These are genuine pro-supply endorsements — not endorsements from anti-density developer interests. The "BAJC-Action" endorsement appeared only on Garry's Guide (Tier C) and was not separately confirmable against a Tier-A/B source this pass — **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]. [(Garry's Guide)](https://garrysguide.org/elections/races/1859) — Tier C, aggregator
 
 **Other**: Hindu United Vote, standard Dem coalition organizations. No Republican, law-enforcement (PORAC), or Chamber of Commerce endorsements found.
 
@@ -91,6 +91,12 @@ From official Assembly site and campaign site unless noted.
 **Tier B:**
 - [SM Daily Journal — Berman defends D23 seat against Republican challengers (2026)](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)
 - [KQED — Prop 36 divides South Bay Democratic candidates (2024)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
-- [Garry's Guide — CA Assembly D23 June 2026 Primary](https://garrysguide.org/elections/races/1859)
+
+**Tier A (endorsing-org endorsement lists — rebound off Garry's Guide):**
+- [California YIMBY — 2026 endorsements](https://cayimby.org/endorsements/) — confirms "Assembly District 23 Marc Berman"
+- [YIMBY Action — June 2026 CA primary voter guide](https://yimbyaction.org/endorsements/2026/june-2026-california-primary-election-voter-guide/) — confirms Berman endorsed for AD-23
+
+**Tier C (aggregators — orientation / scoping only; no decisive claim rests solely here):**
+- [Garry's Guide — CA Assembly D23 June 2026 Primary](https://garrysguide.org/elections/races/1859) — corrected from a prior Tier-B mislabel; YIMBY endorsements rebound to the orgs above; BAJC-Action endorsement left as a DATA-GAP
 - [Ballotpedia — Marc Berman](https://ballotpedia.org/Marc_Berman)
 - [California State Assembly District 23 — Ballotpedia](https://ballotpedia.org/California_State_Assembly_District_23)
