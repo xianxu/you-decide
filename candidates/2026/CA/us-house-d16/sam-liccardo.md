@@ -81,7 +81,7 @@ Sources: [Clerk.house.gov profile](https://clerk.house.gov/members/L000607) [Tie
 
 **AI super PAC:** "Leading the Future" (pro-AI, connected to Trump-adjacent interests including ICE contractor firms) endorsed Liccardo for 2026. Campaign says it has not taken money from them and neither has Liccardo Victory Fund. [Local News Matters, Apr 2026] [Tier B] — warrants watching.
 
-**FEC 2024 fundraising — DATA GAP:** [FEC.gov H4CA16197](https://www.fec.gov/data/candidate/H4CA16197/) [Tier A] was not fetched (rate-limited); OpenSecrets returned 403. No donor-base profile is asserted here — fetch FEC directly before any downstream read relies on donor composition.
+**FEC 2024 fundraising:** **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: [FEC.gov H4CA16197](https://www.fec.gov/data/candidate/H4CA16197/) [Tier A] was not fetched (rate-limited); OpenSecrets returned 403. No donor-base profile is asserted here — fetch FEC directly before any downstream read relies on donor composition.
 
 ---
 
