@@ -16,9 +16,11 @@ review-ref: reviews/2026/2026-05-29-ca-2026-final-batch3.md
 
 ## Background
 
-Born in Calexico, CA to immigrant parents; grew up in a working-class border community. BA from Cal Poly SLO (2008), bilingual teaching credential. Over a decade teaching elementary school in SF's Mission District (Buena Vista Horace Mann). Executive Vice President, United Educators of San Francisco (UESF) since 2021; previously union steward and master teacher. Member of the **Party for Socialism and Liberation (PSL)** and the Peace and Freedom Party of California — runs under "No Party Preference" ballot designation as required for nonpartisan races. Has been an organizer in the PSL ecosystem; self-describes as socialist. Notable awards: Teacher 4 Social Justice (2015), CFT "Pride of the Union" (2017), Bay Area Jefferson Award for Supporting Undocumented Workers (2020). Raised ~$100K for undocumented families during COVID.
+*Source for this section: [campaign About page — frank4caschools.com/about-frank](https://www.frank4caschools.com/about-frank) (Tier A; re-fetched 2026-05-29), unless a claim cites otherwise.*
 
-No prior superintendent race found (background claim of 2022 run not confirmed; campaign site notes a 2014 Peace and Freedom candidacy for Congressional District 12). Did not qualify for EdSource's April 2026 candidate forums, which required prior elected office in an education role — Lara has never held elected office.
+Born in Calexico, CA to immigrant parents; grew up in a working-class border community. BA from Cal Poly SLO (2008), bilingual teaching credential. Over a decade teaching elementary school in SF's Mission District at Buena Vista Horace Mann (a Spanish-immersion school). [(Mission Local)](https://missionlocal.org/2014/11/rising-costs-hit-teachers-hard/) Executive Vice President, United Educators of San Francisco (UESF) since 2021; previously union steward and master teacher. Organizer with the **Party for Socialism and Liberation (PSL)** and member of the Peace and Freedom Party of California — runs under "No Party Preference" ballot designation as required for nonpartisan races. Notable awards: Teacher 4 Social Justice (2015), CFT "Pride of the Union" (2017), Bay Area Jefferson Award for Supporting Undocumented Workers (2020). Raised over $100K for undocumented families during COVID.
+
+No prior superintendent race found (background claim of 2022 run not confirmed; campaign site notes a 2014 Peace and Freedom candidacy for Congressional District 12). Did not qualify for EdSource's April 2026 candidate forums, which required prior elected office in an education role — Lara has never held elected office. [(EdSource)](https://edsource.org/2026/frank-lara-california-superintendent-candidate/758960)
 
 ## Stated positions
 
@@ -39,9 +41,9 @@ Campaign finance pledge: accepts only working-class individual donations; no cor
 
 ## Record / past performance
 
-- No elected office; no prior government administrative role. Record is entirely as a classroom teacher and union leader.
-- As UESF EVP (2021–present): led union through post-COVID period; organized COVID fund for undocumented families. No documented UESF contract outcomes or strike record readily sourced.
-- Did not participate in the main EdSource candidate forum (did a separate video Q&A instead) — not a disqualifier, but reflects non-establishment positioning.
+- No elected office; no prior government administrative role. Record is entirely as a classroom teacher and union leader. [(EdSource)](https://edsource.org/2026/frank-lara-california-superintendent-candidate/758960)
+- As UESF EVP (2021–present): organized the COVID fund for undocumented families (teachers pledging relief checks). [(campaign About page)](https://www.frank4caschools.com/about-frank) [(SF Public Press — relief-check pledge)](https://www.sfpublicpress.org/teachers-pledge-to-funnel-crisis-checks-to-undocumented-neighbors/) No documented UESF contract outcomes or strike record readily sourced.
+- Did not participate in the main EdSource candidate forum (did a separate video Q&A instead) — not a disqualifier, but reflects non-establishment positioning. [(EdSource)](https://edsource.org/2026/frank-lara-california-superintendent-candidate/758960)
 - No record of running a budget, managing a government agency, or implementing education policy at scale.
 
 ## Endorsements & donors
@@ -81,6 +83,8 @@ Donors: per self-description, small individual contributions; $37,737 total rais
 - [B] EdSource video Q&A announcement: https://edsource.org/2026/frank-lara-california-superintendent-candidate/758960 (fetched 2026-05-28) — confirms non-participation in main forum; no prior elected office
 - [B] Press Democrat — Newsom restructuring article: https://www.pressdemocrat.com/2026/05/25/state-superintendent-candidates-slam-newsom-proposal-to-strip-position-of-its-authority-over-schools/ (fetched 2026-05-28)
 - [B] Transparency USA campaign finance: https://www.transparencyusa.org/ca/candidate/frank-lara — $37,737 raised as of April 18, 2026; $12,814 COH; $25,026 expenditures
+- [B] Mission Local — Rising costs hit teachers hard (2014): https://missionlocal.org/2014/11/rising-costs-hit-teachers-hard/ — confirms Lara teaching at Buena Vista Horace Mann, Mission District
+- [B] SF Public Press — teachers pledge crisis checks to undocumented neighbors: https://www.sfpublicpress.org/teachers-pledge-to-funnel-crisis-checks-to-undocumented-neighbors/ — COVID relief-check pledge organizing
 - [A] CA Secretary of State voter guide — Superintendent candidate statements: https://voterguide.sos.ca.gov/candidates/superintendent-candidate-statements.htm (confirms Lara certified on ballot, statement present)
 - [B] CTA — Barrera endorsement: https://www.cta.org/our-advocacy/elect-richard-barrera-for-california-superintendent-of-public-instruction
 - [B] CFT — Muratsuchi endorsement: https://www.cft.org/news-release/cft-endorses-al-muratsuchi-superintendent-public-instruction
