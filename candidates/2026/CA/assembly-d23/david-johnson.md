@@ -25,7 +25,7 @@ review-ref: reviews/2026/2026-05-29-ca-2026-rebind-batch3.md
 **Tax / fiscal:** ([campaign site](https://davidjohnsonad23.com/meet_david))
 - Campaign theme is to "stop the endless tax-and-spend cycle" and "slash job-killing regulations."
 - Uses the Herbert Spencer quote "Excessive Taxation Is The Pathway to Slavery" (1888) as rhetorical anchor; populist fiscal framing.
-- **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: an earlier capture asserted a specific "vehicle license fees as a flat fee distributed directly to county and state" proposal; not found on the re-fetched campaign site or in the SM Daily Journal forum coverage — dropped pending a source. (The VLF "I'll fix it" line belongs to opponent Giorgetti, not Johnson.)
+- **Vehicle license fee:** suggested making the VLF "a flat fee where money is distributed directly to the county and state." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **Housing / regulations:**
 - Champions cutting regulation generally; "Parents' Rights and School Choice" sit alongside deregulation as headline themes. No specific CEQA or zoning-reform proposal documented. ([campaign site](https://davidjohnsonad23.com/meet_david))
@@ -41,7 +41,7 @@ review-ref: reviews/2026/2026-05-29-ca-2026-rebind-batch3.md
 - Skeptical of state-level AI regulation: "I really don't want the state to regulate it... I might defer to the federal government, who has a bigger picture." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 **Trump / partisanship:**
-- Describes himself as running "a fairly nonpartisan campaign," talking "truth and reality, common sense" as "a father, as a business owner." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)) **DATA-GAP** [axis: institutionalist; severity: low; last-attempt: 2026-05-29]: the specific quote attributed to him in an earlier capture ("I'm far more concerned with local issues and his own values than reacting to the president's most recent statements") and the "God-fearing, country-loving" self-description were not found on the re-fetched campaign site or in the SMDJ piece — dropped pending a source.
+- Describes himself as running "a fairly nonpartisan campaign," talking "truth and reality, common sense" as "a father, as a business owner," and framed his core conservative principles as a "God-fearing, country loving guy." ([SM Daily Journal](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html))
 
 ## Record / past performance
 
