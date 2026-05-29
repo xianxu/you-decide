@@ -20,7 +20,7 @@ review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
 
 Half Moon Bay resident. JD from Stanford Law. 25+ years as a lawyer in Silicon Valley representing employees, entrepreneurs, and executives in employment matters. Author of "Negotiate Like a CEO" (campaign-period book profits donated to charity). Five-plus years on the board of Coastside Hope (food and rental assistance nonprofit); long-time supporter of Coastside Land Trust. No prior elected or appointed public office ("I don't have any government experience"). [(Coastside Buzz)](https://coastsidebuzz.com/half-moon-bays-jotham-stein-announces-run-for-congress-as-an-independent-noparty-preference-in-californias-16th-congressional-district-bridge-the-divide/)
 
-Announced candidacy January 20, 2026. [(Coastside Buzz)](https://coastsidebuzz.com/half-moon-bays-jotham-stein-announces-run-for-congress-as-an-independent-noparty-preference-in-californias-16th-congressional-district-bridge-the-divide/) Filed as No Party Preference (NPP). District CA-16 (former Liccardo seat) spans southern Silicon Valley — Los Altos, Mountain View, Sunnyvale, Cupertino, and Coastside — and is a very strongly Democratic seat (Cook PVI D+26). [(Ballotpedia / Cook PVI — CA-16 2026)](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) Incumbent: Sam Liccardo (D). Other candidate: Kevin Johnson (R).
+Announced candidacy January 20, 2026. [(Coastside Buzz)](https://coastsidebuzz.com/half-moon-bays-jotham-stein-announces-run-for-congress-as-an-independent-noparty-preference-in-californias-16th-congressional-district-bridge-the-divide/) Filed as No Party Preference (NPP). District CA-16 (former Liccardo seat) spans southern Silicon Valley — Los Altos, Mountain View, Sunnyvale, Cupertino, and Coastside — and is a very strongly Democratic seat (Cook PVI D+25). [(Cook Political Report — 2025 Cook PVI, CA-16)](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list) Incumbent: Sam Liccardo (D). Full certified field: Sam Liccardo (D), Kevin Johnson (R), Peter Sundin Soulé (R), and Jotham Stein (NPP). [(CA SOS certified candidate list)](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf) [(SM Daily Journal — "Republicans Kevin Johnson and Peter Soule ... and independent Jotham Stein")](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html)
 
 ## Why NPP — not D or R
 
@@ -71,7 +71,7 @@ Effectively self-financed. Fundraising far below threshold for a competitive Hou
 
 ## Viability assessment
 
-Very low. $15K cash on hand five weeks before the June 2 primary vs. Liccardo (incumbent D in a D+heavy district). CA-16 is a safe Democratic seat — Liccardo will almost certainly advance as one of the two top-two finalists. The primary question for Stein is whether he outpolls the Republican (Johnson) for the second general-election slot; no polling surfaced.
+Very low. $15K cash on hand five weeks before the June 2 primary vs. Liccardo (incumbent D in a D+heavy district). CA-16 is a safe Democratic seat — Liccardo will almost certainly advance as one of the two top-two finalists. The primary question for Stein is whether he outpolls the two Republicans (Kevin Johnson and Peter Soulé) for the second general-election slot; no polling surfaced. [(SM Daily Journal)](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html)
 
 ## Controversies / liabilities
 
@@ -89,6 +89,8 @@ None documented. Thin public profile; coverage limited to local/regional Coastsi
 | [Los Altos Online — "Independent candidate concerned about political polarization"](https://www.losaltosonline.com/news/independent-congressional-candidate-stein-concerned-about-nation-s-political-polarization/article_840cefd6-23aa-47bc-9068-2469df777430.html) | B | Local broadsheet; bio and policy detail |
 | [Ballotpedia — Jotham Stein](https://ballotpedia.org/Jotham_Stein) | C | Race structure / orientation only; no decisive claims sourced here |
 | [Ballotpedia — CA-16 2026 primary](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026_(June_2_top-two_primary)) | C | Race structure / orientation only |
-| [Ballotpedia / Cook PVI — CA-16 2026](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) | C→cites Cook (B) | Source for D+26 partisan-lean figure (Cook Partisan Voter Index) |
+| [Cook Political Report — 2025 Cook PVI, district list](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list) | B | Source for D+25 partisan-lean figure (Cook Partisan Voter Index) |
+| [CA SOS certified candidate list (PDF)](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf) | A | Official; full CA-16 certified candidate field |
+| [SM Daily Journal — CA-16 race overview](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html) | B | Local journalism; identifies full challenger field |
 
 **Coverage gaps:** No Tier A/B source contains Stein's position on Israel/Gaza, immigration, or federal tax policy beyond the Social Security income-cap raise. Positions marked unknown reflect genuine sparse coverage of a low-profile independent challenger, not a research failure.
