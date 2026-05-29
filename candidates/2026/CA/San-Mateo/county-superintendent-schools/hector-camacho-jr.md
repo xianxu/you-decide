@@ -22,10 +22,10 @@ Opponent: Chelsea Bonini (SMCOE Board trustee).
 
 ## Stated positions
 
-- **Foundational learning:** Advocates "regional effort" for literacy — districts sharing effective teaching strategies. Vague on specific curriculum or structured-literacy mandate.
-- **Early learning:** References SMCOE's Anne Campbell Child Development Center as part of the office's scope. No standalone early-ed investment proposal identified; campaign site says "support every student from early learning through high school" without program specifics.
-- **Mental health:** Supports continuing the "United for Youth Blueprint" and 2030 mental health plan. Proposes county coordination among districts, first responders, and health agencies — systemic framing, not specific gap-filling.
-- **AI in education:** Wants AI to handle non-student-facing educator tasks with "proper guardrails around data privacy." Participated in a 2024 county AI task force.
+- **Foundational learning:** Advocates a "regional effort" for literacy — districts sharing effective teaching strategies. Vague on specific curriculum or structured-literacy mandate. ([The Almanac forum recap, 2026-05-22](https://www.almanacnews.com/education/2026/05/22/candidates-for-county-superintendent-discuss-ai-mental-health-and-literacy/))
+- **Early learning:** References SMCOE's early-learning scope. No standalone early-ed investment proposal identified; campaign site frames "support every student from early learning through high school" without program specifics. ([campaign site, re-fetched 2026-05-29](https://votehector.com/))
+- **Mental health:** Supports continuing the "United for Youth Blueprint" and the county's 2030 mental health plan; proposes county coordination among districts, first responders, and health agencies — systemic framing, not specific gap-filling. ([The Almanac forum recap, 2026-05-22](https://www.almanacnews.com/education/2026/05/22/candidates-for-county-superintendent-discuss-ai-mental-health-and-literacy/))
+- **AI in education:** Wants AI to handle non-student-facing educator tasks with safeguards for data privacy and proper oversight. ([The Almanac forum recap, 2026-05-22](https://www.almanacnews.com/education/2026/05/22/candidates-for-county-superintendent-discuss-ai-mental-health-and-literacy/)) Participated in a 2024 county AI task force.
 - **Educator investment:** Proposes pathways for school staff to complete degrees and earn teaching credentials — concrete and administratively feasible for this office.
 - **Safety:** Coordinated countywide safety measures; in 2025 his department pivoted to address immigration enforcement threats and LGBTQIA+ youth protections.
 - **Community outreach:** Wants SMCOE services to go to under-resourced districts rather than requiring districts to come to the county office — operational improvement, not a policy position.
@@ -43,32 +43,30 @@ Opponent: Chelsea Bonini (SMCOE Board trustee).
 - No specific trustee-era policy achievements surfaced in sources.
 
 **The Big Lift:**
-Camacho cites The Big Lift — a San Mateo County initiative to get all third-graders reading at grade level — as work connected to his campaign. This is a SMCOE-wide collaborative, not an initiative he personally led. He is one of its advocates. (Tier B: SM Daily Journal)
+The Big Lift is a San Mateo County / SMCOE literacy initiative aimed at getting third-graders reading at grade level (the office reports ~42% of county third-graders behind in English literacy) — a county-wide collaborative, not an initiative Camacho personally led. ([The Almanac forum recap, 2026-05-22](https://www.almanacnews.com/education/2026/05/22/candidates-for-county-superintendent-discuss-ai-mental-health-and-literacy/)) **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: an earlier capture asserted Camacho "cites The Big Lift as work connected to his campaign" and is "one of its advocates" — no Tier A/B source confirms a personal-advocacy tie, so the claim is reduced to the office-initiative fact above.
 
 **Summary:** The equity ED role is recent and thin on documented outcomes. The 11-year board tenure provides governance fluency. There is no evidence of large-scale program design-to-execution credit attributable specifically to Camacho.
 
 ## Endorsements & donors
 
-**Political endorsers (Tier A: campaign site):**
-Congressman Kevin Mullin; State Senators Josh Becker, Scott Wiener; Assemblymembers Diane Papan, Catherine Stefani, Marc Berman; Supervisors Noelia Corzo, Lisa Gauthier, Jackie Speier, Ray Mueller; Former Superintendent Nancy Magee; Former State Senator Joe Simitian; East Palo Alto Mayor Antonio Lopez; San Mateo County Democratic Party.
+**Political endorsers** ([campaign site, re-fetched 2026-05-29](https://votehector.com/)):
+Congressman Kevin Mullin; State Senators Josh Becker, Scott Wiener; Assemblymembers Diane Papan, Catherine Stefani, Marc Berman; Supervisors Noelia Corzo, Lisa Gauthier, Jackie Speier, Ray Mueller, Dave Pine, Adrienne Tissier; Former County Superintendents Nancy Magee, Anne Campbell; Former State Senator Jerry Hill; San Mateo County Democratic Party; San Mateo Democratic Justice Committee. (Note: an earlier capture of this profile listed "Former State Senator Joe Simitian" and "East Palo Alto Mayor Antonio Lopez" as endorsers; neither appears on the 2026-05-29 live campaign-site capture — dropped pending re-confirmation.)
 
-**Labor:**
-AFSCME Council 57, CSEA 197, San Mateo County Labor Council. (Note: AFSCME contributed $5,900 — the single largest organizational donor.)
+**Labor** ([campaign site, re-fetched 2026-05-29](https://votehector.com/)):
+AFSCME Council 57, CSEA 197. (AFSCME Council 57 contributed $5,900 — tied with several individual donors as the largest single contribution; see fundraising below.) **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: "San Mateo County Labor Council" endorsement, listed in an earlier capture, was not on the 2026-05-29 live campaign-site labor list — dropped pending re-confirmation.
 
 **Media endorsements:**
-SM Daily Journal editorial board ("the right person to take the helm"); Palo Alto Daily Post editorial board ("the only qualified choice").
+SM Daily Journal editorial board ("the right person to take the helm and lead the Office of Education into a better tomorrow") ([SM Daily Journal editorial](https://www.smdailyjournal.com/opinion/editorials/editorial-h-ctor-camacho-for-san-mateo-county-superintendent/article_ce519164-26d5-4030-902f-0f3dac55703e.html)); Palo Alto Daily Post editorial board ("the only qualified choice") ([PA Daily Post editorial](https://padailypost.com/2026/05/09/editorial-hector-camacho-is-the-only-qualified-choice-for-county-superintendent/)).
 
-**Fundraising (FPPC, Tier A):**
-- Camacho total raised (through Dec 2025): ~$156,700 ($54,269 Jan–Jun 2025 + $102,432 Jul–Dec 2025).
-- Bonini total raised (same period): ~$21,974.
-- Camacho outraised Bonini ~7:1.
-- Donors are overwhelmingly individual elected officials, education administrators, and Peninsula civic figures — not teacher union PACs. AFSCME $5,900 is the only significant union contribution.
-- No teacher union (CTA, NEA, local teacher associations) money found in available filings. Fundraising base is establishment political network, not organized labor per se.
-- ActBlue donation page used — standard progressive infrastructure.
+**Fundraising (FPPC via Almanac, Tier A data):**
+- Most recent reporting period (Jul–Dec 2025): Camacho raised **$102,432**; Bonini raised **$21,974** — Camacho outraised Bonini ~4.7:1. ([The Almanac, FPPC-sourced](https://www.almanacnews.com/san-mateo-county/2026/02/11/in-county-superintendent-of-school-race-camacho-leads-in-campaign-fundraising/))
+- Camacho's largest contributions ($5,900 each) came from Elizabeth Haham (education administrator), Karen Grove (Menlo Park), Helen Nakai (South San Francisco), and AFSCME Council 57. ([The Almanac](https://www.almanacnews.com/san-mateo-county/2026/02/11/in-county-superintendent-of-school-race-camacho-leads-in-campaign-fundraising/))
+- Donors are overwhelmingly individual elected officials, education administrators, and Peninsula civic figures plus one labor council (AFSCME) — not teacher-union PACs. No teacher-union (CTA, NEA, local teacher associations) money appears in the reported filings.
+- **DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: a cumulative "through Dec 2025 ~$156,700 (incl. $54,269 Jan–Jun 2025)" total and a ~7:1 ratio appeared in an earlier capture; the cited Almanac piece reports only the Jul–Dec 2025 period (~4.7:1) and the Jan–Jun 2025 figure could not be confirmed in a Tier A/B source — using the period figure above instead.
 
 ## Controversies / liabilities
 
-1. **Credentials challenge:** A separate candidate (not Bonini) was flagged as lacking the required Administrative Services Credential. Camacho holds the credential — no issue for him. (Tier B: PA Daily Post, April 2026)
+1. **Credentials challenge (concerns his opponent, not him):** The candidate flagged as lacking a full Administrative Services Credential is Bonini, who holds a "certificate of eligibility" rather than the credential. Camacho obtained his administrative credential in May 2025 — no credential issue for him. ([PA Daily Post, 2026-04-16](https://padailypost.com/2026/04/16/candidate-for-county-school-superintendent-doesnt-have-the-required-credentials-to-run/))
 
 2. **DEI-skeptic critique:** Community letter writers and commenters have raised the concern that an "Equity, Social Justice and Inclusion" director is by definition the wrong person for superintendent, arguing DEI focus depresses academic standards. This is an ideological criticism, not a documented governance failure. No misconduct or scandal found.
 
