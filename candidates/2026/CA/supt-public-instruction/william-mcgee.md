@@ -53,5 +53,7 @@ None found — consistent with near-zero public profile. Absence of coverage is 
 - [A] voterguide.sos.ca.gov/candidates/superintendent-candidate-statements.htm — official CA voter guide; McGee absent (did not submit statement), fetched 2026-05-28.
 - [B] calmatters.org/california-voter-guide-2026/superintendent-of-public-instruction/ — CalMatters voter guide; McGee not listed among the eight profiled candidates, fetched 2026-05-28.
 - [B] calmatters.org/education/k-12-education/2026/05/ca-superintendent-election-2026/ — CalMatters race overview; no McGee mention, fetched 2026-05-28.
-- [B] kpbs.org/news/politics/2026/05/04/2026-primary-election-superintendent-of-public-instruction-race-explainer — KPBS race explainer; no McGee mention (search result only, not fetched).
-- [B] laist.com/news/politics/voter-guides/2026-election-california-primary-superintendent-public-instruction — LAist voter guide; no McGee mention (search result only, not fetched).
+
+**Not fetched (not part of the reviewed source set — listed only as leads):**
+- kpbs.org/news/politics/2026/05/04/2026-primary-election-superintendent-of-public-instruction-race-explainer — KPBS race explainer (search result only; surfaced no McGee mention).
+- laist.com/news/politics/voter-guides/2026-election-california-primary-superintendent-public-instruction — LAist voter guide (search result only; surfaced no McGee mention).

@@ -69,7 +69,7 @@ His house.gov "Protecting Democracy" page exists but was inaccessible for this s
 
 ### Independence from Democratic caucus
 
-No specific party-unity score retrieved (GovTrack 403). GovTrack categorizes him as a mainstream House Democrat with no notable deviation signals surfaced in any Tier A/B source. The 2026 campaign framing leans on energy/consumer advocacy, not independence votes.
+**DATA GAP:** no party-unity / independence score retrieved (GovTrack direct fetch 403; not available from any fetched Tier A/B source). No voting-independence characterization is asserted here. The 2026 campaign framing (per fetched campaign/news sources) leans on energy/consumer advocacy.
 
 ### Bill authorship (119th Congress, Tier A — official press releases)
 

@@ -21,7 +21,7 @@ review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
 
 # Controversies — California 2026 cycle
 
-Derived from the 30 candidate profiles in `candidates/2026/CA/`. Each entry surfaces a dimension where candidates substantively disagree AND there's visible public debate. Survey-ready stances are drafted for downstream use by `[[bootstrap-survey]]` (M3).
+Derived from the candidate profiles in `candidates/2026/CA/` (39 files as of 2026-05-28; originally drafted against 30 — a refresh against the grown profile set is pending). Each entry surfaces a dimension where candidates substantively disagree AND there's visible public debate. Survey-ready stances are drafted for downstream use by `[[bootstrap-survey]]` (M3).
 
 ## High-salience (driving multiple races + visible in media coverage)
 
@@ -145,7 +145,7 @@ Derived from the 30 candidate profiles in `candidates/2026/CA/`. Each entry surf
 
 ## Sources
 
-- Candidate profiles in `data/life/politics/candidates/2026/CA/` (30 files, derived from Tier A/B sources per the source-hygiene calibration skill)
+- Candidate profiles in `candidates/2026/CA/` (39 files as of 2026-05-28, derived from Tier A/B sources per the source-hygiene calibration skill)
 - CalMatters 2026 voter guide
 - KQED CA + SM voter guides
 - LA Times polling and candidate coverage

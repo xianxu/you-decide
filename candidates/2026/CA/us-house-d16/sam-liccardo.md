@@ -80,7 +80,7 @@ Sources: [Clerk.house.gov profile](https://clerk.house.gov/members/L000607) [Tie
 
 **AI super PAC:** "Leading the Future" (pro-AI, connected to Trump-adjacent interests including ICE contractor firms) endorsed Liccardo for 2026. Campaign says it has not taken money from them and neither has Liccardo Victory Fund. [Local News Matters, Apr 2026] [Tier B] — warrants watching.
 
-**FEC 2024 fundraising:** Data available at [FEC.gov H4CA16197](https://www.fec.gov/data/candidate/H4CA16197/) [Tier A] — not fetched due to rate limits; OpenSecrets 403. Noted tech donor base (Zoom, LinkedIn founders), consistent with Silicon Valley moderate Democrat profile.
+**FEC 2024 fundraising — DATA GAP:** [FEC.gov H4CA16197](https://www.fec.gov/data/candidate/H4CA16197/) [Tier A] was not fetched (rate-limited); OpenSecrets returned 403. No donor-base profile is asserted here — fetch FEC directly before any downstream read relies on donor composition.
 
 ---
 
@@ -101,7 +101,7 @@ Sources: [Clerk.house.gov profile](https://clerk.house.gov/members/L000607) [Tie
 | [Clerk.house.gov — Liccardo profile](https://clerk.house.gov/members/L000607) | A | Committee assignment, office confirmation |
 | [GovTrack — Liccardo profile](https://www.govtrack.us/congress/members/sam_liccardo/456976) | B | Voting attendance, committee, legislative focus |
 | [Congress.gov — Liccardo member page](https://www.congress.gov/member/sam-liccardo/L000607) | A | Official record |
-| [FEC.gov — Liccardo candidate overview](https://www.fec.gov/data/candidate/H4CA16197/) | A | Campaign finance (not fetched, 403) |
+| [FEC.gov — Liccardo candidate overview](https://www.fec.gov/data/candidate/H4CA16197/) | — (not retrieved) | Campaign finance **not fetched (rate-limited/403) — data gap, not a used source** |
 | [samliccardo.com/about](https://samliccardo.com/about/) | A | Background, stated positions, mayoral record |
 | [samliccardo.com/endorse](https://samliccardo.com/endorse/) | A | Endorsement list |
 | [J Street PAC — Liccardo endorsement](https://jstreetpac.org/candidate/sam-liccardo/) | A | Israel/Gaza proxy |

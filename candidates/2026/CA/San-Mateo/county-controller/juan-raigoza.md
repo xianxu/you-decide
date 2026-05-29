@@ -48,7 +48,7 @@ No campaign website found with distinct policy positions — consistent with a d
 - **SM County Democratic Party** — listed on smcdems.org (Tier A: smcdems.org profile page)
 - **Blue Voter Guide** — listed as endorsed (Tier B: bluevoterguide.org, 403 on direct fetch)
 
-Campaign finance (FPPC-registered committee "Juan Raigoza for Controller 2026"): donor roster available via theballotbook.com but returned 403 on direct fetch. No large-dollar PAC donors or controversial contributors identified from available data.
+Campaign finance: FPPC-registered committee "Juan Raigoza for Controller 2026" confirmed to exist. **DATA GAP:** donor roster not retrieved (theballotbook.com returned 403); no claim about donor composition (PAC presence, contributor profile) is asserted — fetch SM County NetFile/FPPC before any downstream read relies on it.
 
 No Republican or conservative organizational endorsements found — consistent with Democratic-aligned professional county office.
 
@@ -69,7 +69,7 @@ No post-2015 controversies, investigations, management failures, or accountabili
 | [Single Audit — smcgov.org](https://www.smcgov.org/controller/single-audit) | A | FY 2023, FY 2024 federal compliance audits |
 | [Measure K Audit Reports — smcgov.org](https://www.smcgov.org/controller/measure-k-audit-reports) | A | FY 2022-23 through 2024-25 editions |
 | [CA SCO Apportionment/Allocation Audit SM County, March 2025](https://www.sco.ca.gov/Files-AUD/03-2025_cab-ptx_SanMateoCounty.pdf) | A | State audit of SM County |
-| [FPPC / theballotbook.com — 2026 receipts](https://theballotbook.com/jurisdictions/54/local_campaign_committees/5660/receipts) | A | Campaign finance (403 on direct fetch; committee existence confirmed) |
+| [FPPC / theballotbook.com — 2026 receipts](https://theballotbook.com/jurisdictions/54/local_campaign_committees/5660/receipts) | — (not retrieved) | Committee existence confirmed; receipts **403 on direct fetch — data gap, not a used source** |
 | [smcdems.org profile](https://www.smcdems.org/juanraigozasmc) | A | Democratic Party affiliation confirmed |
 | [SM Daily Journal — Roster closed](https://www.smdailyjournal.com/news/local/roster-for-san-mateo-county-s-june-ballot-closed/article_040038b2-2cb3-42ba-af1f-5244e07f47f8.html) | B | Confirmed roster of declared candidates (Raigoza + Morgan II) |
 | [SM Daily Journal — 2014 ballot challenge](https://www.smdailyjournal.com/news/local/court-denies-controller-hopeful-s-appeal-candidate-juan-raigoza-to-be-on-the-june-ballot/article_3878c2c9-6369-5ec9-b987-ba39a145f91b.html) | B | 2014 qualification challenge; court ruling |

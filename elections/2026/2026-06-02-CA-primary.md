@@ -23,7 +23,14 @@ review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate.md
 
 # California Primary — June 2, 2026
 
-Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's actual ballot is a filtered slice based on their resolved districts (see [[resolve-ballot]] for the filter algorithm). Each race below carries a `District:` tag — the voter sees the race iff their resolved districts include that tag.
+Decision-support manifest of races on the **San Mateo County** voter's 6/2/2026 ballot (the original development target). The voter's actual ballot is a filtered slice based on their resolved districts (see [[resolve-ballot]] for the filter algorithm). Each race below carries a `District:` tag — the voter sees the race iff their resolved districts include that tag.
+
+**Scope & completeness — read before trusting this for ballot truth.** This is *not* the certified candidate roster; two deliberate filters apply:
+
+- **Coverage is San-Mateo-oriented.** Statewide races appear, but several statewide offices on the certified ballot are **not yet enumerated here**: Lieutenant Governor, Secretary of State, Controller, Treasurer, Attorney General, Insurance Commissioner. Other counties' US-House / Assembly slices are also pending.
+- **Candidate lists are viability-filtered, not certified-complete.** Where a race lists fewer names than the CA SoS certified list (e.g. Superintendent of Public Instruction, Board of Equalization D2), the omitted names are low-viability filings dropped for decision-support — they still appear on the physical ballot.
+
+For ballot truth, cross-check the [CA SoS certified candidate list](https://www.sos.ca.gov/elections) and the [SM County roster](https://smcacre.gov/elections/county-offices). Closing both gaps (full statewide enumeration + certified candidate lists) is a tracked research follow-up.
 
 ## Statewide races
 *Tag: STATEWIDE — visible to every CA voter.*
@@ -31,7 +38,7 @@ Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's 
 ### Governor
 - Seats: 1 (top-2 advances to general)
 - District: STATEWIDE
-- CONTESTED — 8 viable candidates:
+- CONTESTED — 8 viability-filtered candidates (certified field is larger; see Scope & completeness):
   - Xavier Becerra (D) [[xavier-becerra]]
   - Katie Porter (D) [[katie-porter]]
   - Tom Steyer (D) [[tom-steyer]]
@@ -44,7 +51,7 @@ Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's 
 ### Superintendent of Public Instruction (nonpartisan)
 - Seats: 1 (top-2 advances)
 - District: STATEWIDE
-- CONTESTED:
+- CONTESTED (viability-filtered subset; CA SoS certifies more — see Scope & completeness):
   - Frank Lara [[frank-lara]]
   - Gus Mattammal [[gus-mattammal]]
   - William L. McGee [[william-mcgee]]
@@ -52,7 +59,7 @@ Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's 
 ### Board of Equalization, District 2
 - Seats: 1 (top-2 advances)
 - District: CA-BOE-D2 (covers Bay Area counties)
-- CONTESTED:
+- CONTESTED (viability-filtered subset; CA SoS certifies more — see Scope & completeness):
   - Sally Lieber (D, incumbent) [[sally-lieber]]
   - John Pimentel [[john-pimentel]]
   - William Shireman [[william-shireman]]
@@ -73,9 +80,10 @@ Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's 
 - Seats: 1 (top-2 advances)
 - District: US-House-D16 (southern SM County + parts of Santa Clara)
 - CONTESTED:
-  - Sam Liccardo (D, incumbent)
-  - Jotham Stein (NPP)
-- *Coverage: candidate profiles not yet researched in this batch — pending*
+  - Sam Liccardo (D, incumbent) [[sam-liccardo]]
+  - Kevin Johnson (R) [[kevin-johnson]]
+  - Peter Sundin Soulé (R) [[peter-soule]]
+  - Jotham Stein (NPP) [[jotham-stein]]
 
 ## State Legislative
 
@@ -90,9 +98,9 @@ Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's 
 - Seats: 1 (top-2 advances)
 - District: CA-Assembly-D23 (parts of SM County + Santa Clara)
 - CONTESTED:
-  - Marc Berman (D, incumbent)
-  - Rick Giorgetti (R)
-- *Coverage: not yet researched in this batch — pending*
+  - Marc Berman (D, incumbent) [[marc-berman]]
+  - Rick Giorgetti (R) [[rick-giorgetti]]
+  - David G. Johnson (R) [[david-johnson]]
 
 ## San Mateo County
 
@@ -141,9 +149,7 @@ Manifest of every race appearing on any CA voter's 6/2/2026 ballot. The voter's 
   - Joaquin Jiménez [[joaquin-jimenez]]
 
 ### Board of Supervisors, District 5 (nonpartisan)
-- Seats: 1 — OPEN (Canepa vacating to run for Assessor)
-- District: SM-SUPERVISOR-D5
-- *Status TBD as of 2026-05-28; verify against SM County official roster before 6/2*
+- **Not on the 6/2/2026 ballot.** The SM County certified candidate roster (03/10/2026) lists only Supervisor Districts 2 and 3 for this primary — D5 is not up in June 2026. Kept here as a note only; remove or relocate if a later official roster contradicts. [SM County roster](https://smcacre.gov/elections/county-offices)
 
 ## Sub-county ballot measures
 

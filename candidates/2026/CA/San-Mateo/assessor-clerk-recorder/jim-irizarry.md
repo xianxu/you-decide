@@ -79,6 +79,6 @@ No documented instances of election-integrity violations, certification challeng
 | Palo Alto Daily Post — employee criticisms | B | https://padailypost.com/2026/05/21/san-mateo-county-assessor-candidate-is-criticized-by-opponent-and-two-employees/ |
 | SMCGOV.org — official county profile | A | https://www.smcgov.org/profile/jim-irizarry |
 | SMCACRE.gov — official ACRE profile | A | https://smcacre.gov/profile/jim-irizarry |
-| FPPC campaign finance — not retrieved | A | https://www.fppc.ca.gov/search-filings/top-10-contributors-list/june-2026-primary-election/ |
+| FPPC campaign finance — **NOT retrieved (data gap, not a used source)** | — | https://www.fppc.ca.gov/search-filings/top-10-contributors-list/june-2026-primary-election/ |
 
 **Data gap:** FPPC/donor data not retrieved (theballotbook.com returned 403, FPPC search not directly fetched). Donor profile is unverified — fetch smcacre.gov/elections/campaign-contributions or netfile.com for SM County local filings before finalizing.
