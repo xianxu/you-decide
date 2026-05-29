@@ -67,7 +67,7 @@ Source: [davidcanepa.com/endorsements](https://www.davidcanepa.com/endorsements)
 **Institutional/labor:**
 - San Mateo County Democrats
 - San Mateo County Central Labor Council
-- SEIU 521 (the union representing workers *inside the assessor's office* — notable: they back the outside challenger over the internal candidate)
+- SEIU (listed as "SEIU" on the endorsements page; the local representing workers *inside the assessor's office* — notable: they back the outside challenger over the internal candidate)
 - AFSCME Council 57
 - San Mateo County Firefighters Local 2400
 - San Mateo County Deputy Sheriffs' Association
@@ -93,7 +93,9 @@ Source: [davidcanepa.com/endorsements](https://www.davidcanepa.com/endorsements)
 **Media:**
 - SM Daily Journal editorial board endorsement
 
-**DATA-GAP** [axis: capture-risk; severity: med; last-attempt: 2026-05-28]: FPPC/donor data not retrieved. No donor-composition claim is asserted. Tier A source: CA SoS Power Search (powersearch.sos.ca.gov) — query "David Canepa" under state-level filings for 2025–2026. (FEC profile H2CA14170 from a 2018 Congress run exists but is irrelevant to this county race.) Med severity: donor/capture data can materially affect this office read.
+**Campaign finance (as of the final pre-primary filing):** Raised ~$158,000 since Jan 1, spent ~$89,000, ~$69,000 cash on hand. ~$17,450 from labor unions; nearly 100 donors at the $1,000 level. Named $1,000-tier donors include the SM County Democratic Party, the county AAPI Alliance, and attorney Joe Cotchett; smaller donations from Burlingame Councilmember Donna Colson ($500) and San Mateo Councilmember Lisa Diaz Nash ($600). [Source: [SM Daily Journal — "David Canepa's campaign thriving"](https://www.smdailyjournal.com/opinion/columnists/david-canepa-s-campaign-thriving/article_292f4c12-0806-4f94-bfb6-2461d63e7b82.html) — Tier B, reporting FPPC/NetFile filings.]
+
+**DATA-GAP** [axis: capture-risk; severity: low; last-attempt: 2026-05-29]: Underlying FPPC/NetFile primary filings not fetched directly (NetFile portal requires interactive search; smcacre.gov/elections/campaign-finance-information is the official filing location). The donor-composition figures above are bound to a Tier-B columnist summarizing those filings; the line-item primary remains unretrieved. Severity low: top-line figures and major donors are now sourced; full donor-concentration detail would refine but is unlikely to flip the read.
 
 ## Controversies / liabilities
 
@@ -121,4 +123,5 @@ Source: [davidcanepa.com/endorsements](https://www.davidcanepa.com/endorsements)
 - [B] [Palo Alto Daily Post — Canepa criticized by opponent and employees (May 21, 2026)](https://padailypost.com/2026/05/21/san-mateo-county-assessor-candidate-is-criticized-by-opponent-and-two-employees/)
 - [B] [Local News Matters — Canepa calls for Genentech/assessor transparency (Mar 2026)](https://localnewsmatters.org/2026/03/18/san-mateo-supe-seeks-transparency-from-assessor-after-20m-tax-hit-to-cities-schools/)
 - [B] [The Almanac — Canepa calls for transparency (Mar 2026)](https://www.almanacnews.com/san-mateo-county/2026/03/18/supervisor-canepa-calls-for-transparency-from-assessors-office-amid-20m-tax-hit-to-cities-schools/)
-- [A — unfetched] FPPC/CalAccess filings: query powersearch.sos.ca.gov for 2025–2026 Canepa committee — donor data not retrieved this session
+- [B] [SM Daily Journal — "David Canepa's campaign thriving"](https://www.smdailyjournal.com/opinion/columnists/david-canepa-s-campaign-thriving/article_292f4c12-0806-4f94-bfb6-2461d63e7b82.html) — campaign-finance figures (raised/spent/cash, labor total, named donors) summarizing FPPC/NetFile filings
+- [A — unfetched primary] FPPC/NetFile filings via [smcacre.gov campaign-finance portal](https://smcacre.gov/elections/campaign-finance-information) — line-item donor detail not directly retrieved (interactive portal); figures above bound via Tier-B summary
