@@ -52,13 +52,13 @@ None documented. Thin record is expected for a law-student first-time challenger
 
 ## Viability assessment
 
-Zero. D16 (Liccardo incumbent) is a strong Democratic hold. R in a top-two primary in D+20+ territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
+Zero. D16 (Liccardo incumbent) is a strong Democratic hold — Cook PVI D+26, the 27th most-Democratic district nationally. [(Ballotpedia / Cook PVI — CA-16 2026)](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) R in a top-two primary in D+26 territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
 
 ## Sources
 
 | Source | Tier | URL |
 |---|---|---|
 | SM Daily Journal — Liccardo defends D16 against challengers (2026) | B | https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html |
-| Ballotpedia — CA-16 election 2026 | C | https://ballotpedia.org/California's_16th_Congressional_District_election,_2026 |
+| Ballotpedia — CA-16 election 2026 (cites Cook PVI D+26) | C→cites Cook (B) | https://ballotpedia.org/California's_16th_Congressional_District_election,_2026 |
 | FEC candidate overview | A | https://www.fec.gov/data/candidate/H6CA16150/ |
 | CA SOS certified candidate list (PDF) | A | https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf |
