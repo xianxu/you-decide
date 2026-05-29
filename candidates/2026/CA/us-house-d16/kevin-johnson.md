@@ -16,21 +16,25 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch1.md
 
 ## Disambiguation
 
-**Not** the former Sacramento mayor Kevin Johnson (b. 1966, Democrat, NBA player). This is a distinct individual — a law student, first-time candidate with no prior political office. Confirmed via FEC filing (H6CA16150) and CA SOS certified candidate list.
+**Not** the former Sacramento mayor Kevin Johnson (b. 1966, Democrat, NBA player). This is a distinct individual — a first-time congressional challenger with no prior political office, FEC ID H6CA16150 (Republican, CA-16), statement of candidacy filed January 25, 2026. [(FEC candidate H6CA16150)](https://www.fec.gov/data/candidate/H6CA16150/) His CA SOS certified ballot designation is "Law Student." [(CA SOS certified candidate list, June 2 2026 primary)](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf)
 
 ## Background
 
-Current law student; ballot designation per CA SOS is "law student." No prior political office. Filed FEC statement of candidacy January 25, 2026. No documented professional background beyond current student status. Micro-campaign: no FEC financials disclosed above $5,000 threshold. Campaign committee: Kevin Johnson for Congress 2026.
+Ballot designation per CA SOS is "Law Student"; the SM Daily Journal candidate write-up describes him as a businessman — either way, a first-time challenger with no prior political office. [(CA SOS certified candidate list)](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf) [(SM Daily Journal — Liccardo vs. challengers)](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html) Filed FEC statement of candidacy January 25, 2026; the FEC has no complete 2025–26 financial data on file for the committee (Kevin Johnson for Congress 2026, C00936302) — a micro-campaign below the disclosure threshold. [(FEC candidate H6CA16150)](https://www.fec.gov/data/candidate/H6CA16150/)
 
 ## Stated positions
 
-**Economy / taxes:** Lowering cost of living through tax reductions; investigating government fraud and spending waste. Fiscal discipline framed as prerequisite for infrastructure investment (crumbling roads).
+All positions below are from the SM Daily Journal candidate write-up. [(SM Daily Journal — Liccardo vs. challengers)](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html)
 
-**Foreign policy:** Self-described "American imperialist with a smile." Supports active US global engagement — "America World Police," ensuring safe global commons. Advocates English as primary hemispheric language with Spanish/Portuguese secondary. Hawkish, exceptionalist frame; more policy-substantive than typical empty-rhetoric challenger.
+**Economy / taxes:** "lowering the cost of living through reductions in taxes" and "investigating government fraud and spending waste."
 
-**AI:** Supports baseline regulatory standards including child protections and data deletion rights; explicitly anti-monopoly overreach. Nuanced position relative to field.
+**Foreign policy:** Self-described "a bit of an American imperialist, but with a smile"; "I am in favor of America World Police and ensuring that the oceans don't have pirates on them." Hawkish, exceptionalist frame.
 
-**Trump:** Voted for Trump but explicitly declines deference — "uninterested in acquiescing to the president on areas where they might disagree." Framed around policy-over-personality: "focusing on the policies rather than the people and the propaganda from either side." This is the **rhetorical-independence posture**, not MAGA-convert; closer to cater-mode baseline than personalist alignment.
+**AI:** Supports federal "baseline standards, including child protections and individuals' rights to data deletion," while seeking "a fine balance between safety and overreach."
+
+**Trump:** Voted for Trump but "uninterested in acquiescing to the president on areas where they might disagree," preferring to focus on "policies rather than the people and the propaganda from either side." This is the **rhetorical-independence posture**, not MAGA-convert; closer to cater-mode baseline than personalist alignment.
+
+**DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: the "English as primary hemispheric language" and "fiscal discipline as prerequisite for infrastructure / crumbling roads" specifics were not found in the SM Daily Journal write-up or any other Tier-A/B source — dropped pending a claim-bound source.
 
 **Immigration, housing, healthcare, 2020 election, COVID:** No documented positions found. Absence of 2020-denial claims is a mild positive signal for a GOP challenger (does not obligate the frame).
 
@@ -55,7 +59,6 @@ Zero. D16 (Liccardo incumbent) is a strong Democratic hold. R in a top-two prima
 | Source | Tier | URL |
 |---|---|---|
 | SM Daily Journal — Liccardo defends D16 against challengers (2026) | B | https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html |
-| Ballotpedia — CA-16 election 2026 | B | https://ballotpedia.org/California's_16th_Congressional_District_election,_2026 |
-| Ballotpedia — Kevin Johnson (CA congressional candidate) | B | https://ballotpedia.org/Kevin_Johnson_(California_congressional_candidate) |
+| Ballotpedia — CA-16 election 2026 | C | https://ballotpedia.org/California's_16th_Congressional_District_election,_2026 |
 | FEC candidate overview | A | https://www.fec.gov/data/candidate/H6CA16150/ |
 | CA SOS certified candidate list (PDF) | A | https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf |
