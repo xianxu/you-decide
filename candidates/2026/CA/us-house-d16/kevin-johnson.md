@@ -10,7 +10,7 @@ review: issues-flagged
 reviewed-by: codex
 reviewed-on: 2026-05-29
 review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
-review-note: re-opened 2026-05-29 — PVI D+26→D+25 correction, pending re-verification
+review-note: re-opened 2026-05-29 — PVI exact figure unverifiable (Cook 403; D+26 vs reported D+25) → represented as a low DATA-GAP; pending re-verification
 ---
 
 # Kevin Johnson — 2026 US House CA-D16
@@ -53,13 +53,13 @@ None documented. Thin record is expected for a law-student first-time challenger
 
 ## Viability assessment
 
-Zero. D16 (Liccardo incumbent) is a strong Democratic hold — Cook PVI D+25, Solid Democratic. [(Cook Political Report — 2025 Cook PVI, district list)](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list) R in a top-two primary in D+25 territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
+Zero. D16 (Liccardo incumbent) is a strong Democratic hold — Solid Democratic, Cook PVI in the mid-D+20s. **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: exact Cook PVI unverified — reachable sources (Ballotpedia, Wikipedia) list **D+26**; a Cook reading was reported as D+25; Cook's page is paywalled (403) here. Either way the seat is Solid Democratic. R in a top-two primary in this D+20s territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
 
 ## Sources
 
 | Source | Tier | URL |
 |---|---|---|
 | SM Daily Journal — Liccardo defends D16 against challengers (2026) | B | https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html |
-| Cook Political Report — 2025 Cook PVI, district list (D+25) | B | https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list |
+| Cook Political Report — 2025 Cook PVI, district list (CA-16 Solid D; **exact figure paywalled/403, unverified** — see DATA-GAP; Ballotpedia/Wikipedia list D+26) | B | https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list |
 | FEC candidate overview | A | https://www.fec.gov/data/candidate/H6CA16150/ |
 | CA SOS certified candidate list (PDF) | A | https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf |
