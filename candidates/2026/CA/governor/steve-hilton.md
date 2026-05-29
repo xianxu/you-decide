@@ -75,17 +75,16 @@ Hilton has never held elected office. His record is his media commentary (Fox Ne
 
 **Trump endorsement (April 6, 2026):** President Trump endorsed Hilton via Truth Social: "Steve Hilton has my COMPLETE & TOTAL ENDORSEMENT... With Federal help, and a Great Governor, like Steve Hilton, California can be better than ever before!" ([CNN](https://www.cnn.com/2026/04/06/politics/steve-hilton-trump-endorsement-california-hnk), [NBC News](https://www.nbcnews.com/politics/2026-election/trump-endorses-steve-hilton-california-governors-race-rcna266852), [Fox News](https://www.foxnews.com/politics/president-trump-makes-endorsement-california-gubernatorial-race-he-great-governor))
 
-**Other endorsements:**
-- Vivek Ramaswamy (2024 GOP presidential candidate) ([Ballotpedia](https://ballotpedia.org/Steve_Hilton))
-- U.S. Rep. Kevin Kiley (CA-03) ([Ballotpedia](https://ballotpedia.org/Steve_Hilton))
-- U.S. Rep. Tom McClintock (CA-05) ([Ballotpedia](https://ballotpedia.org/Steve_Hilton))
-- Gloria Romero (former CA state senator) announced as his running mate for Lt. Governor ([Ballotpedia](https://ballotpedia.org/Steve_Hilton))
+**Other endorsements** (confirmed via reporting; the convention vote below is the more decisive party signal):
+- Vivek Ramaswamy (2024 GOP presidential candidate) ([CalMatters — GOP convention](https://calmatters.org/politics/2026/04/california-gop-convention-governor/))
+- U.S. Rep. Kevin Kiley and U.S. Rep. Tom McClintock endorsed Hilton ([CalMatters — GOP convention](https://calmatters.org/politics/2026/04/california-gop-convention-governor/))
+- Gloria Romero (former CA state senator) announced as his running mate for Lt. Governor ([CalMatters — GOP convention](https://calmatters.org/politics/2026/04/california-gop-convention-governor/))
 
-**CA Republican Party:** Hilton received 44% of delegate votes at the spring 2026 convention, second to Riverside County Sheriff Chad Bianco (49%). Neither reached the 60% threshold; no official CA GOP endorsement was granted. ([Newsweek](https://www.newsweek.com/republican-steve-hilton-california-governor-race-2026-donald-trump-11849699))
+**CA Republican Party:** At the spring 2026 convention (1,101 delegates, San Diego), Hilton took 44% of the delegate vote, second to Riverside County Sheriff Chad Bianco (49%). Neither reached the 60% threshold, so the CA GOP made no gubernatorial endorsement — despite Trump's backing of Hilton. ([CalMatters — Trump wanted CA Republicans to back Hilton; they didn't](https://calmatters.org/politics/2026/04/california-gop-convention-governor/))
 
-**Fundraising:** Raised ~$4.1M in H2 2025, leading most candidates; total as of April 2026 is ~$6.6M. Spent heavily; entered 2026 with ~$2M cash on hand. Only self-funder Tom Steyer ($28M self-funded) raised more overall. ([CalMatters](https://calmatters.org/politics/2026/02/governors-race-fundraising-reports/), [Ballotpedia](https://ballotpedia.org/Steve_Hilton))
+**Fundraising:** Raised ~$4.1M in H2 2025, leading most candidates; total as of April 2026 is ~$6.6M. Spent heavily; entered 2026 with ~$2M cash on hand. Only self-funder Tom Steyer ($28M self-funded) raised more overall. ([CalMatters](https://calmatters.org/politics/2026/02/governors-race-fundraising-reports/))
 
-**Polling:** Led Emerson College poll (April 14–15, 2026) at ~17%, ahead of Bianco and Steyer at 14%. Significant undecided vote remains. ([Newsweek](https://www.newsweek.com/republican-steve-hilton-california-governor-race-2026-donald-trump-11849699))
+**Polling:** Led the Emerson College poll (fielded April 14–15, 2026) among Republicans at 17%, ahead of Bianco (14%) and Steyer (14%), with Becerra and Porter at 10% each and 23% undecided. By the late-May PPIC survey he had risen to second overall at 20% (behind Becerra's 23%). ([Emerson College Polling — April 2026](https://emersoncollegepolling.com/california-2026-poll-april/), [PPIC Statewide Survey — May 2026](https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-may-2026/))
 
 ## Controversies / liabilities
 
@@ -122,6 +121,9 @@ Hilton has never held elected office. His record is his media commentary (Fox Ne
 | [TechCrunch — Crowdpac / Hilton (Oct 2016)](https://techcrunch.com/2016/10/11/steve-hilton-crowdpac-founder-and-brexit-advocate-joins-disrupt-london-dec-5-6/) | B | Tech journalism | Neutral |
 | [Washington Post — Hilton leaves Crowdpac (May 2018)](https://www.washingtonpost.com/news/powerpost/wp/2018/05/18/fox-news-host-steve-hilton-wanted-to-disrupt-the-party-system-this-week-he-left-his-pac/) | B | Journalism | Center-left |
 | [Newsweek — polling and race dynamics](https://www.newsweek.com/republican-steve-hilton-california-governor-race-2026-donald-trump-11849699) | B | Journalism | Center |
-| [Ballotpedia — Steve Hilton](https://ballotpedia.org/Steve_Hilton) | C | Secondary / encyclopedic | Neutral |
+| [Emerson College Polling — April 2026 CA governor poll](https://emersoncollegepolling.com/california-2026-poll-april/) | A/B | Primary (pollster) | Neutral |
+| [PPIC Statewide Survey — May 2026](https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-may-2026/) | A | Primary (pollster) | Neutral |
+| [CalMatters — CA GOP convention, no governor endorsement](https://calmatters.org/politics/2026/04/california-gop-convention-governor/) | B | Journalism | Moderate / neutral |
+| [Ballotpedia — Steve Hilton](https://ballotpedia.org/Steve_Hilton) | C | Secondary / encyclopedic (launch-date scoping only) | Neutral |
 | [Wikipedia — Steve Hilton](https://en.wikipedia.org/wiki/Steve_Hilton) | C | Secondary / encyclopedic — bio only | Neutral |
 | [KPBS / Cap Radio](https://www.capradio.org/articles/2026/05/05/former-political-adviser-commentator-lays-out-his-plans-to-make-the-state-califordable-as-governor) | B | Public radio | Moderate / neutral |
