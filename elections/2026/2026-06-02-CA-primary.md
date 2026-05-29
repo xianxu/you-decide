@@ -18,7 +18,7 @@ generated-on: 2026-05-28
 review: passed
 reviewed-by: codex
 reviewed-on: 2026-05-29
-review-ref: reviews/2026/2026-05-29-ca-2026-rebind-batch1.md
+review-ref: reviews/2026/2026-05-29-ca-2026-final-batch4.md
 review-note: Freeman/Morgan not-qualified corrections confirmed 2026-05-29; candidate-slug links resolve.
 ---
 
