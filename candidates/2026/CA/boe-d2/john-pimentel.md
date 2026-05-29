@@ -22,16 +22,18 @@ Democrat. Menlo Park resident. First-generation college graduate (San Joaquin De
 
 **Private sector:** Co-founded renewable energy and water infrastructure companies totaling $1.5B+ in projects (clean fuels / water recycling). CEO of a Google spinout focused on CO2 removal. Earlier at Bain & Company.
 
-**BOE race context:** Challenging incumbent Sally Lieber (Democratic Assemblymember). Six candidates total in primary; two advance to November. Pimentel raised ~$250K as of late March 2026, slightly exceeding Lieber's ~$225K — the competitive fundraising signal in this race.
+**BOE race context:** Challenging incumbent Sally Lieber (Democratic Assemblymember). A number of Bay Area Democratic leaders are backing Pimentel, including state Treasurer Fiona Ma and San José Mayor Matt Mahan. ([CalMatters — BOE election](https://calmatters.org/politics/2026/05/board-of-equalization-election/) — Tier B) **DATA-GAP** [axis: capture-risk; severity: med; last-attempt: 2026-05-29]: the "~$250K (Pimentel) vs ~$225K (Lieber) as of late March 2026" fundraising-lead claim — load-bearing for the competitive-race read — appears only in Factually.co (Tier-C AI aggregator); no Tier-A Cal-Access filing or Tier-B report carries it. Do not assert the figure as fact until bound to FPPC/Cal-Access primary.
 
-No Foster City planning commissioner role confirmed; the documented land-use board role is Menlo Park Housing Commissioner. [Source A: campaign site]
+No Foster City planning commissioner role confirmed; the documented land-use board role is Menlo Park Housing Commissioner (see Record). ([campaign site — johnpimentel.com](https://johnpimentel.com/) — Tier A, re-fetched live 2026-05-29)
 
 ## Stated positions
 
-1. **End sales tax on food** — describes it as "regressive," disproportionately burdens working families. [Source A: johnpimentel.com]
-2. **Close corporate/wealthy tax loopholes** — specifically names "Water's Edge Election," "Invest/Borrow/Die," "Carried Interest." [Source A: johnpimentel.com]
-3. **BOE reform / possible abolition** — open to eliminating the board entirely and redistributing its functions. Characterizes BOE as "a sinecure for retired legislators" and notes $184K/yr member salary. Framing: California's tax bureaucracy is "confusing and stove-piped," harming average families. [Source B: Almanac News, 2026-05-14]
-4. **Transparency and accountability** — strengthen BOE operations. [Source A: johnpimentel.com]
+(Campaign-site positions re-fetched live 2026-05-29 — page currently carries all of the following.)
+
+1. **End sales tax on food** — "a regressive tax that disproportionately burdens working families." ([johnpimentel.com](https://johnpimentel.com/) — Tier A)
+2. **Close corporate/wealthy tax loopholes** — targeting "large corporations and the ultra-wealthy," specifically naming "Water's Edge Election, Invest/Borrow/Die, and Carried Interest." ([johnpimentel.com](https://johnpimentel.com/) — Tier A)
+3. **BOE reform / possible abolition** — open to eliminating the board and handing its responsibilities to other organizations; characterized the BOE's reputation as a "sinecure for retired legislators," with members making $184,000 annually. ([The Almanac — "Should the state's tax commission even exist?" 2026-05-14](https://www.almanacnews.com/election/2026/05/14/should-the-states-tax-commission-even-exist/) — Tier B)
+4. **Transparency and accountability** — "Strengthen transparency and accountability" so the Board "operates effectively and earns the public's trust." ([johnpimentel.com](https://johnpimentel.com/) — Tier A)
 
 ## Record / past performance
 
@@ -40,18 +42,14 @@ No Foster City planning commissioner role confirmed; the documented land-use boa
 - **Housing Commissioner:** Promoted downtown parking-lot conversion to housing. Reform-minded, incremental approach — aligns with root-cause-before-bonds framing.
 - **Private sector:** $1.5B+ in clean-energy/water infrastructure built. Business credentials are real, though in the clean-energy/renewables lane rather than tax administration specifically. CEO of Google spinout (CO2 removal).
 
-No FPPC donor breakdown available via Tier-A sources within search budget. Named backers include Treasurer Fiona Ma and San Jose Mayor Matt Mahan — Bay Area Democratic establishment split from Lieber.
+No FPPC donor breakdown available via Tier-A sources within search budget (see fundraising DATA-GAP in Background). Named backers include Treasurer Fiona Ma and San José Mayor Matt Mahan — a Bay Area Democratic establishment split from Lieber. ([CalMatters — BOE election](https://calmatters.org/politics/2026/05/board-of-equalization-election/) — Tier B)
 
 ## Endorsements & donors
 
-- **Tier A signal:** Howard Jarvis Taxpayers Association (dual endorsement with another candidate — signals fiscal credibility with the anti-tax-hike constituency; notable for a Democrat)
-- State Treasurer Fiona Ma
-- San Jose Mayor Matt Mahan
-- Multiple Bay Area state legislators
-- San Francisco Chronicle editorial board (informal — described Pimentel as "the best candidate for the role" while advocating BOE abolition; not a formal endorsement) [Source B: SF Chronicle via Almanac News]
-- Fundraising: ~$250K reported late March 2026 [Source B: CalMatters via search]
-
-GrowSF: Did not respond to questionnaire (missed April 7 deadline). GrowSF endorsed Lieber. [Source B: GrowSF voter guide]
+- **Howard Jarvis Taxpayers Association (HJTA-PAC)** — dual endorsement with J. Brett Marymee for BOE District 2 ("Dual endorsement, Alphabetical"); notable fiscal-credibility signal for a Democrat. ([HJTA-PAC endorsements](https://www.hjta.org/election-information/for-voters/endorsements-by-the-hjta-pac/) — Tier A, endorsing org's own page)
+- State Treasurer Fiona Ma, San José Mayor Matt Mahan, and a number of Bay Area Democratic leaders. ([CalMatters — BOE election](https://calmatters.org/politics/2026/05/board-of-equalization-election/) — Tier B)
+- San Francisco Chronicle editorial board wrote that Pimentel "is the best candidate for the role" — but per The Almanac it "didn't make an endorsement," so this is informal praise, not a formal endorsement. ([The Almanac, 2026-05-14](https://www.almanacnews.com/election/2026/05/14/should-the-states-tax-commission-even-exist/) — Tier B)
+- GrowSF: did not respond to questionnaire; GrowSF endorsed Lieber. ([GrowSF — questionnaire (non-response)](https://growsf.org/voter-guide/questionnaires/june-2026/john-pimentel/) — Tier B)
 
 ## Controversies / liabilities
 
