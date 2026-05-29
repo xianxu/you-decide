@@ -51,12 +51,12 @@ All positions drawn from his official campaign site ([stevehiltonforgovernor.com
 
 **Energy / climate:**
 - Self-identifies as "an environmentalist" but questions whether California climate policies "actually help the climate" or just inflict costs on families. ([KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor))
-- Goal: $3/gallon gas; cut electric bills in half.
+- Targets "Three-dollar gas, cut your electric bills in half" — framed as "Califordable" campaign themes, each with "a policy reform plan behind it" (direct quote). ([KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor)) The campaign site frames this as opposing "America's highest prices for gas" and "electricity" via "abundant, affordable energy," but states no $3-per-gallon figure or 50%-cut detail itself. ([campaign site](https://stevehiltonforgovernor.com/))
 - "Use the oil and gas we produce here rather than shipping it in on giant supertankers halfway around the world." (direct quote, [KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor))
 
 **Public safety / homelessness:**
-- Full enforcement of existing laws (theft, drug markets, violent crime, immigration).
-- $24B spent on homelessness "without any idea where it went" — enforcement over additional spending.
+- Full enforcement of existing laws: "We need to get back to the basic principle that we should enforce the law — whether it's on homelessness, open air drug markets, shoplifting, illegal immigration or violent crime." (direct quote, [campaign site](https://stevehiltonforgovernor.com/))
+- "A recent audit found that over $24 billion was spent on homelessness without any idea where it went or what it did, while the problem just gets worse and worse." (direct quote, [campaign site](https://stevehiltonforgovernor.com/)) — enforcement over additional spending.
 - Anti-sanctuary-state; cites Obama-era enforcement as model for consistent application of immigration law. ([KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor))
 
 **Self-framing:** "I'm a pragmatist; I'm not an ideologue, I'm not tribal." — direct quote. ([KPBS](https://www.kpbs.org/news/politics/2026/05/06/steve-hilton-lays-out-his-plans-to-make-the-state-califordable-as-governor)) He identifies as "the candidate of the legal immigrant community." ([Newsweek](https://www.newsweek.com/republican-steve-hilton-california-governor-race-2026-donald-trump-11849699))
