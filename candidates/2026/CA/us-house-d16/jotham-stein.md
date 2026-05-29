@@ -16,9 +16,11 @@ review-ref: reviews/2026/2026-05-29-ca-2026-final-batch1.md
 
 ## Background
 
-Age 64. Half Moon Bay resident. AB Princeton; JD Stanford Law. Principal, Law Offices of Jotham S. Stein P.C. (Palo Alto) — 25+ years representing employees, entrepreneurs, and executives in Silicon Valley employment matters. Author of "Negotiate Like a CEO" (campaign profits donated to charity). Five-plus years on board of Coastside Hope (food and rental assistance nonprofit); supported Coastside Land Trust. No prior elected or appointed public office.
+*Source for this section: [votestein.com — About](https://votestein.com/about-jotham-stein/) (Tier A; retrieved 2026-05-29), unless a claim cites otherwise.*
 
-Announced candidacy January 20, 2026. Filed as No Party Preference (NPP). District CA-16 (former Liccardo seat) spans southern Silicon Valley — Los Altos, Mountain View, Sunnyvale, Cupertino, and Coastside — with a strong Democratic lean. Incumbent: Sam Liccardo (D). Other candidates: Kevin Johnson (R).
+Half Moon Bay resident. JD from Stanford Law. 25+ years as a lawyer in Silicon Valley representing employees, entrepreneurs, and executives in employment matters. Author of "Negotiate Like a CEO" (campaign-period book profits donated to charity). Five-plus years on the board of Coastside Hope (food and rental assistance nonprofit); long-time supporter of Coastside Land Trust. No prior elected or appointed public office ("I don't have any government experience"). [(Coastside Buzz)](https://coastsidebuzz.com/half-moon-bays-jotham-stein-announces-run-for-congress-as-an-independent-noparty-preference-in-californias-16th-congressional-district-bridge-the-divide/)
+
+Announced candidacy January 20, 2026. [(Coastside Buzz)](https://coastsidebuzz.com/half-moon-bays-jotham-stein-announces-run-for-congress-as-an-independent-noparty-preference-in-californias-16th-congressional-district-bridge-the-divide/) Filed as No Party Preference (NPP). District CA-16 (former Liccardo seat) spans southern Silicon Valley — Los Altos, Mountain View, Sunnyvale, Cupertino, and Coastside — and is a very strongly Democratic seat (Cook PVI D+26). [(Ballotpedia / Cook PVI — CA-16 2026)](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) Incumbent: Sam Liccardo (D). Other candidate: Kevin Johnson (R).
 
 ## Why NPP — not D or R
 
@@ -32,15 +34,15 @@ Stein's pitch is structural, not ideological: the two-party system is the proble
 
 **Electoral / governance reform:** Ends gerrymandering nationwide; criticizes "billionaire-financed parties." [(votestein.com)](https://votestein.com/) Term limits for Congress and campaign-finance reform were not stated on the campaign home page on this pass.
 
-**Climate / environment:** Supports environmental action; cites coastal sea-level rise as personally observable. No specific policy mechanism stated beyond general prioritization.
+**Climate / environment:** Lists "Fighting Climate Change: Protecting Our World For Future Generations" as a pillar; cites living near the ocean (Coastside). No specific policy mechanism stated beyond general prioritization. [(votestein.com)](https://votestein.com/) [(votestein.com — About)](https://votestein.com/about-jotham-stein/)
 
-**Healthcare:** Supports lowering prescription drug costs. No specific mechanism (e.g., Medicare negotiation, reimportation) stated in sources.
+**Healthcare:** Lists "Starting Down the Road to Fixing Healthcare: Lowering the Cost of Prescription Drugs." No specific mechanism (e.g., Medicare negotiation, reimportation) stated in sources. [(votestein.com)](https://votestein.com/)
 
-**Constitutional amendments:** Campaign site lists "Constitutional Amendments to Protect and Restore Our Democracy" as a pillar — no detail surfaced in coverage.
+**Constitutional amendments:** Campaign site lists "Constitutional Amendments to Protect and Restore Our Democracy" as a pillar — no detail surfaced in coverage. [(votestein.com)](https://votestein.com/)
 
-**Children's rights / education:** Listed as a campaign priority; no specifics in sources.
+**Children's rights / education:** Lists "Every Child in America Has a Right To" as a campaign priority; no specifics surfaced. [(votestein.com)](https://votestein.com/)
 
-**National debt:** Cited as a problem requiring action; no concrete fiscal position stated beyond Social Security solvency fix.
+**National debt:** Criticizes both parties for "ballooning our national debt"; no concrete fiscal position stated beyond the Social Security solvency fix. [(votestein.com)](https://votestein.com/)
 
 **Israel/Gaza:** No position stated in any retrieved source. Not surfaced in campaign site, press coverage, or candidate interviews. Sparse coverage = genuine gap, not a curated silence; flag as unknown.
 
@@ -87,5 +89,6 @@ None documented. Thin public profile; coverage limited to local/regional Coastsi
 | [Los Altos Online — "Independent candidate concerned about political polarization"](https://www.losaltosonline.com/news/independent-congressional-candidate-stein-concerned-about-nation-s-political-polarization/article_840cefd6-23aa-47bc-9068-2469df777430.html) | B | Local broadsheet; bio and policy detail |
 | [Ballotpedia — Jotham Stein](https://ballotpedia.org/Jotham_Stein) | C | Race structure / orientation only; no decisive claims sourced here |
 | [Ballotpedia — CA-16 2026 primary](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026_(June_2_top-two_primary)) | C | Race structure / orientation only |
+| [Ballotpedia / Cook PVI — CA-16 2026](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) | C→cites Cook (B) | Source for D+26 partisan-lean figure (Cook Partisan Voter Index) |
 
 **Coverage gaps:** No Tier A/B source contains Stein's position on Israel/Gaza, immigration, or federal tax policy beyond the Social Security income-cap raise. Positions marked unknown reflect genuine sparse coverage of a low-profile independent challenger, not a research failure.
