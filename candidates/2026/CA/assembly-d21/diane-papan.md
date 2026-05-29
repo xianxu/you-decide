@@ -2,7 +2,7 @@
 name: Diane Papan
 party: Democrat
 race: 2026-ca-assembly-d21
-last-updated: 2026-05-28
+last-updated: 2026-05-29
 status: active
 generated-by: claude
 generated-on: 2026-05-28
@@ -26,13 +26,13 @@ All from official Assembly site and press releases unless noted.
 
 **Housing**: Acknowledges ongoing housing crisis; cited SB 2 and Proposition 1 as "productive statewide solutions." AB 2296 (2025–26 session) addresses housing element regional housing needs allocation — a process bill aimed at streamlining HCD's review of local housing elements, passed the full Assembly June 2025. As San Mateo City Council deputy mayor in 2022, she preferred the minimum SB 9 density standard (2 units per urban lot split), not pushing for more aggressive upzoning. [(SM Daily Journal, 2024)](https://www.smdailyjournal.com/news/local/papan-defends-her-district-21-assembly-seat-in-san-mateo-county/article_70dda74e-59e4-11ef-8716-d397e387a1e0.html) [(SM Daily Journal, 2022)](https://www.smdailyjournal.com/news/local/san-mateo-discusses-sb-9-standards/article_8f3c2598-ec5f-11ec-a204-d391d3c7f7d4.html)
 
-**Climate / environment**: Championed a $10 billion climate bond (Prop 4, passed Nov 2024) for wildfire mitigation, clean water, and flood prevention. Chairs Water, Parks and Wildlife Committee. AB 527 (2025) exempts geothermal exploratory projects from CEQA if they meet environmental safeguards. Frames climate action as core priority.
+**Climate / environment**: Co-authored the $10 billion climate bond (Prop 4, passed Nov 2024) for wildfire mitigation, clean water, and flood prevention, calling it "a down payment." Chairs Water, Parks and Wildlife Committee. AB 527 (2025–26 session) exempts qualifying geothermal exploratory projects from CEQA (through Jan 1, 2031) if they meet environmental safeguards; passed the Assembly May 2025 and was enrolled to the Governor September 2025. Frames climate action as core priority. [(Papan Sept 2024 newsletter — Prop 4)](https://a21.asmdc.org/district-newsletter/september-2024-newsletter) [(Papan press release — AB 527 geothermal)](https://a21.asmdc.org/press-releases/20250527-papan-legislation-unlock-californias-next-generation-geothermal-energy)
 
-**Fiscal**: During a $45 billion state deficit, she supported "efficiency, being realistic, and creative funding sources." VLF reimbursements for San Mateo County ($72M owed from 2022–23) were a personal fight — a perennial challenge with no permanent fix secured.
+**Fiscal**: During a $45 billion state deficit, she supported "efficiency, being realistic, and creative funding sources." Vehicle license fee (VLF) backfill revenues owed to San Mateo County have been a personal fight; she announced inclusion of $76.5M in the 2025 state budget that "largely restores" the owed backfill to the county and its 20 incorporated cities — not a permanent structural fix (the county estimates ~$157M owed under the broken formula). [(Papan press release — VLF in 2025 budget)](https://papan.asmdc.org/press-releases/20250702-assemblymember-papan-announces-inclusion-vehicle-license-fee-funds-san)
 
-**Public safety**: No explicit Proposition 36 position found in searches. General statements emphasize keeping residents "safe and healthy" and secured $35M in district funding for public safety/emergency communications. No defund-police language found.
+**Public safety**: No explicit Proposition 36 position found in searches. General statements emphasize keeping residents "safe and healthy"; she secured nearly $35M for AD21 in 2023 covering public safety/emergency communications, safer streets, water reliability, youth health, and parks. No defund-police language found. [(Papan official site)](https://papan.asmdc.org/)
 
-**Mental health**: Supports increased funding for school mental health clinicians and services for youth.
+**Mental health**: Supports increased funding for youth mental health, including AB 2829 (the "LIKES Act") to fund expanded youth mental-health care financed by large tech/social-media companies. [(Papan press release — AB 2829 LIKES Act)](https://a21.asmdc.org/ab-2829-likes-act)
 
 **Rent control**: Did not vote on a renter eviction relief measure in 2025, which counted as a no-vote (effectively opposed). [(CalMatters / Almanac, 2025)](https://www.almanacnews.com/calmatters/2025/07/03/california-lawmakers-side-with-landlords-to-kill-renter-eviction-relief-2/)
 
@@ -40,11 +40,11 @@ All from official Assembly site and press releases unless noted.
 
 **Voting alignment**: 92% California Teachers Association alignment, 88% California Labor Federation alignment, 100% Planned Parenthood alignment. 0% Howard Jarvis Taxpayers Association, 25% California Chamber of Commerce. Standard progressive Dem caucus alignment. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/diane-papan-165423)
 
-**Bills authored (current 2025–26 session)**: 35 bills introduced; 4 passed, 9 failed, 22 pending. Key authored bills:
-- AB 2296: Housing element RHNA process streamlining (passed Assembly June 2025) [Tier A: official press release]
-- AB 2469: Data center water-use disclosures
-- AB 2088: Thermal energy networks (public utilities)
-- AB 527 (prior session): CEQA exemption for geothermal exploratory drilling
+**Bills authored (current 2025–26 session)**: 35 bills introduced; 4 passed, 9 failed, 22 pending. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/diane-papan-165423) Key authored bills:
+- AB 2296: Housing element RHNA process streamlining (passed Assembly June 2025) [(Papan press release)](https://a21.asmdc.org/press-releases/20250602-papan-bill-streamline-review-housing-elements-approved-state-assembly)
+- AB 2469: Data center water-use disclosures (Newsom vetoed a prior version; reintroduced) [(AB 2469 — leginfo)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2469)
+- AB 2088: Public utilities — thermal energy networks [(AB 2088 — leginfo)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2088)
+- AB 527 (2025–26 session): CEQA exemption for geothermal exploratory projects [(AB 527 — leginfo)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB527)
 
 **Independent/cross-caucus votes**: No-vote on renter eviction relief (2025) — aligned with landlord-side outcome, diverging from progressive wing. No documented votes against major caucus priorities found; otherwise standard Dem alignment.
 
@@ -56,7 +56,7 @@ All from official Assembly site and press releases unless noted.
 
 ## Endorsements & donors
 
-**Elected officials**: Lt. Gov. Eleni Kounalakis, State Senators Josh Becker and Susan Rubio, multiple San Mateo County supervisors, former Congresswomen Jackie Speier and Anna Eshoo, Congressman Mike Thompson. [(dianepapan.com/endorsements)](https://www.dianepapan.com/endorsements)
+**Elected officials**: Lt. Gov. Eleni Kounalakis, State Senator Susan Rubio, BOE member Malia Cohen, former Congresswomen Jackie Speier and Anna Eshoo, Congressman Mike Thompson, plus multiple state Assemblymembers (Aguiar-Curry, Calderon, R. Rivas, Blanca Rubio, others) and county/local officials. [(dianepapan.com/endorsements)](https://www.dianepapan.com/endorsements)
 
 **Organizations**: Planned Parenthood, California Nurses Association, NARAL, Moms Demand Action, Equality California, CAL-FIRE Local 2881, Teamsters, Sheet Metal Workers, CSEA, Operating Engineers, AFSCME California, SEIU-UHW. Progressive and labor-heavy endorsement map; no business or law-enforcement endorsements found. No PORAC or Chamber endorsement.
 
@@ -77,6 +77,13 @@ All from official Assembly site and press releases unless noted.
 - [Diane Papan official Assembly site (press releases)](https://papan.asmdc.org/)
 - [Diane Papan campaign endorsements page](https://www.dianepapan.com/endorsements)
 - [AB 2296 press release — Papan housing element bill](https://a21.asmdc.org/press-releases/20250602-papan-bill-streamline-review-housing-elements-approved-state-assembly)
+- [AB 527 press release — Papan geothermal CEQA bill](https://a21.asmdc.org/press-releases/20250527-papan-legislation-unlock-californias-next-generation-geothermal-energy)
+- [Papan press release — VLF funds in 2025 state budget](https://papan.asmdc.org/press-releases/20250702-assemblymember-papan-announces-inclusion-vehicle-license-fee-funds-san)
+- [Papan Sept 2024 newsletter — Prop 4 climate bond](https://a21.asmdc.org/district-newsletter/september-2024-newsletter)
+- [AB 2829 (LIKES Act) — Papan official site](https://a21.asmdc.org/ab-2829-likes-act)
+- [AB 2469 — CA Legislative Information](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2469)
+- [AB 2088 — CA Legislative Information](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2088)
+- [AB 527 — CA Legislative Information](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB527)
 
 **Tier B:**
 - [SM Daily Journal — Papan defends District 21 seat (2024)](https://www.smdailyjournal.com/news/local/papan-defends-her-district-21-assembly-seat-in-san-mateo-county/article_70dda74e-59e4-11ef-8716-d397e387a1e0.html)
