@@ -109,6 +109,8 @@ Raised nearly $40 million by May 2026; independent expenditure groups spent $18M
 
 **Polling:** Despite $40M raised, polling 4–10% among likely voters as of May 2026 ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)).
 
+**DATA-FIXME** [axis: capture-risk/viability; severity: med; last-attempt: 2026-05-28]: donor details (Hastings $1M refunded; Tan/Sethi/Solana support) and the polling figure are cited only to Wikipedia (Tier C) but feed capture-risk and the strategic-vote/viability call — med severity because polling drives the strategic recommendation. Upgrade donors to FEC/FPPC and polling to a named aggregator (e.g. CalMatters/Politico tracker). Bio-orientation Wikipedia cites may remain.
+
 ## Controversies / liabilities
 
 **"Billionaire puppet" criticism:** The most consistent attack line from labor and progressive Democrats. His fundraising is overwhelmingly from billionaire tech figures (Brin, Lonsdale, Moritz). Critics question whether he would regulate tech if elected ([Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/)). He supports taxing AI companies for workforce development, which could be read as deflection or genuine position — sources do not resolve this clearly.

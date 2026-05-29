@@ -24,6 +24,8 @@ Career arc: social worker → nonprofit director → school board → state asse
 
 State Assembly (CA-15, 2014–2018): Chaired Labor and Employment Committee; bills on court fine credits, methane emissions, immigrant defendant due process, tobacco restrictions near schools, prison-to-school funding shifts. Introduced 2017 resolution calling for Congressional censure of Trump after Charlottesville. ([Wikipedia](https://en.wikipedia.org/wiki/Tony_Thurmond))
 
+**DATA-FIXME** [axis: positions/record; severity: low; last-attempt: 2026-05-28]: this legislative record (committee chair + specific bills) is cited only to Wikipedia (Tier C) but feeds his issue-position read. Upgrade to leginfo.legislature.ca.gov (official bill records). Birth/education/career-chronology Wikipedia cites are orientation and may remain.
+
 Won 2018 Superintendent race over Marshall Tuck (charter school advocate) 50.9%–49.1%. Re-elected 2022 with 63.7%. ([Wikipedia](https://en.wikipedia.org/wiki/Tony_Thurmond))
 
 Announced gubernatorial candidacy September 26, 2023. Resides in Richmond, CA; has two daughters. Describes himself as Jewish-adjacent ("a convert who's never been through a formal conversion"), works with Rabbi Rebekah Stern at Congregation Beth El in Berkeley on Holocaust education. ([Wikipedia](https://en.wikipedia.org/wiki/Tony_Thurmond))

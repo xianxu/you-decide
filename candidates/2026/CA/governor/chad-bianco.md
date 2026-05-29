@@ -52,6 +52,8 @@ Note tension: In November 2024 Bianco talked about "working somehow around" stat
 
 **BLM moment (2020):** Bianco briefly knelt with Black Lives Matter protesters in June 2020 but later characterized the protests as "destructive riots." ([Wikipedia](https://en.wikipedia.org/wiki/Chad_Bianco) — bio only; no Tier-B source located for this specific episode)
 
+**DATA-FIXME** [axis: character; severity: low; last-attempt: 2026-05-28]: this is a *controversy/character* claim cited only to Wikipedia (Tier C) — the tier rule bars Wikipedia for controversies, and no Tier-B source was found. Either corroborate with contemporaneous reporting or drop the episode. (Note: the source-table claims "all decisive claims re-sourced to Tier A/B" — this line is the exception that contradicts it.)
+
 ## Endorsements & donors
 
 **Endorsements received:**

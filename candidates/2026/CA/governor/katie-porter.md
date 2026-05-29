@@ -67,6 +67,8 @@ Source: campaign website [(KatiePorter.com/priorities)](https://katieporter.com/
 
 **Votes:** Both Trump impeachments (yes). Progressive Caucus deputy chair. [(Wikipedia)](https://en.wikipedia.org/wiki/Katie_Porter)
 
+**DATA-FIXME** [axis: institutionalist/positions; severity: low; last-attempt: 2026-05-28]: the voting record (both impeachments, Progressive Caucus deputy chair) and the consumer-protection record (UCI clinic, $18B mortgage-settlement monitoring) are cited only to Wikipedia (Tier C) but feed institutionalist and economic-philosophy reads. Upgrade to congress.gov / official (votes, caucus role) and AG-office / contemporaneous reporting (settlement). Bio-orientation Wikipedia cites may remain.
+
 **2024 Senate loss:** Lost to Adam Schiff decisively (Schiff ~39%, Porter ~15%). Used the word "rigged" about the primary, later walked it back: "I wish I had chosen a different word." [(Wikipedia)](https://en.wikipedia.org/wiki/Katie_Porter) [(CalMatters 2024)](https://calmatters.org/california-voter-guide-2024/us-senate/katie-porter/)
 
 **Legislative output:** Detailed bill-passage record not reviewed in this research pass; known more for oversight and messaging than legislation passed.
