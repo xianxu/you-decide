@@ -18,9 +18,9 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch3.md
 
 Age 53. Director of Advantage Testing of Silicon Valley, a tutoring and test-prep firm, for 22 years. Author of *A Is for Average: Why California's Public Schools Struggle, and How You Can Help* (year not confirmed). Grew up in inner-city St. Louis; his neighborhood public high school had a 25% graduation rate sustained for 25 years; his parents sacrificed to send him to an all-boys Jesuit school, making him the only child on his block to finish high school and attend college. Undergraduate in physics and math from Pomona College (1994); MBA from Yale School of Management (2000). Not a Stanford-trained founder as the brief suggested — Pomona/Yale. Has also served as president of SHIFT-Bay Area (housing/infrastructure advocacy) and on the San Mateo County Transportation Authority Community Advisory Committee.
 
-Prior elections: 2022 Republican candidate CA-15 (congressional); 2024 Republican candidate CA-23 (state assembly). Both lost. Those races carried endorsements from the California Republican Party, San Mateo County Republican Party, California Congress of Republicans, San Francisco Republican Party, and San Francisco Young Republicans. The 2026 superintendent filing is NPP — the office is constitutionally nonpartisan, but the Republican electoral history is real.
+Prior elections: 2022 Republican candidate CA-15 (congressional); 2024 Republican candidate AD-23 (state assembly, lost primary 2024-03-05). Both lost. ([Ballotpedia](https://ballotpedia.org/Gus_Mattammal) for race history; party endorsements detailed under Endorsements below.) The 2026 superintendent filing is NPP — the office is constitutionally nonpartisan, but the Republican electoral history is real.
 
-Campaign raised $83,799 as of March 31, 2026 (small-money campaign; no major institutional money surfaced).
+Campaign raised $83,799 as of March 31, 2026 (small-money campaign; no major institutional money surfaced). ([EdSource](https://edsource.org/2026/gus-mattammal-california-superintendent-candidate/756334))
 
 ## Stated positions
 
@@ -30,7 +30,7 @@ Source: votegus.org/policy (Tier A) and EdSource profile (Tier B).
 - **Math:** Calls for content-driven reform in mathematics.
 - **History / ethnic studies:** Includes "history/ethnic studies" in list of curriculum reform areas — no detail beyond that; not explicitly antagonistic.
 - **School choice:** Explicitly supports public charter schools, magnet schools, open enrollment, and microschools within the public system; would increase CDE support for parents pursuing microschooling or homeschooling.
-- **Education funding / anti-tax-spend:** Proposes redirecting budget growth above inflation to supplemental/concentration grants for struggling schools — claims this delivers $20B without raising taxes. Opposes Governor Newsom's proposed shift of superintendent powers to an appointed education commissioner.
+- **Education funding / anti-tax-spend:** Proposes redirecting budget growth above inflation to supplemental/concentration grants for struggling schools — claims this delivers $20B without raising taxes ([votegus.org/policy](https://www.votegus.org/policy), re-fetched live 2026-05-29 — page carries the $20B / supplemental-concentration-grant-redesign claim). Opposes Governor Newsom's proposed shift of superintendent powers to an appointed education commissioner ([EdSource](https://edsource.org/2026/gus-mattammal-california-superintendent-candidate/756334): "hopes the scope of the position isn't altered as proposed by Gov. Gavin Newsom, who wants to shift power to a new education commissioner to be appointed by the next governor").
 - **Teacher compensation:** Advocates performance-based pay for teachers in struggling districts; defined contribution (not defined-benefit) retirement plans for new teachers.
 - **Parental involvement:** Would create a CDE team to receive parental observations about local school operations.
 - **Data-driven posture:** Frames decision-making as data-driven; views the superintendent as an underused change agent; plans to visit districts and use the platform for legislative pressure.
@@ -44,7 +44,7 @@ No public-office record (two prior races lost). Tutoring business track record: 
 
 **2026 superintendent race:** No major organizational endorsements surfaced from Tier A/B sources as of May 2026. Small-dollar fundraising ($83K) with no large-donor concentration identified.
 
-**Prior races (background only):** CA Republican Party, San Mateo County Republican Party, California Congress of Republicans, SF Republican Party, SF Young Republicans (congressional and assembly races, 2022–2024).
+**Prior races (background only):** 2022 CA-15 congressional run endorsed by CA Republican Party, San Mateo County Republican Party, California Congress of Republicans, SF Republican Party, SF Young Republicans ([Gus Mattammal for Congress — endorsements](https://gus.aufrecht.org/endorsements/); CA GOP + SF Young Republicans corroborated by [EdSource](https://edsource.org/2026/gus-mattammal-california-superintendent-candidate/756334)). 2024 AD-23 assembly run endorsed by San Mateo County and Santa Clara County Republican Parties ([BayAreaGOP](https://bayareagop.com/san-mateo-and-santa-clara-gop-endorse-gus-mattammal-for-ad23/)).
 
 ## Controversies / liabilities
 
