@@ -6,10 +6,11 @@ last-updated: 2026-05-28
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: passed
+review: issues-flagged
 reviewed-by: codex
 reviewed-on: 2026-05-29
 review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
+review-note: re-opened 2026-05-29 — PVI D+26→D+25 correction, pending re-verification
 ---
 
 # Kevin Johnson — 2026 US House CA-D16
@@ -52,13 +53,13 @@ None documented. Thin record is expected for a law-student first-time challenger
 
 ## Viability assessment
 
-Zero. D16 (Liccardo incumbent) is a strong Democratic hold — Cook PVI D+26, the 27th most-Democratic district nationally. [(Ballotpedia / Cook PVI — CA-16 2026)](https://ballotpedia.org/California's_16th_Congressional_District_election,_2026) R in a top-two primary in D+26 territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
+Zero. D16 (Liccardo incumbent) is a strong Democratic hold — Cook PVI D+25, Solid Democratic. [(Cook Political Report — 2025 Cook PVI, district list)](https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list) R in a top-two primary in D+25 territory: Johnson advances to general only if two D candidates split and both underperform, which is implausible with a well-funded incumbent. Treat as protest-candidate / field-filler.
 
 ## Sources
 
 | Source | Tier | URL |
 |---|---|---|
 | SM Daily Journal — Liccardo defends D16 against challengers (2026) | B | https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html |
-| Ballotpedia — CA-16 election 2026 (cites Cook PVI D+26) | C→cites Cook (B) | https://ballotpedia.org/California's_16th_Congressional_District_election,_2026 |
+| Cook Political Report — 2025 Cook PVI, district list (D+25) | B | https://www.cookpolitical.com/cook-pvi/2025-partisan-voting-index/district-map-and-list |
 | FEC candidate overview | A | https://www.fec.gov/data/candidate/H6CA16150/ |
 | CA SOS certified candidate list (PDF) | A | https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf |
