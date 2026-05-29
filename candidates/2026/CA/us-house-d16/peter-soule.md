@@ -9,11 +9,10 @@ last-updated: 2026-05-28
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: issues-flagged
+review: passed
 reviewed-by: codex
 reviewed-on: 2026-05-29
-review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
-review-note: re-opened 2026-05-29 — PVI exact figure unverifiable (Cook 403; D+26 vs reported D+25) → represented as a low DATA-GAP; pending re-verification
+review-ref: reviews/2026/2026-05-29-ca-2026-final-close.md
 ---
 
 # Peter Soule — 2026 CA-16 US House (Republican challenger)
