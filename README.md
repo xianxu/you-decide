@@ -79,7 +79,7 @@ What that means:
 
 ## Data request
 
-We meant to provide a cached candidate/issue profile that can be easily reused by anyone who want to get advice on how to vote. You can create an issue with title "Data request: {City}, {County}, {State}, {Year}", and we will try to add it on regular cadence to the repo. 
+We meant to provide a cached candidate/issue profile that can be easily reused by anyone who want to get advice on how to vote. You can create an issue with title "Data request: {City}, {County}, {State}, {Year}", and we will try to add it on regular cadence to the repo. As a start, we only focus on California, to test out credibility first. 
 
 ## Repo layout
 
