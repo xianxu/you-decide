@@ -91,4 +91,6 @@ All from official Assembly site and press releases unless noted.
 - [Almanac / CalMatters — Eviction relief no-vote (2025)](https://www.almanacnews.com/calmatters/2025/07/03/california-lawmakers-side-with-landlords-to-kill-renter-eviction-relief-2/)
 - [CalMatters — FPPC campaign finance enforcement (2024)](https://calmatters.org/politics/elections/2024/10/campaign-finance-california-fppc-enforcement/)
 - [San Jose Inside — coordinated PAC donor network (2022)](https://www.sanjoseinside.com/news/investigative-reports/political-donor-network-is-pushing-the-envelope-on-california-campaign-money/)
+
+**Tier C (background / scoping only — not used for decisive claims):**
 - [Ballotpedia — Diane Papan](https://ballotpedia.org/Diane_Papan)
