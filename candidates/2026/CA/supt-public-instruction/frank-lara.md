@@ -22,6 +22,8 @@ No prior superintendent race found (background claim of 2022 run not confirmed; 
 
 ## Stated positions
 
+Source: [campaign platform — frank4caschools.com](https://www.frank4caschools.com/) (Tier A; re-fetched live 2026-05-29 — page carries all positions below verbatim, no scrub rot).
+
 1. **Fund schools to Vermont levels** (6.2% of GSP vs. CA's current ~3%+) — would more than double per-pupil spending; funded by eliminating "corporate tax breaks." No specific revenue mechanism beyond that phrase.
 2. **Free childcare + universal Pre-K** — cites New Mexico model; wage increases for ECE workers.
 3. **Class-size reduction** — 18 or fewer in K-3; 20 in grades 4-8; 25 in grades 9-12.
@@ -33,7 +35,7 @@ No prior superintendent race found (background claim of 2022 run not confirmed; 
 9. **Ethnic studies defense** — explicitly includes Palestinian content: will "defend educators who teach the truth about the Palestinian struggle and the other anti-imperialist fights of oppressed peoples around the world." Opposes any removal of this content from CA's "liberated" ethnic studies curriculum.
 10. **Voucher ban + charter moratorium** — existing charters must unionize and follow all public-school regulations.
 
-Campaign finance pledge: accepts only working-class individual donations; no corporate PACs. Raised $37,737 total as of April 2026; $12,814 cash on hand.
+Campaign finance pledge: accepts only working-class individual donations; no corporate PACs ([frank4caschools.com](https://www.frank4caschools.com/)). Raised $37,737 total as of April 18, 2026; $12,814 cash on hand; $25,026 expenditures ([Transparency USA](https://www.transparencyusa.org/ca/candidate/frank-lara)).
 
 ## Record / past performance
 
@@ -44,23 +46,26 @@ Campaign finance pledge: accepts only working-class individual donations; no cor
 
 ## Endorsements & donors
 
-**Tier A sourced (campaign site):**
+**On campaign endorsements page** ([frank4caschools.com/endorsements](https://www.frank4caschools.com/endorsements), re-fetched live 2026-05-29):
 - United Educators of San Francisco (UESF) — his home union
-- Santa Ana Educators Association (SAEA)
 - Vote Socialist California
-- Peace and Freedom Party
-- Green Party (per CalMatters voter guide)
+- Santa Ana Educators Association (SAEA) — via member Benjamin Vazquez
 - Dean Preston (fmr. SF Supervisor)
 - Matt Haney (CA Assemblymember)
 - SFUSD Board Commissioners: Matt Alexander, Alida Fisher
 
-**Notable absence:** California Teachers Association (endorsing Barrera), California Federation of Teachers (endorsing Muratsuchi). Lara is backed only by his local union — not the major statewide teacher associations.
+**Per CalMatters voter guide** ([CalMatters](https://calmatters.org/california-voter-guide-2026/superintendent-of-public-instruction/)):
+- Peace and Freedom Party
+- Green Party
+- (UESF also listed)
+
+**Notable absence:** California Teachers Association (endorsing Barrera — [cta.org](https://www.cta.org/our-advocacy/elect-richard-barrera-for-california-superintendent-of-public-instruction)), California Federation of Teachers (endorsing Muratsuchi — [cft.org](https://www.cft.org/news-release/cft-endorses-al-muratsuchi-superintendent-public-instruction)). Lara is backed only by his local union — not the major statewide teacher associations.
 
 Donors: per self-description, small individual contributions; $37,737 total raised is dramatically below viable candidates. Muratsuchi, Rendon, Barrera are far better-funded.
 
 ## Controversies / liabilities
 
-1. **Palestine-in-ethnic-studies pledge** — explicit commitment to defend "anti-imperialist" framing and Palestine content in schools. This is the clearest potential electoral liability; it has drawn attention in voter guides. Substantively, it inserts foreign-policy ideology into a K-12 curriculum role.
+1. **Palestine-in-ethnic-studies pledge** — explicit commitment to defend Palestine content in schools: the platform states "The field of ethnic studies is not complete without the inclusion of content related to Palestine" and he will "continue to defend educators who teach the truth about the Palestinian struggle" ([frank4caschools.com](https://www.frank4caschools.com/), re-fetched live 2026-05-29). This is the clearest potential electoral liability. Substantively, it inserts foreign-policy ideology into a K-12 curriculum role.
 2. **PSL/Peace and Freedom Party membership** — Marxist-affiliated party; outside the CA Democratic mainstream. Likely a ceiling on electability in a top-2 primary competing against Democrats.
 3. **No electability path** — $37K raised vs. multi-million-dollar campaigns for Rendon, Muratsuchi, Barrera. Not polling in top-2.
 4. **No administrative experience** — has never run an agency, managed a budget, or set policy at scale. The SSPI oversees a $150B budget. Union VP ≠ bureaucratic executive capacity.
@@ -75,4 +80,7 @@ Donors: per self-description, small individual contributions; $37,737 total rais
 - [B] CalMatters 2026 Voter Guide — Superintendent of Public Instruction: https://calmatters.org/california-voter-guide-2026/superintendent-of-public-instruction/ (fetched 2026-05-28)
 - [B] EdSource video Q&A announcement: https://edsource.org/2026/frank-lara-california-superintendent-candidate/758960 (fetched 2026-05-28) — confirms non-participation in main forum; no prior elected office
 - [B] Press Democrat — Newsom restructuring article: https://www.pressdemocrat.com/2026/05/25/state-superintendent-candidates-slam-newsom-proposal-to-strip-position-of-its-authority-over-schools/ (fetched 2026-05-28)
-- [B] Transparency USA campaign finance: https://www.transparencyusa.org/ca/candidate/frank-lara — $37,737 raised as of April 2026
+- [B] Transparency USA campaign finance: https://www.transparencyusa.org/ca/candidate/frank-lara — $37,737 raised as of April 18, 2026; $12,814 COH; $25,026 expenditures
+- [A] CA Secretary of State voter guide — Superintendent candidate statements: https://voterguide.sos.ca.gov/candidates/superintendent-candidate-statements.htm (confirms Lara certified on ballot, statement present)
+- [B] CTA — Barrera endorsement: https://www.cta.org/our-advocacy/elect-richard-barrera-for-california-superintendent-of-public-instruction
+- [B] CFT — Muratsuchi endorsement: https://www.cft.org/news-release/cft-endorses-al-muratsuchi-superintendent-public-instruction
