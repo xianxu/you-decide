@@ -22,13 +22,15 @@ Announced candidacy January 20, 2026. Filed as No Party Preference (NPP). Distri
 
 ## Why NPP — not D or R
 
-Stein's pitch is structural, not ideological: the two-party system is the problem. His stated rationale: both parties gerrymander, manufacture government shutdowns, and serve special interests over constituents. As an attorney with an established income, he frames financial independence from the party apparatus as a selling point — "my life doesn't depend on me getting elected." Campaign theme: "Bridge the Divide." He states: "It's wrong that two parties are gerrymandering our country for themselves... I'll work with all, for you and us, but remain staunchly Independent." No indication of prior party registration history in sources.
+Stein's pitch is structural, not ideological: the two-party system is the problem. Campaign theme "Bridge the Divide! Vote Independent (No Party Preference)!"; he argues "There are 435 members of the House of Representatives, but not one is an Independent. That's no way to bridge the partisan divide," and "It's wrong that two parties are gerrymandering our country for themselves." [(votestein.com)](https://votestein.com/) He has said he is "especially concerned about the country's political polarization, which motivated him to run as an Independent." [(Los Altos Online)](https://www.losaltosonline.com/news/independent-congressional-candidate-stein-concerned-about-nation-s-political-polarization/article_840cefd6-23aa-47bc-9068-2469df777430.html) No indication of prior party registration history in sources.
 
 ## Stated positions
 
-**Social Security:** Three-part fix — (1) raise the income cap on Social Security taxes, (2) gradually increase the retirement age, (3) expand program participation. Claims to be "the only candidate with a detailed plan" to maintain solvency for 75+ years. This is his signature policy differentiator. (Los Altos Online — Tier B)
+**Social Security:** A three-part plan to maintain long-term solvency — (1) raise the income cap on Social Security taxes, (2) gradually increase the retirement age, (3) expand program participation. This is his signature policy differentiator. [(Los Altos Online)](https://www.losaltosonline.com/news/independent-congressional-candidate-stein-concerned-about-nation-s-political-polarization/article_840cefd6-23aa-47bc-9068-2469df777430.html)
 
-**Electoral / governance reform:** End gerrymandering nationwide. Term limits for Congress. Campaign finance reform ("reign in special interests"). Criticizes "billionaire-financed parties."
+**DATA-GAP** [axis: none; severity: low; last-attempt: 2026-05-29]: the framings "the only candidate with a detailed plan" and "75-year solvency" were not in the Los Altos Online article or on the campaign site — dropped pending a claim-bound source.
+
+**Electoral / governance reform:** Ends gerrymandering nationwide; criticizes "billionaire-financed parties." [(votestein.com)](https://votestein.com/) Term limits for Congress and campaign-finance reform were not stated on the campaign home page on this pass.
 
 **Climate / environment:** Supports environmental action; cites coastal sea-level rise as personally observable. No specific policy mechanism stated beyond general prioritization.
 
@@ -54,14 +56,14 @@ No elected or appointed public office. Nonprofit board service (Coastside Hope, 
 
 **Endorsements:** None surfaced in any Tier A or B source.
 
-**Campaign finance (FEC committee C00932533 — Tier A, data through May 13, 2026):**
-- Total raised: $67,019
-  - Individual contributions: $26,097
-  - Candidate self-loan: $32,000
-  - Candidate contribution: $8,922
-- Total disbursements: $53,927
-- Cash on hand: $14,992
-- Outstanding debt: $32,000 (candidate loan)
+**Campaign finance** (FEC committee C00932533, coverage Jan 1 – May 13, 2026): [(FEC.gov — C00932533)](https://www.fec.gov/data/committee/C00932533/)
+- Total receipts: $67,018.84
+  - Individual contributions: $26,096.84
+  - Candidate self-loan: $32,000.00
+  - Candidate contribution: $8,922.00
+- Total disbursements: $53,927.05
+- Cash on hand: $14,991.79
+- Outstanding debt: $32,000.00 (candidate loan)
 
 Effectively self-financed. Fundraising far below threshold for a competitive House race. No PAC money.
 
