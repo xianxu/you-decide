@@ -6,11 +6,10 @@ last-updated: 2026-05-28
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: issues-flagged
+review: passed
 reviewed-by: codex
 reviewed-on: 2026-05-29
-review-ref: reviews/2026/2026-05-29-ca-2026-final-batch2.md
-review-note: final batch2 verified Ballotpedia source-table label is now Tier C/background-only; remaining issue is malformed DATA-GAP marker for FEC finance note
+review-ref: reviews/2026/2026-05-29-ca-2026-close-batch2.md
 ---
 
 # Sam Liccardo — 2026 US House CA-D16
