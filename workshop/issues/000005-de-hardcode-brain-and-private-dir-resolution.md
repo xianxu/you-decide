@@ -1,9 +1,10 @@
 ---
 id: 000005
-status: open
+status: done
 deps: []
 created: 2026-05-28
 updated: 2026-05-28
+actual_hours: 2.5
 ---
 
 # De-hardcode brain origin + private-dir resolution for standalone use
@@ -82,6 +83,8 @@ resolved location to the user once (transparency, non-blocking).
 
 ## Log
 
+
+- 2026-05-28: closed — resolver tested (default ../who-to-vote-for, env override normalized to abs, brain-symlink logical); grep-clean of Xian/philosophy-xian/operative-brain-path across substrate+skill+atlas+README; 6 leaked reads excised (private copies in brain), profiles neutral facts->Sources; fresh-context review gate passed after C1/I1/I2/M1/M2 fixes
 **2026-05-28 — implemented, reviewed, fixed.**
 
 Added `scripts/private-dir.sh` (resolver: `$YOU_DECIDE_PRIVATE_DIR` → else
