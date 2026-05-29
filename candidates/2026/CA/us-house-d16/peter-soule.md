@@ -86,5 +86,5 @@ None found — no media coverage, no documented controversies. The absence of co
 | [CA SOS contact list](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/contact-list.pdf) | A | Official | Neutral |
 | [SM Daily Journal — CA-16 race overview](https://www.smdailyjournal.com/news/local/sam-liccardo-defends-district-16-seat-against-3-challengers/article_ef8dbf14-c372-46ef-9fa6-341d8b1573fa.html) | B | Local journalism | Neutral |
 | [BallotReady — Peter Sundin Soule](https://www.ballotready.org/people/peter-sundin-soule) | C | Secondary aggregator | Neutral |
-| [Ballotpedia — CA US House 2026](https://ballotpedia.org/United_States_House_of_Representatives_elections_in_California,_2026) | B/C | Secondary | Neutral |
+| [Ballotpedia — CA US House 2026](https://ballotpedia.org/United_States_House_of_Representatives_elections_in_California,_2026) | C | Secondary (aggregator, scoping only) | Neutral |
 | [FEC CA-16 2026](https://www.fec.gov/data/elections/house/CA/16/2026/) | A | Official (no filings found) | Neutral |
