@@ -19,7 +19,7 @@ review-ref: reviews/2026/2026-05-28-ca-2026-candidates-batch1.md
 
 ## Coverage note
 
-**Low-profile candidate. Sparse coverage.** Soule did not respond to interview requests from the SM Daily Journal. No Wikipedia page. BallotReady profile is empty of background and endorsements. All position data comes exclusively from his campaign website (souleforcongress.com) and one local news brief. Apply heavy sourcing discount — all positions are self-reported, unverified by independent journalism.
+**Low-profile candidate. Sparse coverage.** Soule did not respond to interview requests from the SM Daily Journal. No Wikipedia page. BallotReady profile is empty of background and endorsements. All position data comes exclusively from his campaign website (souleforcongress.com), re-fetched 2026-05-29 and confirmed live with every listed position present verbatim (no scrub rot). Apply heavy sourcing discount — positions are self-reported, unverified by independent journalism. FEC shows no committee/filings for Soule in CA-16 2026 as of this pass.
 
 ## Background
 
@@ -45,8 +45,8 @@ All from [souleforcongress.com/issues](https://souleforcongress.com/issues) unle
 
 **Public safety / security:**
 - Oppose local restrictions on Second Amendment rights
-- Prevent Chinese ownership of farmland near military bases
-- Legislation against religious discrimination
+- "Restricting Red China from buying American farmland near our military bases"
+- "Supporting legislation that targets bigotry against Christians, Jews and others"
 
 **Energy / economy:**
 - Increase oil drilling and refinery construction; lower energy costs
