@@ -84,7 +84,7 @@ Invoke [[resolve-ballot]] with `(address, year)`. Returns a structured ballot ma
 ### Stage 2 — Per-candidate research (gap-fill from shared cache)
 For each candidate in the resolved ballot:
 - **Cached** (`candidates/<year>/<state>/<race>/<slug>.md` exists in the shared substrate): reuse — another user already researched this candidate.
-- **Missing**: dispatch a research subagent that produces a candidate profile following the schema (Background, Stated positions, Record, Endorsements & donors, Controversies, Sources). Output goes to the shared `candidates/` location so future users (or future runs) benefit.
+- **Missing**: dispatch a research subagent that produces a candidate profile following the schema (Background, Stated positions, Record, Endorsements & donors, Controversies, Sources). The profile must be **born claim-bound** — load [[source-hygiene-tier-list]] (+ the relevant `sources/<jurisdiction>.md`) into the subagent prompt and require: every decisive claim traceable to a Tier-A/B source at the claim level (single-source-section rule), targeted per-subject fetches on multi-subject sources, and no claim dropped on a summary's silence. Genesis-tracking is a generation requirement, not just a review check. Output goes to the shared `candidates/` location so future users (or future runs) benefit.
 
 Dispatch missing-candidate research subagents in parallel.
 

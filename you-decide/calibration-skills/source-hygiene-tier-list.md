@@ -1,5 +1,5 @@
 ---
-rule: For decisive candidate claims, prefer Tier A (primary / official) and Tier B (authoritative-secondary) sources over Wikipedia and AI aggregators. Tier classification is principle-based; concrete per-jurisdiction outlet lists live in `sources/<jurisdiction>.md`.
+rule: For decisive candidate claims, (1) prefer Tier A (primary / official) and Tier B (authoritative-secondary) sources over Wikipedia and AI aggregators, and (2) bind every claim to its source at the claim level — at generation, not only at review (single-source-section rule below). Verify before binding: targeted per-subject fetch on multi-subject sources; absence-in-a-summary ≠ absence-in-the-source. Concrete per-jurisdiction outlet lists live in `sources/<jurisdiction>.md`.
 applies-to: [research-subagents, profile-generation, all races]
 born-from: 2026-05-27 | 2026 CA governor | Codex peer review flagged Wikipedia and Factually.co as weak source choices, and noted LLM-generation artifacts ("WebSearch" literal text, typo "franding") in final profile text
 generated-by: human
@@ -27,6 +27,22 @@ When research subagents build candidate profiles, source quality matters. This s
 - **AI-summary aggregators** (Factually.co et al.) — derivative; chase the underlying primary
 - **Partisan outlets** (per per-state files) — usable only with explicit tilt flag plus triangulation against Tier A or B
 
+## Claim-level binding (how sources attach to claims)
+
+Genesis-tracking requires every **decisive claim** (a discrete, checkable assertion — roughly a sentence or bullet) to be traceable to a Tier-A/B source. **This applies at generation, not only at review** — a profile should be *born* claim-bound, so the review→fix loop isn't endlessly cleaning up the same defect.
+
+**Single-source-section rule.** Provenance is per-claim, but it can be carried by a **section preamble** when a whole section draws on one source — repeating one URL on every bullet of a genuinely single-source section adds no verification value; strictness belongs where the ambiguity is.
+- **Scope = the section, delimited by the next `##`/`###` heading.** A section may open with a preamble — *"Source for this section: [URL] (Tier A), unless a claim cites otherwise"* — binding every claim down to the next heading.
+- A claim from a **different** source MUST carry its own inline cite (overrides the preamble; marks the exception and where the single-source run ends).
+- **Mixed-source section → per-claim URLs required.** Never lean on a preamble for a multi-source section.
+
+**Binding method — verify before you bind (or drop):**
+- **Targeted extraction on multi-subject sources.** A source covering several entities (candidate-forum write-ups, comparison pieces — often cited across multiple profiles) is a cross-attribution hazard. Extract with a **per-subject targeted fetch** ("quote exactly what *X* said about *Y*"), never a generic "summarize" query — generic summaries blur who-said-what and silently drop specifics.
+- **Absence in a summary ≠ absence in the source.** Never drop or omit a claim because a fetch summary didn't surface it; a small-model fetch summarizer omits detail. Confirming a claim is *not* present requires a targeted negative check against the source itself.
+- **Shared multi-candidate sources are attribution-prone** — pin each claim to the right subject.
+
+Born-from: the May-2026 binding campaign — profiles generated without claim-level binding had to be retro-bound, and a same-stack fixer (Opus 4.8) dropped 3 real claims a different stack restored (a forum article it mis-summarized + cross-attributed). Enforcing this at generation prevents both.
+
 ## Composing per-jurisdiction sources
 
 For a race in state X, the research subagent should load:
@@ -52,4 +68,4 @@ and clean up matches.
 
 ## Don't confuse with
 
-- **Genesis tracking** (architecture principle) — every claim is sourced. This rule is about *which* sources to prefer when there's a choice.
+- **Genesis tracking** is the architecture principle (*every claim is sourced*); this skill is its operational form — *which* sources to prefer (tier list) and *how* claims attach to them (claim-level binding above). [[review]] enforces the same rules at review time.
