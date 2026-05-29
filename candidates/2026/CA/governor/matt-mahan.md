@@ -18,9 +18,9 @@ review-ref: reviews/2026/2026-05-29-ca-2026-final-batch1.md
 
 Matthew William Mahan, born November 18, 1982, in San Francisco, grew up working-class in Watsonville, CA — his father a union letter carrier, his mother a schoolteacher ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)). He attended Bellarmine College Preparatory on a low-income scholarship, then graduated *magna cum laude* from Harvard in 2005 (social studies, Harvard Undergraduate Council president) ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)).
 
-After Harvard: two years teaching 7th–8th grade English/history at Alum Rock Middle School via Teach for America (2006–2008) ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)). He then joined **Causes**, a civic-tech startup co-founded by Facebook/Napster investor Sean Parker — a Facebook app connecting nonprofits with supporters — eventually becoming its CEO ([Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/)).
+After Harvard: two years teaching 7th–8th grade English/history at Alum Rock Middle School via Teach for America (2006–2008) ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)). He then joined **Causes**, a civic-tech startup (a Facebook app connecting nonprofits with supporters) co-founded by Facebook/Napster investor Sean Parker, rising from nonprofit-partnerships director through VP of business development and COO to CEO and president ([Joint Venture profile](https://jointventure.org/read-more-profiles/1724-meet-matt-mahan-brigade); [Fortune](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/)).
 
-In 2014, Mahan founded **Brigade**, a nonpartisan social platform for civic engagement and voter participation, backed by Sean Parker, Ron Conway (SV Angel), and Marc Benioff ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)). Brigade was acquired by Pinterest in 2019; its technology was later sold to Countable ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)). The Brigade period is load-bearing for understanding his frame: he thinks of politics through a civic-product lens — accountability metrics, reducing friction for participation, data-driven outcomes.
+In 2014, Mahan co-founded **Brigade**, a nonpartisan social platform for civic engagement and voter participation — a "Facebook or LinkedIn of politics" — and served as its CEO; it launched with more than $9 million in investment from Sean Parker, venture capitalist Ron Conway, and Salesforce CEO Marc Benioff ([Joint Venture profile](https://jointventure.org/read-more-profiles/1724-meet-matt-mahan-brigade); [SF Standard](https://sfstandard.com/2026/01/29/matt-mahan-governor-san-jose-mayor-gavin-newsom/)). Brigade wound down in 2019: its engineering team was acqui-hired by Pinterest while its technology and data (including the Causes assets) were sold off ([SF Standard](https://sfstandard.com/2026/01/29/matt-mahan-governor-san-jose-mayor-gavin-newsom/)). The Brigade period is load-bearing for understanding his frame: he thinks of politics through a civic-product lens — accountability metrics, reducing friction for participation, data-driven outcomes.
 
 He is 43, married to Silvia-Wedad Scandar (met at Harvard), two children, lives in San Jose's Almaden Valley ([Wikipedia](https://en.wikipedia.org/wiki/Matt_Mahan)).
 
@@ -83,7 +83,7 @@ Called for councilmember Omar Torres's resignation after child sexual misconduct
 Elected 2021, District 10. Limited public record on specific votes available in sources reviewed.
 
 **Brigade (pre-politics):**
-CEO of a civic-tech startup aimed at increasing voter participation — ideologically consistent with "good government" moderate positioning. Acquired/folded 2019; the product didn't achieve mass scale, which is a fair data point on the limits of techno-optimist fixes to civic problems (*inference*).
+Co-founder and CEO of a civic-tech startup aimed at increasing voter participation — ideologically consistent with "good government" moderate positioning ([Joint Venture profile](https://jointventure.org/read-more-profiles/1724-meet-matt-mahan-brigade)). Wound down in 2019; the product didn't achieve mass scale, which is a fair data point on the limits of techno-optimist fixes to civic problems (*inference*).
 
 **Attendance while campaigning:**
 Between January–May 2026, Mahan missed more than one-third of San Jose city council meetings (7 of 19) while campaigning, causing quorum delays during budget deficit negotiations — while collecting his full $228,005 salary ([San José Spotlight](https://sanjosespotlight.com/san-jose-mayors-bid-for-ca-governor-fizzles-out/)).
@@ -129,7 +129,9 @@ Raised nearly $40 million by May 2026; independent expenditure groups spent $18M
 
 | # | Source | Tier | Note |
 |---|--------|------|------|
-| 1 | [Wikipedia — Matt Mahan](https://en.wikipedia.org/wiki/Matt_Mahan) | C | Retained for bio orientation only; not cited for decisive claims |
+| 1 | [Wikipedia — Matt Mahan](https://en.wikipedia.org/wiki/Matt_Mahan) | C | Retained for bio orientation only (birth, Bellarmine scholarship, Harvard, TFA, family); not cited for decisive claims |
+| 1a | [Joint Venture Silicon Valley — Meet Matt Mahan, Brigade.com](https://jointventure.org/read-more-profiles/1724-meet-matt-mahan-brigade) | A | Primary civic-org profile w/ direct quotes; source for Causes role progression, Brigade founding/CEO, $9M+ backers (Parker, Conway, Benioff) |
+| 1b | [SF Standard — Mahan enters race for governor (Jan 2026)](https://sfstandard.com/2026/01/29/matt-mahan-governor-san-jose-mayor-gavin-newsom/) | B | Source for Brigade founding/backers and 2019 wind-down (Pinterest acqui-hire, tech/data sold) |
 | 2 | [CalMatters voter guide 2026 — Governor](https://calmatters.org/california-voter-guide-2026/governor/) | B | Nonpartisan CA news outlet; strong track record |
 | 3 | [CalMatters — Moderate Democrat Matt Mahan runs for CA governor (Jan 2026)](https://calmatters.org/politics/2026/01/governors-race-matt-mahan/) | B | Entry announcement reporting |
 | 4 | [Fortune — Silicon Valley sees only one 'sane' Democrat (May 2026)](https://fortune.com/2026/05/07/who-is-matt-mahan-silicon-valley-california-governor-san-jose-mayor/) | B | Slight sympathetic tilt toward Silicon Valley frame; useful for donor data |
