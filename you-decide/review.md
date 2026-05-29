@@ -56,6 +56,27 @@ rg '^generated-by:' . | sort | uniq -c
 # (requires per-file check; one-liner only approximates)
 ```
 
+## Claim-level binding (genesis-tracking, in practice)
+
+Genesis-tracking requires every **decisive claim** (a discrete, independently-checkable factual assertion — roughly a sentence or bullet) to be traceable to a Tier-A/B source. Two practical rules govern *how* provenance is recorded and *how* a fixer must verify before binding.
+
+### Single-source-section rule
+
+Provenance is per-claim, but it can be carried by a **section preamble** when the whole section draws on one source — repeating one URL on every bullet of a genuinely single-source section adds no verification value; the strictness belongs where the ambiguity is (mixed sourcing).
+
+- **Scope = the section, delimited by the next `##`/`###` heading.** A section MAY open with a source preamble — e.g. *"Source for this section: [URL] (Tier A), unless a claim cites otherwise."* That preamble binds **every claim from the preamble down to the next heading**.
+- A claim drawing on a **different** source MUST carry its own inline cite; that per-claim cite overrides the preamble and self-marks the exception. (It also marks where a single-source section effectively ends early — at the first claim that cites elsewhere.)
+- **Mixed-source section → per-claim URLs required.** Never lean on a section preamble for a section whose claims come from more than one source.
+- **Reviewer check:** on a single-source section, spot-check that no claim actually came from elsewhere — a stowaway off-source claim silently inheriting the wrong preamble is the failure the per-claim-override guards against.
+
+### Binding method — verify before you bind (or drop)
+
+Lessons from the May-2026 binding campaign, where a same-stack fixer dropped three real, source-supported claims that a different stack restored (the same generic fetch omitted some specifics and the fixer cross-attributed another):
+
+- **Targeted extraction on multi-subject sources.** A source covering several entities (a candidate-forum write-up, a comparison piece — often cited across multiple profiles) is a cross-attribution hazard. Bind from it with a **per-subject targeted fetch** ("quote exactly what *X* said about *Y*"), never a generic "summarize" query — generic summaries blur who-said-what *and* silently drop specifics.
+- **Absence in a summary ≠ absence in the source.** Never drop or gap a claim because a fetch summary didn't surface it — a small-model fetch summarizer omits details. Dropping a claim requires a **targeted negative check** against the source itself, not a generic-summary omission.
+- **Flag shared multi-candidate sources.** When one source is cited across several profiles, attribution must pin each claim to the right subject; treat such sources as attribution-prone and re-verify per subject.
+
 ## Data gaps — DATA-GAP / DATA-FIXME
 
 Some data quality issues are permanent fixtures, not transient bugs: a campaign-finance source that 403s, a claim no Tier A/B source confirms, a stale count. The substrate must **tolerate** these — the failure modes to avoid are (a) asserting an unverified fact anyway, and (b) parking a file in `issues-flagged` forever because one gap can't be closed. The convention: log the gap **inline, visibly, next to the fact it concerns**, and move on.
