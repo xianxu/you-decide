@@ -9,10 +9,10 @@ last-updated: 2026-05-28
 status: active
 generated-by: claude
 generated-on: 2026-05-28
-review: issues-flagged
+review: passed
 reviewed-by: codex
 reviewed-on: 2026-05-29
-review-ref: reviews/2026/2026-05-29-ca-2026-final-batch1.md
+review-ref: reviews/2026/2026-05-29-ca-2026-close-batch1.md
 ---
 
 # Peter Soule — 2026 CA-16 US House (Republican challenger)
