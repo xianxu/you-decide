@@ -50,7 +50,7 @@ From official Assembly site and campaign site unless noted.
 
 **Independent/notable cross-caucus votes**:
 - Opposed Prop 36 (2024) — vocal, not silent; progressive-caucus position, diverged from ~70% statewide support. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
-- (The previously listed "voted against a California wealth-tax bill / 'very misleading'" item is removed — see the DATA-FIXME under **Fiscal** above; the bill died in committee with no floor vote.)
+- (The previously listed "voted against a California wealth-tax bill / 'very misleading'" item is removed — see the **Fiscal** note above; no such floor vote occurred — all three CA wealth-tax bills died without enactment.)
 
 **Committee assignments**: Chairs Assembly Committee on Elections; previously chaired Higher Education Committee. Also sits on Business and Professions (chair), Governmental Organization, Insurance. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944)
 

@@ -11,8 +11,7 @@ Nine classes. The first group are **roots** (authored or externally sourced — 
 | Class | Path | Root/derived | Owner |
 |---|---|---|---|
 | Source registry | `sources/<US\|state>.md` | root | human-curated, rarely changes |
-| Calibration skills (shared) | `you-decide/calibration-skills/*.md` | root | curated through use |
-| Calibration skills (private) | `<private>/calibration-skills/*.md` | root | per-user |
+| Calibration skills | `you-decide/calibration-skills/*.md` (shared) + `<private>/calibration-skills/*.md` (per-user) | root | curated through use |
 | Skill bundle (axis taxonomy, templates, sub-skills) | `you-decide/**` | root | the algorithm itself |
 | Election manifest | `elections/<year>/<date>-<state>-<type>.md` | root-ish (derived from SoS filings, an external source) | research subagents |
 | Candidate profile | `candidates/<year>/<state>/<office>/<slug>.md` | **derived** | research subagents (Stage 2) |
