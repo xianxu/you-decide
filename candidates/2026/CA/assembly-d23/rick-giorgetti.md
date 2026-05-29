@@ -68,7 +68,7 @@ No institutionalist red flags documented — no 2020-fraud claims, no ballot-int
 | URL | Tier | Type | Partisan tilt |
 |---|---|---|---|
 | [SM Daily Journal — Berman vs. Republican challengers](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html) | B | Journalism | Neutral / local |
-| [Garry's Guide — AD-23 2026 primary](https://garrysguide.org/elections/races/1859) | B | Aggregator / election guide | Neutral |
+| [Garry's Guide — AD-23 2026 primary](https://garrysguide.org/elections/races/1859) | C | Aggregator / election guide (background/scoping only — not used for decisive claims) | Neutral |
 | [CA SOS certified candidates list](https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/cert-list-candidates.pdf) | A | Official / primary | N/A |
 | [SM County candidate roster (Mar 2026)](https://smcacre.gov/system/files/2026-03/51_candidateroster03102026.pdf) | A | Official / primary | N/A |
 | [CRA 2026 primary endorsements](https://cragop.org/2026-primary-election-endorsements/) | B | Party (CA GOP right) | Right |
