@@ -116,4 +116,4 @@ Sources: [Clerk.house.gov profile](https://clerk.house.gov/members/L000607) [Tie
 | [Local News Matters — AI regulation, Apr 2026](https://localnewsmatters.org/2026/04/21/san-jose-rep-sam-liccardo-lands-at-center-of-national-fight-over-who-should-regulate-ai/) | B | AI policy; "Leading the Future" PAC |
 | [BOLD PAC — Liccardo endorsement](https://www.boldpac.com/members/sam-liccardo) | B | Congressional Hispanic Caucus endorsement |
 | [legisletter.org — voting record](https://legisletter.org/legislator/sam-liccardo-L000607) | B | Bill counts, legislative focus breakdown |
-| [Ballotpedia — Sam Liccardo](https://ballotpedia.org/Sam_Liccardo) | B (scoping) | Race overview, challenger list |
+| [Ballotpedia — Sam Liccardo](https://ballotpedia.org/Sam_Liccardo) | C | Race overview, challenger list (aggregator, scoping only) |
