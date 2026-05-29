@@ -36,7 +36,7 @@ Chung currently has **three active lawsuits against Rosen**: two related to the 
 
 ## Stated positions
 
-Source: campaign website [(chungforchange.com/issues)](https://www.chungforchange.com/issues), Davis Vanguard interview [(May 2026)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/).
+Source: campaign website (re-fetched live 2026-05-29 — page currently carries the platform claims below) [(chungforchange.com/issues)](https://www.chungforchange.com/issues), and a reform-advocacy-outlet interview [(Davis Vanguard, May 2026)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/) — Tier C, tilt flag.
 
 **Violent and repeat offenders:**
 - Eliminate the "revolving door" for repeat and violent offenders
@@ -52,9 +52,9 @@ Source: campaign website [(chungforchange.com/issues)](https://www.chungforchang
 - Divert most misdemeanors to conserve resources for serious felonies [(chungforchange.com)](https://www.chungforchange.com/issues)
 
 **Transparency and Brady compliance:**
-- Systemic Brady violations in the current office: prosecutors receive only selective information from supervisors about officer credibility before testimony, not direct access to underlying records [(Davis Vanguard)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/)
-- Proposal: grant prosecutors, public defenders, and the public greater access to officer credibility findings and disciplinary records
-- Partner conviction integrity unit with universities, nonprofits, and law students for wrongful-conviction review [(Davis Vanguard)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/)
+- *Chung's campaign allegation* (not an adjudicated finding): that the current office has systemic Brady-disclosure problems — prosecutors get only selective supervisor summaries of officer-credibility issues before testimony rather than direct access to underlying records. Presented as his stated critique, sourced to his interview with a reform-advocacy outlet. [(Davis Vanguard)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/) — Tier C, tilt flag
+- Proposal: grant prosecutors, public defenders, and the public greater access to officer-credibility findings and disciplinary records [(Davis Vanguard)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/) — Tier C
+- Partner a conviction-integrity unit with universities, nonprofits, and law students for wrongful-conviction review [(Davis Vanguard)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/) — Tier C
 
 **Corrupt public officials:**
 - Prosecute law-breaking officials equally — politicians, judges, attorneys, police [(chungforchange.com)](https://www.chungforchange.com/issues)
@@ -100,7 +100,7 @@ Source: campaign website [(chungforchange.com/issues)](https://www.chungforchang
 - [Palo Alto Daily Post — "Rosen forced to re-hire deputy DA who criticized his office" (Dec 2022)](https://padailypost.com/2022/12/25/rosen-forced-to-re-hire-deputy-da-who-criticized-his-office/) — Tier B regional
 - [Palo Alto Daily Post — "Prosecutor sues DA Rosen a third time over job" (Jul 2025)](https://padailypost.com/2025/07/30/prosecutor-sues-da-rosen-a-third-time-over-job/) — Tier B regional
 - [San José Spotlight — "Dollars flow into Santa Clara County DA, supervisor races" (May 2026)](https://sanjosespotlight.com/dollars-flow-into-santa-clara-county-da-supervisor-races/) — Tier B regional nonprofit
-- [Davis Vanguard — "DA Candidate Daniel Chung Targets 'Corruption and Injustice'" (May 2026)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/) — Tier B-adjacent; criminal-justice-reform lean, flag accordingly; substantive interview
+- [Davis Vanguard — "DA Candidate Daniel Chung Targets 'Corruption and Injustice'" (May 2026)](https://davisvanguard.org/2026/05/prosecutorial-misconduct-police-accountability/) — **Tier C** (reform-advocacy outlet; tilt flag). Used only for Chung's own stated positions/allegations, not for asserting facts about Rosen's office
 - [Bolts Magazine — "This DA Tried to Punish Stanford Protesters Again, Until Judge Pulled Him from Case"](https://boltsmag.org/santa-clara-da-jeff-rosen-recused-stanford-student-palestine-prosecutors-retrial/) — left-of-center criminal-justice outlet; use for factual events, flag tilt on framing
 - [Stanford Daily — "Santa Clara residents protest against DA Jeff Rosen" (May 2026)](https://stanforddaily.com/2026/05/19/local-residents-protest-against-da/) — student paper; Tier C for conclusions, Tier B for on-the-ground reporting
 - [Palo Alto Online — "Dollars flow into Santa Clara County DA, supervisor races" (May 2026)](https://www.paloaltoonline.com/election/2026/05/18/dollars-flow-into-santa-clara-county-da-supervisor-races/) — Tier B regional
