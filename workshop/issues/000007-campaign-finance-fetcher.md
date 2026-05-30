@@ -14,7 +14,7 @@ The genesis-binding campaign (28 CA-2026 candidate profiles, May 2026) surfaced 
 - **State / county (CA):** FPPC / Cal-Access (now `powersearch.sos.ca.gov`) and county NetFile portals (e.g. `netfile.com/public/MAT`) — interactive, JS-driven, not directly fetchable.
 - **Federal (US House):** FEC (`fec.gov/data/candidate/<id>`) — has an API but the per-candidate cycle summaries weren't always posted / fetchable in-session.
 
-Result: several profiles carry `DATA-GAP [axis: capture-risk; severity: med|low]` markers for donor/fundraising data that *should* be bindable to a primary filing. `rg 'DATA-GAP.*capture-risk' candidates/` lists them.
+Result: several profiles carry `DATA-GAP [axis: capture-risk; severity: med|low]` markers for donor/fundraising data that *should* be bindable to a primary filing. `rg 'DATA-GAP.*capture-risk' data/candidates/` lists them.
 
 This is **tooling**, not data debt — hence a `workshop/issues/` item (per `review.md`'s routing rule): build the fetcher, then a fixer pass closes the finance gaps in bulk.
 

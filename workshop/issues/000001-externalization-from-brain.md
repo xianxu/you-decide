@@ -22,13 +22,13 @@ Externalize from `brain#11` into this repo the following (probably across `docs/
 
 ### Major design decisions to document
 
-- **Privacy boundary** (candidates/ raw vs who-to-vote-for/ reads): the rationale for splitting AI-generated facts from per-user interpretation; the "shared brain + private brain" model; the rule "if reading a calibration-skill body reveals the user's preferences, it's private."
+- **Privacy boundary** (data/candidates/ raw vs who-to-vote-for/ reads): the rationale for splitting AI-generated facts from per-user interpretation; the "shared brain + private brain" model; the rule "if reading a calibration-skill body reveals the user's preferences, it's private."
 - **AI-curated, not crowdsourced**: the Wikipedia-bias-injection concern; PR policy (algorithm-yes, substrate-no); the AI-transparency manifesto.
-- **Election-day-centric ballot model**: why `elections/<year>/<date>-<state>-<type>.md` is the primary key vs per-jurisdiction × year manifests; the insight that voters think in election-days.
+- **Election-day-centric ballot model**: why `data/elections/<year>/<date>-<state>-<type>.md` is the primary key vs per-jurisdiction × year manifests; the insight that voters think in election-days.
 - **5-tier axis taxonomy**: the structure (Character, Institutional, Economic, Issue, Social); universal vs office-weighted tiers.
 - **Risk-frame, not scorecard**: Codex peer-review's pushback on mechanical scoring; the conscience-vs-strategic divergence framing.
 - **Cache-first by default**: the explicit table of cache layers; why every stage that has a cache hits it before re-dispatching.
-- **Sources organized per-jurisdiction**: `sources/US.md` + `sources/<state>.md` compose at research time; tier classification as principle (in calibration-skills) vs concrete outlet lists (in sources/).
+- **Sources organized per-jurisdiction**: `data/sources/US.md` + `data/sources/<state>.md` compose at research time; tier classification as principle (in calibration-skills) vs concrete outlet lists (in data/sources/).
 - **Review mechanism**: fresh-context + different-AI-stack as the two independence requirements; the per-file frontmatter contract making review state greppable.
 - **Survey design**: progressive disclosure (Headline 5 + opt-in deeper rounds); universal question-bank vs cycle-composed; force-choice + outlier + free-form per question.
 - **Scoring contract**: -2/+2 per axis × template weight, sum as weighted-total; the bug it fixed (subagent score-scale drift).

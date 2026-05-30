@@ -7,29 +7,29 @@ created: 2026-05-28
 updated: 2026-05-28
 ---
 
-# Build out per-state authoritative-source registry (sources/ directory)
+# Build out per-state authoritative-source registry (data/sources/ directory)
 
 ## Problem
 
-As coverage expands beyond California (via #000002), each new state needs its own `sources/<state>.md` listing authoritative outlets (Tier A primary, Tier B authoritative-secondary) for that jurisdiction. Without per-state outlet registries, the research subagents fall back to whatever the WebSearch tool surfaces — which tends to over-index on Wikipedia, blog posts, and partisan local outlets.
+As coverage expands beyond California (via #000002), each new state needs its own `data/sources/<state>.md` listing authoritative outlets (Tier A primary, Tier B authoritative-secondary) for that jurisdiction. Without per-state outlet registries, the research subagents fall back to whatever the WebSearch tool surfaces — which tends to over-index on Wikipedia, blog posts, and partisan local outlets.
 
 The tier-classification *principle* lives in `calibration-skills/source-hygiene-tier-list.md`; the concrete per-state outlet *lists* are what unblocks accurate research in new states.
 
 ## Current state
 
-- `sources/US.md` — federal (FEC, Congress.gov, AP, Reuters, NPR, Politico, etc.)
-- `sources/CA.md` — California (CalMatters, KQED, LA Times, SF Chronicle, EdSource, regional broadsheets, county registrar voter-info tools for SM/LA/SF/SAC/SC/AC/SD/OC)
+- `data/sources/US.md` — federal (FEC, Congress.gov, AP, Reuters, NPR, Politico, etc.)
+- `data/sources/CA.md` — California (CalMatters, KQED, LA Times, SF Chronicle, EdSource, regional broadsheets, county registrar voter-info tools for SM/LA/SF/SAC/SC/AC/SD/OC)
 
 ## Spec
 
 ### Composition convention
 
-Each Phase-1 / Phase-2 state addition in #000002 should be accompanied by `sources/<state>.md` populated *before* the candidate-research run, so research subagents have the right outlet list from the start.
+Each Phase-1 / Phase-2 state addition in #000002 should be accompanied by `data/sources/<state>.md` populated *before* the candidate-research run, so research subagents have the right outlet list from the start.
 
 Concretely:
-1. Add state to coverage plan → seed `sources/<state>.md` with key outlets first
+1. Add state to coverage plan → seed `data/sources/<state>.md` with key outlets first
 2. Run `scripts/populate-jurisdiction.sh STATE=<X> YEAR=<Y>` using those sources
-3. Refine `sources/<X>.md` based on what the research surfaces (outlets discovered get tier-classified and added back)
+3. Refine `data/sources/<X>.md` based on what the research surfaces (outlets discovered get tier-classified and added back)
 
 ### What to capture per state
 
@@ -54,7 +54,7 @@ Concretely:
 
 ### PR policy
 
-Unlike candidate research / controversies / ballot manifests (which are factual substrate, no external PRs), `sources/` PRs are **welcomed** — sources are research methodology metadata, and disagreement about which outlets are authoritative is itself useful signal that surfaces faster via PR review.
+Unlike candidate research / controversies / ballot manifests (which are factual substrate, no external PRs), `data/sources/` PRs are **welcomed** — sources are research methodology metadata, and disagreement about which outlets are authoritative is itself useful signal that surfaces faster via PR review.
 
 PR acceptance:
 - Tier classification follows `calibration-skills/source-hygiene-tier-list.md`
@@ -70,10 +70,10 @@ Following #000002:
 
 ## Plan
 
-- [ ] sources/TX.md
-- [ ] sources/NY.md
-- [ ] sources/FL.md
-- [ ] sources/PA.md, IL.md, OH.md, GA.md, NC.md, MI.md
+- [ ] data/sources/TX.md
+- [ ] data/sources/NY.md
+- [ ] data/sources/FL.md
+- [ ] data/sources/PA.md, IL.md, OH.md, GA.md, NC.md, MI.md
 - [ ] Remaining 40 states (long tail; populate as those states enter the scaling roadmap in #000002)
 
 ## Log

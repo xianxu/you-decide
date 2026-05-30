@@ -66,7 +66,7 @@ Read `surveys/<chosen-design>.md`. Its frontmatter + intro + question list + cha
 ### Stage 2 — Compose with cycle data
 
 For designs that reference cycle-specific composition (Round 2 and 4 in `progressive`, the 3 outliers in `essay`):
-- Load `controversies/<year>/<state>.md` (per `[[identify-controversies]]`)
+- Load `data/controversies/<year>/<state>.md` (per `[[identify-controversies]]`)
 - Compose questions from `Survey-ready stance:` entries + candidate-side summaries
 - Skip if cycle has no matching entries
 

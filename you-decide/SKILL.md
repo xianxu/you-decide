@@ -14,7 +14,7 @@ Help the user decide how to vote in an upcoming election. The deliberation happe
 
 **Path conventions in this file.** Two roots:
 
-- **Shared substrate** — `candidates/<year>/...`, `elections/<year>/...`, `controversies/...`, `sources/...`, `templates/...`, `you-decide/calibration-skills/` — is **repo-root-relative** (committed, reusable across users). The skill files live in the inner `you-decide/` folder (the skill bundle); the shared substrate sits at repo root.
+- **Shared substrate** — `data/candidates/<year>/...`, `data/elections/<year>/...`, `data/controversies/...`, `data/sources/...`, `data/templates/...`, `you-decide/calibration-skills/` — is **repo-root-relative** (committed, reusable across users). The skill files live in the inner `you-decide/` folder (the skill bundle); the shared substrate sits under `data/` at repo root.
 - **Private substrate** — every `who-to-vote-for/...` path (the user's `philosophy-<user>.md`, per-axis `-read.md` files, `vote.md`, user-private `calibration-skills/`) — lives in the **user's private dir**, resolved by `scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR` if set, otherwise `<repo-root>/../who-to-vote-for` (a sibling of the repo, so it's never inside the repo and a `git push` can't leak it). Read `who-to-vote-for/X` in this file as `<private-dir>/X`. Resolve once per session via the script; announce the resolved location to the user the first time you write there.
 
 A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`; invoked through that symlink the default resolves to the brain's own `brain/data/life/politics/who-to-vote-for/`. Brain installs should set `$YOU_DECIDE_PRIVATE_DIR` to that path explicitly (the brain's private tree is not beside the *physical* repo checkout).
@@ -32,7 +32,7 @@ The skill auto-detects:
 - Whether the user has a `philosophy-<user>.md` (cold-start → triggers [[bootstrap-survey]] first)
 - The upcoming election for the user's state (via [[resolve-ballot]])
 - The user's districts (address → district mapping)
-- Which candidates need research vs. already cached in the shared `candidates/` substrate
+- Which candidates need research vs. already cached in the shared `data/candidates/` substrate
 
 ### Race-by-race (manual mode)
 
@@ -44,7 +44,7 @@ The conversational mode used during M0-M3 development. User names a specific rac
 |---|---|---|
 | Philosophy | `philosophy-<user>.md` | Values and axes substrate. The source of truth for what the user believes. |
 | Calibration skills | `calibration-skills/*.md` | Accumulated judgments from prior disagreement loops. Apply automatically. |
-| Per-office axis template | `templates/<office>.md` | Reusable axis weighting for a given office shape (governor, mayor, judge, etc.). |
+| Per-office axis template | `data/templates/<office>.md` | Reusable axis weighting for a given office shape (governor, mayor, judge, etc.). |
 | Candidate profiles | `<year>/<state>/<office>/<candidate>.md` | Genesis-tracked, with inline source URLs. Generate via research subagents if absent. |
 | Current polling | Fresh WebSearch each cycle | Not persisted — moving target. Used for the strategic-vote analysis. |
 | Race scope | Conversation with the user | Office, jurisdiction, voting system (top-2, ranked-choice, plurality), date, hard filters. |
@@ -59,11 +59,11 @@ Every stage that has a cached artifact reuses it rather than regenerating. The s
 
 | Stage | Artifact | Cache location | Refresh trigger |
 |---|---|---|---|
-| 1 | Election manifest | `elections/<year>/<date>-<state>-<type>.md` | Per proximity-to-election rules in [[resolve-ballot]] |
-| 2 | Candidate profile | `candidates/<year>/<state>/<race>/<slug>.md` | Candidate position changes (post-debate, post-major-news); otherwise indefinite reuse |
+| 1 | Election manifest | `data/elections/<year>/<date>-<state>-<type>.md` | Per proximity-to-election rules in [[resolve-ballot]] |
+| 2 | Candidate profile | `data/candidates/<year>/<state>/<race>/<slug>.md` | Candidate position changes (post-debate, post-major-news); otherwise indefinite reuse |
 | 3 | Per-axis read | `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` | Philosophy / calibration-skill / candidate-profile newer than the read |
-| — | Controversy map | `controversies/<year>/<state>.md` | Per cycle; refresh as new controversies surface |
-| — | Source registry | `sources/<state>.md` | Rarely changes; manual maintenance |
+| — | Controversy map | `data/controversies/<year>/<state>.md` | Per cycle; refresh as new controversies surface |
+| — | Source registry | `data/sources/<state>.md` | Rarely changes; manual maintenance |
 
 The typical returning-user invocation (*"help me vote in Menlo Park, CA 2026"* with everything already populated) does ~zero new work in Stages 1-3 — they all hit cache. Stages 4 (disagreement loop) and 5 (aggregate + present) are where the actual deliberation happens.
 
@@ -79,12 +79,12 @@ The typical returning-user invocation (*"help me vote in Menlo Park, CA 2026"* w
   - Returns control here once a philosophy exists
 
 ### Stage 1 — Resolve ballot
-Invoke [[resolve-ballot]] with `(address, year)`. Returns a structured ballot manifest — every race and measure on the user's actual ballot for the resolved election day, filtered to contested by default. The manifest references candidate slugs that live in `candidates/<year>/<state>/<race>/<slug>.md`.
+Invoke [[resolve-ballot]] with `(address, year)`. Returns a structured ballot manifest — every race and measure on the user's actual ballot for the resolved election day, filtered to contested by default. The manifest references candidate slugs that live in `data/candidates/<year>/<state>/<race>/<slug>.md`.
 
 ### Stage 2 — Per-candidate research (gap-fill from shared cache)
 For each candidate in the resolved ballot:
-- **Cached** (`candidates/<year>/<state>/<race>/<slug>.md` exists in the shared substrate): reuse — another user already researched this candidate.
-- **Missing**: dispatch a research subagent that produces a candidate profile following the schema (Background, Stated positions, Record, Endorsements & donors, Controversies, Sources). The profile must be **born claim-bound** — load [[source-hygiene-tier-list]] (+ the relevant `sources/<jurisdiction>.md`) into the subagent prompt and require: every decisive claim traceable to a Tier-A/B source at the claim level (single-source-section rule), targeted per-subject fetches on multi-subject sources, and no claim dropped on a summary's silence. Genesis-tracking is a generation requirement, not just a review check. Output goes to the shared `candidates/` location so future users (or future runs) benefit.
+- **Cached** (`data/candidates/<year>/<state>/<race>/<slug>.md` exists in the shared substrate): reuse — another user already researched this candidate.
+- **Missing**: dispatch a research subagent that produces a candidate profile following the schema (Background, Stated positions, Record, Endorsements & donors, Controversies, Sources). The profile must be **born claim-bound** — load [[source-hygiene-tier-list]] (+ the relevant `data/sources/<jurisdiction>.md`) into the subagent prompt and require: every decisive claim traceable to a Tier-A/B source at the claim level (single-source-section rule), targeted per-subject fetches on multi-subject sources, and no claim dropped on a summary's silence. Genesis-tracking is a generation requirement, not just a review check. Output goes to the shared `data/candidates/` location so future users (or future runs) benefit.
 
 Dispatch missing-candidate research subagents in parallel.
 
@@ -133,7 +133,7 @@ Apply hard filters from the user's philosophy (auto-reject). Weight axes per the
 When disagreement loop converges, write `who-to-vote-for/<year>/<state>/<race>/vote.md` per race — captures conscience vote, strategic vote, general-election scenarios, parked open questions, and calibration skills active for this race.
 
 ### Review gate (before committing shared substrate)
-Before any commit to the shared `candidates/`, `elections/`, `controversies/` directories, dispatch [[review]] — a fresh-context, ideally-different-AI-stack check on source-hygiene + genesis tracking + math correctness + disambiguation + internal consistency. Output goes to `reviews/<year>/<date>-<batch>.md`; per-file frontmatter gets `last-reviewed:` + `review-pass:` + `review-stack:` updates. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but can be reviewed by the same mechanism to catch arithmetic errors.
+Before any commit to the shared `data/candidates/`, `data/elections/`, `data/controversies/` directories, dispatch [[review]] — a fresh-context, ideally-different-AI-stack check on source-hygiene + genesis tracking + math correctness + disambiguation + internal consistency. Output goes to `data/reviews/<year>/<date>-<batch>.md`; per-file frontmatter gets `last-reviewed:` + `review-pass:` + `review-stack:` updates. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but can be reviewed by the same mechanism to catch arithmetic errors.
 
 ## Axis taxonomy (five tiers)
 
@@ -272,7 +272,7 @@ List of new `calibration-skills/<slug>.md` files born from this race's disagreem
 0. User-state detection  → cold-start? → bootstrap-survey → philosophy-<user>.md
                          → returning?  → proceed
 1. Resolve ballot        → resolve-ballot(address, year) → race+candidate manifest
-2. Candidate research    → gap-fill missing from shared candidates/ cache
+2. Candidate research    → gap-fill missing from shared data/candidates/ cache
 3. Per-axis reads        → philosophy × template × calibration-skills per candidate
 4. Disagreement loop     → user pushback → calibration-skills/ → re-score
 5. Aggregate + present   → hard filters → weights → conscience + strategic + risk-frame

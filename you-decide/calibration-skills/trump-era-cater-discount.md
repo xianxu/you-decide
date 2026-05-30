@@ -7,7 +7,7 @@ generated-on: 2026-05-28
 review: passed
 reviewed-by: codex
 reviewed-on: 2026-05-28
-review-ref: reviews/2026/2026-05-28-ca-2026-shared-substrate-r2.md
+review-ref: data/reviews/2026/2026-05-28-ca-2026-shared-substrate-r2.md
 ---
 
 # Trump-era cater-mode discount

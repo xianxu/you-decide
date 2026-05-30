@@ -17,7 +17,7 @@ The primary key is **election day** (one specific date when polls are open). An 
 Election manifests live at:
 
 ```
-elections/<YYYY>/<YYYY-MM-DD>-<state>-<type>.md
+data/elections/<YYYY>/<YYYY-MM-DD>-<state>-<type>.md
 ```
 
 The year folder keeps each year's elections grouped (a long-running install accumulates many years of manifests).
@@ -45,9 +45,9 @@ A ballot manifest in markdown — see [Output schema](#output-schema). Returned 
 ### Stage 1 — Resolve the election day(s)
 
 Given `when`:
-- `next` → scan `elections/<YYYY>/` directories (current year onward), find the soonest dated file matching `state`, return if date >= today. If none, ask the user (or research) to identify when the next election is.
-- `<date>` → load `elections/<YYYY>/<date>-<state>-*.md` (year derived from date)
-- `<year>` → load all matching `elections/<year>/<year>-*-<state>-*.md`
+- `next` → scan `data/elections/<YYYY>/` directories (current year onward), find the soonest dated file matching `state`, return if date >= today. If none, ask the user (or research) to identify when the next election is.
+- `<date>` → load `data/elections/<YYYY>/<date>-<state>-*.md` (year derived from date)
+- `<year>` → load all matching `data/elections/<year>/<year>-*-<state>-*.md`
 
 If the relevant election manifest doesn't exist yet, dispatch the [research subagent](#research-prompt-template) to create it.
 
@@ -84,7 +84,7 @@ For each loaded election manifest:
 
 Structured manifest with the user's actual ballot. Each race carries:
 - Office name + seats
-- Candidates (with [[slug]] pointers to candidate files in `candidates/`)
+- Candidates (with [[slug]] pointers to candidate files in `data/candidates/`)
 - Election date
 
 ## Output schema (user's ballot)
@@ -118,7 +118,7 @@ posture: contested-only | all
 
 ## Per-election manifest schema
 
-The cached files in `elections/`:
+The cached files in `data/elections/`:
 
 ```markdown
 ---
@@ -218,7 +218,7 @@ Run against `(123 Main St, Menlo Park, CA, next, contested-only)`. Should produc
 - **SM County**: County Superintendent of Schools, Assessor/Clerk-Recorder, Controller, Supervisor D3
 - **Sub-county measures**: none (the test address is not in Ravenswood/Brisbane/RCESD)
 
-Baseline encoded at `elections/2026/2026-06-02-CA-primary.md` — should be exactly filterable to the above via the-test-address district tags `STATEWIDE` + `CA-BOE-D2` + `US-House-D15` + `CA-Assembly-D21` + `SM-COUNTY` + `SM-SUPERVISOR-D3`.
+Baseline encoded at `data/elections/2026/2026-06-02-CA-primary.md` — should be exactly filterable to the above via the-test-address district tags `STATEWIDE` + `CA-BOE-D2` + `US-House-D15` + `CA-Assembly-D21` + `SM-COUNTY` + `SM-SUPERVISOR-D3`.
 
 ## When NOT to use
 
@@ -228,6 +228,6 @@ Baseline encoded at `elections/2026/2026-06-02-CA-primary.md` — should be exac
 ## Cross-references
 
 - Main algorithm: [[SKILL]]
-- Per-candidate research files: `candidates/<year>/<state>/<race>/<slug>.md`
+- Per-candidate research files: `data/candidates/<year>/<state>/<race>/<slug>.md`
 - Per-office axis-weighting templates: [[templates]]
 - Calibration skills: [[calibration-skills]] (shared) + the user's private calibration-skills

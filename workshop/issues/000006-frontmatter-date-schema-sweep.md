@@ -10,7 +10,7 @@ updated: 2026-05-28
 
 ## Context
 
-Codex's CA-2026 shared-substrate review (`reviews/2026/2026-05-28-ca-2026-shared-substrate.md`, minor finding) flagged mixed date fields: some substrate files carry **both** `generated:` and `generated-on:`. The `review.md` frontmatter contract only requires `generated-by`, `generated-on`, `review` — so a bare `generated:` is redundant and makes audit scripts noisier.
+Codex's CA-2026 shared-substrate review (`data/reviews/2026/2026-05-28-ca-2026-shared-substrate.md`, minor finding) flagged mixed date fields: some substrate files carry **both** `generated:` and `generated-on:`. The `review.md` frontmatter contract only requires `generated-by`, `generated-on`, `review` — so a bare `generated:` is redundant and makes audit scripts noisier.
 
 This is **schema/convention** work (file-format conformance + a small canonical-field decision + tooling enforcement), not data-content debt — hence a `workshop/issues/` item rather than an inline `DATA-GAP`/`DATA-FIXME` marker. (Routing rule, per `review.md`: data-content debt → inline markers; schema/tooling/convention → here.)
 
@@ -18,10 +18,10 @@ This is **schema/convention** work (file-format conformance + a small canonical-
 
 Exactly 4 files carry both fields today (candidate profiles already use `generated-on:` only):
 
-- `elections/2026/2026-06-02-CA-primary.md`
-- `controversies/2026/CA.md`
-- `sources/US.md`
-- `sources/CA.md`
+- `data/elections/2026/2026-06-02-CA-primary.md`
+- `data/controversies/2026/CA.md`
+- `data/sources/US.md`
+- `data/sources/CA.md`
 
 ## Spec
 

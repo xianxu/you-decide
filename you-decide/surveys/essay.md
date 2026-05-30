@@ -59,7 +59,7 @@ review: not-done
 
 ## Cycle-specific outliers (3, composed at runtime)
 
-Drawn from `controversies/<year>/<state>.md` — pick the top-3 High-salience non-Tier-4 entries (the cycle-specific debates that don't surface organically from the 3 essays above). For each, present the controversy's framing + invite a paragraph response.
+Drawn from `data/controversies/<year>/<state>.md` — pick the top-3 High-salience non-Tier-4 entries (the cycle-specific debates that don't surface organically from the 3 essays above). For each, present the controversy's framing + invite a paragraph response.
 
 E.g., for CA 2026 the top-3 outliers might be:
 - Billionaire self-funding (Steyer's $147M run)

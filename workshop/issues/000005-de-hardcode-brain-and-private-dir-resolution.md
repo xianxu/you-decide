@@ -24,7 +24,7 @@ artifacts baked into the public repo:
    the headline privacy promise ("your view is yours to keep private"). And
    `YOU_DECIDE_PRIVATE_DIR` is documented in the README but read by nothing.
 
-A real privacy leak was also found: `candidates/2026/CA/us-house-d16/
+A real privacy leak was also found: `data/candidates/2026/CA/us-house-d16/
 sam-liccardo.md` (a shared, committed profile) embeds a full
 `## Reading against philosophy-xian.md` section — Xian's per-axis scores and
 preferences. Reads are supposed to be private (atlas/substrate.md). The private
@@ -48,7 +48,7 @@ Resolved **logically** (honoring symlinks) so a brain install reached via the
 
 Implement as `scripts/private-dir.sh` (real committed file): resolve + `mkdir -p`
 + echo the absolute path. The skill's path-convention is: shared substrate
-(`candidates/`, `elections/`, …) is repo-root-relative; the private
+(`data/candidates/`, `data/elections/`, …) is repo-root-relative; the private
 `who-to-vote-for/...` paths mean `<private-dir>/...`. Stage 0 announces the
 resolved location to the user once (transparency, non-blocking).
 
@@ -67,19 +67,19 @@ resolved location to the user once (transparency, non-blocking).
 ### Privacy fix
 
 - Excise the `## Reading against philosophy-xian.md` section from
-  `candidates/.../sam-liccardo.md` (private read leaked into shared profile).
+  `data/candidates/.../sam-liccardo.md` (private read leaked into shared profile).
 
 ## Plan
 
 - [x] `scripts/private-dir.sh` — resolver (env → ../who-to-vote-for, logical, mkdir, abs-normalize).
 - [x] `you-decide/SKILL.md` — path conventions + Stage 0 + "private brain"→"private dir".
 - [x] `you-decide/bootstrap-survey.md`, `surveys/{progressive,essay}.md` — shape ref + private dir.
-- [x] `you-decide/{resolve-ballot,review,identify-controversies}.md`, `templates/*` — phrasing + operative paths.
+- [x] `you-decide/{resolve-ballot,review,identify-controversies}.md`, `data/templates/*` — phrasing + operative paths.
 - [x] `atlas/{overview,substrate,algorithm,survey-and-philosophy}.md` — de-hardcode.
 - [x] `README.md` — real env var + resolution + path note.
 - [x] Excise leaked reads from shared profiles: sam-liccardo, kevin-johnson, peter-soule, david-johnson, jeff-rosen, **daniel-chung** (caught by review); genericize inline asides in 8 profiles + 4 templates.
 - [x] Verify resolver; grep clean of `philosophy-xian` / `Xian` / operative brain path.
-- [x] Review gate ([[review]], fresh-context subagent) → `reviews/2026/2026-05-28-de-xian-privatedir.md`; fixed C1/I1/I2/M1/M2.
+- [x] Review gate ([[review]], fresh-context subagent) → `data/reviews/2026/2026-05-28-de-xian-privatedir.md`; fixed C1/I1/I2/M1/M2.
 
 ## Log
 
@@ -103,7 +103,7 @@ Review gate: fresh-context subagent flagged C1 (daniel-chung leak missed by the 
 grep — same-race opponent of jeff-rosen, framed generically), I1 (`identify-controversies.md`
 operative brain path), I2 (`resolve-ballot.md` operative brain paths contradicting its own
 body), M1 (resolver didn't normalize relative env path), M2 (no `.gitignore` guard). All
-fixed; record at `reviews/2026/2026-05-28-de-xian-privatedir.md`.
+fixed; record at `data/reviews/2026/2026-05-28-de-xian-privatedir.md`.
 
 Note for the operator's own (brain) install: data stays in
 `brain/data/life/politics/who-to-vote-for/`; set `YOU_DECIDE_PRIVATE_DIR` to it (this

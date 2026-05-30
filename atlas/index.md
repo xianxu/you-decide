@@ -6,7 +6,7 @@ Map of how `you-decide` works. Practical sketch — details live in the code, su
 
 - [Overview](overview.md) — what this repo is, install models (standalone vs brain-integrated), repo layout, where the skill bundle lives
 - [Algorithm](algorithm.md) — Stage 0–6 of the top-level skill, cache-first principle, axis taxonomy, calibration skills
-- [Substrate](substrate.md) — data directories (`candidates/`, `controversies/`, `elections/`, `sources/`, `reviews/`), per-file frontmatter contract, public/private split
+- [Substrate](substrate.md) — data directories (`data/candidates/`, `data/controversies/`, `data/elections/`, `data/sources/`, `data/reviews/`), per-file frontmatter contract, public/private split
 - [Substrate dependencies & freshness](substrate-dependencies.md) — the artifact dependency DAG, the 9 artifact classes, and the two staleness rules (newer-input mtime + fan-in membership) that say when a derived artifact must be recomputed
 - [Survey + philosophy](survey-and-philosophy.md) — bootstrap-survey orchestrator, available designs (`progressive`, `essay`), decision-help posture, just-in-time disambiguation
 - [Review pipeline](review.md) — fresh-context / different-AI-stack review, per-file frontmatter contract, `scripts/audit-review.sh`

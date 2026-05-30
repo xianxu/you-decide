@@ -25,7 +25,7 @@ A voter-philosophy survey that asks *"do you support criminal justice reform?"* 
 
 ## Output
 
-A controversy map at `controversies/<year>/<state>.md` (shared substrate, reusable across users and races in the same cycle).
+A controversy map at `data/controversies/<year>/<state>.md` (shared substrate, reusable across users and races in the same cycle).
 
 ## Algorithm
 
@@ -35,7 +35,7 @@ Accept election manifests as input or invoke [[resolve-ballot]] to discover them
 
 ### Stage 2 — Pull candidate positions
 
-For each race, walk the candidate profiles in `candidates/<year>/<state>/<race>/<slug>.md`. Extract the `## Stated positions` sections. Candidate profiles are factual and value-neutral — they're the input substrate.
+For each race, walk the candidate profiles in `data/candidates/<year>/<state>/<race>/<slug>.md`. Extract the `## Stated positions` sections. Candidate profiles are factual and value-neutral — they're the input substrate.
 
 ### Stage 3 — Cluster disagreements by issue
 
@@ -113,7 +113,7 @@ Dispatch when the controversy map is missing or stale:
 >
 > Pre-loaded context:
 > - Election manifests: [paths]
-> - Candidate profiles directory: `candidates/<year>/<state>/`
+> - Candidate profiles directory: `data/candidates/<year>/<state>/`
 >
 > Task: walk the candidate profiles, extract their stated positions, identify where candidates substantively disagree. Cluster disagreements into issue dimensions. For each cluster:
 > - Tier the issue per the 5-tier taxonomy in [[SKILL]]
@@ -141,7 +141,7 @@ Run on `(2026, CA, sub-jurisdictions=[San-Mateo])`. Should surface (at minimum) 
 
 If the algorithm doesn't surface most of these without prompting, the disagreement-clustering or media-cross-referencing step is wrong.
 
-Baseline encoded at `controversies/2026/CA.md`.
+Baseline encoded at `data/controversies/2026/CA.md`.
 
 ## When NOT to use
 

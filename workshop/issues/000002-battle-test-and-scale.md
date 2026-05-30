@@ -11,7 +11,7 @@ updated: 2026-05-28
 
 ## Problem
 
-The MVP (`brain#11`) validated the algorithm on California 2026 (8 governor candidates + 4 SM County races + 4 CA state races + 1 US House district). To become useful beyond a single user in a single state, the substrate (`candidates/`, `elections/`, `controversies/`) needs maintainer-curated, AI-driven population across many jurisdictions — with consistent methodology, inline source citations, and the review pipeline enforcing quality.
+The MVP (`brain#11`) validated the algorithm on California 2026 (8 governor candidates + 4 SM County races + 4 CA state races + 1 US House district). To become useful beyond a single user in a single state, the substrate (`data/candidates/`, `data/elections/`, `data/controversies/`) needs maintainer-curated, AI-driven population across many jurisdictions — with consistent methodology, inline source citations, and the review pipeline enforcing quality.
 
 Battle-testing also surfaces algorithm gaps that don't appear in a single-state run: voting systems other than CA top-2 (ranked-choice in ME/AK, partisan primaries elsewhere), state-specific filing windows, judicial-retention races, ballot measures with conditional dependencies.
 
@@ -61,7 +61,7 @@ Every batch-research run must:
 - [ ] Makefile target: `make populate-state STATE=CA YEAR=2026` (and variants for county / metro level)
 - [ ] Per-state voter-info-tool registry (the per-county equivalent of `smcacre.gov`) so `resolve-ballot` can resolve addresses → districts without per-state custom code
 - [ ] CI: validate source-hygiene compliance on every commit (grep for un-sourced claims, weak-source citations, stale `last-verified` dates)
-- [ ] Coverage tracking: `COVERAGE.md` listing populated jurisdictions × years and their freshness (per #000004 pre-commit hook + reviews/COVERAGE.md)
+- [ ] Coverage tracking: `COVERAGE.md` listing populated jurisdictions × years and their freshness (per #000004 pre-commit hook + data/reviews/COVERAGE.md)
 - [ ] Cost model: per-jurisdiction AI-bill estimate; budget planning for Phase 1/2/3 scaling
 - [ ] Post-cycle archival convention: after election day passes, manifest becomes historical record — don't delete, document the convention
 - [ ] Execute Phase 1 across all 50 states for the next major cycle (incremental over many sessions)

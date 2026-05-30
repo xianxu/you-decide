@@ -1,6 +1,6 @@
 ---
 name: review
-description: Use after research-subagents produce facts or scoring subagents produce per-axis reads, AND before any commit to the shared substrate (candidates/, elections/, controversies/). Runs in fresh context (no shared session memory) and ideally a different AI stack to independently check (a) source-tier compliance per source-hygiene-tier-list, (b) genesis tracking — every claim has source URL, (c) math correctness in weighted totals, (d) internal consistency, (e) disambiguation of common names. Outputs a review report to `reviews/<year>/<date>-<batch>.md` and updates per-file `last-reviewed:` + `review-pass:` frontmatter.
+description: Use after research-subagents produce facts or scoring subagents produce per-axis reads, AND before any commit to the shared substrate (data/candidates/, data/elections/, data/controversies/). Runs in fresh context (no shared session memory) and ideally a different AI stack to independently check (a) source-tier compliance per source-hygiene-tier-list, (b) genesis tracking — every claim has source URL, (c) math correctness in weighted totals, (d) internal consistency, (e) disambiguation of common names. Outputs a review report to `data/reviews/<year>/<date>-<batch>.md` and updates per-file `last-reviewed:` + `review-pass:` frontmatter.
 generated-by: human
 generated-on: 2026-05-28
 review: passed
@@ -37,7 +37,7 @@ Conventions:
 
 - **Producing skills MUST set** `generated-by` + `generated-on` + `review: not-done` at write time. Never omit the `review:` field, even on first write.
 - **Review skill updates** `review:`, `reviewed-by`, `reviewed-on`, `review-ref` after a fresh-stack pass.
-- **Author-curated algorithm files** (templates, calibration-skills, sub-skill markdown, README, sources/) can use `generated-by: human` + `review: passed` since they go through git-PR review rather than AI-mediated review. Still carry the fields for consistency.
+- **Author-curated algorithm files** (templates, calibration-skills, sub-skill markdown, README, data/sources/) can use `generated-by: human` + `review: passed` since they go through git-PR review rather than AI-mediated review. Still carry the fields for consistency.
 - **Cross-stack-independence check**: a hook or audit script flags any file where `generated-by == reviewed-by` (same-stack review doesn't count).
 
 Audit queries:
@@ -91,7 +91,7 @@ A file with **honestly-marked gaps and no unsupported claims can be `review: pas
 
 ### Rollup
 
-`rg 'DATA-GAP|DATA-FIXME' candidates/` is the live debt list. Optionally generate `reviews/DATA-GAPS.md` tabulating by severity × axis × staleness (a script greps + sorts). Individual gaps stay inline; only **systemic** remediation (e.g. "build an FPPC/FEC fetcher to close finance gaps in bulk") belongs in `workshop/issues/` as tooling work.
+`rg 'DATA-GAP|DATA-FIXME' data/candidates/` is the live debt list. Optionally generate `data/reviews/DATA-GAPS.md` tabulating by severity × axis × staleness (a script greps + sorts). Individual gaps stay inline; only **systemic** remediation (e.g. "build an FPPC/FEC fetcher to close finance gaps in bulk") belongs in `workshop/issues/` as tooling work.
 
 **Routing rule (where does a follow-up live?):** *data-content* debt — a missing/unverified/under-sourced fact in a substrate file — is an inline `DATA-GAP`/`DATA-FIXME`, tracked by grep. *Schema / tooling / convention* work — file-format conformance, a script, an algorithm change — is a `workshop/issues/` item. Litmus: "is this a property of a specific fact, or a thing to build/decide?"
 
@@ -99,8 +99,8 @@ A file with **honestly-marked gaps and no unsupported claims can be `review: pas
 
 | Field | Required | Notes |
 |---|---|---|
-| `batch` | yes | Logical name for the review report. Becomes the filename in `reviews/<year>/<date>-<batch>.md`. Conventional shape: `<state>-<jurisdiction>-<date>` (e.g. `CA-Palo-Alto-2026-05-28`) or `<producing-skill>-<date>` |
-| `reviewer-stack` | recommended | AI provider running the review. **Must differ from the producing stack.** If producing was Claude/Anthropic → review with Codex/OpenAI or Gemini. Recorded in the review report's frontmatter; later audited via `rg 'reviewer-stack:' reviews/` |
+| `batch` | yes | Logical name for the review report. Becomes the filename in `data/reviews/<year>/<date>-<batch>.md`. Conventional shape: `<state>-<jurisdiction>-<date>` (e.g. `CA-Palo-Alto-2026-05-28`) or `<producing-skill>-<date>` |
+| `reviewer-stack` | recommended | AI provider running the review. **Must differ from the producing stack.** If producing was Claude/Anthropic → review with Codex/OpenAI or Gemini. Recorded in the review report's frontmatter; later audited via `rg 'reviewer-stack:' data/reviews/` |
 | `producing-stack` | annotation | Which AI made the substrate being reviewed (Claude / Codex / Gemini / mixed). Recorded for cross-stack-coverage tracking |
 | `scope` | optional, default `all-shared` | Categorical filter: `candidates` / `elections` / `controversies` / `reads` / `all-shared` (= candidates+elections+controversies) / `all` (= shared + reads). User-private reads are usually reviewed via a personal-brain pass, not the public-substrate flow |
 
@@ -127,7 +127,7 @@ review:
   reviewer-stack: codex
   producing-stack: claude
   scope: candidates
-  # no breadth selector → default to all uncommitted under candidates/
+  # no breadth selector → default to all uncommitted under data/candidates/
 ```
 
 Pre-commit gate:
@@ -153,7 +153,7 @@ Spot-check:
 review:
   batch: spot-2026-06-15
   reviewer-stack: codex
-  target-files: [candidates/2026/CA/governor/xavier-becerra.md]
+  target-files: [data/candidates/2026/CA/governor/xavier-becerra.md]
 ```
 
 ## Algorithm
@@ -163,7 +163,7 @@ review:
 Dispatch as a single-purpose subagent (or human-driven review session) with **no shared session memory**. Load only:
 - The files to review (target-files)
 - `calibration-skills/source-hygiene-tier-list.md` (tier principle)
-- `sources/<state>.md` + `sources/US.md` (concrete authoritative outlets)
+- `data/sources/<state>.md` + `data/sources/US.md` (concrete authoritative outlets)
 - The relevant office template (for score-scale validation)
 - This skill ([[review]]) for the checklist
 
@@ -176,7 +176,7 @@ For each file in scope, check the following classes of issue. Severity is `block
 **Source-hygiene (every factual claim)** — blocker
 - Inline source URL present for every non-trivial claim
 - Source tier acceptable: Tier A/B for decisive claims; Tier C only for orienting context + explicit tilt-flag
-- Sources match patterns in `sources/<state>.md` / `sources/US.md` — flag novel sources for tier assignment
+- Sources match patterns in `data/sources/<state>.md` / `data/sources/US.md` — flag novel sources for tier assignment
 
 **Genesis tracking** — blocker
 - Every claim has a URL link (no genesis-untracked assertions)
@@ -205,7 +205,7 @@ For each file in scope, check the following classes of issue. Severity is `block
 
 ### Stage 3 — Output review report
 
-Write to `reviews/<year>/<YYYY-MM-DD>-<batch>.md`:
+Write to `data/reviews/<year>/<YYYY-MM-DD>-<batch>.md`:
 
 ```markdown
 ---
@@ -250,29 +250,29 @@ For each file checked, update the [per-file contract](#per-file-frontmatter-cont
 - `review: passed` | `issues-flagged` | `failed` (replace the prior `not-done`)
 - `reviewed-by: <reviewer-stack>` (must differ from `generated-by`)
 - `reviewed-on: <date>`
-- `review-ref: reviews/<year>/<date>-<batch>.md` (required if review ≠ passed; nice-to-have if passed)
+- `review-ref: data/reviews/<year>/<date>-<batch>.md` (required if review ≠ passed; nice-to-have if passed)
 
 Makes coverage queryable: `rg '^review: not-done' .` returns the unreviewed set.
 
 ## State tracking
 
-Reviews accumulate in `reviews/<year>/<date>-<batch>.md`. Queries:
+Reviews accumulate in `data/reviews/<year>/<date>-<batch>.md`. Queries:
 
 ```bash
 # All reviews of a given year
-ls reviews/2026/
+ls data/reviews/2026/
 
 # Producing-stack distribution
-rg '^producing-stack:' reviews/
+rg '^producing-stack:' data/reviews/
 
 # Find unfixed blockers
-rg '^status: fail' reviews/
+rg '^status: fail' data/reviews/
 
 # Cross-stack coverage
-rg '^reviewer-stack:' reviews/ | sort -u
+rg '^reviewer-stack:' data/reviews/ | sort -u
 ```
 
-A long-running `reviews/COVERAGE.md` maintained by hand can track which jurisdictions × cycles have been reviewed and by which stacks — useful for deciding "is the CA 2026 substrate trustworthy enough to publish."
+A long-running `data/reviews/COVERAGE.md` maintained by hand can track which jurisdictions × cycles have been reviewed and by which stacks — useful for deciding "is the CA 2026 substrate trustworthy enough to publish."
 
 ## Commit-gate convention — one commit per handoff
 
@@ -297,7 +297,7 @@ Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews,
 - **Deferral is a valid outcome, not a failure.** A finding you can't close by verification (a 403'd campaign-finance source, a search-result-only citation) is legitimately cleared by **demoting the claim to an explicit "Data gap"** — the file stops *asserting* the unverified thing. Never invent facts to satisfy a finding.
 - **Disputes escalate, capped.** Disagree with a finding? Dispute it in the fix commit body with rationale — never silently skip it. If reviewer and fixer still disagree after ~2 rounds, escalate to the operator as tiebreaker. Two stacks must not ping-pong indefinitely.
 
-A pre-commit hook can enforce "no commit to `candidates/`/`elections/`/`controversies/` without a current `review-ref`" (see `workshop/issues/000004`), but for MVP it's a convention.
+A pre-commit hook can enforce "no commit to `data/candidates/`/`data/elections/`/`data/controversies/` without a current `review-ref`" (see `workshop/issues/000004`), but for MVP it's a convention.
 
 ## Spawning the other stack (cross-stack review mechanics)
 
@@ -328,7 +328,7 @@ claude -p "<REVIEW PROMPT>" --dangerously-skip-permissions --add-dir <repo-root>
 
 ### Prompt skeleton (either reviewer)
 
-> Read `you-decide/review.md` in full — it defines your procedure, write-surface (report + `review:` frontmatter ONLY, never the body/facts), and the DATA-GAP/DATA-FIXME + severity-governs-blocking rules. You are the **<reviewer-stack>** reviewer. [If re-review:] This is round N — **diff-scoped**; `git log`/`git diff` the fix commits since the prior report (`reviews/.../…-r{N-1}.md`); verify only those findings + check for regressions, do not re-audit untouched files. Write `reviews/<year>/<date>-<batch>[-rN].md`, flip cleared files `issues-flagged → passed` (severity governs: low debt is passable), and **commit** `review: <stack> rN — <batch> (<status>)` with the `Co-Authored-By` trailer above — **commit only; do NOT `git push`** (the operator pushes deliberately once the arc is clean).
+> Read `you-decide/review.md` in full — it defines your procedure, write-surface (report + `review:` frontmatter ONLY, never the body/facts), and the DATA-GAP/DATA-FIXME + severity-governs-blocking rules. You are the **<reviewer-stack>** reviewer. [If re-review:] This is round N — **diff-scoped**; `git log`/`git diff` the fix commits since the prior report (`data/reviews/.../…-r{N-1}.md`); verify only those findings + check for regressions, do not re-audit untouched files. Write `data/reviews/<year>/<date>-<batch>[-rN].md`, flip cleared files `issues-flagged → passed` (severity governs: low debt is passable), and **commit** `review: <stack> rN — <batch> (<status>)` with the `Co-Authored-By` trailer above — **commit only; do NOT `git push`** (the operator pushes deliberately once the arc is clean).
 
 When wrapping in a sub-agent, also have the sub-agent **verify** afterward (`git log`, the new report's status, `git show --stat` to confirm the commit is report + frontmatter only) and return a digest — never let the wrapping agent edit substrate itself.
 
@@ -342,7 +342,7 @@ When wrapping in a sub-agent, also have the sub-agent **verify** afterward (`git
 ## Cross-references
 
 - Source quality principle: [[source-hygiene-tier-list]]
-- Per-state authoritative sources: `sources/<state>.md`
+- Per-state authoritative sources: `data/sources/<state>.md`
 - Per-office templates: [[templates]] (for score-scale + weight validation)
 - Main algorithm: [[SKILL]]
 - Producing skills: [[resolve-ballot]], [[identify-controversies]], candidate research dispatches

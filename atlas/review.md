@@ -18,7 +18,7 @@ generated-on: <YYYY-MM-DD>
 review: <not-done | passed | failed | in-progress>
 reviewed-by: <stack used to review>             # required when review != not-done
 reviewed-on: <YYYY-MM-DD>                        # required when review != not-done
-review-ref: reviews/<year>/<date>-<batch>.md     # link to the session output
+review-ref: data/reviews/<year>/<date>-<batch>.md     # link to the session output
 ---
 ```
 
@@ -41,11 +41,11 @@ Run before committing shared substrate; surface unreviewed work for batched revi
 - A directory → review all files under it
 - A batch label → review all files in the named batch (e.g., a per-city run)
 
-Output goes to `reviews/<year>/<date>-<batch>.md` — captures findings, source-tier verifications, math re-derivations, disambiguation checks. Each reviewed file's frontmatter is updated with `review:`, `reviewed-by:`, `reviewed-on:`, `review-ref:`.
+Output goes to `data/reviews/<year>/<date>-<batch>.md` — captures findings, source-tier verifications, math re-derivations, disambiguation checks. Each reviewed file's frontmatter is updated with `review:`, `reviewed-by:`, `reviewed-on:`, `review-ref:`.
 
 ## Review gate
 
-Mandatory before any commit to shared `candidates/`, `elections/`, `controversies/` directories. The skill dispatches review before letting the user commit. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but benefit from the same mechanism — primary value is catching arithmetic errors in the weighted-total math (the scoring contract in [algorithm](algorithm.md#scoring-contract) gives review a sharp invariant to check).
+Mandatory before any commit to shared `data/candidates/`, `data/elections/`, `data/controversies/` directories. The skill dispatches review before letting the user commit. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but benefit from the same mechanism — primary value is catching arithmetic errors in the weighted-total math (the scoring contract in [algorithm](algorithm.md#scoring-contract) gives review a sharp invariant to check).
 
 ## What review does NOT do
 

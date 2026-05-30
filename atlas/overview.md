@@ -32,12 +32,12 @@ you-decide/                # repo root
 │   ├── review.md
 │   ├── surveys/           # named designs (progressive, essay, ...)
 │   ├── calibration-skills/# shared judgments accumulated across users
-│   └── templates/         # per-office axis weighting
-├── candidates/<year>/<state>/<office>/<slug>.md  # genesis-tracked profiles
-├── controversies/<year>/<state>.md
-├── elections/<year>/<YYYY-MM-DD>-<state>-<scope>.md   # election-day-keyed ballot manifests
-├── sources/<US|state>.md  # authoritative source registries, composed at runtime
-├── reviews/<year>/<date>-<batch>.md
+│   └── data/templates/         # per-office axis weighting
+├── data/candidates/<year>/<state>/<office>/<slug>.md  # genesis-tracked profiles
+├── data/controversies/<year>/<state>.md
+├── data/elections/<year>/<YYYY-MM-DD>-<state>-<scope>.md   # election-day-keyed ballot manifests
+├── data/sources/<US|state>.md  # authoritative source registries, composed at runtime
+├── data/reviews/<year>/<date>-<batch>.md
 ├── workshop/              # ariadne convention — issues, plans, history, lessons
 ├── atlas/                 # this directory
 ├── construct/             # ariadne base layer (vendored)

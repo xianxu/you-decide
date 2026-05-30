@@ -20,7 +20,7 @@ This file documents the schema for designing questions, the anti-patterns to avo
 | `essay` | `surveys/essay.md` | Open-ended essays seeded with concrete examples, 3+3 total |
 | *future designs* | `surveys/<slug>.md` | Whatever shape the design calls for |
 
-Cycle-specific Round 2 and Round 4 (in `progressive`) and cycle-outliers (in `essay`) are composed at runtime from `controversies/<year>/<state>.md` — they're not stored in the survey design file itself.
+Cycle-specific Round 2 and Round 4 (in `progressive`) and cycle-outliers (in `essay`) are composed at runtime from `data/controversies/<year>/<state>.md` — they're not stored in the survey design file itself.
 
 ## Question entry schema (for force-choice questions in progressive)
 
@@ -68,7 +68,7 @@ No canned options. The synthesizer reads the user's prose and extracts axis posi
 - **Asking about settled issues** — if everyone in this cycle agrees, the question wastes budget.
 - **Asking too many upfront** — respect attention budget. `progressive` mitigates via progressive-disclosure rounds; `essay` mitigates via fewer-but-deeper questions.
 - **Stakes-clarity** ("this question measures your axis on X") — pushes users toward considered-policy mode and away from frank intuition. Counter-intuitively, *less* explanation of what's being measured invites more honest responses.
-- **Putting cycle-specific framings inline in a design file** — cycle-specifics live in `controversies/<year>/<state>.md`; designs compose them at runtime.
+- **Putting cycle-specific framings inline in a design file** — cycle-specifics live in `data/controversies/<year>/<state>.md`; designs compose them at runtime.
 
 ## Stable-axis question pool (for force-choice designs)
 

@@ -1,5 +1,5 @@
 ---
-rule: For decisive candidate claims, (1) prefer Tier A (primary / official) and Tier B (authoritative-secondary) sources over Wikipedia and AI aggregators, and (2) bind every claim to its source at the claim level — at generation, not only at review (single-source-section rule below). Verify before binding: targeted per-subject fetch on multi-subject sources; absence-in-a-summary ≠ absence-in-the-source. Concrete per-jurisdiction outlet lists live in `sources/<jurisdiction>.md`.
+rule: For decisive candidate claims, (1) prefer Tier A (primary / official) and Tier B (authoritative-secondary) sources over Wikipedia and AI aggregators, and (2) bind every claim to its source at the claim level — at generation, not only at review (single-source-section rule below). Verify before binding: targeted per-subject fetch on multi-subject sources; absence-in-a-summary ≠ absence-in-the-source. Concrete per-jurisdiction outlet lists live in `data/sources/<jurisdiction>.md`.
 applies-to: [research-subagents, profile-generation, all races]
 born-from: 2026-05-27 | 2026 CA governor | Codex peer review flagged Wikipedia and Factually.co as weak source choices, and noted LLM-generation artifacts ("WebSearch" literal text, typo "franding") in final profile text
 generated-by: human
@@ -9,7 +9,7 @@ review: passed
 
 # Source-hygiene tier list
 
-When research subagents build candidate profiles, source quality matters. This skill defines the **tier classification principle**; the concrete authoritative outlets per jurisdiction live in `sources/<jurisdiction>.md` (e.g., `sources/US.md` for federal, `sources/CA.md` for California, etc.).
+When research subagents build candidate profiles, source quality matters. This skill defines the **tier classification principle**; the concrete authoritative outlets per jurisdiction live in `data/sources/<jurisdiction>.md` (e.g., `data/sources/US.md` for federal, `data/sources/CA.md` for California, etc.).
 
 ## Tier classification (principle)
 
@@ -20,7 +20,7 @@ When research subagents build candidate profiles, source quality matters. This s
 - Candidate's own social-media posts (link the post directly)
 - Court documents, agency reports
 
-**Tier B — Authoritative-secondary.** Nonpartisan or mainstream outlets with established editorial standards. Good for synthesis and corroboration. Specific outlets vary by jurisdiction — see per-state files (e.g., `sources/CA.md` lists CalMatters, KQED, LA Times, EdSource, regional broadsheets; `sources/US.md` lists AP, Reuters, NPR, Politico, GovTrack).
+**Tier B — Authoritative-secondary.** Nonpartisan or mainstream outlets with established editorial standards. Good for synthesis and corroboration. Specific outlets vary by jurisdiction — see per-state files (e.g., `data/sources/CA.md` lists CalMatters, KQED, LA Times, EdSource, regional broadsheets; `data/sources/US.md` lists AP, Reuters, NPR, Politico, GovTrack).
 
 **Tier C — Avoid for decisive claims:**
 - **Wikipedia** — use for orienting bio context only; never as the source for a position or controversy
@@ -46,15 +46,15 @@ Born-from: the May-2026 binding campaign — profiles generated without claim-le
 ## Composing per-jurisdiction sources
 
 For a race in state X, the research subagent should load:
-- `sources/US.md` (always — for any federal sources or cross-state nationals)
-- `sources/<X>.md` (state-level)
-- Optionally `sources/<X>-<county>.md` (county-specific if it exists)
+- `data/sources/US.md` (always — for any federal sources or cross-state nationals)
+- `data/sources/<X>.md` (state-level)
+- Optionally `data/sources/<X>-<county>.md` (county-specific if it exists)
 
 The tier classification rule applies uniformly; the concrete outlet lists are per-jurisdiction.
 
 ## When it applies
 
-Any per-candidate profile generation. Add this tier list + the relevant `sources/<jurisdiction>.md` files to research-subagent prompts.
+Any per-candidate profile generation. Add this tier list + the relevant `data/sources/<jurisdiction>.md` files to research-subagent prompts.
 
 ## Artifact hygiene (sub-rule)
 

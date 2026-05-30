@@ -78,7 +78,7 @@ These capture the major political-identity dimensions: party-tribal realignment,
 
 ## Round 2 — Issues (~5, cycle-specific, composed at runtime)
 
-Drawn from `controversies/<year>/<state>.md` — High-salience Tier-4 controversy entries. Each entry generates one question:
+Drawn from `data/controversies/<year>/<state>.md` — High-salience Tier-4 controversy entries. Each entry generates one question:
 - Question text = controversy's `Survey-ready stance:` line
 - Stance options = drawn from side-A/B/middle/outlier candidate-position summaries
 - Synthesis hint = tier/axis tag from controversy entry
@@ -147,7 +147,7 @@ Skip Round 2 entirely if cycle has no Tier-4 entries.
 
 ## Round 4 — Cycle outliers (composed at runtime)
 
-Drawn from `controversies/<year>/<state>.md` — High-salience non-Tier-4 entries (anti-hypocrisy meta, capture-risk, election-integrity-as-tier-2-violation, etc.). Same composition as Round 2. Skip if cycle has none.
+Drawn from `data/controversies/<year>/<state>.md` — High-salience non-Tier-4 entries (anti-hypocrisy meta, capture-risk, election-integrity-as-tier-2-violation, etc.). Same composition as Round 2. Skip if cycle has none.
 
 ## Synthesis
 
