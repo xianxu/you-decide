@@ -80,8 +80,12 @@ Building our own review tool. We use Claude / Codex / Gemini / etc. as the revie
 - [ ] `data/reviews/COVERAGE.md` initial population + maintenance convention
 - [ ] Cross-stack-coverage tracker (`generated-by == reviewed-by` ⇒ incomplete) — extend `audit-review.sh` output
 
-**M3 — server-side enforcement:**
-- [ ] GitHub Actions PR workflow: same `review-gate.sh` + source-hygiene grep + `-read.md` math sanity-check + frontmatter-contract lint (for contributors who don't run the local hook)
+**M3 — server-side enforcement:** ✅ built 2026-05-31 (on ariadne #52 generic mechanism)
+- [x] Built the generic CI merge-check mechanism in the base layer (ariadne #52): seeded `.github/workflows/merge-check.yml` shim + symlinked `scripts/run-merge-checks.sh` runner + scaffolded `scripts/merge-checks.d/`.
+- [x] you-decide plugs in `scripts/merge-checks.d/10-review-gate.sh` (wraps `review-gate.sh`).
+- [x] Refactored the M1 `pre-push` hook to call `run-merge-checks.sh` (one check-set, two call sites — local hook + CI; can't drift).
+- [ ] Validate on a real PR (CI run fires + reports). Advisory for now — branch protection / required-check is opt-in (ariadne #52 M2 `make remote-init`); direct-push-to-main stays the acknowledged escape.
+- [ ] (deferred) extra lints: source-hygiene grep, `-read.md` math sanity-check — additional `merge-checks.d/` entries later.
 
 ## Revisions
 

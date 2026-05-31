@@ -5,17 +5,18 @@
 # at the *publish* boundary instead: pushing to refs/heads/main. Pushes to any
 # other ref (machine/agent sync) pass untouched.
 #
-# Hard-block if any shared-substrate file in the pushed commits is not
-# `review: passed`. Override requires a LIVE HUMAN at a controlling terminal —
-# an agent/CI driving `git push` has no /dev/tty and cannot bypass. The only
-# other escape is `git push --no-verify`, which agents must NEVER use
-# autonomously (see you-decide/review.md).
+# Runs the same merge-checks as CI (scripts/run-merge-checks.sh →
+# scripts/merge-checks.d/*; for you-decide that's the `review: passed`
+# substrate gate) so the local and server gates can't drift. Override requires
+# a LIVE HUMAN at a controlling terminal — an agent/CI driving `git push` has
+# no /dev/tty and cannot bypass. The only other escape is `git push
+# --no-verify`, which agents must NEVER use autonomously (see review.md).
 #
 # git feeds us, on stdin: <local ref> <local sha> <remote ref> <remote sha>
 set -euo pipefail
 
 ROOT="$(git rev-parse --show-toplevel)"
-GATE="$ROOT/scripts/review-gate.sh"
+GATE="$ROOT/scripts/run-merge-checks.sh"
 ZERO="0000000000000000000000000000000000000000"
 
 blocked=0
