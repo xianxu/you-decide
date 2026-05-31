@@ -112,7 +112,7 @@ ambiguity the plan-quality judge flagged).
 - [x] Built the generic CI merge-check mechanism in the base layer (ariadne #52): seeded `.github/workflows/merge-check.yml` shim + symlinked `scripts/run-merge-checks.sh` runner + scaffolded `scripts/merge-checks.d/`.
 - [x] you-decide plugs in `scripts/merge-checks.d/10-review-gate.sh` (wraps `review-gate.sh`).
 - [x] Refactored the M1 `pre-push` hook to call `run-merge-checks.sh` (one check-set, two call sites — local hook + CI; can't drift).
-- [ ] Validate on a real PR (CI run fires + reports). Advisory for now — branch protection / required-check is opt-in (ariadne #52 M2 `make remote-init`); direct-push-to-main stays the acknowledged escape.
+- [x] Validate on a real PR (CI run fires + reports). **Done — you-decide PR #4, 2026-05-31:** CI green, both gates ran (see Phase E log). Still *advisory* — branch protection / required-check is opt-in (ariadne #52 M2 `make remote-init`); direct-push-to-main stays the acknowledged escape until then.
 - [ ] (deferred) extra lints: source-hygiene grep, `-read.md` math sanity-check — additional `merge-checks.d/` entries later.
 
 ## Done when
