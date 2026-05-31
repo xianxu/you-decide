@@ -98,15 +98,9 @@ ambiguity the plan-quality judge flagged).
 - [x] `you-decide/review.md` — publish standard now = `review: passed` AND
   `reviewed-by ≠ generated-by`; human-override path unchanged.
 
-**M4 — coverage dashboard (deferred; not blocking the gate):**
-- [ ] `data/reviews/COVERAGE.md` — **pin the format first** (markdown table,
-  columns: `(state,year) | generated-by | reviewed-by | unfixed-blockers`,
-  row-per-batch), then populate. Only `2026/CA` exists today, so cost is the
-  format decision, not data entry.
-- [ ] Cross-stack-coverage rollup. NOTE: `audit-review.sh:50-63` *already* emits
-  a "Same-stack reviews (INVALID)" section (4fa2eed). Remaining delta = (a)
-  per-batch rollup feeding COVERAGE.md, and (b) reconcile the Spec's
-  "both-Claude ⇒ incomplete" with the existing "any gen==rev" rule.
+**M4 — coverage dashboard → MOVED to #8 (2026-05-31).** The COVERAGE.md
+dashboard + cross-stack rollup + stack-equality reconciliation are reporting,
+not enforcement; split into **#8** so they never block the gate. See #8.
 
 **M3 — server-side enforcement:** ✅ built 2026-05-31 (on ariadne #52 generic mechanism)
 - [x] Built the generic CI merge-check mechanism in the base layer (ariadne #52): seeded `.github/workflows/merge-check.yml` shim + symlinked `scripts/run-merge-checks.sh` runner + scaffolded `scripts/merge-checks.d/`.
@@ -124,10 +118,18 @@ ambiguity the plan-quality judge flagged).
   keys, missing stack fields on a passed file) and is human-override-only at the
   pre-push boundary (no autonomous `--no-verify`).
 - [x] Gate correctness is covered by an automated test harness.
-- [ ] `data/reviews/COVERAGE.md` tracks per-batch review + producing/reviewing
-  stack; `audit-review.sh` reports same-stack files as the dashboard view. (M4, deferred)
+- [→] `data/reviews/COVERAGE.md` tracks per-batch review + producing/reviewing
+  stack; `audit-review.sh` reports same-stack files as the dashboard view.
+  **Moved to #8** — reporting, not part of this issue's gate scope.
 
 ## Revisions
+
+### 2026-05-31 — M4 (coverage dashboard) extracted to #8
+Operator chose to postpone the COVERAGE.md dashboard + cross-stack rollup to a
+future issue. Moved M4 wholesale to **#8** (reporting, not enforcement — it must
+not block the gate). #4's remaining open work is just M1's operator-only
+activation (`make install-hooks`) + the deferred extra-lint bullet; the gate
+(M2) + CI validation (M3) are done.
 
 ### 2026-05-31 — cross-stack: dashboard → hard gate (#53 Phase D); estimate refreshed
 M2 originally scoped cross-stack as a coverage *tracker* ("extend `audit-review.sh`
