@@ -25,21 +25,51 @@ if printf '%s' "$BASE" | grep -qE '^0+$'; then
     BASE="$(git hash-object -t tree /dev/null)"
 fi
 
+# Resolve the changed substrate files. An unresolvable range MUST fail, not
+# silently pass — capture the diff and check git's exit status (don't swallow
+# the error into an empty loop). Fail-closed on any git error.
+if ! changed="$(git diff --name-only --diff-filter=d "$BASE" "$TIP" \
+        -- data/candidates data/elections data/controversies)"; then
+    echo "✖ review-gate: could not diff range ${BASE}..${TIP} — unresolved revision? (failing closed)" >&2
+    exit 2
+fi
+
 blockers=""
 count=0
 while IFS= read -r f; do
     [ -n "$f" ] || continue
     case "$f" in *.md) ;; *) continue ;; esac
-    state="$(git show "$TIP:$f" 2>/dev/null \
-        | grep -m1 -E '^review:[[:space:]]*' \
-        | sed -E 's/^review:[[:space:]]*//; s/[[:space:]]*$//' || true)"
+
+    # Read the file's review-state at TIP. Parse ONLY the YAML frontmatter block
+    # (between the leading '---' on line 1 and the next '---'), so a body line
+    # that looks like `review:` can't masquerade as metadata. Fail-closed:
+    # unreadable, missing, or duplicate `review:` keys all count as not-passed.
+    if ! content="$(git show "$TIP:$f" 2>/dev/null)"; then
+        state="<unreadable>"
+    else
+        fm="$(printf '%s\n' "$content" | awk '
+            NR==1 && $0 != "---" { exit }
+            NR==1 { next }
+            /^---[[:space:]]*$/ { exit }
+            { print }
+        ')"
+        n="$(printf '%s\n' "$fm" | grep -cE '^review:[[:space:]]' || true)"
+        if [ "$n" -eq 1 ]; then
+            state="$(printf '%s\n' "$fm" | grep -m1 -E '^review:[[:space:]]' \
+                | sed -E 's/^review:[[:space:]]*//; s/[[:space:]]*$//')"
+        elif [ "$n" -gt 1 ]; then
+            state="<duplicate>"
+        else
+            state="<missing>"
+        fi
+    fi
+
     if [ "$state" != "passed" ]; then
         blockers="${blockers}    ${f}  [review: ${state:-<missing>}]
 "
         count=$((count + 1))
     fi
-done < <(git diff --name-only --diff-filter=d "$BASE" "$TIP" \
-            -- data/candidates data/elections data/controversies 2>/dev/null | sort -u)
+done < <(printf '%s\n' "$changed" | sort -u)
 
 if [ "$count" -gt 0 ]; then
     {
