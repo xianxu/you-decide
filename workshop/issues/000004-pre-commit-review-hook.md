@@ -80,22 +80,22 @@ Building our own review tool. We use Claude / Codex / Gemini / etc. as the revie
 agreed," not just "reviewed." The gate is the *enforcement*; the dashboard (M4)
 is the *report* — distinct deliverables (resolves the gate-vs-dashboard
 ambiguity the plan-quality judge flagged).
-- [ ] `scripts/lib-substrate.sh` — factor substrate-file discovery + fail-closed
+- [x] `scripts/lib-substrate.sh` — factor substrate-file discovery + fail-closed
   frontmatter-field read out of `review-gate.sh` into a sourced lib
   (`substrate_files_in_range`, `frontmatter_field <tip> <file> <key>`); refactor
   `review-gate.sh` to consume it (behavior-preserving; exit codes 0/1/2 + stderr
   messages unchanged).
-- [ ] `scripts/cross-stack-gate.sh <base> <tip>` — for each `review: passed`
+- [x] `scripts/cross-stack-gate.sh <base> <tip>` — for each `review: passed`
   substrate file in range, block if `generated-by`/`reviewed-by` is missing/
   duplicate/unreadable OR the two normalized values are equal (exact inequality;
   compound-stack overlap deferred). Exit 0/1/2 mirroring `review-gate.sh`.
-- [ ] `scripts/merge-checks.d/20-cross-stack-gate.sh` — thin wrapper, mirrors
+- [x] `scripts/merge-checks.d/20-cross-stack-gate.sh` — thin wrapper, mirrors
   `10-review-gate.sh`; runner picks it up by `20-` ordering.
-- [ ] `scripts/tests/test-gates.sh` — bash harness: throwaway git fixture +
+- [x] `scripts/tests/test-gates.sh` — bash harness: throwaway git fixture +
   exit-code asserts for both gates (passed/blocked/missing-field/not-passed/
   unresolvable-range) + an end-to-end `run-merge-checks.sh` same-stack-fails case.
   (Addresses the "no committed repeatable test" gap.)
-- [ ] `you-decide/review.md` — publish standard now = `review: passed` AND
+- [x] `you-decide/review.md` — publish standard now = `review: passed` AND
   `reviewed-by ≠ generated-by`; human-override path unchanged.
 
 **M4 — coverage dashboard (deferred; not blocking the gate):**
@@ -117,15 +117,15 @@ ambiguity the plan-quality judge flagged).
 
 ## Done when
 
-- [ ] Publish to `main` is gated (pre-push hook + PR-side CI, one check-set via
+- [x] Publish to `main` is gated (pre-push hook + PR-side CI, one check-set via
   `run-merge-checks.sh`) such that shared substrate must be `review: passed`
   AND reviewed by a different stack (`reviewed-by ≠ generated-by`).
-- [ ] The gate fails closed (unresolvable range, missing/duplicate frontmatter
+- [x] The gate fails closed (unresolvable range, missing/duplicate frontmatter
   keys, missing stack fields on a passed file) and is human-override-only at the
   pre-push boundary (no autonomous `--no-verify`).
-- [ ] Gate correctness is covered by an automated test harness.
+- [x] Gate correctness is covered by an automated test harness.
 - [ ] `data/reviews/COVERAGE.md` tracks per-batch review + producing/reviewing
-  stack; `audit-review.sh` reports same-stack files as the dashboard view.
+  stack; `audit-review.sh` reports same-stack files as the dashboard view. (M4, deferred)
 
 ## Revisions
 
@@ -161,3 +161,6 @@ Process note: during testing I `git commit -am` on the throwaway branch, which s
 
 ### 2026-05-31 — M3 built + Codex review (Phase A1 of ariadne #53)
 M3 plugged review-gate into the generic CI mechanism (ariadne #52): seeded workflow + symlinked runner + `merge-checks.d/10-review-gate.sh`; pre-push hook refactored to call the runner. Codex cross-stack review found 2 blockers + 3 important + 2 minor. **Fixed now (real correctness bugs):** (#2) `review-gate.sh` silently passed on an unresolvable range — now captures `git diff` exit status and fails closed (exit 2); verified `review-gate.sh deadbeef HEAD` → exit 2. (#3) frontmatter parser was too loose (first `review:` anywhere) — now parses only the YAML frontmatter block and fails closed on missing/duplicate keys. (#6) escaped shebang `#\!` in the plugin → fixed. **Deferred to enforcement (Phase C / ariadne #52 M2):** (#1) CI runs gate code from the PR's own tree — a PR can neuter the gate; needs CI to run *trusted base-branch/pinned* gate code. (#4) `--no-verify` bypass — needs branch protection (known; advisory until then). (#5) empty `merge-checks.d/` = pass — a `chmod -x` of the plugin silently no-ops; needs a required-checks manifest. (#7, minor) rename out of a gated dir → false-positive missing-review (fails closed; safe). **State note:** `data/candidates/2026/CA/boe-d2/john-pimentel.md` is `issues-flagged` on main (med DATA-GAP awaiting #7) — it will block gating once enforcement is live, until resolved/accepted.
+
+### 2026-05-31 — M2 built: cross-stack publish gate (#53 Phase D)
+Elevated cross-stack from dashboard to a hard gate (see Revisions). Built via the now-proven in-place branch flow (#51): factored `scripts/lib-substrate.sh` (substrate discovery + fail-closed frontmatter parse) and refactored `review-gate.sh` to consume it (behavior-preserving); added `scripts/cross-stack-gate.sh` (a *passed* substrate file must have `reviewed-by ≠ generated-by`; exact inequality; fail-closed on missing/duplicate stack fields; not-yet-passed files skipped as review-gate's domain), the `merge-checks.d/20-cross-stack-gate.sh` wrapper, and `scripts/tests/test-gates.sh` (13 asserts, all green). **Verified:** harness 13/13; refactored `review-gate.sh` over all real substrate still flags `john-pimentel.md` (behavior-preserving); `cross-stack-gate.sh` over all real substrate → exit 0 (40 passed files all claude/codex); `run-merge-checks.sh` runs both `10-` + `20-` in order. Updated `you-decide/review.md` publish standard to the two-assertion form. Coverage dashboard (COVERAGE.md + `audit-review.sh` rollup) split out to deferred M4. Next: fresh-eyes code review on the gate diff, then `sdlc pr` (this branch→PR doubles as #53 Phase E — first live CI exercise of the mechanism).

@@ -299,7 +299,14 @@ Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews,
 
 ### Publish gate (pre-push enforcement)
 
-Because **commit is a sync/handoff primitive here, not a readiness claim**, the gate sits at the *publish* boundary, not the commit. A tracked `pre-push` hook (`scripts/hooks/pre-push`, activated by `make install-hooks`) hard-blocks a push to `refs/heads/main` if any substrate file (`data/candidates/`, `data/elections/`, `data/controversies/`) in the pushed commits is not `review: passed`. Pushes to any other ref (machine/agent sync) pass untouched. The check itself is `scripts/review-gate.sh <base> <tip>` — reusable by PR-side CI. See `workshop/issues/000004`.
+Because **commit is a sync/handoff primitive here, not a readiness claim**, the gate sits at the *publish* boundary, not the commit. A tracked `pre-push` hook (`scripts/hooks/pre-push`, activated by `make install-hooks`) hard-blocks a push to `refs/heads/main` when any substrate file (`data/candidates/`, `data/elections/`, `data/controversies/`) in the pushed commits fails the publish standard. Pushes to any other ref (machine/agent sync) pass untouched. See `workshop/issues/000004`.
+
+The standard is **two assertions**, run as the check-set under `scripts/run-merge-checks.sh` (one set, two call sites — the local hook and PR-side CI, so they can't drift):
+
+1. **`scripts/review-gate.sh`** (`merge-checks.d/10-`) — every substrate file in range is `review: passed`.
+2. **`scripts/cross-stack-gate.sh`** (`merge-checks.d/20-`) — every *passed* substrate file was reviewed by a **different stack than produced it** (`reviewed-by ≠ generated-by`). Same-stack review degrades to fresh-context only and does not satisfy the "two stacks agree" guarantee. Exact inequality today (compound-stack overlap deferred — #4 M4); a missing/duplicate stack field on a passed file fails closed.
+
+Both gates fail closed on an unresolvable range or malformed frontmatter (exit 2), parse only the YAML frontmatter block (a body `review:` line can't masquerade as metadata), and share `scripts/lib-substrate.sh`. Correctness is pinned by `scripts/tests/test-gates.sh`.
 
 **Override is human-only.** On a block, the hook prompts for a typed confirmation over `/dev/tty`; with no controlling terminal (an agent driving `git push` through a tool, or CI) the prompt is impossible and the push stays hard-blocked. The only other escape is `git push --no-verify`, which **agents must NEVER use autonomously** — it is the operator's manual escape, used by an agent only on the operator's explicit in-conversation authorization. This keeps "publish unreviewed substrate" a deliberate human act, never a side effect of an agent's turn.
 
