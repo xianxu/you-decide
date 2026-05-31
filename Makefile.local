@@ -1,2 +1,9 @@
 # Repo-specific Makefile targets.
 # This file is included by Makefile — add your own targets here.
+
+.PHONY: install-hooks
+install-hooks:  ## Activate the tracked git hooks (publish gate, issue #4) in this clone
+	git config core.hooksPath scripts/hooks
+	@echo "core.hooksPath → scripts/hooks  (pre-push publish gate active)"
+	@echo "Override is human-only: a blocked push to main needs a live terminal,"
+	@echo "or the operator's explicit --no-verify. See you-decide/review.md."

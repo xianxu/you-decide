@@ -297,7 +297,11 @@ Review is a **turn-based loop between two isolated stacks** (e.g. Codex reviews,
 - **Deferral is a valid outcome, not a failure.** A finding you can't close by verification (a 403'd campaign-finance source, a search-result-only citation) is legitimately cleared by **demoting the claim to an explicit "Data gap"** — the file stops *asserting* the unverified thing. Never invent facts to satisfy a finding.
 - **Disputes escalate, capped.** Disagree with a finding? Dispute it in the fix commit body with rationale — never silently skip it. If reviewer and fixer still disagree after ~2 rounds, escalate to the operator as tiebreaker. Two stacks must not ping-pong indefinitely.
 
-A pre-commit hook can enforce "no commit to `data/candidates/`/`data/elections/`/`data/controversies/` without a current `review-ref`" (see `workshop/issues/000004`), but for MVP it's a convention.
+### Publish gate (pre-push enforcement)
+
+Because **commit is a sync/handoff primitive here, not a readiness claim**, the gate sits at the *publish* boundary, not the commit. A tracked `pre-push` hook (`scripts/hooks/pre-push`, activated by `make install-hooks`) hard-blocks a push to `refs/heads/main` if any substrate file (`data/candidates/`, `data/elections/`, `data/controversies/`) in the pushed commits is not `review: passed`. Pushes to any other ref (machine/agent sync) pass untouched. The check itself is `scripts/review-gate.sh <base> <tip>` — reusable by PR-side CI. See `workshop/issues/000004`.
+
+**Override is human-only.** On a block, the hook prompts for a typed confirmation over `/dev/tty`; with no controlling terminal (an agent driving `git push` through a tool, or CI) the prompt is impossible and the push stays hard-blocked. The only other escape is `git push --no-verify`, which **agents must NEVER use autonomously** — it is the operator's manual escape, used by an agent only on the operator's explicit in-conversation authorization. This keeps "publish unreviewed substrate" a deliberate human act, never a side effect of an agent's turn.
 
 ## Spawning the other stack (cross-stack review mechanics)
 

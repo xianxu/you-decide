@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# pre-push publish gate (issue #4).
+#
+# Commit is a sync/handoff primitive here, so the review-readiness gate lives
+# at the *publish* boundary instead: pushing to refs/heads/main. Pushes to any
+# other ref (machine/agent sync) pass untouched.
+#
+# Hard-block if any shared-substrate file in the pushed commits is not
+# `review: passed`. Override requires a LIVE HUMAN at a controlling terminal —
+# an agent/CI driving `git push` has no /dev/tty and cannot bypass. The only
+# other escape is `git push --no-verify`, which agents must NEVER use
+# autonomously (see you-decide/review.md).
+#
+# git feeds us, on stdin: <local ref> <local sha> <remote ref> <remote sha>
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+GATE="$ROOT/scripts/review-gate.sh"
+ZERO="0000000000000000000000000000000000000000"
+
+blocked=0
+while read -r _local_ref local_sha remote_ref remote_sha; do
+    [ "$remote_ref" = "refs/heads/main" ] || continue   # only gate publishing to main
+    [ "$local_sha" = "$ZERO" ] && continue              # branch deletion — nothing to gate
+    bash "$GATE" "$remote_sha" "$local_sha" || blocked=1
+done
+
+[ "$blocked" -eq 0 ] && exit 0
+
+# Blocked. Offer a human-only override over the controlling terminal.
+# Writing to /dev/tty fails (ENXIO) when there is no controlling terminal —
+# that failure IS the "no human present" signal, so agents/CI fall through to
+# the hard block below.
+prompt='
+  ✖ Publish to main BLOCKED: unreviewed substrate (listed above).
+    A human operator may override; agents and CI cannot.
+    Type exactly  publish unreviewed  to publish anyway (anything else aborts): '
+
+# Probe for a controlling terminal with the error suppressed (the group-level
+# 2>/dev/null catches the redirection failure before it can leak to stderr).
+if { : >/dev/tty; } 2>/dev/null; then
+    printf '%s' "$prompt" >/dev/tty
+    IFS= read -r reply </dev/tty || reply=""
+    if [ "$reply" = "publish unreviewed" ]; then
+        echo "  → operator override accepted; publishing." >&2
+        exit 0
+    fi
+    echo "  → aborted by operator." >&2
+    exit 1
+fi
+
+echo "" >&2
+echo "  ✖ Publish BLOCKED and no controlling terminal for operator override." >&2
+echo "    A human must run this push interactively, or explicitly authorize --no-verify." >&2
+exit 1
