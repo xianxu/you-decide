@@ -4,8 +4,8 @@ status: working
 deps: []
 github_issue: xianxu/you-decide#3
 created: 2026-05-28
-updated: 2026-05-30
-estimate_hours: 1.0
+updated: 2026-05-31
+estimate_hours: 6.0
 ---
 
 # Pre-commit review hook + data/reviews/COVERAGE.md tracking
@@ -76,9 +76,37 @@ Building our own review tool. We use Claude / Codex / Gemini / etc. as the revie
 - [x] Test: non-`passed` substrate in range → blocked non-interactively (no `/dev/tty` → hard fail); all-`passed` → passes; non-main ref → untouched. All three verified.
 - [ ] Operator one-time activation: `make install-hooks` (writes `core.hooksPath`; sandbox-blocked from agent side — operator runs it).
 
-**M2 — coverage tracking:**
-- [ ] `data/reviews/COVERAGE.md` initial population + maintenance convention
-- [ ] Cross-stack-coverage tracker (`generated-by == reviewed-by` ⇒ incomplete) — extend `audit-review.sh` output
+**M2 — cross-stack publish gate (#53 Phase D):** make the gate mean "two stacks
+agreed," not just "reviewed." The gate is the *enforcement*; the dashboard (M4)
+is the *report* — distinct deliverables (resolves the gate-vs-dashboard
+ambiguity the plan-quality judge flagged).
+- [ ] `scripts/lib-substrate.sh` — factor substrate-file discovery + fail-closed
+  frontmatter-field read out of `review-gate.sh` into a sourced lib
+  (`substrate_files_in_range`, `frontmatter_field <tip> <file> <key>`); refactor
+  `review-gate.sh` to consume it (behavior-preserving; exit codes 0/1/2 + stderr
+  messages unchanged).
+- [ ] `scripts/cross-stack-gate.sh <base> <tip>` — for each `review: passed`
+  substrate file in range, block if `generated-by`/`reviewed-by` is missing/
+  duplicate/unreadable OR the two normalized values are equal (exact inequality;
+  compound-stack overlap deferred). Exit 0/1/2 mirroring `review-gate.sh`.
+- [ ] `scripts/merge-checks.d/20-cross-stack-gate.sh` — thin wrapper, mirrors
+  `10-review-gate.sh`; runner picks it up by `20-` ordering.
+- [ ] `scripts/tests/test-gates.sh` — bash harness: throwaway git fixture +
+  exit-code asserts for both gates (passed/blocked/missing-field/not-passed/
+  unresolvable-range) + an end-to-end `run-merge-checks.sh` same-stack-fails case.
+  (Addresses the "no committed repeatable test" gap.)
+- [ ] `you-decide/review.md` — publish standard now = `review: passed` AND
+  `reviewed-by ≠ generated-by`; human-override path unchanged.
+
+**M4 — coverage dashboard (deferred; not blocking the gate):**
+- [ ] `data/reviews/COVERAGE.md` — **pin the format first** (markdown table,
+  columns: `(state,year) | generated-by | reviewed-by | unfixed-blockers`,
+  row-per-batch), then populate. Only `2026/CA` exists today, so cost is the
+  format decision, not data entry.
+- [ ] Cross-stack-coverage rollup. NOTE: `audit-review.sh:50-63` *already* emits
+  a "Same-stack reviews (INVALID)" section (4fa2eed). Remaining delta = (a)
+  per-batch rollup feeding COVERAGE.md, and (b) reconcile the Spec's
+  "both-Claude ⇒ incomplete" with the existing "any gen==rev" rule.
 
 **M3 — server-side enforcement:** ✅ built 2026-05-31 (on ariadne #52 generic mechanism)
 - [x] Built the generic CI merge-check mechanism in the base layer (ariadne #52): seeded `.github/workflows/merge-check.yml` shim + symlinked `scripts/run-merge-checks.sh` runner + scaffolded `scripts/merge-checks.d/`.
@@ -87,7 +115,30 @@ Building our own review tool. We use Claude / Codex / Gemini / etc. as the revie
 - [ ] Validate on a real PR (CI run fires + reports). Advisory for now — branch protection / required-check is opt-in (ariadne #52 M2 `make remote-init`); direct-push-to-main stays the acknowledged escape.
 - [ ] (deferred) extra lints: source-hygiene grep, `-read.md` math sanity-check — additional `merge-checks.d/` entries later.
 
+## Done when
+
+- [ ] Publish to `main` is gated (pre-push hook + PR-side CI, one check-set via
+  `run-merge-checks.sh`) such that shared substrate must be `review: passed`
+  AND reviewed by a different stack (`reviewed-by ≠ generated-by`).
+- [ ] The gate fails closed (unresolvable range, missing/duplicate frontmatter
+  keys, missing stack fields on a passed file) and is human-override-only at the
+  pre-push boundary (no autonomous `--no-verify`).
+- [ ] Gate correctness is covered by an automated test harness.
+- [ ] `data/reviews/COVERAGE.md` tracks per-batch review + producing/reviewing
+  stack; `audit-review.sh` reports same-stack files as the dashboard view.
+
 ## Revisions
+
+### 2026-05-31 — cross-stack: dashboard → hard gate (#53 Phase D); estimate refreshed
+M2 originally scoped cross-stack as a coverage *tracker* ("extend `audit-review.sh`
+output"). The #53 rollout's end-result #2 ("two different AI stacks agree")
+requires it as a load-bearing **gate**, so M2 is reframed to the cross-stack
+publish gate (new `cross-stack-gate.sh` + `20-` merge-check entry + shared
+`lib-substrate.sh` + test harness); the dashboard work moved to a deferred M4
+(the `audit-review.sh` same-stack report stays as the dashboard view). Added a
+top-level `## Done when`. Bumped `estimate_hours` 1.0 → 6.0: M1+M3 already shipped
+~140 LOC + a 7-finding Codex review; the original 1.0 was an order of magnitude
+low (plan-quality judge, 2026-05-31).
 
 ### 2026-05-30 — gate moved from pre-commit to pre-push-to-main
 Scope/locus change, not scope creep. Surfaced in design: `commit` is used here as a **checkpoint/handoff/sync** primitive (fixer commits `issues-flagged`; reviewer commits the `passed` flip), so a pre-commit readiness gate fights the review loop. Relocated the gate to the **publish boundary** (push → `main`), which already coincides with the operator's deliberate `commit, never push` step. Added a human-only override requirement (TTY-gated; agents may not autonomously `--no-verify`). Title/Problem still say "pre-commit"; kept for GH#3 continuity — the mechanism is pre-push.
