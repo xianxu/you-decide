@@ -9,7 +9,7 @@ Map of how `you-decide` works. Practical sketch — details live in the code, su
 - [Substrate](substrate.md) — data directories (`data/candidates/`, `data/controversies/`, `data/elections/`, `data/sources/`, `data/reviews/`), per-file frontmatter contract, public/private split
 - [Substrate dependencies & freshness](substrate-dependencies.md) — the artifact dependency DAG, the 9 artifact classes, and the two staleness rules (newer-input mtime + fan-in membership) that say when a derived artifact must be recomputed
 - [Survey + philosophy](survey-and-philosophy.md) — bootstrap-survey orchestrator, available designs (`progressive`, `essay`), decision-help posture, just-in-time disambiguation
-- [Review pipeline](review.md) — fresh-context / different-AI-stack review, per-file frontmatter contract, `scripts/audit-review.sh`
+- [Review pipeline](review.md) — fresh-context / different-AI-stack review, per-file frontmatter contract, `scripts/audit-review.sh`, and the two-assertion publish gate (review + cross-stack) at the push boundary
 - [Workflow](workflow/index.md) — ariadne base layer: issue lifecycle, directory conventions (symlinked from ariadne)
 
 ## What this repo is not

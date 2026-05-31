@@ -43,9 +43,18 @@ Run before committing shared substrate; surface unreviewed work for batched revi
 
 Output goes to `data/reviews/<year>/<date>-<batch>.md` — captures findings, source-tier verifications, math re-derivations, disambiguation checks. Each reviewed file's frontmatter is updated with `review:`, `reviewed-by:`, `reviewed-on:`, `review-ref:`.
 
-## Review gate
+## Publish gate
 
-Mandatory before any commit to shared `data/candidates/`, `data/elections/`, `data/controversies/` directories. The skill dispatches review before letting the user commit. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but benefit from the same mechanism — primary value is catching arithmetic errors in the weighted-total math (the scoring contract in [algorithm](algorithm.md#scoring-contract) gives review a sharp invariant to check).
+Because **commit is a sync/handoff primitive here, not a readiness claim**, enforcement sits at the **publish** boundary, not the commit. A tracked `pre-push` hook (`scripts/hooks/pre-push`, activated by `make install-hooks`) hard-blocks a push to `main` when any substrate file (`data/candidates/`, `data/elections/`, `data/controversies/`) in the pushed range fails the publish standard. Pushes to any other ref (machine/agent sync) pass untouched.
+
+The standard is **two assertions**, run as one check-set under `scripts/run-merge-checks.sh` (shared by the local hook and PR-side CI so they can't drift):
+
+1. `scripts/review-gate.sh` (`merge-checks.d/10-`) — every substrate file in range is `review: passed`.
+2. `scripts/cross-stack-gate.sh` (`merge-checks.d/20-`) — every *passed* file was reviewed by a different stack than produced it (`reviewed-by ≠ generated-by`); same-stack review degrades to fresh-context only. Exact inequality today (compound-stack overlap deferred); missing/duplicate stack fields fail closed.
+
+Both fail closed on an unresolvable range or malformed frontmatter (exit 2), parse only the YAML frontmatter block (a body `review:` line can't masquerade as metadata), and share `scripts/lib-substrate.sh`; correctness is pinned by `scripts/tests/test-gates.sh`. **Override is human-only** (typed confirmation over `/dev/tty`; agents must never `--no-verify` autonomously). Mechanics + override semantics live in `you-decide/review.md` (§ Publish gate) and `workshop/issues/000004`.
+
+Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but benefit from the same review mechanism — primary value is catching arithmetic errors in the weighted-total math (the scoring contract in [algorithm](algorithm.md#scoring-contract) gives review a sharp invariant to check).
 
 ## What review does NOT do
 
