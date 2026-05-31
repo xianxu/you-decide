@@ -69,12 +69,30 @@ mkfile data/candidates/inprogsame.md in-progress claude  claude;   SINPROGSAME=$
 mkfile data/candidates/compound.md   passed      claude+codex codex; SCOMPOUND=$(commit "compound: passed claude+codex/codex")
 echo "more" >> README.md;                                          SDOC=$(commit "doc-only change")
 
+# Malformed-frontmatter fixtures — each must fail closed (Codex-class bugs).
+# body-fake: a body `review: passed` line with NO frontmatter review key.
+mkdir -p data/candidates
+printf -- '---\nname: X\ngenerated-by: claude\n---\n\nreview: passed\nreviewed-by: codex\n' \
+    > data/candidates/bodyfake.md;                                 SBODYFAKE=$(commit "bodyfake: review only in body")
+# dup: two reviewed-by lines in frontmatter (ambiguous → <duplicate>).
+printf -- '---\nname: X\ngenerated-by: claude\nreview: passed\nreviewed-by: codex\nreviewed-by: gemini\n---\nbody\n' \
+    > data/candidates/dup.md;                                      SDUP=$(commit "dup: two reviewed-by keys")
+# empty: zero-byte file (no frontmatter at all).
+: > data/candidates/empty.md;                                      SEMPTY=$(commit "empty: no frontmatter")
+# noclose: opening fence, no closing fence → body must NOT be read as metadata.
+printf -- '---\nname: X\ngenerated-by: claude\nreview: passed\nreviewed-by: codex\nbody line\n' \
+    > data/candidates/noclose.md;                                  SNOCLOSE=$(commit "noclose: unterminated frontmatter")
+
 echo
 echo "── review-gate.sh (review: passed) ──"
 assert_exit "passed claude/codex → 0"            0 "$REVIEW_GATE" "$S0" "$SGOOD"
 assert_exit "not-passed (in-progress) → 1"       1 "$REVIEW_GATE" "$SNOFIELD" "$SINPROG"
 assert_exit "passed-but-no-reviewed-by → 0"      0 "$REVIEW_GATE" "$SSAME" "$SNOFIELD"
 assert_exit "doc-only (no substrate) → 0"        0 "$REVIEW_GATE" "$SCOMPOUND" "$SDOC"
+assert_exit "body-only review key → 1 (not read as metadata)" 1 "$REVIEW_GATE" "$SDOC" "$SBODYFAKE"
+assert_exit "dup reviewed-by but review:passed → 0 (review-gate's scope)" 0 "$REVIEW_GATE" "$SBODYFAKE" "$SDUP"
+assert_exit "empty file → 1"                     1 "$REVIEW_GATE" "$SDUP" "$SEMPTY"
+assert_exit "unclosed frontmatter → 1 (body not metadata)" 1 "$REVIEW_GATE" "$SEMPTY" "$SNOCLOSE"
 assert_exit "unresolvable range → 2"             2 "$REVIEW_GATE" deadbeef HEAD
 
 echo
@@ -84,6 +102,9 @@ assert_exit "passed same stack (claude/claude) → 1" 1 "$CROSS_GATE" "$SGOOD" "
 assert_exit "passed missing reviewed-by → 1"     1 "$CROSS_GATE" "$SSAME" "$SNOFIELD"
 assert_exit "not-passed same stack → 0 (skipped)" 0 "$CROSS_GATE" "$SINPROG" "$SINPROGSAME"
 assert_exit "passed compound claude+codex/codex → 0 (exact ineq)" 0 "$CROSS_GATE" "$SINPROGSAME" "$SCOMPOUND"
+assert_exit "passed dup reviewed-by → 1 (ambiguous, fail closed)" 1 "$CROSS_GATE" "$SBODYFAKE" "$SDUP"
+assert_exit "body-only review key → 0 (not passed → skipped)" 0 "$CROSS_GATE" "$SDOC" "$SBODYFAKE"
+assert_exit "unclosed frontmatter → 0 (not passed → skipped)" 0 "$CROSS_GATE" "$SEMPTY" "$SNOCLOSE"
 assert_exit "unresolvable range → 2"             2 "$CROSS_GATE" deadbeef HEAD
 
 echo

@@ -42,11 +42,19 @@ frontmatter_field() {
         printf '%s\n' "<unreadable>"
         return 0
     fi
+    # Parse ONLY a *properly fenced* frontmatter block: opening '---' on line 1,
+    # a matching closing '---'. Buffer the interior and emit it ONLY if the
+    # closing fence is seen — an unclosed fence yields no frontmatter (every
+    # field → <missing>), so a malformed file fails closed rather than letting
+    # body lines masquerade as metadata. Tolerate CRLF (strip trailing \r) so a
+    # legitimately-reviewed CRLF file parses instead of false-blocking.
     fm="$(printf '%s\n' "$content" | awk '
+        { sub(/\r$/, "") }
         NR==1 && $0 != "---" { exit }
         NR==1 { next }
-        /^---[[:space:]]*$/ { exit }
-        { print }
+        /^---[[:space:]]*$/ { closed = 1; exit }
+        { buf = buf $0 "\n" }
+        END { if (closed) printf "%s", buf }
     ')"
     n="$(printf '%s\n' "$fm" | grep -cE "^${key}:[[:space:]]" || true)"
     if [ "$n" -eq 1 ]; then
