@@ -15,7 +15,7 @@ Every reviewable file declares state in its frontmatter so unreviewed work is **
 ---
 generated-by: <stack used to generate, e.g. claude / gemini / gpt-4 / human>
 generated-on: <YYYY-MM-DD>
-review: <not-done | passed | failed | in-progress>
+review: <not-done | passed | issues-flagged | failed>
 reviewed-by: <stack used to review>             # required when review != not-done
 reviewed-on: <YYYY-MM-DD>                        # required when review != not-done
 review-ref: data/reviews/<year>/<date>-<batch>.md     # link to the session output

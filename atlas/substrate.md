@@ -55,7 +55,7 @@ Every markdown file in the **public substrate** (and the skill bundle itself) ca
 ---
 generated-by: <claude | gemini | gpt-4 | human>
 generated-on: <YYYY-MM-DD>
-review: <not-done | passed | failed | in-progress>
+review: <not-done | passed | issues-flagged | failed>
 reviewed-by: <agent stack used for review>   # set when review != not-done
 reviewed-on: <YYYY-MM-DD>                     # set when review != not-done
 review-ref: data/reviews/<year>/<date>-<batch>.md  # link to the session
