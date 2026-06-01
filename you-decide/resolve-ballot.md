@@ -210,15 +210,18 @@ Dispatch this when an election manifest is missing or stale:
 
 ## Acceptance test (from issue 000011)
 
-Run against `(123 Main St, Menlo Park, CA, next, contested-only)`. Should produce a ballot containing exactly:
+Run against a Menlo Park, CA test address (the canonical MVP fixture; supply a
+concrete address from your private dir — do **not** commit a real residential
+address to this public repo). The MVP baseline address resolves to the district
+fingerprint below; a ballot should contain exactly:
 
-- **Statewide**: Governor, State Supt of Public Instruction, BOE D2 (the test address is in BOE D2)
+- **Statewide**: Governor, State Supt of Public Instruction, BOE D2 (test address is in BOE D2)
 - **Federal**: US House D15
 - **State Legislative**: Assembly D21
 - **SM County**: County Superintendent of Schools, Assessor/Clerk-Recorder, Controller, Supervisor D3
-- **Sub-county measures**: none (the test address is not in Ravenswood/Brisbane/RCESD)
+- **Sub-county measures**: none (test address is not in Ravenswood/Brisbane/RCESD)
 
-Baseline encoded at `data/elections/2026/2026-06-02-CA-primary.md` — should be exactly filterable to the above via the-test-address district tags `STATEWIDE` + `CA-BOE-D2` + `US-House-D15` + `CA-Assembly-D21` + `SM-COUNTY` + `SM-SUPERVISOR-D3`.
+Baseline encoded at `data/elections/2026/2026-06-02-CA-primary.md` — should be exactly filterable to the above via the test address's district tags `STATEWIDE` + `CA-BOE-D2` + `US-House-D15` + `CA-Assembly-D21` + `SM-COUNTY` + `SM-SUPERVISOR-D3`.
 
 ## When NOT to use
 
