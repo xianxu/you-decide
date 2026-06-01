@@ -1,10 +1,11 @@
 ---
 id: 000004
-status: working
+status: done
 deps: []
 created: 2026-05-28
 updated: 2026-05-31
 estimate_hours: 6.0
+actual_hours: 5.8
 ---
 
 # Pre-commit review hook + data/reviews/COVERAGE.md tracking
@@ -106,7 +107,7 @@ not enforcement; split into **#8** so they never block the gate. See #8.
 - [x] you-decide plugs in `scripts/merge-checks.d/10-review-gate.sh` (wraps `review-gate.sh`).
 - [x] Refactored the M1 `pre-push` hook to call `run-merge-checks.sh` (one check-set, two call sites — local hook + CI; can't drift).
 - [x] Validate on a real PR (CI run fires + reports). **Done — you-decide PR #4, 2026-05-31:** CI green, both gates ran (see Phase E log). Still *advisory* — branch protection / required-check is opt-in (ariadne #52 M2 `make remote-init`); direct-push-to-main stays the acknowledged escape until then.
-- [ ] (deferred) extra lint: source-hygiene grep over `data/candidates` substrate — a future `merge-checks.d/` entry. (Correctly scoped to you-decide: substrate is public.)
+- [→] extra lint: source-hygiene grep over `data/candidates` substrate — **split to #9** (2026-05-31). Correctly scoped to you-decide (public substrate); a future `merge-checks.d/30-` entry, not part of #4's gate done-when.
 - [x] (dropped 2026-05-31) `-read.md` math sanity-check — **mis-scoped for you-decide CI.** Reads live in the user's *private* dir (`who-to-vote-for/…`, a sibling of the repo so `git push` can't leak them — SKILL.md L18/L64), so a `merge-checks.d/` entry over you-decide's push range would be permanently dead (no read ever enters the range). The arithmetic check belongs to the private/brain review path (SKILL.md L136: reads "can be reviewed by the same mechanism to catch arithmetic errors"), not this issue. Build it there if/when reads are version-controlled. See Revisions.
 
 ## Done when
@@ -158,6 +159,8 @@ Scope/locus change, not scope creep. Surfaced in design: `commit` is used here a
 
 ## Log
 
+
+- 2026-05-31: closed — Publish gate (review:passed AND reviewed-by≠generated-by) enforced via pre-push hook + PR CI; 20/20 test harness green; validated live on PR #4 CI; hook activated locally
 ### 2026-05-28
 Ported from GH#3 per the ariadne in-repo-first convention. GH#3 remains as the public-visibility stub pointing here.
 
