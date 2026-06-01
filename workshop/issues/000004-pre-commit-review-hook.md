@@ -2,7 +2,6 @@
 id: 000004
 status: working
 deps: []
-github_issue: xianxu/you-decide#3
 created: 2026-05-28
 updated: 2026-05-31
 estimate_hours: 6.0

@@ -2,7 +2,6 @@
 id: 000002
 status: open
 deps: []
-github_issue: xianxu/you-decide#1
 created: 2026-05-28
 updated: 2026-05-28
 ---
