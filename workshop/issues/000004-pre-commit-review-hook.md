@@ -74,7 +74,7 @@ Building our own review tool. We use Claude / Codex / Gemini / etc. as the revie
 - [x] `Makefile.local` — `install-hooks` target: `git config core.hooksPath scripts/hooks` (one-time; later fold into `make bootstrap`).
 - [x] `you-decide/review.md` — add "Publish gate" section + the no-autonomous-`--no-verify` rule.
 - [x] Test: non-`passed` substrate in range → blocked non-interactively (no `/dev/tty` → hard fail); all-`passed` → passes; non-main ref → untouched. All three verified.
-- [ ] Operator one-time activation: `make install-hooks` (writes `core.hooksPath`; sandbox-blocked from agent side — operator runs it).
+- [x] Operator one-time activation: `make install-hooks` (writes `core.hooksPath`; sandbox-blocked from agent side — operator runs it). **Done 2026-05-31** — `core.hooksPath → scripts/hooks` verified; pre-push gate live locally.
 
 **M2 — cross-stack publish gate (#53 Phase D):** make the gate mean "two stacks
 agreed," not just "reviewed." The gate is the *enforcement*; the dashboard (M4)
@@ -107,7 +107,8 @@ not enforcement; split into **#8** so they never block the gate. See #8.
 - [x] you-decide plugs in `scripts/merge-checks.d/10-review-gate.sh` (wraps `review-gate.sh`).
 - [x] Refactored the M1 `pre-push` hook to call `run-merge-checks.sh` (one check-set, two call sites — local hook + CI; can't drift).
 - [x] Validate on a real PR (CI run fires + reports). **Done — you-decide PR #4, 2026-05-31:** CI green, both gates ran (see Phase E log). Still *advisory* — branch protection / required-check is opt-in (ariadne #52 M2 `make remote-init`); direct-push-to-main stays the acknowledged escape until then.
-- [ ] (deferred) extra lints: source-hygiene grep, `-read.md` math sanity-check — additional `merge-checks.d/` entries later.
+- [ ] (deferred) extra lint: source-hygiene grep over `data/candidates` substrate — a future `merge-checks.d/` entry. (Correctly scoped to you-decide: substrate is public.)
+- [x] (dropped 2026-05-31) `-read.md` math sanity-check — **mis-scoped for you-decide CI.** Reads live in the user's *private* dir (`who-to-vote-for/…`, a sibling of the repo so `git push` can't leak them — SKILL.md L18/L64), so a `merge-checks.d/` entry over you-decide's push range would be permanently dead (no read ever enters the range). The arithmetic check belongs to the private/brain review path (SKILL.md L136: reads "can be reviewed by the same mechanism to catch arithmetic errors"), not this issue. Build it there if/when reads are version-controlled. See Revisions.
 
 ## Done when
 
@@ -123,6 +124,17 @@ not enforcement; split into **#8** so they never block the gate. See #8.
   **Moved to #8** — reporting, not part of this issue's gate scope.
 
 ## Revisions
+
+### 2026-05-31 — `-read.md` math sanity-check dropped (mis-scoped)
+The deferred extra-lint pair split on scope. Source-hygiene grep is correctly a
+you-decide merge-check (public substrate). The `-read.md` math sanity-check is
+**not** — reads are per-user *private* artifacts (philosophy applied to facts),
+kept in a sibling `who-to-vote-for/` dir precisely so a you-decide `git push`
+can't leak them, so they never enter this repo's git range; a `merge-checks.d/`
+entry over that range is dead code. The original M3/CI spec (line 60–61)
+predated the private-dir decision and wrongly assumed reads flow through PRs.
+The arithmetic check, if built, belongs to the private/brain review path
+(SKILL.md L136), not #4. Dropped from this issue.
 
 ### 2026-05-31 — M4 (coverage dashboard) extracted to #8
 Operator chose to postpone the COVERAGE.md dashboard + cross-stack rollup to a
