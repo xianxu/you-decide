@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# pre-commit: NON-blocking review reminder (issue #10).
+#
+# Commit is a free sync/handoff primitive here, so this hook never blocks — it
+# only warns when shared substrate is staged at `review ≠ passed`, making the
+# owed review step observable at commit time instead of silent until push. The
+# BLOCKING publish gate lives at the push boundary (scripts/hooks/pre-push →
+# review-gate.sh). Always exits 0.
+set -euo pipefail
+ROOT="$(git rev-parse --show-toplevel)"
+"$ROOT/scripts/warn-unreviewed.sh" || true
+exit 0

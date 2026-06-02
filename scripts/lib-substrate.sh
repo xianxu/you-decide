@@ -9,6 +9,10 @@
 # data/controversies). data/reviews + data/sources are intentionally out of
 # scope (review reports + human-curated reference, not AI-curated facts).
 
+# The fact-bearing substrate dirs — ONE definition shared by both discovery
+# helpers (range + staged), so the push gate and the pre-commit warn can't drift.
+SUBSTRATE_DIRS="data/candidates data/elections data/controversies"
+
 # substrate_files_in_range <base> <tip>
 # Prints the *.md substrate files added/modified in base..tip, one per line,
 # sorted + deduped. An all-zeros base (a brand-new ref) is diffed against the
@@ -20,12 +24,24 @@ substrate_files_in_range() {
     if printf '%s' "$base" | grep -qE '^0+$'; then
         base="$(git hash-object -t tree /dev/null)"
     fi
+    # shellcheck disable=SC2086  # intentional word-split of the dir list
     if ! changed="$(git diff --name-only --diff-filter=d "$base" "$tip" \
-            -- data/candidates data/elections data/controversies)"; then
+            -- $SUBSTRATE_DIRS)"; then
         return 2
     fi
     printf '%s\n' "$changed" | grep -E '\.md$' | sort -u || true
     return 0
+}
+
+# substrate_files_staged
+# Index counterpart of substrate_files_in_range: prints the *.md substrate files
+# currently STAGED for commit (added/copied/modified), one per line, sorted +
+# deduped. Used by the pre-commit warn (scripts/warn-unreviewed.sh) so it shares
+# the same substrate definition as the push gate. Empty output = nothing staged.
+substrate_files_staged() {
+    # shellcheck disable=SC2086  # intentional word-split of the dir list
+    git diff --cached --name-only --diff-filter=ACM -- $SUBSTRATE_DIRS \
+        | grep -E '\.md$' | sort -u || true
 }
 
 # frontmatter_field <tip> <file> <key>
