@@ -4,8 +4,8 @@ type: primary
 state: CA
 slug: 2026-06-02-CA-primary
 generated: 2026-05-28
-last-verified: 2026-05-28
-coverage: SM County voter ballot (other CA counties' US House + Assembly slices pending)
+last-verified: 2026-06-02
+coverage: SM County voter ballot + statewide Lt. Gov & Secretary of State now enumerated (other CA counties' US House + Assembly slices pending)
 sources:
   - https://www.sos.ca.gov/elections
   - https://smcacre.gov/elections/county-offices
@@ -17,9 +17,9 @@ generated-by: claude
 generated-on: 2026-05-28
 review: passed
 reviewed-by: codex
-reviewed-on: 2026-05-29
-review-ref: data/reviews/2026/2026-05-29-ca-2026-final-batch4.md
-review-note: Freeman/Morgan not-qualified corrections confirmed 2026-05-29; candidate-slug links resolve.
+reviewed-on: 2026-06-02
+review-ref: data/reviews/2026/2026-06-02-ca-secretary-of-state.md
+review-note: re-reviewed 2026-06-02 for added Lt. Gov + Secretary of State statewide race enumerations.
 ---
 
 # California Primary — June 2, 2026
@@ -28,7 +28,7 @@ Decision-support manifest of races on the **San Mateo County** voter's 6/2/2026 
 
 **Scope & completeness — read before trusting this for ballot truth.** This is *not* the certified candidate roster; two deliberate filters apply:
 
-- **Coverage is San-Mateo-oriented.** Statewide races appear, but several statewide offices on the certified ballot are **not yet enumerated here**: Lieutenant Governor, Secretary of State, Controller, Treasurer, Attorney General, Insurance Commissioner. Other counties' US-House / Assembly slices are also pending.
+- **Coverage is San-Mateo-oriented.** Statewide races appear, but several statewide offices on the certified ballot are **not yet enumerated here**: Controller, Treasurer, Attorney General, Insurance Commissioner. (Lieutenant Governor and Secretary of State are now enumerated below.) Other counties' US-House / Assembly slices are also pending.
 - **Candidate lists are viability-filtered, not certified-complete.** Where a race lists fewer names than the CA SoS certified list (e.g. Superintendent of Public Instruction, Board of Equalization D2), the omitted names are low-viability filings dropped for decision-support — they still appear on the physical ballot.
 
 For ballot truth, cross-check the [CA SoS certified candidate list](https://www.sos.ca.gov/elections) and the [SM County roster](https://smcacre.gov/elections/county-offices). Closing both gaps (full statewide enumeration + certified candidate lists) is a tracked research follow-up.
@@ -48,6 +48,25 @@ For ballot truth, cross-check the [CA SoS certified candidate list](https://www.
   - Matt Mahan (D) [[matt-mahan]]
   - Steve Hilton (R) [[steve-hilton]]
   - Chad Bianco (R) [[chad-bianco]]
+
+### Lieutenant Governor
+- Seats: 1 (top-2 advances)
+- District: STATEWIDE
+- CONTESTED (viability-filtered subset; CA SoS certifies more — see Scope & completeness):
+  - Fiona Ma (D) [[fiona-ma]]
+  - Josh Fryday (D) [[josh-fryday]]
+  - Michael Tubbs (D) [[michael-tubbs]]
+  - Janelle Kellman (D) [[janelle-kellman]]
+  - Gloria Romero (R) [[gloria-romero]]
+
+### Secretary of State
+- Seats: 1 (top-2 advances)
+- District: STATEWIDE
+- CONTESTED — full certified field (4):
+  - Shirley Weber (D, incumbent) [[shirley-weber]]
+  - Don Wagner (R) [[don-wagner]]
+  - Michael Feinstein (Green) [[michael-feinstein]]
+  - Gary Blenner (Green) [[gary-blenner]]
 
 ### Superintendent of Public Instruction (nonpartisan)
 - Seats: 1 (top-2 advances)
