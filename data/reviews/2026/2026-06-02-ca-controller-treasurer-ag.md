@@ -23,6 +23,8 @@ Re-review on 2026-06-02 was limited to the five previously issues-flagged files:
 - `data/candidates/2026/CA/attorney-general/michael-gates.md`
 - `data/candidates/2026/CA/attorney-general/marjorie-mikels.md`
 
+A subsequent same-day spot-check re-review was limited to `data/candidates/2026/CA/controller/herb-morgan.md`, after correction of an unsupported "AI and blockchain" description of Morgan's transparency proposal.
+
 The seven prior `passed` verdicts are retained.
 
 ## Issues found
@@ -75,6 +77,7 @@ None.
 - DATA-GAP markers in the cleared files use the required `[axis: ...; severity: ...; last-attempt: 2026-06-02]` shape and are low-severity honest gaps; under `review.md`, these do not block passage.
 - The prior five blockers are resolved: decisive record, position, liability, endorsement, fundraising, and viability claims now use Tier A/B source pages or explicit inference/DATA-GAP treatment. The remaining Tier C sources in the five re-reviewed files are explicitly orienting-only and are not used for decisive claims.
 - No Ballotpedia or California Globe reliance remains in the five re-reviewed files.
+- Morgan correction spot-check: the revised "radical transparency" claim now matches CalMatters, which supports a state database plus AI monitoring/flagging for suspicious purchases and does not support blockchain; KPBS supports only the general fraud-exposure framing and does not describe the technical mechanism. No remaining attributed-but-unsupported claims surfaced in the Morgan file; its only Tier C source is Ballotpedia, used as orienting field corroboration alongside the official Secretary of State certified list.
 - Content-bearing single-page campaign URLs remain in a few source tables for candidate self-descriptions/platform lists; I did not treat those as the prior class of invalid bare domain-level rebinding, because the cited root pages themselves expose the claim text rather than serving as generic outlet homepages.
 - Cohen's 2022 disclosure items are framed correctly as opposition-raised, partisan-sourced, unadjudicated allegations, not proven misconduct.
 - Kounalakis's Meridian Plaza / blind-trust conflict flag is anchored to CalMatters, with California Globe explicitly marked Tier C and not relied on for the decisive claim.
