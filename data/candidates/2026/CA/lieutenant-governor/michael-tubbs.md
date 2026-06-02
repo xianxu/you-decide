@@ -6,7 +6,10 @@ last-updated: 2026-06-02
 status: active
 generated-by: claude
 generated-on: 2026-06-02
-review: not-done
+review: passed
+reviewed-by: codex
+reviewed-on: 2026-06-02
+review-ref: data/reviews/2026/2026-06-02-ca-lieutenant-governor.md
 ---
 
 # Michael Tubbs — 2026 CA Lieutenant Governor candidate
@@ -21,7 +24,7 @@ He founded several institutions: Mayors for a Guaranteed Income (MGI), a nationa
 
 As of the June 2, 2026 top-two primary he runs a progressive / grassroots lane and trails frontrunner Fiona Ma on money and establishment endorsements. [(CalMatters race story)](https://calmatters.org/politics/2026/06/california-primary-lieutenant-governor/)
 
-**About the office he seeks:** The California Lieutenant Governor has limited independent power. The office's substantive roles are mostly ex-officio board seats — Regent of the University of California, Trustee of the California State University, and member (and chair) of the State Lands Commission — plus serving as President of the State Senate with a tie-breaking vote, and standing first in line of succession to the Governor. Several of Tubbs's stated "plans" below are framed explicitly around these seat-authorities (public-land housing, offshore wind), while others (guaranteed income, tuition policy) depend on the Governor, Legislature, or the Regents/Trustees as a body rather than on the lieutenant governorship alone. (inference)
+**About the office he seeks:** The California Lieutenant Governor has limited independent power. The office's substantive roles are mostly ex-officio board seats — Regent of the University of California, Trustee of the California State University, and member (and chair) of the State Lands Commission — plus serving as President of the State Senate with a tie-breaking vote, and standing first in line of succession to the Governor. [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/) [(LAist voter guide)](https://laist.com/news/politics/voter-guides/2026-election-california-primary-california-lieutenant-governor) Several of Tubbs's stated "plans" below are framed explicitly around these seat-authorities (public-land housing, offshore wind), while others (guaranteed income, tuition policy) depend on the Governor, Legislature, or the Regents/Trustees as a body rather than on the lieutenant governorship alone. (inference)
 
 ## Stated positions
 
@@ -42,7 +45,7 @@ Sources below draw on his campaign site (primary), the nonpartisan California Se
 - **Caveat (campaign figure):** independent homicide counts during his term show a real downward trend — 55 (2017), 33 (2018), 34 (2019) — but counts rose to roughly 53 by 2024, after his term. The "40%" line appears to conflate his tenure with successor years; treat it as a campaign-sourced, period-stretched statistic. [(ABC10)](https://www.abc10.com/article/news/local/crime-is-down-in-stockton-despite-recent-spike-in-homicides/103-454758032)
 
 **Fiscal (central tension):**
-- Fiscal-credibility claim: the campaign says that under him Stockton was named the state's "second most fiscally healthy city" — a **campaign claim, not independently verified** in sources reviewed. [(michaeltubbsforca.com)](https://michaeltubbsforca.com/)
+- Fiscal-credibility claim: the campaign says that under him Stockton was named the state's "second most fiscally healthy city." **DATA-GAP** [axis: record; severity: low; last-attempt: 2026-06-02]: campaign-sourced; no independent Tier-A/B confirmation of the ranking surfaced — read as a campaign claim. [(michaeltubbsforca.com)](https://michaeltubbsforca.com/)
 - Tuition pledge: "I will not vote to raise tuition — period" (a pledge tied to his prospective UC Regent / CSU Trustee seats). [(michaeltubbsforca.com/issues)](https://michaeltubbsforca.com/issues)
 - Guaranteed income (GI) is his signature, and he is doubling down: "champion proven solutions like guaranteed income to end poverty and prevent homelessness," framed as fiscally prudent because it prevents costlier downstream costs, and "emulated by 150+ cities." [(michaeltubbsforca.com/issues)](https://michaeltubbsforca.com/issues) [(CalMatters — guaranteed income)](https://calmatters.org/california-divide/2023/04/california-guaranteed-income/)
 
@@ -51,7 +54,7 @@ Sources below draw on his campaign site (primary), the nonpartisan California Se
 - No charter or school-choice advocacy was found. (inference)
 
 **Immigration:**
-- No explicit platform position was found in sources reviewed (gap). He is endorsed by Dolores Huerta and runs in a pro-immigrant coalition. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
+- **DATA-GAP** [axis: none; severity: low; last-attempt: 2026-06-02]: no explicit immigration platform position found in sources reviewed. He is endorsed by Dolores Huerta and runs in a pro-immigrant coalition. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
 
 **Social liberty:**
 - Socially liberal by coalition; endorsed by the Harvey Milk LGBTQ Democratic Club and Courage California. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
@@ -68,7 +71,7 @@ Sources below draw on his campaign site (primary), the nonpartisan California Se
 - **SEED results nuance:** an early first-year report showed full-time employment rising from 28% to 40%, but the **final study (2023; researchers Amy Castro and Stacia West) found the employment effects were not statistically significant**, with the pandemic disrupting year two. The robust findings were reduced income volatility, lower depression and anxiety, and improved well-being. Researcher Amy Castro: "$500 a month is not a panacea." [(stocktondemonstration.org)](https://www.stocktondemonstration.org/) [(CalMatters — guaranteed income)](https://calmatters.org/california-divide/2023/04/california-guaranteed-income/)
 
 **Stockton Scholars (founded 2018):**
-- Place-based college-promise scholarship: up to $4,000 over four years (or $1,000 for community college / trade), with a low 2.0-GPA barrier, plus mentoring and persistence support. Campaign/program figures: roughly 5,000 scholarships and more than $3 million awarded, with the first cohort graduated. [(Stockton Scholars)](https://stocktonscholars.org/) [(PRNewswire, 2023)](https://www.prnewswire.com/)
+- Place-based college-promise scholarship: up to $4,000 over four years (or $1,000 for community college / trade), with a low 2.0-GPA barrier, plus mentoring and persistence support. Campaign/program figures: roughly 5,000 scholarships and more than $3 million awarded, with the first cohort graduated. [(Stockton Scholars)](https://stocktonscholars.org/) [(PRNewswire — Stockton Scholars first grads, 2023)](https://www.prnewswire.com/news-releases/lower-barriers-to-higher-ed-pay-off-as-stockton-scholars-celebrates-first-class-of-college-grads-301847604.html)
 
 **National policy movement:**
 - Founded Mayors for a Guaranteed Income (MGI), which he says has been emulated by 150+ cities, and helped run an RCT-style pilot (SEED) with an academic evaluation — a scaled, evidence-oriented policy effort. [(CalMatters — guaranteed income)](https://calmatters.org/california-divide/2023/04/california-guaranteed-income/) [(amacad.org)](https://www.amacad.org/person/michael-d-tubbs)
@@ -82,18 +85,19 @@ Sources below draw on his campaign site (primary), the nonpartisan California Se
 ## Endorsements & donors
 
 **Endorsements — labor and progressive lane:**
-- Labor: SEIU California, AFSCME, and both major teacher unions, the California Teachers Association (CTA) and California Federation of Teachers (CFT). Note: teacher-union backing exclusivity is uncertain — CalMatters has also attributed teacher-union support to rival Josh Fryday, so treat these as not necessarily exclusive to Tubbs (verify). [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements) [(CalMatters race story)](https://calmatters.org/politics/2026/06/california-primary-lieutenant-governor/)
+- Labor: **SEIU California** and **AFSCME** (the page lists "SEIU California" and "AFSCME California People"). Tubbs's endorsements page does **not** list either teachers' union. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
+- *Teacher-union backing went to rivals, not Tubbs:* the California Teachers Association (CTA) recommends **Josh Fryday**, and the California Federation of Teachers (CFT) dual-endorsed **Josh Fryday and Fiona Ma**. Do not attribute CTA/CFT to Tubbs. [(joshfryday.com/endorsements)](https://joshfryday.com/endorsements) [(CalMatters race story)](https://calmatters.org/politics/2026/06/california-primary-lieutenant-governor/)
 - Party / progressive groups: California Working Families Party, Courage California, Inland Empire United, Harvey Milk LGBTQ Democratic Club, and Pilipino Action Center. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
 - Leaders: Dolores Huerta, Rep. Robert Garcia, Rep. Lateefah Simon, Oakland Mayor Barbara Lee, Sen. Lola Smallwood-Cuevas, Asm. Mia Bonta, and LA County Supervisor Holly Mitchell. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
 
 **Campaign-finance posture:**
-- Runs a progressive / grassroots, small-donor lane and says he does not take fossil-fuel, real-estate, law-enforcement, or corporate-PAC money. [(michaeltubbsforca.com/endorsements)](https://michaeltubbsforca.com/endorsements)
+- Runs a progressive / grassroots, small-donor lane. **DATA-GAP** [axis: donors; severity: low; last-attempt: 2026-06-02]: a previously-asserted pledge to refuse fossil-fuel / real-estate / law-enforcement / corporate-PAC money could not be located on his campaign site (endorsements, homepage, or issues pages) — the claim is removed pending a direct campaign source or filing-based support.
 
 **Fundraising:**
 - $2,125,751 raised (campaign-reported). He trails Fiona Ma on money and on establishment endorsements. [(michaeltubbsforca.com)](https://michaeltubbsforca.com/) [(CalMatters race story)](https://calmatters.org/politics/2026/06/california-primary-lieutenant-governor/)
 
 **Polling / viability (as of June 2, 2026):**
-- The CEPP / Cal Poly Pomona survey released June 1, 2026 put him third at 8% — behind Fiona Ma (15%, first) and Ari Romero (R, 11%), and ahead of / statistically tied with Josh Fryday (7%), with 31% undecided. With a single GOP candidate (Romero) likely consolidating Republicans into one top-two slot, Tubbs is fighting Fryday for the remaining Democratic lane: strongest grassroots / small-donor energy but trailing on cash, and statistically tied for third–fourth. Plausible but not favored for the top two. (inference on the top-two dynamics) [(CalMatters race story)](https://calmatters.org/politics/2026/06/california-primary-lieutenant-governor/) [(CEPP / Cal Poly Pomona)](https://www.cpp.edu/class/political-science/)
+- The CEPP / Cal Poly Pomona survey released June 1, 2026 put him third at 8% — behind Fiona Ma (15%, first) and Gloria Romero (R, 11%), and ahead of / statistically tied with Josh Fryday (7%), with 31% undecided. With a single GOP candidate (Romero) likely consolidating Republicans into one top-two slot, Tubbs is fighting Fryday for the remaining Democratic lane: strongest grassroots / small-donor energy but trailing on cash, and statistically tied for third–fourth. Plausible but not favored for the top two. (inference on the top-two dynamics) [(CalMatters race story)](https://calmatters.org/politics/2026/06/california-primary-lieutenant-governor/) [(CEPP / Cal Poly Pomona)](https://www.cpp.edu/class/political-science/)
 
 ## Controversies / liabilities
 
@@ -117,7 +121,7 @@ Trails on cash and establishment endorsements and sits at ~8% (third) in early p
 | # | Source | Tier | Note |
 |---|--------|------|------|
 | 1 | [Michael Tubbs campaign — Issues](https://michaeltubbsforca.com/issues) | A | Candidate's own words; housing on public lands, offshore wind, tuition pledge, guaranteed income |
-| 2 | [Michael Tubbs campaign — Endorsements](https://michaeltubbsforca.com/endorsements) | A | Campaign self-presentation; labor/progressive endorsement lists, no-corporate-PAC posture |
+| 2 | [Michael Tubbs campaign — Endorsements](https://michaeltubbsforca.com/endorsements) | A | Campaign self-presentation; labor/progressive endorsement lists (SEIU California, AFSCME — not CTA/CFT) |
 | 3 | [Michael Tubbs campaign — homepage / media](https://michaeltubbsforca.com/) | A | Candidate's own words; "second most fiscally healthy" claim, fundraising figure |
 | 4 | [CA Secretary of State — Lt. Governor candidate statements](https://voterguide.sos.ca.gov/candidates/lt-governor-candidate-statements.htm) | A | Official voter-guide statement; "40% homicide," public-safety framing |
 | 5 | [CalMatters 2026 voter guide — Lieutenant Governor](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/) | B | Nonpartisan CA outlet; bio and race orientation |
@@ -131,5 +135,7 @@ Trails on cash and establishment endorsements and sits at ~8% (third) in early p
 | 13 | [Petaluma Argus-Courier — Tubbs commentary on Israel-Hamas war (Feb 2024)](https://www.petalumanews.com/2024/02/19/commentary-israel-hamas-war-hurts-us-globally-locally/) | B | Op-ed in his own words; two-state / anti-Hamas framing |
 | 14 | [J. (Jewish News of Northern California) — two Bay Area ex-mayors run for Lt. Gov (May 2026)](https://jweekly.com/2026/05/26/two-jewish-bay-area-ex-mayors-are-running-for-california-lieutenant-governor/) | B | Nonpartisan community outlet; non-response to CA Jewish Democrats questionnaire |
 | 15 | [CEPP / Cal Poly Pomona — Political Science](https://www.cpp.edu/class/political-science/) | B | Source of the June 1, 2026 CEPP poll cited for standings |
-| 16 | [PRNewswire — Stockton Scholars (2023)](https://www.prnewswire.com/) | C | Press-release wire; scholarship scope figures (campaign/program-sourced) |
+| 16 | [PRNewswire — Stockton Scholars celebrates first class of college grads (2023)](https://www.prnewswire.com/news-releases/lower-barriers-to-higher-ed-pay-off-as-stockton-scholars-celebrates-first-class-of-college-grads-301847604.html) | C | Press-release wire; scholarship scope figures (campaign/program-sourced) — specific release confirming 5,000 scholarships / >$3M / $4,000–$1,000 / 2.0 GPA / first graduating class |
 | 17 | 209 Times (2018; 2020 allegations) | C | Local blog; characterized by CalMatters as "often with no proof"; cited only as the origin of unsubstantiated allegations and Advance Peace criticism |
+| 18 | [Josh Fryday campaign — Endorsements](https://joshfryday.com/endorsements) | A | Cross-reference: CTA + CFT teacher-union endorsements went to Fryday, not Tubbs |
+| 19 | [LAist — 2026 CA primary lieutenant governor voter guide](https://laist.com/news/politics/voter-guides/2026-election-california-primary-california-lieutenant-governor) | B | Nonpartisan public-media voter guide; office-powers paragraph |

@@ -6,7 +6,10 @@ last-updated: 2026-06-02
 status: active
 generated-by: claude
 generated-on: 2026-06-02
-review: not-done
+review: passed
+reviewed-by: codex
+reviewed-on: 2026-06-02
+review-ref: data/reviews/2026/2026-06-02-ca-lieutenant-governor.md
 ---
 
 # Janelle Kellman — 2026 CA Lieutenant Governor candidate
@@ -17,11 +20,11 @@ Janelle Kellman is a Democrat, an environmental attorney, and a former Mayor of 
 
 Her public-service record is roughly a decade of Sausalito local government: planning commissioner (about four years), city councilmember (elected 2020), and Mayor (2022). Outside elected office she founded the Center for Sea Rise Solutions, a climate-risk nonprofit. [(Ballotpedia)](https://ballotpedia.org/Janelle_Kellman) [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/) [(janellekellman.com — Meet Janelle)](https://janellekellman.com/meet-janelle)
 
-If elected she would be the first openly gay person elected to statewide office in California. She is also Jewish and competed in the Maccabiah Games. [(janellekellman.com — Meet Janelle)](https://janellekellman.com/meet-janelle) [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(J. — Jewish news of Northern California)](https://jweekly.com/2026/05/26/two-jewish-bay-area-ex-mayors-are-running-for-california-lieutenant-governor/)
+If elected she would be the first openly LGBTQ+ person to serve as California Lieutenant Governor. (She would not be the first openly gay person elected to statewide office in California — Ricardo Lara was elected Insurance Commissioner in 2018.) She is also Jewish and competed in the Maccabiah Games. [(janellekellman.com — Meet Janelle)](https://janellekellman.com/meet-janelle) [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(J. — Jewish news of Northern California)](https://jweekly.com/2026/05/26/two-jewish-bay-area-ex-mayors-are-running-for-california-lieutenant-governor/)
 
 As of the June 2, 2026 top-two primary she is a lower-profile candidate in the field, running with thinner money and name recognition than better-known rivals. [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/)
 
-**About the office she seeks:** The California Lieutenant Governor has limited independent power. The office's substantive roles are mostly ex-officio board seats — Regent of the University of California, Trustee of the California State University, and member (and chair) of the State Lands Commission — plus serving as President of the State Senate with a tie-breaking vote, and standing first in line of succession to the Governor. Most of the "plans" below would, in practice, depend on the Governor, Legislature, or other offices rather than on the lieutenant governorship itself. (inference)
+**About the office she seeks:** The California Lieutenant Governor has limited independent power. The office's substantive roles are mostly ex-officio board seats — Regent of the University of California, Trustee of the California State University, and member (and chair) of the State Lands Commission — plus serving as President of the State Senate with a tie-breaking vote, and standing first in line of succession to the Governor. [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/) [(LAist voter guide)](https://laist.com/news/politics/voter-guides/2026-election-california-primary-california-lieutenant-governor) Most of the "plans" below would, in practice, depend on the Governor, Legislature, or other offices rather than on the lieutenant governorship itself. (inference)
 
 ## Stated positions
 
@@ -46,10 +49,11 @@ Sources below draw on her campaign site (primary) and nonpartisan voter guides.
 
 **Education:**
 - Free community college plus workforce / apprenticeship programs aligned to "climate tech, housing, service, skilled trades" — a vocational / outcomes framing. [(janellekellman.com — Priorities)](https://janellekellman.com/priorities)
-- No charter / school-choice stance surfaced; standard-Democratic K-12, union-aligned by default. (inference)
+- No charter / school-choice stance surfaced. (inference — absence of evidence)
+- **DATA-GAP** [axis: education; severity: low; last-attempt: 2026-06-02]: no teachers'-union endorsement, questionnaire, or stated union-alignment position surfaced in sources searched (campaign Priorities page, CalMatters, Bay Area Reporter); her union posture toward K-12 is unestablished, not assumed.
 
 **Immigration:**
-- No specific position surfaced; standard California-Democratic sanctuary-aligned default. (inference)
+- **DATA-GAP** [axis: immigration; severity: low; last-attempt: 2026-06-02]: no specific immigration position surfaced in sources searched (campaign Priorities page, CalMatters, Bay Area Reporter); no campaign / questionnaire / endorsement source characterizing her immigration stance was located.
 
 **Social liberty:**
 - Strong "leave people alone" liberal. Openly gay, with explicit representation framing: "representation matters... at a time when LGBTQ+ people, trans people, and young people are facing attacks." Backs reproductive rights and mental-health expansion. [(Bay Area Reporter)](https://www.ebar.com/story/153699)
@@ -80,14 +84,14 @@ Sources below draw on her campaign site (primary) and nonpartisan voter guides.
 - LPAC; Stonewall Democratic Club; East Area Progressive Democrats. [(Bay Area Reporter)](https://www.ebar.com/story/153699)
 
 **Fundraising:**
-- No public aggregate total surfaced. Reporting describes her money and name recognition as thin relative to better-known rivals. [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/)
+- **DATA-GAP** [axis: viability; severity: low; last-attempt: 2026-06-02]: no public aggregate fundraising total surfaced for Kellman in sources searched (CalMatters voter guide, Bay Area Reporter); a finance-aggregator/FPPC snapshot was not located. Reporting describes her money and name recognition as thin relative to better-known rivals. [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/)
 
 **Polling / viability:**
-- Low. As a first-term local official she faces a sitting State Treasurer (Fiona Ma), an ex-Stockton mayor (Michael Tubbs), and the Newsom-endorsed Josh Fryday. She runs as a niche progressive / LGBTQ / climate candidate with a weak top-two path. [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/)
+- Low. As a first-term local official she faces a sitting State Treasurer (Fiona Ma), an ex-Stockton mayor (Michael Tubbs), and the Newsom-endorsed Josh Fryday. She runs as a niche progressive / LGBTQ / climate candidate with a weak top-two path. No public poll has reported a Kellman vote share. **DATA-GAP** [axis: viability; severity: low; last-attempt: 2026-06-02]: low-viability framing rests on named coverage (Bay Area Reporter, CalMatters) describing her as lower-profile, not on a polled number. [(Bay Area Reporter)](https://www.ebar.com/story/153699) [(CalMatters voter guide)](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/)
 
 ## Controversies / liabilities
 
-- No scandals, lawsuits, or election-administration violations surfaced in available reporting. (inference — absence of evidence, not a positive finding of clean conduct)
+- **DATA-GAP** [axis: integrity; severity: low; last-attempt: 2026-06-02]: no scandals, lawsuits, or election-administration violations surfaced in available reporting (CalMatters, Bay Area Reporter, Ballotpedia). This is an absence of evidence from the searches run, not a positive finding of clean conduct.
 
 ## Sources
 
@@ -95,7 +99,7 @@ Sources below draw on her campaign site (primary) and nonpartisan voter guides.
 |---|--------|------|------|
 | 1 | [CalMatters 2026 voter guide — Lieutenant Governor](https://calmatters.org/california-voter-guide-2026/lieutenant-governor/) | B | Nonpartisan CA outlet; bio, sea-rise framing, viability |
 | 2 | [LAist — 2026 California primary, Lieutenant Governor voter guide](https://laist.com/news/politics/voter-guides/2026-election-california-primary-california-lieutenant-governor) | B | Nonpartisan public-media voter guide; race orientation |
-| 3 | [Ballotpedia — Janelle Kellman](https://ballotpedia.org/Janelle_Kellman) | B | Nonpartisan reference; education, Sausalito offices, attorney background |
+| 3 | [Ballotpedia — Janelle Kellman](https://ballotpedia.org/Janelle_Kellman) | B/C | Reference; acceptable for scoping/orientation, not decisive candidate-position claims |
 | 4 | [Janelle Kellman campaign — Priorities](https://janellekellman.com/priorities) | A | Candidate's own words; energy cost-cut mechanisms, insurance/housing, free community college, fiscal posture |
 | 5 | [Janelle Kellman campaign — Meet Janelle](https://janellekellman.com/meet-janelle) | A | Candidate self-presentation; bio, mayoral homelessness response, coastal resilience |
 | 6 | [J. (jweekly) — Two Jewish Bay Area ex-mayors running for Lt. Gov (May 26, 2026)](https://jweekly.com/2026/05/26/two-jewish-bay-area-ex-mayors-are-running-for-california-lieutenant-governor/) | B | Jewish identity, antisemitism framing, Jewish-org endorsements |
