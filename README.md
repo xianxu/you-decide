@@ -46,7 +46,9 @@ export YOU_DECIDE_PRIVATE_DIR=~/voting
 1. `$YOU_DECIDE_PRIVATE_DIR` if set, else
 2. `../who-to-vote-for` — a sibling of the repo root.
 
-Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. Brain users: set `YOU_DECIDE_PRIVATE_DIR` to `…/brain/data/life/politics/who-to-vote-for`.
+Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. **Brain users:** the brain's `construct/deps` already declares the you-decide mount (`data <url> data/life/politics/you-decide`), so the private dir resolves automatically as its `who-to-vote-for` sibling when the skill is invoked through the brain symlink — no env var needed; `YOU_DECIDE_PRIVATE_DIR` stays available as an override.
+
+The names + frontmatter of every artifact written into the private dir (ballot guide, candidate read, race vote, cast ballot) are defined in [`you-decide/artifacts.md`](you-decide/artifacts.md).
 
 ### Usage
 
@@ -130,7 +132,7 @@ you-decide/                              ← repo root
 └── workshop/, construct/, atlas/        ariadne base layer
 ```
 
-**Note on paths in skill files:** the skill files distinguish two roots. **Shared substrate** paths (e.g., `data/candidates/<year>/...`, `data/elections/...`, `data/templates/...`) are **repo-root-relative** — committed, reusable across users. **Private** paths (every `who-to-vote-for/...`: the user's philosophy, per-axis reads, votes) resolve to the **private dir** described above (`scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR`, else `../who-to-vote-for`), which is always *outside* the repo. A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`.
+**Note on paths in skill files:** the skill files distinguish two roots. **Shared substrate** paths (e.g., `data/candidates/<year>/...`, `data/elections/...`, `data/templates/...`) are **repo-root-relative** — committed, reusable across users. **Private** artifacts (the user's philosophy, per-axis reads, votes, cast ballots) resolve to the **private dir** described above (`scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR`, else `../who-to-vote-for`), which is always *outside* the repo; their names + frontmatter are defined in [`you-decide/artifacts.md`](you-decide/artifacts.md). A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`.
 
 ## Coverage status
 

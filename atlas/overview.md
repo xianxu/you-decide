@@ -13,11 +13,11 @@ Two ways to use the skill bundle. In both, **private deliberation lives outside 
 | Mode | Use case | Private dir |
 |---|---|---|
 | **Standalone** | Single user, no brain integration | `../who-to-vote-for` (sibling of the repo), or `$YOU_DECIDE_PRIVATE_DIR` |
-| **Brain-integrated** | User has an ariadne-styled `brain/` with private encrypted directories | `brain/data/life/politics/who-to-vote-for/` (set `$YOU_DECIDE_PRIVATE_DIR` to it; repo reached via the symlink at `brain/data/life/politics/you-decide/`) |
+| **Brain-integrated** | User has an ariadne-styled `brain/` with private encrypted directories | `brain/data/life/politics/who-to-vote-for/` — the `who-to-vote-for` sibling of the you-decide mount declared in the brain's `construct/deps`. Reached via the symlink at `brain/data/life/politics/you-decide/`; `$YOU_DECIDE_PRIVATE_DIR` is an optional override. |
 
 Both keep **shared substrate** (candidates, controversies, sources) in this repo's git history and **private deliberation** (the user's philosophy file, per-axis reads, vote.md) in the resolved private dir. The standalone default is a *sibling* of the repo, not inside it, so the privacy boundary holds either way — a `git push` of this repo can never carry private state.
 
-Brain integration via `go.mod` replace directive (parsed by ariadne's `construct/` setup script, not Go itself — convention borrowed from `nous/construct/go.mod`).
+Brain integration is declared in the brain's `construct/deps` as a `data <url> <mount>` row (`data git@github.com:…/you-decide.git data/life/politics/you-decide`), cloned + symlinked by ariadne's `construct/` setup. That row is the brain's canonical anchor for *where you-decide lives*, from which the private dir is derived as the `who-to-vote-for` sibling — so no env var is needed in a brain (it stays available as an override).
 
 ## Repo layout
 

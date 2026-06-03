@@ -42,10 +42,14 @@ Review session output — see [review](review.md).
 
 Location: the user's private dir, resolved by `scripts/private-dir.sh` — `$YOU_DECIDE_PRIVATE_DIR` if set, else `<repo-root>/../who-to-vote-for` (a sibling of the repo). In a brain install, point `$YOU_DECIDE_PRIVATE_DIR` at `data/life/politics/who-to-vote-for/`.
 
+The full naming + frontmatter of each private artifact is the registry [[../you-decide/artifacts]] (the single authority — this list is just the map):
+
 - `philosophy-<user>.md` — the user's political philosophy file. Source of truth for what the user believes. Grows organically across cycles via [[SKILL]] Stage 3 disambiguation + Stage 4 disagreement-loop corrections.
 - `calibration-skills/*.md` — user-specific corrections that don't generalize (the shared ones live in `you-decide/calibration-skills/` in this repo).
-- `<year>/<state>/<race>/<slug>-read.md` — per-candidate axis reads. Pure function of (philosophy, calibration skills, candidate profile); cached and reused.
-- `<year>/<state>/<race>/vote.md` — final deliberation per race: conscience vote, strategic vote, scenarios, parked questions, active calibration skills.
+- **candidate-read** — per-candidate axis reads. Pure function of (philosophy, calibration skills, candidate profile); cached and reused.
+- **race-vote** — final deliberation per race: conscience vote, strategic vote, scenarios, parked questions, active calibration skills.
+- **ballot-guide** — personalized voter guide for one (address, election day): every race scored + recommended.
+- **cast-ballot** — record of what the user actually marked, reconciled against the ballot guide.
 
 ## Per-file frontmatter contract
 

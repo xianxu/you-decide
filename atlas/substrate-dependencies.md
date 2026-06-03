@@ -6,7 +6,7 @@ The motivating bug: the controversy map (`data/controversies/2026/CA.md`) was dr
 
 ## Artifact classes
 
-Nine classes. The first group are **roots** (authored or externally sourced — nothing in the repo derives them); the rest are **derived** (a pure-ish function of upstream artifacts, cacheable, and therefore invalidatable).
+Eleven classes. The first group are **roots** (authored or externally sourced — nothing in the repo derives them); the rest are **derived** (a pure-ish function of upstream artifacts, cacheable, and therefore invalidatable) — with the cast ballot a **record** of an external action, never recomputed.
 
 | Class | Path | Root/derived | Owner |
 |---|---|---|---|
@@ -17,8 +17,12 @@ Nine classes. The first group are **roots** (authored or externally sourced — 
 | Candidate profile | `data/candidates/<year>/<state>/<office>/<slug>.md` | **derived** | research subagents (Stage 2) |
 | Controversy map | `data/controversies/<year>/<state>.md` | **derived** | synthesis (per cycle) |
 | Philosophy file | `<private>/philosophy-<user>.md` | root | the user (grows via use) |
-| Per-axis read | `<private>/<year>/<state>/<race>/<slug>-read.md` | **derived** | Stage 3 |
-| Vote deliberation | `<private>/<year>/<state>/<race>/vote.md` | **derived** | Stage 4–5 |
+| Per-axis read | candidate-read ([[../you-decide/artifacts]]) | **derived** | Stage 3 |
+| Vote deliberation | race-vote ([[../you-decide/artifacts]]) | **derived** | Stage 4–5 |
+| Ballot guide | ballot-guide ([[../you-decide/artifacts]]) | **derived** | Stage 1 + 5 |
+| Cast ballot | cast-ballot ([[../you-decide/artifacts]]) | **record** (never recomputed — captures an external action) | post-vote |
+
+Private-artifact paths + frontmatter are defined in the registry [[../you-decide/artifacts]]; this table is the dependency view.
 
 ## The dependency DAG
 

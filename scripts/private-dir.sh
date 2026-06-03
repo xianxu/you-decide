@@ -18,9 +18,11 @@
 # brain-integrated install where brain/data/life/politics/you-decide is a
 # symlink to this repo therefore lands on brain/data/life/politics/who-to-vote-for
 # — the brain's own private tree — when the skill is invoked through that
-# symlink. That coincidence is a convenience, not a contract: a brain install
-# should set $YOU_DECIDE_PRIVATE_DIR explicitly, since the brain's private tree
-# is not beside the *physical* repo checkout.
+# symlink. In a brain that mount is DECLARED, not coincidental: the brain's
+# construct/deps carries a `data <url> data/life/politics/you-decide` row, so
+# the private dir is the deterministic `who-to-vote-for` sibling of the declared
+# mount. $YOU_DECIDE_PRIVATE_DIR remains available as an explicit override (e.g.
+# to resolve against the *physical* checkout rather than the brain symlink).
 #
 # Prints the absolute path on stdout; creates it (mkdir -p) if missing.
 # Idempotent. Usage: PRIVATE_DIR="$(scripts/private-dir.sh)"

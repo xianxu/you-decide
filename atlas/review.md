@@ -54,7 +54,7 @@ The standard is **two assertions**, run as one check-set under `scripts/run-merg
 
 Both fail closed on an unresolvable range or malformed frontmatter (exit 2), parse only the YAML frontmatter block (a body `review:` line can't masquerade as metadata), and share `scripts/lib-substrate.sh`; correctness is pinned by `scripts/tests/test-gates.sh`. **Override is human-only** (typed confirmation over `/dev/tty`; agents must never `--no-verify` autonomously). Mechanics + override semantics live in `you-decide/review.md` (§ Publish gate) and `workshop/issues/000004`.
 
-Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but benefit from the same review mechanism — primary value is catching arithmetic errors in the weighted-total math (the scoring contract in [algorithm](algorithm.md#scoring-contract) gives review a sharp invariant to check).
+Reads (the candidate-read artifact, [[../you-decide/artifacts]]) are user-private but benefit from the same review mechanism — primary value is catching arithmetic errors in the weighted-total math (the scoring contract in [algorithm](algorithm.md#scoring-contract) gives review a sharp invariant to check).
 
 ## What review does NOT do
 

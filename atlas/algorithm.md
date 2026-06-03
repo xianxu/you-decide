@@ -16,7 +16,7 @@ We don't try to capture the user's complete political identity upfront. The phil
 | **3** Per-axis read | (inline) | `<slug>-read.md` per candidate: axis scores + weighted total. **Just-in-time disambiguation** fires here when an axis is load-bearing for the race but silent in the philosophy. |
 | **4** Disagreement loop | (inline) | User corrections crystallize as calibration skills; affected reads re-scored |
 | **5** Aggregate + present | (inline) | Conscience vote + strategic vote, with divergence surfaced; risk-frame not scorecard |
-| **6** Final write | (inline) | `who-to-vote-for/<year>/<state>/<race>/vote.md` in user's private dir |
+| **6** Final write | (inline) | race-vote artifact in the user's private dir ([[../you-decide/artifacts]]); + a cast-ballot artifact when the user later reports how they voted |
 
 Plus the **Review gate** before any commit to shared substrate (see [review](review.md)).
 

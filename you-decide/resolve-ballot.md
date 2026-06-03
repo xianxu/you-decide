@@ -38,7 +38,7 @@ Examples:
 
 ## Output
 
-A ballot manifest in markdown — see [Output schema](#output-schema). Returned in-conversation and optionally written to the user's private dir at `who-to-vote-for/<year>/<state>/<address-slug>-<date>-ballot.md`.
+A ballot manifest in markdown — see [Output schema](#output-schema). Returned in-conversation and optionally written to the user's private dir as the ballot-guide artifact (path + frontmatter in [[artifacts]]).
 
 ## Algorithm
 
