@@ -2,16 +2,17 @@
 name: Marc Berman
 party: Democrat
 race: 2026-ca-assembly-d23
-last-updated: 2026-05-28
+last-updated: 2026-06-02
 status: active
 incumbent: true
 term-limit: true
 generated-by: claude
 generated-on: 2026-05-28
 review: passed
-reviewed-by: codex
-reviewed-on: 2026-05-29
-review-ref: data/reviews/2026/2026-05-29-ca-2026-post-close-rereview.md
+reviewed-by: gemini
+reviewed-on: 2026-06-02
+review-ref: data/reviews/2026/2026-06-02-ca-assembly-d23-correction.md
+prior-review: passed (codex, 2026-05-29, data/reviews/2026/2026-05-29-ca-2026-post-close-rereview.md) — superseded by 2026-06-02 AB 3209 public-safety addition; needs re-review
 ---
 
 # Marc Berman — 2026 CA Assembly D23
@@ -32,7 +33,7 @@ From official Assembly site and campaign site unless noted.
 
 **Fiscal**: CalChamber alignment 0%; HJTA 0% — standard Dem-caucus profile. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944) On a state wealth tax specifically, no documented Berman position or recorded vote exists: a targeted search across all three California wealth-tax vehicles found none — AB 2289 (2021–22) died in committee with no floor vote ([leginfo AB 2289 history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202120220AB2289)), and Alex Lee's AB 2088 (2020) and AB 259 (2023–24) likewise died without enactment ([leginfo AB 2088](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201920200AB2088); [leginfo AB 259](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB259)). (Audit trail: an earlier capture claimed Berman "cast what was characterized as a deciding vote against" a wealth tax and called the bill "very misleading," sourced only to Garry's Guide (Tier C); that claim was confabulated and removed — no such floor vote could have occurred, and the "very misleading" quote traces to Prop 19 property-tax coverage, not a wealth tax.) His fiscal posture is captured by the CalChamber/HJTA 0% alignment scores above, not by any wealth-tax-specific stance.
 
-**Public safety**: Opposed Proposition 36 (2024, drug/theft penalty increases) — actively, not silently. Argued against cost to state/county and diversion program defunding. His opponent Lydia Kou (2024 primary) explicitly supported Prop 36 and used Berman's opposition as a campaign wedge. District-level Prop 36 sentiment was not counted by Berman. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
+**Public safety**: A mixed record, not a uniformly soft one. **Authored AB 3209 (2024)** — California's first-of-its-kind Retail Crime Restraining Order, authorizing a court to bar a person convicted of (or twice cited for) in-store theft, vandalism, or battery on an employee from the premises; co-authored with Speaker Robert Rivas, part of the Assembly's 2024 bipartisan retail-theft package, supported by AG Rob Bonta, the California Retailers Association, and the CA Chamber of Commerce, and signed by Gov. Newsom on Aug 16 2024. [(Asm. Berman — California Cracks Down on Retail Theft)](https://a23.asmdc.org/press-releases/20240816-california-cracks-down-retail-theft) [(InMenlo)](https://inmenlo.com/2024/08/17/california-cracks-down-on-retail-theft-in-bill-authored-by-marc-berman-d-menlo-park/) At the same time, **opposed Proposition 36 (2024, drug/theft penalty increases)** — actively, not silently — arguing against cost to state/county and diversion-program defunding, and preferring the legislative retail-theft package over the ballot initiative. His opponent Lydia Kou (2024 primary) explicitly supported Prop 36 and used Berman's opposition as a campaign wedge. District-level Prop 36 sentiment was not counted by Berman. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
 
 **AI regulation**: Supports state regulation of AI, citing California's leadership role. [(SM Daily Journal)](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)
 
@@ -49,7 +50,8 @@ From official Assembly site and campaign site unless noted.
 **Bills authored (career total)**: Claims 100+ bills signed into law. Current 2025–26 session: 45 bills introduced, 15 passed, 3 failed, 27 pending. Key current-session bills include AB 2604 (elections ballot curing), AB 2236 (postsecondary education articulation), AB 2003 (pupil health suicide prevention). [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944)
 
 **Independent/notable cross-caucus votes**:
-- Opposed Prop 36 (2024) — vocal, not silent; progressive-caucus position, diverged from ~70% statewide support. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
+- Authored AB 3209 (2024), the Retail Crime Restraining Order — a substantive tough-on-retail-theft enforcement bill carried *the same year* he opposed Prop 36; signed by Newsom, backed by AG Bonta + retailers + CalChamber. [(Asm. Berman)](https://a23.asmdc.org/press-releases/20240816-california-cracks-down-retail-theft)
+- Opposed Prop 36 (2024) — vocal, not silent; progressive-caucus position, diverged from ~70% statewide support — but preferred the legislative package (above) to the initiative. [(KQED)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
 - (The previously listed "voted against a California wealth-tax bill / 'very misleading'" item is removed — see the **Fiscal** note above; no such floor vote occurred — all three CA wealth-tax bills died without enactment.)
 
 **Committee assignments**: Chairs Assembly Committee on Elections; previously chaired Higher Education Committee. Also sits on Business and Professions (chair), Governmental Organization, Insurance. [(CalMatters Digital Democracy)](https://calmatters.digitaldemocracy.org/legislators/marc-berman-100944)
@@ -68,7 +70,7 @@ From official Assembly site and campaign site unless noted.
 
 ## Controversies / liabilities
 
-1. **Prop 36 opposition**: Actively opposed the overwhelmingly popular public-safety measure (passed ~70% statewide). Progressive-caucus solidarity over constituent alignment. In a Palo Alto/Menlo Park district where tech-moderate sentiment often exceeds state-Dem averages, this is a meaningful disconnect. [Tier B: KQED]
+1. **Prop 36 opposition**: Actively opposed the overwhelmingly popular public-safety measure (passed ~70% statewide). Progressive-caucus solidarity over constituent alignment. In a Palo Alto/Menlo Park district where tech-moderate sentiment often exceeds state-Dem averages, this is a meaningful disconnect. *Context (don't read as blanket soft-on-crime): the same year, he authored AB 3209, the Retail Crime Restraining Order — see Public safety above. The flag is establishment/caucus-conformity over a supermajority and a preference for the legislative mechanism, not opposition to retail-theft enforcement as such.* [Tier B: KQED]
 2. **Gas-engine ban AB 1346**: Cost-imposing regulation on landscaping and small-business workers; framed as climate. Likely no political cost in D23 but signals regulatory-first instincts over cost-consciousness. [(leginfo AB 1346)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB1346)
 3. **0% CalChamber**: Consistent across full tenure; no business-side alignment on any economic votes found. [Tier A: CalMatters Digital Democracy]
 4. **Final-term post-Assembly positioning**: Running a final-term campaign; what comes next (statewide race? lobbying? nonprofit?) shapes current-term incentives. No announced post-Assembly plans found as of research date. This is a structural flag, not a documented controversy.
