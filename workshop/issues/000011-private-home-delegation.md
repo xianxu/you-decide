@@ -1,11 +1,12 @@
 ---
 id: 000011
-status: working
+status: done
 deps: []
 github_issue:
 created: 2026-06-02
 updated: 2026-06-02
 estimate_hours: 2
+actual_hours: 2
 ---
 
 # Private home: split routing/longevity out of the shared algorithm
@@ -179,6 +180,7 @@ would duplicate `construct/deps`.
 ## Log
 
 ### 2026-06-02
+- 2026-06-02: closed — artifacts.md is sole naming authority (grep: no independent restatements outside it); registry race-vote/ballot-guide schemas reconciled to ground-truth field survey of 19 vote files + the real ballot guide; cast-ballot + ballot-guide files conformed; leakage grep clean (only github.com/xianxu clone URLs); private-dir.sh comment-only, resolves identically; fresh-eyes review Ready-with-fixes, 2 Important fixed in b1979b7, 0 Critical; atlas updated
 
 Born from a session that (a) re-confirmed the SM County Superintendent vote
 under the new `institutionalism-costly-signal` calibration skill, (b) recorded
