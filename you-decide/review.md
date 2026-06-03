@@ -83,7 +83,7 @@ Shape:
 
 ### Scoring impact lives in the read, not the profile
 
-The candidate profile is **shared** (one file, all users); a gap's *impact* depends on the user's axis weights, so it can't be a single number in the shared profile. The profile marker carries only the **handle** — which `axis` the gap touches. The **realized impact** is recorded in the per-user read (`who-to-vote-for/.../<slug>-read.md`): score the axis low-confidence and name the gap, e.g. *"capture-risk: 0 (low-confidence) — DATA-GAP in profile; if donor concentration is high this moves to −1."* Filling the gap updates the profile, which invalidates the read under the Stage-3 cache rule (profile newer than read → re-score) — so resolution propagates to the decision automatically.
+The candidate profile is **shared** (one file, all users); a gap's *impact* depends on the user's axis weights, so it can't be a single number in the shared profile. The profile marker carries only the **handle** — which `axis` the gap touches. The **realized impact** is recorded in the per-user read (the candidate-read artifact, [[artifacts]]): score the axis low-confidence and name the gap, e.g. *"capture-risk: 0 (low-confidence) — DATA-GAP in profile; if donor concentration is high this moves to −1."* Filling the gap updates the profile, which invalidates the read under the Stage-3 cache rule (profile newer than read → re-score) — so resolution propagates to the decision automatically.
 
 ### Gaps are orthogonal to review-state
 

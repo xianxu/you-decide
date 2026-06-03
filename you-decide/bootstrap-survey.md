@@ -36,7 +36,7 @@ Adding a new design: drop a new `surveys/<slug>.md` following the shape of the e
 
 ## Output
 
-`who-to-vote-for/philosophy-<user>.md` in the user's private dir (see [[SKILL]] Path conventions), matching the documented philosophy shape (`atlas/survey-and-philosophy.md`):
+The user's `philosophy-<user>.md`, a user-root file in the private dir (see [[artifacts]] — User-root files), matching the documented philosophy shape (`atlas/survey-and-philosophy.md`):
 - Frontmatter (date, topic, status: starting-point, design-used: <slug>)
 - Overarching posture (prose synthesized from user's answers)
 - Issue positions (from Tier 4 answers)
@@ -95,7 +95,7 @@ Per the design's synthesis hints + the general principles:
 5. **Generate hard-limits** section from explicit opt-ins (Stage 4).
 6. **Frontmatter**: date, topic: political philosophy, status: starting-point, design-used: <slug>.
 
-Output to `who-to-vote-for/philosophy-<user>.md` (in the user's private dir).
+Output to the user's `philosophy-<user>.md` in the private dir (see [[artifacts]] — User-root files).
 
 ### Stage 6 — Confirm + iterate
 

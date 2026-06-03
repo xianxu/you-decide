@@ -15,9 +15,9 @@ Help the user decide how to vote in an upcoming election. The deliberation happe
 **Path conventions in this file.** Two roots:
 
 - **Shared substrate** — `data/candidates/<year>/...`, `data/elections/<year>/...`, `data/controversies/...`, `data/sources/...`, `data/templates/...`, `you-decide/calibration-skills/` — is **repo-root-relative** (committed, reusable across users). The skill files live in the inner `you-decide/` folder (the skill bundle); the shared substrate sits under `data/` at repo root.
-- **Private substrate** — every `who-to-vote-for/...` path (the user's `philosophy-<user>.md`, per-axis `-read.md` files, `vote.md`, user-private `calibration-skills/`) — lives in the **user's private dir**, resolved by `scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR` if set, otherwise `<repo-root>/../who-to-vote-for` (a sibling of the repo, so it's never inside the repo and a `git push` can't leak it). Read `who-to-vote-for/X` in this file as `<private-dir>/X`. Resolve once per session via the script; announce the resolved location to the user the first time you write there.
+- **Private substrate** — everything under the **user's private dir** (`who-to-vote-for/...`): the user's `philosophy-<user>.md`, per-axis reads, `vote.md`, cast ballots, user-private `calibration-skills/`. **The name, location, and frontmatter of every private artifact the algorithm writes is defined in [[artifacts]] — the single authority; this file does not restate path patterns.** The private dir itself is resolved by `scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR` if set, otherwise the `who-to-vote-for` sibling of the repo root (so it's never inside the repo and a `git push` can't leak it). Resolve once per session via the script; announce the resolved location to the user the first time you write there.
 
-A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`; invoked through that symlink the default resolves to the brain's own `brain/data/life/politics/who-to-vote-for/`. Brain installs should set `$YOU_DECIDE_PRIVATE_DIR` to that path explicitly (the brain's private tree is not beside the *physical* repo checkout).
+A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`. The durable anchor for *where the private dir is* is the brain's `construct/deps`, which declares the you-decide mount (`data <url> data/life/politics/you-decide`); the private dir is the `who-to-vote-for` sibling of that mount. Invoked through the brain symlink, `private-dir.sh` already resolves there — `construct/deps` makes that a contract, not a coincidence. `$YOU_DECIDE_PRIVATE_DIR` remains available as an explicit override.
 
 ## Entry points
 
@@ -61,7 +61,7 @@ Every stage that has a cached artifact reuses it rather than regenerating. The s
 |---|---|---|---|
 | 1 | Election manifest | `data/elections/<year>/<date>-<state>-<type>.md` | Per proximity-to-election rules in [[resolve-ballot]] |
 | 2 | Candidate profile | `data/candidates/<year>/<state>/<race>/<slug>.md` | Candidate position changes (post-debate, post-major-news); otherwise indefinite reuse |
-| 3 | Per-axis read | `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` | Philosophy / calibration-skill / candidate-profile newer than the read |
+| 3 | Per-axis read | candidate-read ([[artifacts]]) | Philosophy / calibration-skill / candidate-profile newer than the read |
 | — | Controversy map | `data/controversies/<year>/<state>.md` | Per cycle; refresh as new controversies surface |
 | — | Source registry | `data/sources/<state>.md` | Rarely changes; manual maintenance |
 
@@ -91,7 +91,7 @@ Dispatch missing-candidate research subagents in parallel.
 ### Stage 3 — Per-axis read
 **Cache-first**: if `<slug>-read.md` already exists and is newer than (a) the user's philosophy file, (b) the relevant calibration-skill files, and (c) the candidate profile it scored against, **reuse it**. The read is a pure function of those three inputs; nothing changed → re-running produces the same output.
 
-Otherwise — first run, or one of the inputs changed — generate `who-to-vote-for/<year>/<state>/<race>/<slug>-read.md` in the user's private dir. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from `who-to-vote-for/calibration-skills/`).
+Otherwise — first run, or one of the inputs changed — generate the candidate-read artifact (see [[artifacts]] for its path + frontmatter) in the user's private dir. Apply philosophy + per-office template + all calibration skills (general from `you-decide/calibration-skills/` + user-private from the user's `calibration-skills/`).
 
 **Scoring contract** (use this exact shape; [[review]] checks it):
 
@@ -130,7 +130,7 @@ Present per-axis reads + per-race aggregated recommendation. When the user pushe
 Apply hard filters from the user's philosophy (auto-reject). Weight axes per the office template. Surface ranked recommendation with inference chain visible. Two outputs by default — **conscience vote** (best-fit across all axes) and **strategic vote** (best-fit among top-N polling). Note divergence (often the most decision-relevant signal). Frame as **risk-mode** not scorecard (see "Recommendation framing" below).
 
 ### Stage 6 — Final write
-When disagreement loop converges, write `who-to-vote-for/<year>/<state>/<race>/vote.md` per race — captures conscience vote, strategic vote, general-election scenarios, parked open questions, and calibration skills active for this race.
+When disagreement loop converges, write the race-vote artifact per race (see [[artifacts]] for its path + frontmatter) — captures conscience vote, strategic vote, general-election scenarios, parked open questions, and calibration skills active for this race. When the user later reports how they actually voted, record a cast-ballot artifact ([[artifacts]]) reconciling the marked ballot against the guide.
 
 ### Review gate (before committing shared substrate)
 Before any commit to the shared `data/candidates/`, `data/elections/`, `data/controversies/` directories, dispatch [[review]] — a fresh-context, ideally-different-AI-stack check on source-hygiene + genesis tracking + math correctness + disambiguation + internal consistency. Output goes to `data/reviews/<year>/<date>-<batch>.md`; per-file frontmatter gets `last-reviewed:` + `review-pass:` + `review-stack:` updates. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but can be reviewed by the same mechanism to catch arithmetic errors.
@@ -235,16 +235,9 @@ These skills are the user's interpretation function accumulating over cycles. Lo
 
 ## Output format
 
-When the disagreement loop converges, write `<year>/<state>/<office>/vote.md`:
+When the disagreement loop converges, write the race-vote artifact (path + frontmatter in [[artifacts]]). Body structure:
 
 ```markdown
----
-race: <slug>
-date: <decision-date>
-final-vote: <candidate name | undecided>
-strategic-vote: <candidate name | conscience-aligned>
----
-
 # Vote rationale — <race>
 
 ## Hard-filter pass
@@ -289,4 +282,4 @@ The race-by-race manual mode collapses Stage 1 (uses user-named race instead of 
 
 ## Publishing (later, not now)
 
-The polished `vote.md` is the candidate for publication as "the user's voter guide" — markdown out of the private dir → public repo → Astro renders, following the `xianxu.dev` pattern. The private workshop (disagreement loop, intermediate reads) stays in the private dir.
+The polished `vote.md` is the candidate for publication as "the user's voter guide" — markdown out of the private dir → public repo → static-site renderer (e.g. Astro), following the standard personal-site publishing pattern. The private workshop (disagreement loop, intermediate reads) stays in the private dir.

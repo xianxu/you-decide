@@ -17,8 +17,12 @@ Nine classes. The first group are **roots** (authored or externally sourced — 
 | Candidate profile | `data/candidates/<year>/<state>/<office>/<slug>.md` | **derived** | research subagents (Stage 2) |
 | Controversy map | `data/controversies/<year>/<state>.md` | **derived** | synthesis (per cycle) |
 | Philosophy file | `<private>/philosophy-<user>.md` | root | the user (grows via use) |
-| Per-axis read | `<private>/<year>/<state>/<race>/<slug>-read.md` | **derived** | Stage 3 |
-| Vote deliberation | `<private>/<year>/<state>/<race>/vote.md` | **derived** | Stage 4–5 |
+| Per-axis read | candidate-read ([[../you-decide/artifacts]]) | **derived** | Stage 3 |
+| Vote deliberation | race-vote ([[../you-decide/artifacts]]) | **derived** | Stage 4–5 |
+| Ballot guide | ballot-guide ([[../you-decide/artifacts]]) | **derived** | Stage 1 + 5 |
+| Cast ballot | cast-ballot ([[../you-decide/artifacts]]) | **record** (never recomputed — captures an external action) | post-vote |
+
+Private-artifact paths + frontmatter are defined in the registry [[../you-decide/artifacts]]; this table is the dependency view.
 
 ## The dependency DAG
 

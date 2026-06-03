@@ -46,7 +46,9 @@ export YOU_DECIDE_PRIVATE_DIR=~/voting
 1. `$YOU_DECIDE_PRIVATE_DIR` if set, else
 2. `../who-to-vote-for` — a sibling of the repo root.
 
-Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. Brain users: set `YOU_DECIDE_PRIVATE_DIR` to `…/brain/data/life/politics/who-to-vote-for`.
+Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. **Brain users:** the brain's `construct/deps` already declares the you-decide mount (`data <url> data/life/politics/you-decide`), so the private dir resolves automatically as its `who-to-vote-for` sibling when the skill is invoked through the brain symlink — no env var needed; `YOU_DECIDE_PRIVATE_DIR` stays available as an override.
+
+The names + frontmatter of every artifact written into the private dir (ballot guide, candidate read, race vote, cast ballot) are defined in [`you-decide/artifacts.md`](you-decide/artifacts.md).
 
 ### Usage
 

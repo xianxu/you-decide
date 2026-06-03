@@ -104,17 +104,30 @@ went wrong.
 
 ## Done when
 
-- A thin private-home artifact exists in the brain tree, owning the four
-  responsibilities above (resolution, type registry, user pointer, security
-  posture).
-- The cast-ballot type is in the registry with a defined name
-  (`<addr>-<date>-cast.md`) + frontmatter; the 2026-06-02 file conforms to it.
-- `you-decide/SKILL.md` no longer hardcodes `who-to-vote-for/...` paths,
-  `$YOU_DECIDE_PRIVATE_DIR` logic, or any user-specific assumption — it
-  delegates to the private home at a single point.
-- A fresh `grep` of the public bundle for `who-to-vote-for` / `philosophy-xian`
-  / brain paths returns nothing load-bearing (only delegation references).
-- `atlas/` updated for the new private-home seam + the inversion.
+*(Revised 2026-06-02 to match the `## Revisions` reframe — superseded the
+brain-home + grep-`who-to-vote-for`-clean bars, which belonged to the dropped
+design. `who-to-vote-for/` is the legitimate private-dir convention name and is
+NOT something we eliminate.)*
+
+- `you-decide/artifacts.md` exists and is the **single authority** for the four
+  artifact types (ballot-guide, candidate-read, race-vote, **cast-ballot**):
+  path pattern + frontmatter + purpose each, plus a note on the user-root files
+  (`philosophy-<user>.md`, `calibration-skills/`) and where the private dir
+  resolves.
+- The cast-ballot type is defined (`<year>/<state>/<addr>-<date>-cast.md` +
+  frontmatter); `menlo-park-2026-06-02-cast.md` conforms to it.
+- The scattered *pattern restatements* now reference `artifacts.md` instead of
+  independently defining naming — in `SKILL.md`, `resolve-ballot.md`,
+  `review.md`, `bootstrap-survey.md`. Algorithm prose stays; only the
+  drift-prone naming duplication is removed.
+- **No user-specific leakage in the shared bundle:**
+  `grep -rn "philosophy-xian\|menlo-park\|xianxu" you-decide/ atlas/ README.md`
+  returns nothing load-bearing.
+- `atlas/` updated (`substrate.md`, `substrate-dependencies.md`, `algorithm.md`,
+  `review.md`, `index.md`) to point naming at `artifacts.md` + add the
+  cast-ballot row.
+- Brain-routing docs anchored on the **brain's** `construct/deps` (doc-only;
+  `private-dir.sh` resolution behavior unchanged).
 
 ## Plan
 
@@ -125,14 +138,18 @@ went wrong.
       pattern + frontmatter + purpose per type.
 - [ ] Formalize the cast-ballot type from the 2026-06-02 ad-hoc shape.
 - [ ] Thin scattered naming restatements (`SKILL.md`, `resolve-ballot.md`,
-      `review.md`) to reference `artifacts.md`; keep algorithm prose.
-- [ ] Re-anchor brain-routing docs on `construct/deps` (doc-only:
+      `review.md`, `bootstrap-survey.md`) to reference `artifacts.md`; keep
+      algorithm prose.
+- [ ] Re-anchor brain-routing docs on the **brain's** `construct/deps` (doc-only:
       `private-dir.sh` comment, `atlas/overview.md`, `README.md`) — demote
-      `$YOU_DECIDE_PRIVATE_DIR` to an override.
+      `$YOU_DECIDE_PRIVATE_DIR` to an override. (NB: *this* repo's
+      `construct/deps` is `substrate ../ariadne`; the `data <url> …you-decide`
+      mount row lives in the brain's deps — reference it as such in prose.)
 - [ ] Update atlas (`substrate.md`, `substrate-dependencies.md`, `algorithm.md`,
-      `index.md`); conform `menlo-park-2026-06-02-cast.md`.
-- [ ] Verify (grep no naming drift / no user leakage; routing dry-run) +
-      fresh-eyes review; fix Critical/Important.
+      `review.md`, `index.md`); conform `menlo-park-2026-06-02-cast.md`.
+- [ ] Verify: grep no naming drift; `grep -rn "philosophy-xian\|menlo-park\|xianxu"`
+      clean; `bash scripts/private-dir.sh` resolves identically before/after
+      (comment-only change); fresh-eyes review; fix Critical/Important.
 
 ## Revisions
 
