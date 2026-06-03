@@ -19,33 +19,48 @@ We grew **verbs** for keeping the substrate current — `refresh-facts`, `refres
 Write down the data model. Design, not (mostly) code — the output is a `target` + atlas entry that later slices implement.
 
 ### Entities (nouns) and where they live
-Two parallel trees mirror each other race-for-race — **facts** (`data/`) and **inference** (`who-to-vote-for/`) — plus cross-cutting inputs:
+**One fact layer** (`data/`, collected by you-decide) and **one inference layer** (`who-to-vote-for/`, per-user) on top — *not* mirrored trees. Plus cross-cutting inputs.
 
-- **election** (fact) — `data/elections/<year>/<date>-<state>-<type>.md`. The manifest of races, each tagged with the `District:` that gates visibility. **`race` and `ballot` are not new datatypes — they are records/views in here:**
-  - **race** (fact) — one contest in the manifest: office, district tag, seats, voting system, on-ballot candidate list (→ `[[candidate]]` edges). Mirrored on the inference side by a race *directory* (`who-to-vote-for/<year>/<state>/<race>/` = its reads + `vote.md`).
-  - **ballot** (fact, a *view*) — `(address, date) → resolved district set → the filtered subset of the manifest's races`. The one noun that is **not** a directory: it's a cross-cut (D16-not-D15, D23-not-D21, + statewide + county). Its content on the inference side is the **consolidated guide** (`menlo-park-*-ballot.md`).
+**Facts — collected per (year, state):**
+- **election** (fact) — `data/elections/<year>/<date>-<state>-<type>.md`. Holds the races and the ballot-styles below. **`race` and `ballot` are not new datatypes — they are records in here.**
+  - **race** (fact) — one contest: office, district tag, seats, voting system, on-ballot candidate list (→ `[[candidate]]` edges).
+  - **ballot-style** (fact) — a **discrete, enumerable** ballot = a specific district combination → the subset of races a voter with those districts sees. The set of distinct styles in a (year, state) is *finite and small* at the granularity you-decide scores (statewide + the few district races + county): the Peninsula is ~`{D15/D21, D16/D23} × county`. So ballot-styles are **collected as facts**, no address needed — *not* a per-address derivation, and *not* a "view straddling layers." This is the home for the consolidated guide's structure.
 - **candidate** (fact) — `data/candidates/<…>/<slug>.md` dossier.
-- **read** (inference) — `<…>/<slug>-read.md`; one candidate × user. Declares its input edges: `candidate:` (dossier), "## Calibration skills applied" (`[[skill]]`), office `template`, and (implicitly) the user `philosophy`.
-- **vote** (inference) — `<race>/vote.md`; aggregates its race's reads.
-- **cycle** (structural) — `<year>/<state>` subtree; all races in an election.
-- **inputs** (cross-cutting, not in either tree) — `philosophy-<user>.md`, `calibration-skills/*.md`, `templates/<office>.md`.
+
+**Inference — per-user (`who-to-vote-for/`):**
+- **read** — `<…>/<slug>-read.md`; one candidate × user. Declares its input edges: `candidate:` (dossier), "## Calibration skills applied" (`[[skill]]`), office `template`, and (implicitly) the user `philosophy`.
+- **vote** — `<race>/vote.md`; aggregates its race's reads.
+- **my-guide** — the consolidated voter guide for *my* ballot-style (`menlo-park-*-ballot.md`); aggregates the votes of the races in my style.
+
+**Cross-cutting inputs** (in neither layer) — `philosophy-<user>.md`, `calibration-skills/*.md`, `templates/<office>.md`.
+
+**Structural conveniences:** `cycle` = `<year>/<state>` subtree; `all` = the private dir.
 
 ### The dependency graph
 **Computed from conventions — filesystem containment + frontmatter edges — never a stored manifest** (minimum-mechanism; "nouns ≈ directories" only works because the graph *is* the tree + declared edges). Edges:
 
 ```
-election.manifest ──(defines membership/candidates)──▶ race ──▶ vote ──▶ ballot-guide
-philosophy ┐                                            ▲                    ▲
-calib-skill├──(declared input edges)──▶ read ───────────┘                    │
-template   │                             ▲                                   │
-candidate ─┴──(dossier edge)─────────────┘                                   │
-ballot.resolution (address→districts) ──(defines which races)────────────────┘
+FACTS (collected, no address)                 INFERENCE (per-user)
+  race ──────────────┐
+  candidate ──┐      │
+  philosophy ─┤      ▼
+  calib-skill ┼─▶  read ──▶ vote ──┐
+  template ───┘                    ▼
+  ballot-style ──(which races)──▶ my-guide
+       ▲
+  address→district resolution (thin · external · per-user) ──picks──▶ my ballot-style
 ```
 
-**Refresh = downstream closure** over this graph from whatever changed. The structural nouns (race/cycle/ballot/all) are pre-named subgraphs; **impact scope** is an arbitrary subgraph rooted at a changed input (e.g. `affected-by:calibration-skill:progress-over-status-quo` = only the reads that cite it — fixes the over-invalidation bug). Same single mechanism; the verbs (`refresh-facts`/`refresh-reads`) walk the fact vs inference side of the *same* node coordinates.
+One direction: facts → reads → votes → my-guide. **Refresh = downstream closure** from whatever changed. Structural nouns (race/cycle/ballot-style/all) are pre-named subgraphs; **impact scope** is an arbitrary subgraph rooted at a changed input (e.g. `affected-by:calibration-skill:progress-over-status-quo` = only the reads that cite it — fixes the over-invalidation bug). The verbs (`refresh-facts`/`refresh-reads`) walk the same node coordinates on the fact vs inference side.
 
-### The hard part: `ballot` straddles fact and inference
-Every other noun is pure structure; **ballot membership is a fact-grounded selector**. `(address, date) → district set` is **externally-sourced and fallible** — it is the edge that was wrong in the D15/D16 case, and nothing detected it. So the resolution must become a **dated, sourced, checkable fact edge** (it exists today only as an undated `jurisdictions:` list in the consolidated guide). Consequence: `refresh ballot` has a first step the other nouns lack — **re-resolve districts** (a fact-refresh) → which may change membership → then refresh the member races + re-aggregate the guide. This also gives the consolidated guide a home in the graph (closing #12 dogfood-finding #2: it was untracked).
+### The one external/fallible edge: address → ballot-style
+This is now small. **Ballot-styles are plain facts** (collected, enumerable). The only per-user, externally-sourced, fallible bit is the **one-line resolution `address → my districts → which ballot-style is mine`** — exactly where D15/D16 went wrong, and nothing detected it. Make *that* dated + sourced + checkable; it is not a subsystem.
+
+Two tiers of external lookup, kept distinct:
+- **Coarse — "what's contested in this city / county / state"** → builds the manifest + enumerates ballot-styles. No address needed; this is what we already used (CalMatters / SoS / county roster). Refreshable as facts (`refresh-facts`).
+- **Precise — "address → district → which style"** → the thin per-voter resolution, on-the-fly, the one fallible edge. Cheap to re-run; the value is that re-running it (or dating it) makes a wrong/stale ballot *detectable* instead of user-caught.
+
+Net: `my-guide` is just the votes of the races in my resolved ballot-style — closing #12 dogfood-finding #2 (the guide had no home in the graph) without any "view straddling layers."
 
 ### Design decisions to lock
 - Graph computed-from-conventions, not stored manifests. ✔ (proposed)
@@ -71,3 +86,5 @@ Every other noun is pure structure; **ballot membership is a fact-grounded selec
 
 ### 2026-06-02
 Spun out of the #12 brainstorm. Sequence of insights: verbs without scope-nouns → all-or-nothing refresh + over-invalidation → nouns ≈ directories + a computed dependency graph → `ballot` is the lone non-directory noun (a view) → its membership is a fallible externally-sourced fact (the D15/D16 error) → therefore `race`/`ballot` are really one **election-structure fact type**, already half-modeled in the (incomplete) `data/elections/2026/2026-06-02-CA-primary.md` manifest. This ticket = sort out that model; #12 is its first slice.
+
+**Refinement (same session).** User pushed back on two over-builds and simplified the model: (1) dropped "two mirrored trees" — there's just one fact layer + one inference layer, race/ballot are facts you-decide collects like candidates; (2) **ballot = a discrete, enumerable "ballot-style" fact** (the set of distinct ballots in a year/state is finite/small at the scored granularity — Peninsula ≈ {D15/D21, D16/D23}×county), collected with no address. The "ballot straddles fact/inference" awkwardness dissolves: the only external/fallible piece is the thin one-line `address→which-style` resolution. Two distinct external tiers: coarse jurisdiction lookup (builds the manifest+styles; already used) vs precise address→district resolution (the fallible edge). Spec above rewritten to this simpler model.
