@@ -132,7 +132,7 @@ you-decide/                              ← repo root
 └── workshop/, construct/, atlas/        ariadne base layer
 ```
 
-**Note on paths in skill files:** the skill files distinguish two roots. **Shared substrate** paths (e.g., `data/candidates/<year>/...`, `data/elections/...`, `data/templates/...`) are **repo-root-relative** — committed, reusable across users. **Private** paths (every `who-to-vote-for/...`: the user's philosophy, per-axis reads, votes) resolve to the **private dir** described above (`scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR`, else `../who-to-vote-for`), which is always *outside* the repo. A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`.
+**Note on paths in skill files:** the skill files distinguish two roots. **Shared substrate** paths (e.g., `data/candidates/<year>/...`, `data/elections/...`, `data/templates/...`) are **repo-root-relative** — committed, reusable across users. **Private** artifacts (the user's philosophy, per-axis reads, votes, cast ballots) resolve to the **private dir** described above (`scripts/private-dir.sh`: `$YOU_DECIDE_PRIVATE_DIR`, else `../who-to-vote-for`), which is always *outside* the repo; their names + frontmatter are defined in [`you-decide/artifacts.md`](you-decide/artifacts.md). A brain-integrated install reaches the repo via the symlink at `brain/data/life/politics/you-decide/`.
 
 ## Coverage status
 

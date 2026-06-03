@@ -89,17 +89,24 @@ review: <not-done | passed | …>
 disagreement loop converges (Stage 6): hard-filter pass, per-axis matrix, conscience
 vote, strategic vote, divergence, and the calibration skills active for the race.
 
+The vote field is named for the election it decides — `primary-vote:` for the primary
+pick, `general-vote:` for the general-election pick/scenario (a race carries both when a
+primary feeds a later general). `posture:` is free-text prose describing the strategic
+posture, not an enum.
+
 ```yaml
 ---
 race: <race-id>
 date: <decision-date YYYY-MM-DD>
-primary-date: <YYYY-MM-DD>             # for primaries; the election day this decides
-final-vote: <candidate | undecided>    # general; OR primary-vote: for a primary
-strategic-vote: <candidate | conscience-aligned>
-posture: <single-vote | top-2 | ranked-choice>
+primary-date: <YYYY-MM-DD>             # the primary election day this race is scored for
+primary-vote: <candidate | "X vs Y — toss-up" | undecided>      # the pick for the primary
+general-vote: <candidate | "top-2 dependent (see scenarios)">   # optional; the general pick/scenario
+strategic-vote: <candidate | conscience-aligned>                # optional; older alias for the general strategy
+posture: <free-text, e.g. "expressive-primary + strategic-general (aligned this race)">
+office-template: <template slug>       # optional
 generated-by: <claude | …>
 generated-on: <YYYY-MM-DD>
-revised-on: <YYYY-MM-DD>        # optional
+revised-on: <YYYY-MM-DD>               # optional
 review: <not-done | passed | …>
 ---
 ```

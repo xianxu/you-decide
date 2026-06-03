@@ -133,7 +133,7 @@ Apply hard filters from the user's philosophy (auto-reject). Weight axes per the
 When disagreement loop converges, write the race-vote artifact per race (see [[artifacts]] for its path + frontmatter) — captures conscience vote, strategic vote, general-election scenarios, parked open questions, and calibration skills active for this race. When the user later reports how they actually voted, record a cast-ballot artifact ([[artifacts]]) reconciling the marked ballot against the guide.
 
 ### Review gate (before committing shared substrate)
-Before any commit to the shared `data/candidates/`, `data/elections/`, `data/controversies/` directories, dispatch [[review]] — a fresh-context, ideally-different-AI-stack check on source-hygiene + genesis tracking + math correctness + disambiguation + internal consistency. Output goes to `data/reviews/<year>/<date>-<batch>.md`; per-file frontmatter gets `last-reviewed:` + `review-pass:` + `review-stack:` updates. Reads (`who-to-vote-for/.../<slug>-read.md`) are user-private but can be reviewed by the same mechanism to catch arithmetic errors.
+Before any commit to the shared `data/candidates/`, `data/elections/`, `data/controversies/` directories, dispatch [[review]] — a fresh-context, ideally-different-AI-stack check on source-hygiene + genesis tracking + math correctness + disambiguation + internal consistency. Output goes to `data/reviews/<year>/<date>-<batch>.md`; per-file frontmatter gets `last-reviewed:` + `review-pass:` + `review-stack:` updates. Candidate reads ([[artifacts]]) are user-private but can be reviewed by the same mechanism to catch arithmetic errors.
 
 ## Axis taxonomy (five tiers)
 
