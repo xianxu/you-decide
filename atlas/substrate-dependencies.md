@@ -6,7 +6,7 @@ The motivating bug: the controversy map (`data/controversies/2026/CA.md`) was dr
 
 ## Artifact classes
 
-Nine classes. The first group are **roots** (authored or externally sourced — nothing in the repo derives them); the rest are **derived** (a pure-ish function of upstream artifacts, cacheable, and therefore invalidatable).
+Eleven classes. The first group are **roots** (authored or externally sourced — nothing in the repo derives them); the rest are **derived** (a pure-ish function of upstream artifacts, cacheable, and therefore invalidatable) — with the cast ballot a **record** of an external action, never recomputed.
 
 | Class | Path | Root/derived | Owner |
 |---|---|---|---|
