@@ -1,3 +1,7 @@
+## 2026-06-02 - Authoritative schema must be derived from ALL instances, not a sample
+
+When authoring a registry/schema asserted as the "single authority" for a document type, derive its frontmatter by surveying **every existing instance**, not the two or three you happened to read. In #11 the `artifacts.md` race-vote schema declared `final-vote:` — a field present in **0 of 19** real `vote.md` files (they use `primary-vote:`/`general-vote:`) — and a `posture:` enum when the field is actually free-text prose; the ballot-guide schema declared `generated-on:` when the one real guide used `generated:`. Both slipped past self-review (confirmation bias from the sampled files) and were caught only by fresh-eyes review. Rule: before writing a schema, run a field-frequency grep over the real corpus, e.g. `for f in $(find . -name vote.md); do sed -n '/^---$/,/^---$/p' "$f"; done | grep -oE '^[a-z-]+:' | sort | uniq -c | sort -rn`. The schema must match observed reality (or, if normalizing forward, say so explicitly and migrate the existing files).
+
 ## 2026-05-28 - Review ballot manifests before candidate facts
 
 When reviewing election substrate, verify the manifest against official certified candidate lists before spending time on candidate-profile source hygiene. A stale or partial manifest makes otherwise well-sourced candidate profiles unsafe for downstream ballot resolution.

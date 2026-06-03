@@ -133,21 +133,21 @@ NOT something we eliminate.)*
 
 *(Revised 2026-06-02 — see `## Revisions`. Original brain-home plan superseded.)*
 
-- [ ] Create `you-decide/artifacts.md` — the shared artifact-type registry
+- [x] Create `you-decide/artifacts.md` — the shared artifact-type registry
       (ballot-guide / candidate-read / race-vote / **cast-ballot**): path
       pattern + frontmatter + purpose per type.
-- [ ] Formalize the cast-ballot type from the 2026-06-02 ad-hoc shape.
-- [ ] Thin scattered naming restatements (`SKILL.md`, `resolve-ballot.md`,
+- [x] Formalize the cast-ballot type from the 2026-06-02 ad-hoc shape.
+- [x] Thin scattered naming restatements (`SKILL.md`, `resolve-ballot.md`,
       `review.md`, `bootstrap-survey.md`) to reference `artifacts.md`; keep
       algorithm prose.
-- [ ] Re-anchor brain-routing docs on the **brain's** `construct/deps` (doc-only:
+- [x] Re-anchor brain-routing docs on the **brain's** `construct/deps` (doc-only:
       `private-dir.sh` comment, `atlas/overview.md`, `README.md`) — demote
       `$YOU_DECIDE_PRIVATE_DIR` to an override. (NB: *this* repo's
       `construct/deps` is `substrate ../ariadne`; the `data <url> …you-decide`
       mount row lives in the brain's deps — reference it as such in prose.)
-- [ ] Update atlas (`substrate.md`, `substrate-dependencies.md`, `algorithm.md`,
+- [x] Update atlas (`substrate.md`, `substrate-dependencies.md`, `algorithm.md`,
       `review.md`, `index.md`); conform `menlo-park-2026-06-02-cast.md`.
-- [ ] Verify: grep no naming drift; `grep -rn "philosophy-xian\|menlo-park\|xianxu"`
+- [x] Verify: grep no naming drift; `grep -rn "philosophy-xian\|menlo-park\|xianxu"`
       clean; `bash scripts/private-dir.sh` resolves identically before/after
       (comment-only change); fresh-eyes review; fix Critical/Important.
 
@@ -186,3 +186,22 @@ Xian's full cast ballot — which surfaced that **no cast-ballot convention
 existed** (file invented ad hoc) — and (c) led to the design discussion this
 issue captures. Recommendation in this issue = the agreed direction: thin
 brain-resident private home + delegation, not a parallel skill.
+
+**Implementation (commits 79831cb, b1979b7).** Built `you-decide/artifacts.md`
+as the single artifact-type authority (ballot-guide / candidate-read /
+race-vote / cast-ballot); thinned the scattered restatements across
+`SKILL.md`, `resolve-ballot.md`, `review.md`, `bootstrap-survey.md`, and 5
+atlas files to reference it; re-anchored brain-routing docs on the brain's
+`construct/deps`; conformed the cast-ballot + ballot-guide files.
+
+**Fresh-eyes review (general-purpose subagent, BASE 10ae202 → b1979b7):
+Ready-with-fixes.** Caught 2 Important defects the implementation pass missed —
+the registry's race-vote schema declared `final-vote:` (in 0/19 real files) +
+a `posture` enum (actually free-text), and ballot-guide declared `generated-on:`
+vs the one real guide's `generated:`. Verified both against ground truth (19
+vote files surveyed) and fixed in b1979b7: race-vote schema rewritten to the
+real convention (`primary-vote`/`general-vote`/free-text `posture`), ballot
+guide conformed to the bundle's `generated-on` contract. Two flagged Minor
+read-path restatements (SKILL review-gate line, README path note) also thinned.
+No Critical. construct/deps claim, leakage grep, wikilinks, and the
+comment-only `private-dir.sh` change all verified clean.
