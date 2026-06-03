@@ -65,16 +65,21 @@ out="$(run "$d")"; EC=$?
 
 echo "case 4 (FAIL-CLOSED): unclosed fence must NOT leak a body date (C3, lessons §2026-05-31)"
 d="$(new_priv)"; mkdoss "$d" a
-# opening ---, an old date, NO closing fence, then a body line that mimics revised:
-mkf "$d/2026/CA/race/a-read.md" $'---\nread-date: 2020-01-01\ncandidate: ../../../dossiers/a.md\nbody revised: 2099-01-01\n'
-out="$(run "$d")"; EC=$?
-has "$out" "a-read.md" && ok "unclosed-fence read flagged stale (body 2099 not parsed as fresh)" || bad "C3 regressed: body date leaked -> false fresh"
+# opening ---, an old date, NO closing fence, then a COLUMN-0 line that mimics a
+# frontmatter date. With the fence guard this is body (unparsed) -> read has no
+# date -> stale. WITHOUT the guard, fm() would read to EOF, `revised: 2099` would
+# parse, and the read would look fresh -> this assertion then FAILS (locks C3).
+mkf "$d/2026/CA/race/a-read.md" $'---\nread-date: 2020-01-01\ncandidate: ../../../dossiers/a.md\nrevised: 2099-01-01\n'
+vout="$(YOU_DECIDE_PRIVATE_DIR="$d" "$DETECTOR" 2>/dev/null || true)"
+has "$vout" "a-read.md" && ok "unclosed-fence read flagged stale (body 2099 not parsed as fresh)" || bad "C3 regressed: body date leaked -> false fresh"
 
-echo "case 5 (FAIL-CLOSED): properly fenced but NO date key -> stale (C2)"
+echo "case 5 (FAIL-CLOSED): properly fenced but NO date key -> stale, via the no-date guard (C2)"
 d="$(new_priv)"; mkdoss "$d" a
 mkf "$d/2026/CA/race/a-read.md" $'---\nname: foo\ncandidate: ../../../dossiers/a.md\n---\nscore\n'
-out="$(run "$d")"; EC=$?
-has "$out" "a-read.md" && ok "date-less read flagged stale" || bad "C2: date-less read read as fresh"
+# Assert the TRIGGER is the no-date guard, not the base-date comparison — so the
+# test fails if the explicit `[[ -z "$rd" ]]` branch is removed (locks C2).
+vout="$(YOU_DECIDE_PRIVATE_DIR="$d" "$DETECTOR" 2>/dev/null || true)"
+has "$vout" "no-date-in-read" && ok "date-less read flagged via the no-date guard" || bad "C2: date-less read not flagged by the no-date branch"
 
 echo "case 6 (FAIL-CLOSED): unresolvable dossier -> stale even if the read date is recent (I2)"
 d="$(new_priv)"
@@ -108,6 +113,15 @@ d="$(new_priv)"; mkdoss "$d" a
 printf '%s\r\n' '---' 'revised: 2026-06-09' 'candidate: ../../../dossiers/a.md' '---' 'score' > "$d/2026/CA/race/a-read.md"
 out="$(run "$d")"; EC=$?
 has "$out" "a-read.md" && bad "CRLF date not parsed -> falsely stale" || ok "CRLF date parsed, read fresh"
+
+echo "case 11 (FAIL-CLOSED): a read's own date is revised-first, not newest — a stray newer read-date must not mask staleness"
+d="$(new_priv)"; mkdoss "$d" a 2026-06-05
+# revised (authoritative re-derive) = 2026-06-01, OLDER than the dossier 2026-06-05 -> STALE.
+# read-date = 2026-06-20 would mask it under a newest-wins own-date. fdate_own takes
+# revised first, so it stays flagged; reverting to max makes this assertion FAIL.
+mkf "$d/2026/CA/race/a-read.md" $'---\nrevised: 2026-06-01\nread-date: 2026-06-20\ncandidate: ../../../dossiers/a.md\n---\nscore\n'
+out="$(run "$d")"; EC=$?
+has "$out" "a-read.md" && ok "flagged on revised(06-01) vs dossier(06-05); newer read-date(06-20) did not mask" || bad "own-date masking: newest read-date hid staleness"
 
 echo ""
 if [[ $fails -eq 0 ]]; then echo "PASS — all assertions green"; else echo "FAIL — $fails assertion(s) failed"; exit 1; fi

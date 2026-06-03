@@ -59,17 +59,35 @@ fm() {
   return 0
 }
 
-# fdate FILE KEY [KEY...] — newest ISO date among the given frontmatter keys
-# (priority order is irrelevant once we take the max; duplicate keys take the
-# newest value, the fail-closed choice for an input). Empty if none present or
-# the block is unfenced. Always returns 0 (so `set -e` never aborts the caller).
-fdate() {
+# Two date extractors, because an artifact's OWN date and an INPUT's date want
+# opposite tie-breaking:
+#
+# fdate_own FILE KEY [KEY...] — the artifact's authoritative effective date:
+#   the FIRST present key in priority order (e.g. `revised` overrides `read-date`).
+#   Taking the *max* here would be a fail-OPEN hole — a stray newer `read-date`
+#   on a not-actually-re-derived read would mask it against newer inputs.
+# fdate_in FILE KEY [KEY...] — an input's date: the NEWEST value across all keys
+#   and duplicates. For an input, newest-wins is the fail-CLOSED choice (a newer
+#   input must win so it flags its dependents).
+# Both: empty if none present / block unfenced; always return 0 (set -e safe).
+fdate_own() {
+  local file="$1"; shift
+  local block; block="$(fm "$file")"
+  local key v
+  for key in "$@"; do
+    v="$(printf '%s\n' "$block" | sed -n "s/^${key}:[[:space:]]*//p" | head -1)"
+    v="${v//[[:space:]]/}"            # strip spaces + trailing CR (CRLF-safe)
+    [[ -n "$v" ]] && { printf '%s' "$v"; return 0; }
+  done
+  return 0
+}
+fdate_in() {
   local file="$1"; shift
   local block; block="$(fm "$file")"
   local key v best=""
   for key in "$@"; do
     while IFS= read -r v; do
-      v="${v//[[:space:]]/}"          # strip spaces + trailing CR (CRLF-safe)
+      v="${v//[[:space:]]/}"
       [[ -n "$v" && "$v" > "$best" ]] && best="$v"
     done < <(printf '%s\n' "$block" | sed -n "s/^${key}:[[:space:]]*//p")
   done
@@ -116,7 +134,7 @@ report() {  # report FILE TRIGGER DATE
 # verified -> fail closed by forcing the future sentinel (every read/vote stale).
 phil="$(ls "$PRIVATE_DIR"/philosophy-*.md 2>/dev/null | grep -v -- '-from-survey' | head -1 || true)"
 phil_date=""
-[[ -n "$phil" && -f "$phil" ]] && phil_date="$(fdate "$phil" revised generated-on date)"
+[[ -n "$phil" && -f "$phil" ]] && phil_date="$(fdate_in "$phil" revised generated-on date)"
 if [[ -z "$phil_date" ]]; then
   printf 'stale-reads: WARNING: philosophy missing or undated (%s) — failing closed (all stale)\n' "${phil:-<none found>}" >&2
   phil_date="$SENTINEL_FUTURE"; phil_name="philosophy(MISSING-OR-UNDATED)"
@@ -127,7 +145,7 @@ fi
 calib_max=""; calib_who=""
 shopt -s nullglob
 for cs in "$PRIVATE_DIR"/calibration-skills/*.md; do
-  d="$(fdate "$cs" revised generated-on)"
+  d="$(fdate_in "$cs" revised generated-on)"
   if [[ -z "$d" ]]; then
     printf 'stale-reads: WARNING: calibration skill undated (%s) — failing closed\n' "$(basename "$cs")" >&2
     d="$SENTINEL_FUTURE"
@@ -141,7 +159,7 @@ if [[ "$base" == "$phil_date" ]]; then base_who="$phil_name"; else base_who="cal
 
 # --- reads ---
 while IFS= read -r read; do
-  rd="$(fdate "$read" revised read-date generated-on)"
+  rd="$(fdate_own "$read" revised read-date generated-on)"
   # no parseable date on the read itself -> cannot verify -> stale
   [[ -z "$rd" ]] && { report "$read" "no-date-in-read" "-"; continue; }
 
@@ -159,7 +177,7 @@ while IFS= read -r read; do
   [[ -z "$doss" || ! -f "$doss" ]] && { report "$read" "dossier-unresolved" "${cand:-<none>}"; continue; }
 
   trig="$base_who"; td="$base"
-  dd="$(fdate "$doss" last-updated revised generated-on)"
+  dd="$(fdate_in "$doss" last-updated revised generated-on)"
   [[ -z "$dd" ]] && dd="$SENTINEL_FUTURE"        # undated dossier -> fail closed
   if [[ "$dd" > "$td" ]]; then td="$dd"; trig="dossier:$(basename "$doss")"; fi
 
@@ -168,13 +186,13 @@ done < <(find "$PRIVATE_DIR" -name '*-read.md' | sort)
 
 # --- votes (downstream of their race's reads) ---
 while IFS= read -r vote; do
-  vd="$(fdate "$vote" revised date generated-on)"
+  vd="$(fdate_own "$vote" revised date generated-on)"
   [[ -z "$vd" ]] && { report "$vote" "no-date-in-vote" "-"; continue; }
   trig="$base_who"; td="$base"
   shopt -s nullglob
   for sib in "$(dirname "$vote")"/*-read.md; do
     [[ -f "$sib" ]] || continue
-    sd="$(fdate "$sib" revised read-date generated-on)"
+    sd="$(fdate_own "$sib" revised read-date generated-on)"
     [[ -z "$sd" ]] && sd="$SENTINEL_FUTURE"      # undated sibling read -> fail closed
     if [[ "$sd" > "$td" ]]; then td="$sd"; trig="read:$(basename "$sib")"; fi
   done
