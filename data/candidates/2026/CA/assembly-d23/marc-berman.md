@@ -11,8 +11,7 @@ generated-on: 2026-05-28
 review: passed
 reviewed-by: gemini
 reviewed-on: 2026-06-02
-review-ref: data/reviews/2026/2026-06-02-ca-assembly-d23-correction.md
-prior-review: passed (codex, 2026-05-29, data/reviews/2026/2026-05-29-ca-2026-post-close-rereview.md) — superseded by 2026-06-02 AB 3209 public-safety addition; needs re-review
+review-ref: data/reviews/2026/2026-06-02-ca-assembly-d23-correction-r2.md
 ---
 
 # Marc Berman — 2026 CA Assembly D23
@@ -89,10 +88,12 @@ From official Assembly site and campaign site unless noted.
 - [Assembly official page — Marc Berman, District 23](https://www.assembly.ca.gov/assemblymembers/23)
 - [Marc Berman campaign priorities page](https://www.voteberman.com/priorities)
 - [Marc Berman official Assembly site](https://berman.asmdc.org/)
+- [Asm. Berman press release — California Cracks Down on Retail Theft (AB 3209, signed Aug 16 2024)](https://a23.asmdc.org/press-releases/20240816-california-cracks-down-retail-theft)
 
 **Tier B:**
 - [SM Daily Journal — Berman defends D23 seat against Republican challengers (2026)](https://www.smdailyjournal.com/news/local/marc-berman-defends-district-23-assembly-seat-against-republican-challengers/article_167f1bcb-a7fb-40af-9251-43468214cc09.html)
 - [KQED — Prop 36 divides South Bay Democratic candidates (2024)](https://www.kqed.org/news/12011368/tough-on-crime-initiative-divides-south-bay-democratic-candidates)
+- [InMenlo — California cracks down on retail theft in bill authored by Marc Berman (Aug 2024)](https://inmenlo.com/2024/08/17/california-cracks-down-on-retail-theft-in-bill-authored-by-marc-berman-d-menlo-park/)
 
 **Tier A (endorsing-org endorsement lists — rebound off Garry's Guide):**
 - [California YIMBY — 2026 endorsements](https://cayimby.org/endorsements/) — confirms "Assembly District 23 Marc Berman"
