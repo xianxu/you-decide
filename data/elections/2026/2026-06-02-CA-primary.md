@@ -34,7 +34,7 @@ Decision-support manifest of races on the **San Mateo County** voter's 6/2/2026 
 For ballot truth, cross-check the [CA SoS certified candidate list](https://www.sos.ca.gov/elections) and the [SM County roster](https://smcacre.gov/elections/county-offices). Closing both gaps (full statewide enumeration + certified candidate lists) is a tracked research follow-up.
 
 ## Statewide races
-*Tag: STATEWIDE — visible to every CA voter.*
+Tag: STATEWIDE — visible to every CA voter.*
 
 ### Governor
 - Seats: 1 (top-2 advances to general)

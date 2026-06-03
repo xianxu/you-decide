@@ -1,11 +1,12 @@
 ---
 id: 000012
-status: open
+status: done
 deps: []
 github_issue:
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 estimate_hours: 3
+actual_hours: 5
 ---
 
 # refresh-reads: stale-read detector + re-score driver
@@ -62,6 +63,7 @@ Ordering + recommendation unchanged (Villaraigosa conscience, Becerra/Hilton str
 3. **Stale `candidate:` paths.** Reads point at `you-decide/candidates/...` but dossiers live at `you-decide/data/candidates/...`; the detector resolves the dossier by path-convention as a workaround. Fix the frontmatter field (relates to #000006). → fold into #000006 or new issue.
 
 ### 2026-06-03 — fresh-eyes review (two rounds) + fail-closed fixes
+- 2026-06-03: closed — 11-case fail-closed test suite green (bash 3.2); negative checks prove cases 4/5/11 fail when their guard is reverted (non-tautological); two fresh-eyes review rounds both satisfied, 0 open Critical/Important; real-dir dogfood: exit 1, 40/44 stale, 0 dossier-unresolved, 0 no-date; sub-skill + SKILL link present; refresh-facts deferred noted
 
 The original commit (74885ae) shipped green but the happy-path-only test masked real bugs. Two fresh-eyes review rounds (general-purpose subagent) on the detector:
 
