@@ -60,3 +60,20 @@ Ordering + recommendation unchanged (Villaraigosa conscience, Becerra/Hilton str
 1. **Date-bump-on-no-change is load-bearing.** The driver must set `revised:` on EVERY re-scored read, including unchanged ones — else the detector can't distinguish "not yet refreshed" from "refreshed, unchanged." The refresh-reads skill already prescribes this; the acceptance subagent initially skipped it (5 unchanged reads stayed flagged until bumped). Candidate for `workshop/lessons.md`.
 2. **Consolidated guide not in detector scope.** `who-to-vote-for/**/menlo-park-*-ballot.md` is downstream of the per-race `vote.md`s but is neither a `-read.md` nor a `vote.md`, so the detector doesn't track it; it needs a manual re-sync after a race re-score (done by hand here for Governor). Extend the detector to track consolidated guides, or add a `consolidate` step. → new issue.
 3. **Stale `candidate:` paths.** Reads point at `you-decide/candidates/...` but dossiers live at `you-decide/data/candidates/...`; the detector resolves the dossier by path-convention as a workaround. Fix the frontmatter field (relates to #000006). → fold into #000006 or new issue.
+
+### 2026-06-03 — fresh-eyes review (two rounds) + fail-closed fixes
+
+The original commit (74885ae) shipped green but the happy-path-only test masked real bugs. Two fresh-eyes review rounds (general-purpose subagent) on the detector:
+
+**Round 1 (74885ae) — Ready? NO. 3 Critical + 2 Important, all fail-OPEN** (a stale artifact reading fresh — the one failure mode `lessons.md §2026-05-31` says matters):
+- C1: `fdate` returned nonzero on the no-date path → under `set -e` the scan loop aborted at the first date-less file → silent, order-dependent truncation (could print nothing yet exit 1).
+- C2: a date-less read treated as fresh. C3: an unclosed `---` fence let a body `revised:` line parse as the date (verbatim regression of the previously-logged gate bug).
+- I2: the `candidate:` field was ignored (convention-only); relocated/missing dossier dropped the edge. I3: missing/undated philosophy → all-fresh verdict.
+- Fix (7de20a5): `fm()` requires a closing fence; helpers all `return 0`; every ambiguous input (no date / no fence / unresolved-or-undated dossier / undated philosophy/skill) forced stale via a `9999-12-31` sentinel; read the real `candidate:` path with convention fallback. Test overhauled to 10 fail-closed cases.
+
+**Round 2 (7de20a5) — Ready? WITH FIXES. 2 Important:**
+- newest-wins masked staleness on a read's OWN date (a stray newer `read-date` hiding an old `revised`). Split into `fdate_own` (priority-first, own date) vs `fdate_in` (newest-wins, inputs).
+- test cases 4 (C3) + 5 (C2) were tautological (passed with the fix reverted). Re-fixtured to genuinely fail on regression; added case 11 for the own-date fix.
+- Fix (4c58035). **Verified: 11 cases green; negative checks confirm cases 4/5/11 FAIL when their guard is reverted (proven non-tautological). Real dogfood unchanged: 40/44 stale, 0 dossier-unresolved, 0 no-date.** Both review verdicts now satisfied; no open Critical/Important.
+
+Follow-up #2 (consolidated guide not in detector scope) and #3 (`candidate:` path convention vs `data/candidates`) remain open — neither blocks closure; fold into #13's data-model reconciliation / #6.

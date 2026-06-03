@@ -60,6 +60,8 @@ A derived artifact is **stale** when any of the following holds. The first is th
 
 Two staleness kinds, one disposition: when either fires, the derived artifact's `review:` no longer certifies its current content. Recompute (or incrementally integrate the delta), update the recorded input set, and re-run review.
 
+**Executed by** (#12): the newer-input rule for reads/votes is no longer just documented — `scripts/stale-reads.sh` is the deterministic detector (frontmatter-date based, **fail-closed**: any unparseable/undated/missing-edge artifact is treated as stale, never fresh), and [[../you-decide/refresh-reads]] is the soft re-score driver. The detector covers the read/vote inference layer; the membership-staleness rule and the consolidated-guide node are the remaining slices (tracked under #13's data-model reconciliation).
+
 ### Why the controversy edge was the one that rotted
 
 Every other derived edge had a working trigger: reads have the Stage-3 mtime rule; profiles refresh on candidate news; the manifest refreshes on election proximity. The `data/candidates → controversy map` edge had only the prose trigger "refresh as new controversies surface" — a human cue, not a mechanical check, and it's a fan-in edge, so it needed the membership rule that didn't exist. Rule 2 is the fix; this doc is where it now lives.
