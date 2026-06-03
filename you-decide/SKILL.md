@@ -67,6 +67,8 @@ Every stage that has a cached artifact reuses it rather than regenerating. The s
 
 The typical returning-user invocation (*"help me vote in Menlo Park, CA 2026"* with everything already populated) does ~zero new work in Stages 1-3 — they all hit cache. Stages 4 (disagreement loop) and 5 (aggregate + present) are where the actual deliberation happens.
 
+**Executing the cache rule.** The Stage-3 staleness predicate above isn't just documentation — it's run by `scripts/stale-reads.sh` (deterministic, frontmatter-date based; the hard shell) and acted on by [[refresh-reads]] (re-score the stale set; the soft half). Run them after any philosophy / calibration-skill / dossier edit, which otherwise silently invalidate downstream reads. Fact-refresh (re-researching the dossiers themselves) is the separate Stage 1–2 concern.
+
 ## Algorithm
 
 ### Stage 0 — User-state detection
