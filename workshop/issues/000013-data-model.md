@@ -87,4 +87,12 @@ Net: `my-guide` is just the votes of the races in my resolved ballot-style — c
 ### 2026-06-02
 Spun out of the #12 brainstorm. Sequence of insights: verbs without scope-nouns → all-or-nothing refresh + over-invalidation → nouns ≈ directories + a computed dependency graph → `ballot` is the lone non-directory noun (a view) → its membership is a fallible externally-sourced fact (the D15/D16 error) → therefore `race`/`ballot` are really one **election-structure fact type**, already half-modeled in the (incomplete) `data/elections/2026/2026-06-02-CA-primary.md` manifest. This ticket = sort out that model; #12 is its first slice.
 
+**General pattern (2026-06-03).** Zoomed out from this instance to the category it belongs to —
+a "markdown build system" (a build system whose recipes are LLM skills). Captured in
+`workshop/pensive/2026-06-03-pensive-markdown-build-system.md`: the three properties that break the
+Make analogy (non-deterministic / expensive / self-hosting recipes), the ~five staleness kinds,
+certification-replaces-fixed-point, the two separable propagations (recompute-need vs recertify-need),
+dbt as the closest analog, and the fork between #13 (you-decide instance) and a possible ariadne
+base-layer `refresh` engine. Feeds the `target` this issue proposes.
+
 **Refinement (same session).** User pushed back on two over-builds and simplified the model: (1) dropped "two mirrored trees" — there's just one fact layer + one inference layer, race/ballot are facts you-decide collects like candidates; (2) **ballot = a discrete, enumerable "ballot-style" fact** (the set of distinct ballots in a year/state is finite/small at the scored granularity — Peninsula ≈ {D15/D21, D16/D23}×county), collected with no address. The "ballot straddles fact/inference" awkwardness dissolves: the only external/fallible piece is the thin one-line `address→which-style` resolution. Two distinct external tiers: coarse jurisdiction lookup (builds the manifest+styles; already used) vs precise address→district resolution (the fallible edge). Spec above rewritten to this simpler model.
