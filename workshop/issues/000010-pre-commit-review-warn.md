@@ -6,6 +6,7 @@ github_issue:
 created: 2026-06-02
 updated: 2026-06-02
 estimate_hours: 0.5
+card_mirror: '1cce865a47bff2bb0b8c0d8b33e6fcabd9a233d2' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Non-blocking pre-commit review reminder for unreviewed substrate

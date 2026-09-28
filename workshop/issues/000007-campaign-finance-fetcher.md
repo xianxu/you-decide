@@ -3,9 +3,14 @@ id: 000007
 status: open
 deps: []
 created: 2026-05-29
+card_mirror: '143ef24f70f3fbb5e1fe2103ab29a49e433ebb02' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Campaign-finance fetcher (FPPC/Cal-Access + FEC) → bind donor/fundraising claims to primary filings
+
+## Problem
+
+No problem statement was recorded before the issue tracker migration.
 
 ## Context
 

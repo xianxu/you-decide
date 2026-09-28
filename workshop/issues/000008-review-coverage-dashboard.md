@@ -5,6 +5,7 @@ deps: []
 created: 2026-05-31
 updated: 2026-05-31
 estimate_hours: 1.5
+card_mirror: 'a47c53dc2364034243fae58c95a8b010d011d1cc' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Review-coverage dashboard (COVERAGE.md + cross-stack rollup)

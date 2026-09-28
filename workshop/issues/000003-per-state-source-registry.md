@@ -4,6 +4,7 @@ status: open
 deps: [000002]
 created: 2026-05-28
 updated: 2026-05-28
+card_mirror: '69ca0475b691dccc93695aa99ab2abcd8df82797' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Build out per-state authoritative-source registry (data/sources/ directory)

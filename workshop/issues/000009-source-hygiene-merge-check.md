@@ -5,6 +5,7 @@ deps: []
 created: 2026-05-31
 updated: 2026-05-31
 estimate_hours: 1.0
+card_mirror: '6af72dda419cd607e3fbd30559018ad64580bb68' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Source-hygiene grep merge-check (data/candidates substrate)

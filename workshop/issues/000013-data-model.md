@@ -6,6 +6,7 @@ github_issue:
 created: 2026-06-02
 updated: 2026-06-02
 estimate_hours: 4
+card_mirror: 'e4c5d1c3d13c571224cc68361dfb80d7b5c298c2' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # you-decide data model: nouns, dependency graph, fact/inference layers

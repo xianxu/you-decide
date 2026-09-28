@@ -6,6 +6,7 @@ github_issue:
 created: 2026-09-18
 updated: 2026-09-18
 estimate_hours:
+card_mirror: 'b20c11e7baac640259c5cd8966b2f2b1b8501d9e' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # atlas: migrate to purpose split (map / journeys / workflow)

@@ -4,6 +4,7 @@ status: open
 deps: []
 created: 2026-05-28
 updated: 2026-05-28
+card_mirror: '72ad20833480edbd3909006e1cefdfdd1a4dd88f' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Battle-test and scale: AI-curated voter research across key US jurisdictions

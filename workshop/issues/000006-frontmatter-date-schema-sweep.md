@@ -4,9 +4,14 @@ status: open
 deps: []
 created: 2026-05-28
 updated: 2026-05-28
+card_mirror: 'bf20458d8d5b7a74b610cf1dde183583beef0122' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Normalize generated: / generated-on: frontmatter + enforce in audit-review
+
+## Problem
+
+No problem statement was recorded before the issue tracker migration.
 
 ## Context
 

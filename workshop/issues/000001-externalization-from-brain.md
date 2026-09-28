@@ -4,9 +4,14 @@ status: open
 deps: [brain#11]
 created: 2026-05-28
 updated: 2026-05-28
+card_mirror: '308cbb7aec48aa3af8c3b440fc054c1529642fbc' # card fields mirrored from issue-cards; edit via sdlc
 ---
 
 # Externalize design decisions + history from brain
+
+## Problem
+
+No problem statement was recorded before the issue tracker migration.
 
 ## Context
 
