@@ -43,6 +43,8 @@ Out of scope (follow-up): folding the supplement into the individual `data/candi
 - `ballot.json` parses; every `research_file`#anchor in it resolves to a heading in the moved reports.
 - The new manifest lists all 48 BT-114 contests.
 - The supplement contains no personalized scoring or recommendations.
+- (revised) No voter-exported ballot PDF or image is published: `sources/` holds only the text transcription, and no file references the withheld PDF.
+- (revised) Every `District:` tag in the manifest matches a pattern in `resolve-ballot.md` Stage 2's tag vocabulary.
 
 ## Plan
 
