@@ -14,7 +14,7 @@ claimant:
     machine_name: Xian’s MacBook Pro
     worktree: /Users/xianxu/workspace/you-decide
     repository: github.com/xianxu/you-decide
-flow: {kind: quick, provenance: inferred, spec: "f4b7ffa2", done: "2a028713"}
+flow: {kind: full, provenance: inferred}
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
@@ -59,6 +59,8 @@ Out of scope (follow-up): folding the supplement into the individual `data/candi
 ## Log
 
 ### 2026-10-04
+- 2026-10-04: closed — review-gate.sh + cross-stack-gate.sh pass; ballot.json parses, 48/48 contests + anchors resolve; packet passed Claude cross-stack (3 rounds), manifest+supplement passed Codex cross-stack (3 rounds); PDF withheld (sources/ = txt only, no PDF refs); manifest District tags all in resolve-ballot Stage 2 vocabulary; atlas updated; brain-side private copy removed and guide links verified; review verdict: FIX-THEN-SHIP
+- 2026-10-04: flow upgraded quick → full — 2926 added lines in code files (limit 100); an earlier round of this close already ran the full review
 - Packet copied verbatim into `data/elections/2026/2026-11-03-CA-general/`. Codex's same-stack review record moved to `data/reviews/2026/` (review records don't live in substrate dirs).
 - Manifest generated from `ballot.json`: 48/48 contests; all 48 research anchors resolve; 22 candidate dossier links verified (matched by race folder + last name for slug drift, e.g. `don-wagner`).
 - **Privacy catch by cross-stack review (Critical):** the voter-exported ballot PDF carried the exporter's personal name in `/Author`, and page 25 showed an on-screen selection mark. A text-only grep missed both. Resolution: the PDF is withheld from the public packet; the text transcription is published; `ballot.json` `source.pdf = null` with a note. Never committed, so no history scrub needed. Lesson added to `workshop/lessons.md`.

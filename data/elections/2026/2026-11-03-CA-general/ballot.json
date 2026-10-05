@@ -18,7 +18,7 @@
   },
   "field_notes": {
     "party_preference": "null means no party preference displayed for this nonpartisan contest, not a claim of no party affiliation",
-    "candidate_order": "As printed in supplied PDF; not a ranking",
+    "candidate_order": "As printed on the reference ballot (see sources/ballot-bt-114.txt); not a ranking",
     "id_scope": "Unique and stable within this election; combine with election_date across elections",
     "short_description": "Research navigation label, not official ballot title",
     "max_selections": "Maximum selections per contest; no recommendation implied",

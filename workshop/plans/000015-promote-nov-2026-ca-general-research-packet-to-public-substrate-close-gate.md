@@ -31,6 +31,35 @@ rounds:
           round: 1
       recipe: milestone-review
       blocked: true
+    - "n": 2
+      timestamp: "2026-10-04T19:59:16-07:00"
+      agent: claude
+      dispose:
+        - id: BR-1
+          disposition: addressed
+          note: Stage 2 extended (resolve-ballot.md:63-79) with single-vocabulary rule; all manifest District tags verified to match.
+          round: 2
+        - id: BR-2
+          disposition: addressed
+          note: README:33-34 now points to the omniballot county tool; no "use the PDF" pointer remains.
+          round: 2
+        - id: BR-3
+          disposition: addressed
+          note: Manifest headings now unique; Sources section at line 202.
+          round: 2
+        - id: BR-4
+          disposition: addressed
+          note: Revisions entry records the PDF withholding; Done-when revised to match.
+          round: 2
+      findings:
+        - id: BR-5
+          severity: Minor
+          title: ballot.json field_notes.candidate_order still says "As printed in supplied PDF"
+          detail: '2nd finding in this family. Rule: when an artifact is withheld, sweep every file in the packet including JSON notes, not just Markdown. Retarget line 21 to the text transcription.'
+          family: stale-reference-to-withheld-artifact
+          round: 2
+      recipe: milestone-review
+      blocked: false
 ---
 
 # Gate ledger — you-decide#15 (boundary-review)
@@ -49,9 +78,20 @@ later rounds disposed of them. Generated — edit the gate, not this file.
 - **BR-3** [Minor] `manifest-schema-conformance` Manifest has duplicate Candidate contests headings and no Sources section, unlike the resolve-ballot schema
 - **BR-4** [Minor] `spec-revision-on-scope-change` Issue Spec still promises the sources/ PDF; add a Revisions entry recording that it was withheld
 
+## Round 2 — 2026-10-04T19:59:16-07:00 (claude) — passed
+
+### Disposed
+
+- BR-1 — addressed — Stage 2 extended (resolve-ballot.md:63-79) with single-vocabulary rule; all manifest District tags verified to match.
+- BR-2 — addressed — README:33-34 now points to the omniballot county tool; no "use the PDF" pointer remains.
+- BR-3 — addressed — Manifest headings now unique; Sources section at line 202.
+- BR-4 — addressed — Revisions entry records the PDF withholding; Done-when revised to match.
+
+### Raised
+
+- **BR-5** [Minor] `stale-reference-to-withheld-artifact` ballot.json field_notes.candidate_order still says "As printed in supplied PDF"
+  2nd finding in this family. Rule: when an artifact is withheld, sweep every file in the packet including JSON notes, not just Markdown. Retarget line 21 to the text transcription.
+
 ## Open findings
 
-- **BR-1** [Important] `district-tag-vocabulary-single-source` Manifest district tags (MPCSD, SEQUOIA-UHSD-AREA-D, RTM-DISTRICT, SMCCCD, CA-APPEAL-D1) are missing from resolve-ballot Stage 2's tag list
-- **BR-2** [Minor] `stale-reference-to-withheld-artifact` Packet README still points readers to the withheld PDF (lines 34 and 55)
-- **BR-3** [Minor] `manifest-schema-conformance` Manifest has duplicate Candidate contests headings and no Sources section, unlike the resolve-ballot schema
-- **BR-4** [Minor] `spec-revision-on-scope-change` Issue Spec still promises the sources/ PDF; add a Revisions entry recording that it was withheld
+- **BR-5** [Minor] `stale-reference-to-withheld-artifact` ballot.json field_notes.candidate_order still says "As printed in supplied PDF"
