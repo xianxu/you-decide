@@ -1,6 +1,6 @@
 ---
 id: 000015
-status: open
+status: working
 created: 2026-10-04
 updated: 2026-10-04
 estimate_hours:
@@ -17,6 +17,13 @@ tracker:
         source_blob: 509fd86e7cfe67c96b36e7eab9fc74ead876a67c
         destination: workshop/issues/000015-promote-nov-2026-ca-general-research-packet-to-public-substrate.md
         main_commit: 41315f5d4bc0a885db771155260b1508ba8b312d
+started: 2026-10-04T19:27:21-07:00
+claimant:
+    operator: Xian Xu
+    machine: 4716879978a7b90f6b583da1716fd0e9
+    machine_name: Xian’s MacBook Pro
+    worktree: /Users/xianxu/workspace/you-decide
+    repository: github.com/xianxu/you-decide
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
