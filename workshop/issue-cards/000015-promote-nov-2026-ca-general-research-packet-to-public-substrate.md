@@ -16,6 +16,7 @@ tracker:
         source_path: workshop/issues/000015-promote-nov-2026-ca-general-research-packet-to-public-substrate.md
         source_blob: 509fd86e7cfe67c96b36e7eab9fc74ead876a67c
         destination: workshop/issues/000015-promote-nov-2026-ca-general-research-packet-to-public-substrate.md
+        main_commit: 41315f5d4bc0a885db771155260b1508ba8b312d
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
