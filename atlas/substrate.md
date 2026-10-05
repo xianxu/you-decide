@@ -22,6 +22,14 @@ Entries also carry candidate-side summaries (A/B/middle/outlier framings) so the
 
 Includes: voting system per race (top-2, ranked-choice, plurality), filing windows, key dates. `pending` entries are fine when filing hasn't closed.
 
+**Companion research folder** `data/elections/<year>/<YYYY-MM-DD>-<state>-<scope>/` (same stem as the manifest). It holds research scoped to that election that isn't per-candidate. First instance: `2026-11-03-CA-general/`, which contains:
+- `ballot.json`: the structured contest list for one ballot style, with research anchors.
+- Comparison reports for candidates, measures and judicial retention.
+- `sources/`: a text transcription of the reference ballot.
+- Dated supplements.
+
+Its `.md` files are substrate, so they fall under the same publish and cross-stack gates. Review records still go to `data/reviews/`. **Never publish a voter-exported ballot** (PDF or image). Those exports embed the exporter's metadata and on-screen selections; publish a text transcription instead.
+
 ### `data/sources/<US|state>.md`
 
 Authoritative source registry. Tiers:
