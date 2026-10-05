@@ -1,12 +1,12 @@
 ---
 id: 000015
-status: working
+status: codecomplete
 deps: []
 github_issue:
 created: 2026-10-04
 updated: 2026-10-04
 estimate_hours:
-card_mirror: 'cb94c845e6169498a570c11c526e283a056ab574' # card fields mirrored from issue-cards; edit via sdlc
+card_mirror: '76029de4be33ab6f0c6b8a61804bab8d172594c6' # card fields mirrored from issue-cards; edit via sdlc
 started: 2026-10-04T19:27:21-07:00
 claimant:
     operator: Xian Xu
@@ -15,6 +15,7 @@ claimant:
     worktree: /Users/xianxu/workspace/you-decide
     repository: github.com/xianxu/you-decide
 flow: {kind: full, provenance: inferred}
+actual_hours: 0.94
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
