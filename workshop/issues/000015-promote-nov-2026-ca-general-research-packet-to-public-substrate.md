@@ -46,14 +46,23 @@ Out of scope (follow-up): folding the supplement into the individual `data/candi
 
 ## Plan
 
-- [ ] Move the packet into `data/elections/2026/2026-11-03-CA-general/` and fix the README.
-- [ ] Write the manifest `.md` from `ballot.json`.
-- [ ] Write the neutral supplement.
-- [ ] Verify JSON parsing and anchors, and grep for personal identifiers.
-- [ ] Cross-stack reviews (Claude on the Codex files, Gemini on the Claude files), then fix, then set review frontmatter.
+- [x] Move the packet into `data/elections/2026/2026-11-03-CA-general/` and fix the README.
+- [x] Write the manifest `.md` from `ballot.json`.
+- [x] Write the neutral supplement.
+- [x] Verify JSON parsing and anchors, and grep for personal identifiers.
+- [x] Cross-stack reviews (Claude on the Codex files, Gemini on the Claude files), then fix, then set review frontmatter.
 - [ ] Run both gate scripts, close, open a PR, merge.
 - [ ] Brain side: delete the private copy and repoint the guide links.
 
 ## Log
 
 ### 2026-10-04
+- Packet copied verbatim into `data/elections/2026/2026-11-03-CA-general/`. Codex's same-stack review record moved to `data/reviews/2026/` (review records don't live in substrate dirs).
+- Manifest generated from `ballot.json`: 48/48 contests; all 48 research anchors resolve; 22 candidate dossier links verified (matched by race folder + last name for slug drift, e.g. `don-wagner`).
+- **Privacy catch by cross-stack review (Critical):** the voter-exported ballot PDF carried the exporter's personal name in `/Author`, and page 25 showed an on-screen selection mark. A text-only grep missed both. Resolution: the PDF is withheld from the public packet; the text transcription is published; `ballot.json` `source.pdf = null` with a note. Never committed, so no history scrub needed. Lesson added to `workshop/lessons.md`.
+- Reviews:
+  - Claude cross-stack on the Codex packet: 3 rounds, all 6 files passed (Johnson disambiguation, TIDE/Sunset/Kounalakis wording fixes).
+  - Codex cross-stack on the Claude manifest (passed r1) and supplement: 3 rounds, passed. Unverifiable claims were demoted to DATA-GAP, and the poll was bound to the primary memo.
+  - The Gemini CLI is now unusable (ineligible tier); Codex 0.160 works for reviews.
+- Gates: `review-gate.sh` and `cross-stack-gate.sh` both pass over the branch range.
+- Follow-ups (not done here): fold the supplement into individual `data/candidates/` dossiers; add a `data/measures/` home; remove user-specific phrasing from office templates (`templates/*` cite "the user's stated values").
