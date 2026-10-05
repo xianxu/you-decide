@@ -1,6 +1,6 @@
 ---
 id: 000015
-status: codecomplete
+status: done
 created: 2026-10-04
 updated: 2026-10-04
 estimate_hours:
@@ -30,6 +30,7 @@ tracker:
         repository: github.com/xianxu/you-decide
         reviewed_head: d6f4962b8e008647dddf2deb516c7b02c105ec27
         evidence_commit: e416e52d51337c78b953d6c1751a30d9834ca0e2
+        landed_commit: 39eb5bc9648462ef16c480514e2d1eeff77a87a1
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
