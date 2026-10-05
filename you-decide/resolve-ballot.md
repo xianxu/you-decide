@@ -61,7 +61,9 @@ Map the address to all overlapping electoral districts.
 3. Census geocoder + state-published district shapefiles
 
 **District tags to resolve** (subset varies per state and election type):
-- `STATEWIDE` (always, for any state-level race)
+- `STATEWIDE` (always, for any state-level race, including Supreme Court retention)
+- Board of Equalization district (`CA-BOE-D<N>`)
+- Court of Appeal district (`CA-APPEAL-D<N>`, for appellate retention votes)
 - US House district (`US-House-D<N>`)
 - State Senate district (`CA-Senate-D<N>` etc.)
 - State Assembly district (`CA-Assembly-D<N>`)
@@ -70,7 +72,11 @@ Map the address to all overlapping electoral districts.
 - City (`MENLO-PARK`)
 - City Council district (`MENLO-PARK-COUNCIL-D<N>`)
 - School district (`MENLO-PARK-CSD`, `SEQUOIA-UHSD`, etc.)
-- Special districts (`MENLO-PARK-FIRE`, `WEST-BAY-SANITARY`, etc.)
+- School-district trustee area (`<SCHOOL-DISTRICT>-AREA-<X>`, e.g. `SEQUOIA-UHSD-AREA-D`)
+- Community college district (`SMCCCD`, etc.)
+- Special districts (`MENLO-PARK-FIRE`, `WEST-BAY-SANITARY`, `RTM-DISTRICT` for the regional transit measure, etc.)
+
+This list is the **single tag vocabulary**: a manifest's `District:` tags must be drawn from these patterns, because Stage 3 matches tags exactly. A manifest that introduces a new jurisdiction class extends this list in the same change.
 
 ### Stage 3 — Filter election manifest by districts
 

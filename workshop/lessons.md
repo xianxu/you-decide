@@ -1,3 +1,29 @@
+## 2026-10-04 - A captured ballot leaks through metadata AND rendered marks — text greps miss both
+
+The Nov-2026 reference-ballot PDF passed a text grep for names and addresses, yet it carried the exporting voter's personal name in `/Author`, and page 25 showed their on-screen selection (a filled star on Measure P). Both came from the county guide's browser export. Text extraction showed neither, and stripping metadata couldn't remove the mark, which is part of the page image. Two rules follow. (1) Privacy scans of captured sources must cover binary metadata (`strings`/`pdfinfo`/`exiftool`) and visually inspect the rendered pages, not just the extracted text. (2) Better: don't publish voter-exported ballots at all. Publish the text transcription and link the county's public tool. Also note: `exiftool -all=` on a PDF is an incremental edit, so the old metadata stays recoverable; only a full rewrite (e.g. `pdftocairo -pdf`) removes it.
+
+## 2026-10-04 - Election web research: what works, and the traps
+
+From four parallel research passes for the Nov-2026 CA general (#15):
+
+- **Date every quote; positions move mid-cycle.** Hilton refused to say Biden won on May 4, 2026, and affirmed it on June 5. A single snapshot would have scored the wrong posture. Record the date next to each statement and prefer the latest Tier-B source.
+- **Sources that work:**
+  - CalMatters campaign-finance fragments (`project-voter-guide-2026.interactives.calmatters.org/.../prop/N/{support|oppose}/total`) via curl.
+  - The PPIC PDF via `pdftotext`, which beats aggregator summaries (an aggregator printed 52/42 where the PDF says 52/46).
+  - Wikipedia `?action=raw` for poll and endorsement tables.
+  - The LWV "Vote with the League" page for local-measure letter mapping.
+  - SM Daily Journal (BLOX/TownNews): the "paywalled" text is in the page as ROT47 and decodes.
+- **Blocked sources and workarounds:**
+  - EdSource, the SF Chronicle, the LA Times, CNN and Mediaite block fetchers.
+  - Use syndicated copies instead: Stocktonia or Times of San Diego for EdSource, local TV sites for CNN wire copy, Scripps for AP.
+- **Traps:**
+  - Search snippets and WebFetch summaries misattribute: they swapped which council candidate was the Meta attorney, and credited a Press Democrat editorial to the Mercury News.
+  - Name collisions: David Johnson, Romero, Michael Cohen vs Malia Cohen.
+  - Reused prop numbers: Prop 45/37 hits from 2012–2014.
+  - Multi-year deficit figures get mixed together; anchor each number to a dated article.
+  - Low-tier sites (Hoodline, Factually) rank high; use them as leads only.
+- **Placement:** neutral research is substrate. Write it to `data/elections/<year>/<date>-<state>-<type>/`, never into the user's private dir. A non-Claude session put the Nov packet in the private dir and declined to synthesize the user's scores; the move here fixed the first problem.
+
 ## 2026-06-03 - A fail-closed gate needs fail-closed TESTS — and a green happy-path test proves nothing
 
 Two compounding lessons from #12's stale-read detector, both caught only by fresh-eyes review (the happy-path test shipped green twice over a detector that failed OPEN):

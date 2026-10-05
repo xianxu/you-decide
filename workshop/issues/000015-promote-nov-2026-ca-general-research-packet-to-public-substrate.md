@@ -1,12 +1,21 @@
 ---
 id: 000015
-status: open
+status: codecomplete
 deps: []
 github_issue:
 created: 2026-10-04
 updated: 2026-10-04
 estimate_hours:
-card_mirror: 'c8586fac33de280f0a7816ab1194c0544c150f0c' # card fields mirrored from issue-cards; edit via sdlc
+card_mirror: '76029de4be33ab6f0c6b8a61804bab8d172594c6' # card fields mirrored from issue-cards; edit via sdlc
+started: 2026-10-04T19:27:21-07:00
+claimant:
+    operator: Xian Xu
+    machine: 4716879978a7b90f6b583da1716fd0e9
+    machine_name: Xian’s MacBook Pro
+    worktree: /Users/xianxu/workspace/you-decide
+    repository: github.com/xianxu/you-decide
+flow: {kind: full, provenance: inferred}
+actual_hours: 0.94
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
@@ -35,17 +44,35 @@ Out of scope (follow-up): folding the supplement into the individual `data/candi
 - `ballot.json` parses; every `research_file`#anchor in it resolves to a heading in the moved reports.
 - The new manifest lists all 48 BT-114 contests.
 - The supplement contains no personalized scoring or recommendations.
+- (revised) No voter-exported ballot PDF or image is published: `sources/` holds only the text transcription, and no file references the withheld PDF.
+- (revised) Every `District:` tag in the manifest matches a pattern in `resolve-ballot.md` Stage 2's tag vocabulary.
 
 ## Plan
 
-- [ ] Move the packet into `data/elections/2026/2026-11-03-CA-general/` and fix the README.
-- [ ] Write the manifest `.md` from `ballot.json`.
-- [ ] Write the neutral supplement.
-- [ ] Verify JSON parsing and anchors, and grep for personal identifiers.
-- [ ] Cross-stack reviews (Claude on the Codex files, Gemini on the Claude files), then fix, then set review frontmatter.
-- [ ] Run both gate scripts, close, open a PR, merge.
-- [ ] Brain side: delete the private copy and repoint the guide links.
+- [x] Move the packet into `data/elections/2026/2026-11-03-CA-general/` and fix the README.
+- [x] Write the manifest `.md` from `ballot.json`.
+- [x] Write the neutral supplement.
+- [x] Verify JSON parsing and anchors, and grep for personal identifiers.
+- [x] Cross-stack reviews (Claude on the Codex files, Gemini on the Claude files), then fix, then set review frontmatter.
+- [x] Run both gate scripts (both pass). `sdlc close` → `sdlc pr` → `sdlc merge` follow this checklist.
+- [x] Brain side: delete the private copy and repoint the guide links. The private copy was deleted, keeping only the user's original PDF export as a private record (`menlo-park-2026-11-03-reference-ballot.pdf`). The guide's links now point to the public packet, and each target was verified to exist.
 
 ## Log
 
 ### 2026-10-04
+- 2026-10-04: closed — review-gate.sh + cross-stack-gate.sh pass; ballot.json parses, 48/48 contests + anchors resolve; packet passed Claude cross-stack (3 rounds), manifest+supplement passed Codex cross-stack (3 rounds); PDF withheld (sources/ = txt only, no PDF refs); manifest District tags all in resolve-ballot Stage 2 vocabulary; atlas updated; brain-side private copy removed and guide links verified; review verdict: FIX-THEN-SHIP
+- 2026-10-04: flow upgraded quick → full — 2926 added lines in code files (limit 100); an earlier round of this close already ran the full review
+- Packet copied verbatim into `data/elections/2026/2026-11-03-CA-general/`. Codex's same-stack review record moved to `data/reviews/2026/` (review records don't live in substrate dirs).
+- Manifest generated from `ballot.json`: 48/48 contests; all 48 research anchors resolve; 22 candidate dossier links verified (matched by race folder + last name for slug drift, e.g. `don-wagner`).
+- **Privacy catch by cross-stack review (Critical):** the voter-exported ballot PDF carried the exporter's personal name in `/Author`, and page 25 showed an on-screen selection mark. A text-only grep missed both. Resolution: the PDF is withheld from the public packet; the text transcription is published; `ballot.json` `source.pdf = null` with a note. Never committed, so no history scrub needed. Lesson added to `workshop/lessons.md`.
+- Reviews:
+  - Claude cross-stack on the Codex packet: 3 rounds, all 6 files passed (Johnson disambiguation, TIDE/Sunset/Kounalakis wording fixes).
+  - Codex cross-stack on the Claude manifest (passed r1) and supplement: 3 rounds, passed. Unverifiable claims were demoted to DATA-GAP, and the poll was bound to the primary memo.
+  - The Gemini CLI is now unusable (ineligible tier); Codex 0.160 works for reviews.
+- Gates: `review-gate.sh` and `cross-stack-gate.sh` both pass over the branch range.
+- Follow-ups (not done here): fold the supplement into individual `data/candidates/` dossiers; add a `data/measures/` home; remove user-specific phrasing from office templates (`templates/*` cite "the user's stated values").
+
+## Revisions
+
+- 2026-10-04: **scope change.** The Spec planned to move `sources/` with the PDF and the text. Review found that the voter-exported PDF embeds the exporter's name (metadata) and on-screen selections (page image), so it is **withheld** from the public packet. Only the text transcription is published, and `ballot.json` `source.pdf = null`. The original stays in the user's private dir.
+- 2026-10-04: **boundary review BR-1, fixed at the class level.** The tag vocabulary is now single-sourced in `resolve-ballot.md` Stage 2, extended with BOE, Court of Appeal, trustee-area, community-college and transit-district patterns, with a rule that manifests draw from it. The manifest is retagged `MPCSD` → `MENLO-PARK-CSD`. Minor findings also fixed: duplicate manifest headings, missing Sources section, and stale PDF references in the README.

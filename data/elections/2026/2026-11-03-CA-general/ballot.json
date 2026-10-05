@@ -1,0 +1,1103 @@
+{
+  "schema_version": 1,
+  "election_date": "2026-11-03",
+  "election_type": "general",
+  "state": "CA",
+  "county": "San Mateo",
+  "ballot_style": "BT-114",
+  "generated_on": "2026-10-04",
+  "research_posture": "neutral_information",
+  "source": {
+    "pdf": null,
+    "text": "sources/ballot-bt-114.txt",
+    "page_count": 25,
+    "provenance": "User supplied county reference ballot; not an official ballot",
+    "export_timestamp_local": "2026-10-04 18:12",
+    "page_numbering": "one-based",
+    "pdf_note": "Original PDF export withheld from the public substrate: it embeds the exporting voter's selections and metadata. Text transcription in sources/ballot-bt-114.txt."
+  },
+  "field_notes": {
+    "party_preference": "null means no party preference displayed for this nonpartisan contest, not a claim of no party affiliation",
+    "candidate_order": "As printed on the reference ballot (see sources/ballot-bt-114.txt); not a ranking",
+    "id_scope": "Unique and stable within this election; combine with election_date across elections",
+    "short_description": "Research navigation label, not official ballot title",
+    "max_selections": "Maximum selections per contest; no recommendation implied",
+    "printed_write_in_slots": "Number of write-in lines printed in supplied reference ballot; not a statement about write-in qualification or eligibility."
+  },
+  "contests": [
+    {
+      "id": "ca-governor",
+      "ballot_order": 1,
+      "kind": "candidate_election",
+      "title": "Governor",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Steve Hilton",
+          "party_preference": "Republican",
+          "id": "steve-hilton"
+        },
+        {
+          "name": "Xavier Becerra",
+          "party_preference": "Democratic",
+          "id": "xavier-becerra"
+        }
+      ],
+      "ballot_pages": [
+        1
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Governor — Steve Hilton (Republican) and Xavier Becerra (Democratic)",
+      "research_anchor": "governor--steve-hilton-republican-and-xavier-becerra-democratic"
+    },
+    {
+      "id": "ca-lieutenant-governor",
+      "ballot_order": 2,
+      "kind": "candidate_election",
+      "title": "Lieutenant Governor",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Gloria Romero",
+          "party_preference": "Republican",
+          "id": "gloria-romero"
+        },
+        {
+          "name": "Fiona Ma",
+          "party_preference": "Democratic",
+          "id": "fiona-ma"
+        }
+      ],
+      "ballot_pages": [
+        1,
+        2
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Lieutenant governor — Gloria Romero (Republican) and Fiona Ma (Democratic)",
+      "research_anchor": "lieutenant-governor--gloria-romero-republican-and-fiona-ma-democratic"
+    },
+    {
+      "id": "ca-secretary-of-state",
+      "ballot_order": 3,
+      "kind": "candidate_election",
+      "title": "Secretary of State",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Donald P. (Don) Wagner",
+          "party_preference": "Republican",
+          "id": "donald-p-don-wagner"
+        },
+        {
+          "name": "Shirley N. Weber",
+          "party_preference": "Democratic",
+          "id": "shirley-n-weber"
+        }
+      ],
+      "ballot_pages": [
+        2
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Secretary of state — Donald P. (Don) Wagner (Republican) and Shirley N. Weber (Democratic)",
+      "research_anchor": "secretary-of-state--donald-p-don-wagner-republican-and-shirley-n-weber-democratic"
+    },
+    {
+      "id": "ca-controller",
+      "ballot_order": 4,
+      "kind": "candidate_election",
+      "title": "Controller",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Malia M. Cohen",
+          "party_preference": "Democratic",
+          "id": "malia-m-cohen"
+        },
+        {
+          "name": "Herb W Morgan",
+          "party_preference": "Republican",
+          "id": "herb-w-morgan"
+        }
+      ],
+      "ballot_pages": [
+        2
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Controller — Malia M. Cohen (Democratic) and Herb W Morgan (Republican)",
+      "research_anchor": "controller--malia-m-cohen-democratic-and-herb-w-morgan-republican"
+    },
+    {
+      "id": "ca-treasurer",
+      "ballot_order": 5,
+      "kind": "candidate_election",
+      "title": "Treasurer",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Jennifer Hawks",
+          "party_preference": "Republican",
+          "id": "jennifer-hawks"
+        },
+        {
+          "name": "Eleni Kounalakis",
+          "party_preference": "Democratic",
+          "id": "eleni-kounalakis"
+        }
+      ],
+      "ballot_pages": [
+        2,
+        3
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Treasurer — Jennifer Hawks (Republican) and Eleni Kounalakis (Democratic)",
+      "research_anchor": "treasurer--jennifer-hawks-republican-and-eleni-kounalakis-democratic"
+    },
+    {
+      "id": "ca-attorney-general",
+      "ballot_order": 6,
+      "kind": "candidate_election",
+      "title": "Attorney General",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Rob Bonta",
+          "party_preference": "Democratic",
+          "id": "rob-bonta"
+        },
+        {
+          "name": "Michael E. Gates",
+          "party_preference": "Republican",
+          "id": "michael-e-gates"
+        }
+      ],
+      "ballot_pages": [
+        3
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Attorney general — Rob Bonta (Democratic) and Michael E. Gates (Republican)",
+      "research_anchor": "attorney-general--rob-bonta-democratic-and-michael-e-gates-republican"
+    },
+    {
+      "id": "ca-insurance-commissioner",
+      "ballot_order": 7,
+      "kind": "candidate_election",
+      "title": "Insurance Commissioner",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Jane Kim",
+          "party_preference": "Democratic",
+          "id": "jane-kim"
+        },
+        {
+          "name": "Ben Allen",
+          "party_preference": "Democratic",
+          "id": "ben-allen"
+        }
+      ],
+      "ballot_pages": [
+        3
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Insurance commissioner — Jane Kim and Ben Allen (both Democratic)",
+      "research_anchor": "insurance-commissioner--jane-kim-and-ben-allen-both-democratic"
+    },
+    {
+      "id": "ca-boe-d2",
+      "ballot_order": 8,
+      "kind": "candidate_election",
+      "title": "Board of Equalization District 2",
+      "jurisdiction": "California BOE District 2",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "John Pimentel",
+          "party_preference": "Democratic",
+          "id": "john-pimentel"
+        },
+        {
+          "name": "Sally J. Lieber",
+          "party_preference": "Democratic",
+          "id": "sally-j-lieber"
+        }
+      ],
+      "ballot_pages": [
+        3,
+        4
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "Board of Equalization, District 2 — John Pimentel and Sally J. Lieber (both Democratic)",
+      "research_anchor": "board-of-equalization-district-2--john-pimentel-and-sally-j-lieber-both-democratic"
+    },
+    {
+      "id": "us-house-ca16",
+      "ballot_order": 9,
+      "kind": "candidate_election",
+      "title": "U.S. House District 16",
+      "jurisdiction": "California Congressional District 16",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Peter Sundin Soulé",
+          "party_preference": "Republican",
+          "id": "peter-sundin-soule"
+        },
+        {
+          "name": "Sam Liccardo",
+          "party_preference": "Democratic",
+          "id": "sam-liccardo"
+        }
+      ],
+      "ballot_pages": [
+        4
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "U.S. House, District 16 — Peter Sundin Soulé (Republican) and Sam Liccardo (Democratic)",
+      "research_anchor": "us-house-district-16--peter-sundin-soulé-republican-and-sam-liccardo-democratic"
+    },
+    {
+      "id": "ca-assembly-d23",
+      "ballot_order": 10,
+      "kind": "candidate_election",
+      "title": "State Assembly District 23",
+      "jurisdiction": "California Assembly District 23",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Marc Berman",
+          "party_preference": "Democratic",
+          "id": "marc-berman"
+        },
+        {
+          "name": "David G. Johnson",
+          "party_preference": "Republican",
+          "id": "david-g-johnson"
+        }
+      ],
+      "ballot_pages": [
+        4
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 0,
+      "research_heading": "State Assembly, District 23 — Marc Berman (Democratic) and David G. Johnson (Republican)",
+      "research_anchor": "state-assembly-district-23--marc-berman-democratic-and-david-g-johnson-republican"
+    },
+    {
+      "id": "ca-retain-joshua-groban",
+      "ballot_order": 11,
+      "kind": "judicial_retention",
+      "title": "Joshua Groban retention",
+      "jurisdiction": "California supreme-court",
+      "office": "Associate Justice",
+      "justice": "Joshua Groban",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        5
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "joshua-groban"
+    },
+    {
+      "id": "ca-retain-kelli-m-evans",
+      "ballot_order": 12,
+      "kind": "judicial_retention",
+      "title": "Kelli M. Evans retention",
+      "jurisdiction": "California supreme-court",
+      "office": "Associate Justice",
+      "justice": "Kelli M. Evans",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        5
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "kelli-m-evans"
+    },
+    {
+      "id": "ca-retain-monique-langhorne-wilson",
+      "ballot_order": 13,
+      "kind": "judicial_retention",
+      "title": "Monique Langhorne Wilson retention",
+      "jurisdiction": "California appeal-d1-div1",
+      "office": "Associate Justice",
+      "justice": "Monique Langhorne Wilson",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        5,
+        6
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "monique-langhorne-wilson"
+    },
+    {
+      "id": "ca-retain-charles-a-smiley",
+      "ballot_order": 14,
+      "kind": "judicial_retention",
+      "title": "Charles A. Smiley retention",
+      "jurisdiction": "California appeal-d1-div1",
+      "office": "Associate Justice",
+      "justice": "Charles A. Smiley",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        6
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "charles-a-smiley"
+    },
+    {
+      "id": "ca-retain-kathleen-m-banke",
+      "ballot_order": 15,
+      "kind": "judicial_retention",
+      "title": "Kathleen M. Banke retention",
+      "jurisdiction": "California appeal-d1-div1",
+      "office": "Associate Justice",
+      "justice": "Kathleen M. Banke",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        6
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "kathleen-m-banke"
+    },
+    {
+      "id": "ca-retain-therese-m-stewart",
+      "ballot_order": 16,
+      "kind": "judicial_retention",
+      "title": "Therese M. Stewart retention",
+      "jurisdiction": "California appeal-d1-div2",
+      "office": "Presiding Justice",
+      "justice": "Therese M. Stewart",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        7
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "therese-m-stewart"
+    },
+    {
+      "id": "ca-retain-tara-m-desautels",
+      "ballot_order": 17,
+      "kind": "judicial_retention",
+      "title": "Tara M. Desautels retention",
+      "jurisdiction": "California appeal-d1-div2",
+      "office": "Associate Justice",
+      "justice": "Tara M. Desautels",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        7
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "tara-m-desautels"
+    },
+    {
+      "id": "ca-retain-ioana-petrou",
+      "ballot_order": 18,
+      "kind": "judicial_retention",
+      "title": "Ioana Petrou retention",
+      "jurisdiction": "California appeal-d1-div3",
+      "office": "Associate Justice",
+      "justice": "Ioana Petrou",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        7,
+        8
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "ioana-petrou"
+    },
+    {
+      "id": "ca-retain-victor-a-rodriguez",
+      "ballot_order": 19,
+      "kind": "judicial_retention",
+      "title": "Victor A. Rodriguez retention",
+      "jurisdiction": "California appeal-d1-div3",
+      "office": "Associate Justice",
+      "justice": "Victor A. Rodriguez",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        8
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "victor-a-rodriguez"
+    },
+    {
+      "id": "ca-retain-tracie-l-brown",
+      "ballot_order": 20,
+      "kind": "judicial_retention",
+      "title": "Tracie L. Brown retention",
+      "jurisdiction": "California appeal-d1-div4",
+      "office": "Presiding Justice",
+      "justice": "Tracie L. Brown",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        8
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "tracie-l-brown"
+    },
+    {
+      "id": "ca-retain-danny-y-chou",
+      "ballot_order": 21,
+      "kind": "judicial_retention",
+      "title": "Danny Y. Chou retention",
+      "jurisdiction": "California appeal-d1-div5",
+      "office": "Associate Justice",
+      "justice": "Danny Y. Chou",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        8,
+        9
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "danny-y-chou"
+    },
+    {
+      "id": "ca-retain-mark-simons",
+      "ballot_order": 22,
+      "kind": "judicial_retention",
+      "title": "Mark Simons retention",
+      "jurisdiction": "California appeal-d1-div5",
+      "office": "Associate Justice",
+      "justice": "Mark Simons",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        9
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "mark-simons"
+    },
+    {
+      "id": "ca-retain-gordon-burns",
+      "ballot_order": 23,
+      "kind": "judicial_retention",
+      "title": "Gordon Burns retention",
+      "jurisdiction": "California appeal-d1-div5",
+      "office": "Associate Justice",
+      "justice": "Gordon Burns",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        9
+      ],
+      "research_file": "judicial-retention.md",
+      "printed_write_in_slots": 0,
+      "research_anchor": "gordon-burns"
+    },
+    {
+      "id": "ca-superintendent-public-instruction",
+      "ballot_order": 24,
+      "kind": "candidate_election",
+      "title": "Superintendent of Public Instruction",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Sonja Shaw",
+          "party_preference": null,
+          "id": "sonja-shaw"
+        },
+        {
+          "name": "Richard Barrera",
+          "party_preference": null,
+          "id": "richard-barrera"
+        }
+      ],
+      "ballot_pages": [
+        10
+      ],
+      "research_file": "state-and-federal-candidates.md",
+      "printed_write_in_slots": 1,
+      "research_heading": "Superintendent of public instruction — Sonja Shaw and Richard Barrera (nonpartisan)",
+      "research_anchor": "superintendent-of-public-instruction--sonja-shaw-and-richard-barrera-nonpartisan"
+    },
+    {
+      "id": "sequoia-uhsd-area-d",
+      "ballot_order": 25,
+      "kind": "candidate_election",
+      "title": "Sequoia Union High School Board Area D",
+      "jurisdiction": "Sequoia Union High School District Area D",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Michael Dekshenieks",
+          "party_preference": null,
+          "id": "michael-dekshenieks"
+        },
+        {
+          "name": "Sathvik Nori",
+          "party_preference": null,
+          "id": "sathvik-nori",
+          "research_annotations": [
+            {
+              "as_of": "2026-10-04",
+              "status": "campaign_withdrawn_name_remains_printed",
+              "reported_date": "2026-08-28",
+              "note": "Reported withdrawal and endorsement of Michael Dekshenieks after ballot-removal deadline. This annotation does not determine legal consequences if elected.",
+              "source_url": "https://www.rwcpulse.com/election/2026/08/28/sequoia-districts-youngest-incumbent-drops-out-of-board-race-endorses-opponent/"
+            }
+          ]
+        }
+      ],
+      "ballot_pages": [
+        10
+      ],
+      "research_file": "local-candidates.md",
+      "printed_write_in_slots": 1,
+      "research_heading": "Sequoia Union High School District Trustee Area D",
+      "research_anchor": "sequoia-union-high-school-district-trustee-area-d"
+    },
+    {
+      "id": "menlo-park-city-school-board",
+      "ballot_order": 26,
+      "kind": "candidate_election",
+      "title": "Menlo Park City School Board",
+      "jurisdiction": "Menlo Park City School District",
+      "max_selections": 3,
+      "candidates": [
+        {
+          "name": "Maya Herstein",
+          "party_preference": null,
+          "id": "maya-herstein"
+        },
+        {
+          "name": "Sherwin Chen",
+          "party_preference": null,
+          "id": "sherwin-chen"
+        },
+        {
+          "name": "Jed Scolnick",
+          "party_preference": null,
+          "id": "jed-scolnick"
+        },
+        {
+          "name": "Andrew Barnes",
+          "party_preference": null,
+          "id": "andrew-barnes"
+        }
+      ],
+      "ballot_pages": [
+        10,
+        11
+      ],
+      "research_file": "local-candidates.md",
+      "printed_write_in_slots": 3,
+      "research_heading": "Menlo Park City School District Governing Board",
+      "research_anchor": "menlo-park-city-school-district-governing-board"
+    },
+    {
+      "id": "menlo-park-council-d2",
+      "ballot_order": 27,
+      "kind": "candidate_election",
+      "title": "Menlo Park City Council District 2",
+      "jurisdiction": "City of Menlo Park District 2",
+      "max_selections": 1,
+      "candidates": [
+        {
+          "name": "Drew Combs",
+          "party_preference": null,
+          "id": "drew-combs"
+        },
+        {
+          "name": "Vamsi Velagapudi",
+          "party_preference": null,
+          "id": "vamsi-velagapudi"
+        }
+      ],
+      "ballot_pages": [
+        11
+      ],
+      "research_file": "local-candidates.md",
+      "printed_write_in_slots": 1,
+      "research_heading": "Menlo Park City Council District 2",
+      "research_anchor": "menlo-park-city-council-district-2"
+    },
+    {
+      "id": "ca-proposition-1",
+      "ballot_order": 28,
+      "kind": "ballot_measure",
+      "title": "Proposition 1",
+      "short_description": "Housing affordability bonds",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        12
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-1",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-2",
+      "ballot_order": 29,
+      "kind": "ballot_measure",
+      "title": "Proposition 2",
+      "short_description": "Rainy day fund",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        12,
+        13
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-2",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-3",
+      "ballot_order": 30,
+      "kind": "ballot_measure",
+      "title": "Proposition 3",
+      "short_description": "High income tax extension",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        13
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-3",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-4",
+      "ballot_order": 31,
+      "kind": "ballot_measure",
+      "title": "Proposition 4",
+      "short_description": "Public campaign funding",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        13,
+        14
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-4",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-5",
+      "ballot_order": 32,
+      "kind": "ballot_measure",
+      "title": "Proposition 5",
+      "short_description": "Statewide recall process",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        14,
+        15
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-5",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-37",
+      "ballot_order": 33,
+      "kind": "ballot_measure",
+      "title": "Proposition 37",
+      "short_description": "New home mortgage program",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        15
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-37",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-38",
+      "ballot_order": 34,
+      "kind": "ballot_measure",
+      "title": "Proposition 38",
+      "short_description": "Immunology research bonds",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        15,
+        16
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-38",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-39",
+      "ballot_order": 35,
+      "kind": "ballot_measure",
+      "title": "Proposition 39",
+      "short_description": "Voter identification requirements",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        16
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-39",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-40",
+      "ballot_order": 36,
+      "kind": "ballot_measure",
+      "title": "Proposition 40",
+      "short_description": "One time billionaire tax",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        17
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-40",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-41",
+      "ballot_order": 37,
+      "kind": "ballot_measure",
+      "title": "Proposition 41",
+      "short_description": "State spending limit and special tax audits",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        17,
+        18
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-41",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-42",
+      "ballot_order": 38,
+      "kind": "ballot_measure",
+      "title": "Proposition 42",
+      "short_description": "Personal property and retroactive state taxes",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        18
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-42",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-43",
+      "ballot_order": 39,
+      "kind": "ballot_measure",
+      "title": "Proposition 43",
+      "short_description": "Local special tax approval threshold",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        18,
+        19
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-43",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-44",
+      "ballot_order": 40,
+      "kind": "ballot_measure",
+      "title": "Proposition 44",
+      "short_description": "Community clinic spending requirements",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        19,
+        20
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-44",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "ca-proposition-45",
+      "ballot_order": 41,
+      "kind": "ballot_measure",
+      "title": "Proposition 45",
+      "short_description": "Environmental review changes",
+      "jurisdiction": "California",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        20
+      ],
+      "research_file": "state-propositions.md",
+      "research_anchor": "proposition-45",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-rtm",
+      "ballot_order": 42,
+      "kind": "ballot_measure",
+      "title": "Measure RTM",
+      "short_description": "Regional transit sales tax",
+      "jurisdiction": "Public Transit Revenue Measure District",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        21
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-rtm",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-v",
+      "ballot_order": 43,
+      "kind": "ballot_measure",
+      "title": "Measure V",
+      "short_description": "Community college facilities bonds",
+      "jurisdiction": "San Mateo County Community College District",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        21,
+        22
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-v",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-l",
+      "ballot_order": 44,
+      "kind": "ballot_measure",
+      "title": "Measure L",
+      "short_description": "Extreme weather charter preamble",
+      "jurisdiction": "San Mateo County",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        22
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-l",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-aa",
+      "ballot_order": 45,
+      "kind": "ballot_measure",
+      "title": "Measure AA",
+      "short_description": "Rights charter preamble",
+      "jurisdiction": "San Mateo County",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        22,
+        23
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-aa",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-j",
+      "ballot_order": 46,
+      "kind": "ballot_measure",
+      "title": "Measure J",
+      "short_description": "Vacancy filling procedures",
+      "jurisdiction": "San Mateo County",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        23
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-j",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-u",
+      "ballot_order": 47,
+      "kind": "ballot_measure",
+      "title": "Measure U",
+      "short_description": "Independent redistricting commission",
+      "jurisdiction": "San Mateo County",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        23,
+        24
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-u",
+      "printed_write_in_slots": 0
+    },
+    {
+      "id": "local-measure-p",
+      "ballot_order": 48,
+      "kind": "ballot_measure",
+      "title": "Measure P",
+      "short_description": "Downtown parking plaza voter approval",
+      "jurisdiction": "City of Menlo Park",
+      "max_selections": 1,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballot_pages": [
+        24,
+        25
+      ],
+      "research_file": "local-measures.md",
+      "research_anchor": "measure-p",
+      "printed_write_in_slots": 0
+    }
+  ]
+}

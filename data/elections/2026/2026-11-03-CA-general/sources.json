@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "indexed_on": "2026-10-04",
+  "description": "URLs cited in research reports; references locate claims, not whole-source endorsements. This is a citation index, not a full offline source archive.",
+  "sources": [
+    {
+      "url": "https://apnews.com/article/ead2e489977a95692300735520cae195",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/charles-smiley",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/gordon-b-burns",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/ioana-petrou",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/kathleen-m-banke",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/mark-b-simons",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/monique-langhorne-wilson",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/tara-m-desautels",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/therese-m-stewart",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/tracie-l-brown",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/bio/victor-rodriguez",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellate.courts.ca.gov/district-courts/1dca/news/judge-tara-desautels-confirmed-associate-justice-first-district-court-appeal-division-two",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://appellatecases.courtinfo.ca.gov/",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://boe.ca.gov/lieber/about.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/attorney-general/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/controller/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/governor/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/lieutenant-governor/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/secretary-of-state/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/superintendent-of-public-instruction/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/california-voter-guide-2026/treasurer/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/economy/2026/08/insurance-commissioner-progressive-wave/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/health/2026/09/california-wealth-tax-prop-40-41-42/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/politics/2026/04/california-lieutenant-governor-race/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/politics/2026/05/california-governor-becerra-criticism/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://calmatters.org/politics/2026/09/california-general-election-gubernatorial-debate-cnn/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://cjp.ca.gov/",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://cjp.ca.gov/decisions_by_judges/",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://cjp.ca.gov/pending_cases/",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://davidjohnsonad23.com/issues",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://davidjohnsonad23.com/meet_david",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://district-mpcsd.community.highbond.com/document/432819cc-bf9f-48e4-9494-36d73d6ec83f/",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://district.mpcsd.org/board/board-committees",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://district.mpcsd.org/board/board-of-education",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://drews-newsletter-c45b6e.beehiiv.com/p/september-2026-newsletter",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/election-guide/section-05-supreme-appellate-courts.pdf",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB3209",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://news.smccd.edu/smcccd-recovers-20-million-in-civil-litigation-involving-former-chancellor/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://newsroom.courts.ca.gov/news/commission-confirms-appointments-courts-appeal-13",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://newsroom.courts.ca.gov/news/commission-confirms-appointments-courts-appeal-15",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://oag.ca.gov/node/591509",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/elections/november-3-2026-statewide-general-election",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-204-Contest%20Code-5ArgInFavor-SMC%20Charter_Redacted.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M102-Contest%20Code-6ArgAgainst-Menlo%20Park%20Muni%20Amendment_Redacted_0.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M102-ContestCode-7ArgInFavor-Menlo%20Park%20Muni%20Amendment_Redacted.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M206-Contest%20Code-46ArgAgainst-Public%20Transit%20District%20Sales%20Tax_Redacted.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M206-Contest%20Code-4ArginFavor-Public%20Transit%20District%20Sales%20Tax_Redacted_0.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M206-ImpartialAnalysis-Public-Transit-District-Sales-Tax.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M307-Contest%20Code-5ArgInFavor-SMCCD%20Bond_Redacted.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M307-Contest%20Code-6ArgAgainst-SMCCD%20Bond_Redacted.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-M307-Contest%20Code-Reso-SMCCD%20Bond_Redacted.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-MAA-ImpartialAnalysis-SMC-Charter-Affirmation-of-Rights.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-MJ-ImpartialAnalysis-SMC-Charter-Extension-to-Call%20Special%20Election.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-ML-ImpartialAnalysis-SMC-Charter-Extreme-Weather.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-MP-ImpartialAnalysis-MenloPark-Muni-Amendment.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-MU-ImpartialAnalysis-SMC-Charter-Reapportionment.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-08/52-ENG-MV-ImpartialAnalysis-SMCCD-Bond.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://smcacre.gov/system/files/2026-09/52_candidateroster0903.pdf",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://souleforcongress.com/about",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://souleforcongress.com/issues",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop40-text-proposed-laws.pdf",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop41-text-proposed-laws.pdf",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop42-text-proposed-laws.pdf",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/attorney-general-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/boe-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/controller-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/insurance-commissioner-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/lt-governor-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/secretary-of-state-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/superintendent-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/candidates/treasurer-candidate-statements.htm",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/justices/courts-of-appeal/district1.htm",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/justices/supreme-court-justices/",
+      "cited_in": [
+        "judicial-retention.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/1/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/1/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/2/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/2/arguments-rebuttals.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/3/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/3/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/37/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/37/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/38/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/38/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/39/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/39/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/4/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/4/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/40/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/40/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/41/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/41/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/42/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/42/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/43/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/43/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/44/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/44/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/45/",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/45/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/5/analysis.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://voterguide.sos.ca.gov/propositions/5/arguments-rebuttals.htm",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://www.almanacnews.com/education/2026/09/03/school-board-candidates-running-for-menlo-park-and-sequoia-districts/",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.almanacnews.com/menlo-park/2026/05/14/finance-commissioner-challenges-combs-for-menlo-park-city-council-seat/",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.drewcombs.com/",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.fec.gov/data/candidate/H6CA16176/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.kqed.org/news/12102150/prop-38-borrows-8-4-billion-to-fund-immunology-research",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://www.kqed.org/voterguide/california/proposition-37",
+      "cited_in": [
+        "state-propositions.md"
+      ]
+    },
+    {
+      "url": "https://www.menlopark.gov/Government/Departments/City-Managers-Office/City-Clerk/Elections/Nov.-3-2026-General-Election/2026-City-Council-election/2026-City-Council-candidates",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.menlopark.gov/News-articles/City-news/20260629City-Council-adopts-fiscal-year-2026-27-budget",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.menlopark.gov/files/sharedassets/public/v/2/agendas-and-minutes/city-council/2025-meetings/20251202/f1-20251202-cc-receive-election-report-9212_.pdf",
+      "cited_in": [
+        "local-measures.md"
+      ]
+    },
+    {
+      "url": "https://www.oig.hhs.gov/reports/all/2024/gaps-in-sponsor-screening-and-followup-raise-safety-concerns-for-unaccompanied-children/",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.rwcpulse.com/election/2026/08/28/sequoia-districts-youngest-incumbent-drops-out-of-board-race-endorses-opponent/",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.samliccardo.com/about",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.sco.ca.gov/eo_pressrel_27649.html",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.smccd.edu/boardoftrustees/documents/Pimentel%20Bio.pdf",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.smdailyjournal.com/news/local/tide-academy-will-close/article_ee29479b-52b6-4240-a433-47284a3bf005.html",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.voteberman.com/priorities",
+      "cited_in": [
+        "state-and-federal-candidates.md"
+      ]
+    },
+    {
+      "url": "https://www.votevamsi.com/",
+      "cited_in": [
+        "local-candidates.md"
+      ]
+    }
+  ]
+}
