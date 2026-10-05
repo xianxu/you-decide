@@ -1,12 +1,20 @@
 ---
 id: 000015
-status: open
+status: working
 deps: []
 github_issue:
 created: 2026-10-04
 updated: 2026-10-04
 estimate_hours:
-card_mirror: 'c8586fac33de280f0a7816ab1194c0544c150f0c' # card fields mirrored from issue-cards; edit via sdlc
+card_mirror: 'cb94c845e6169498a570c11c526e283a056ab574' # card fields mirrored from issue-cards; edit via sdlc
+started: 2026-10-04T19:27:21-07:00
+claimant:
+    operator: Xian Xu
+    machine: 4716879978a7b90f6b583da1716fd0e9
+    machine_name: Xian’s MacBook Pro
+    worktree: /Users/xianxu/workspace/you-decide
+    repository: github.com/xianxu/you-decide
+flow: {kind: quick, provenance: inferred, spec: "f4b7ffa2", done: "2a028713"}
 ---
 
 # Promote Nov-2026 CA general research packet to public substrate
