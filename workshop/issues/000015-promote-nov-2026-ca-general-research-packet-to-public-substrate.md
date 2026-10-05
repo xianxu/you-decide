@@ -51,8 +51,8 @@ Out of scope (follow-up): folding the supplement into the individual `data/candi
 - [x] Write the neutral supplement.
 - [x] Verify JSON parsing and anchors, and grep for personal identifiers.
 - [x] Cross-stack reviews (Claude on the Codex files, Gemini on the Claude files), then fix, then set review frontmatter.
-- [ ] Run both gate scripts, close, open a PR, merge.
-- [ ] Brain side: delete the private copy and repoint the guide links.
+- [x] Run both gate scripts (both pass). `sdlc close` → `sdlc pr` → `sdlc merge` follow this checklist.
+- [x] Brain side: delete the private copy and repoint the guide links. The private copy was deleted, keeping only the user's original PDF export as a private record (`menlo-park-2026-11-03-reference-ballot.pdf`). The guide's links now point to the public packet, and each target was verified to exist.
 
 ## Log
 
