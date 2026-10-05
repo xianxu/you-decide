@@ -25,7 +25,7 @@ Manifest of the 48 contests on San Mateo County **ballot style BT-114**: 14 cand
 
 **Scope.** Only one ballot style is covered. Statewide contests apply to every California voter. The district contests (BOE D2, US House D16, Assembly D23, Court of Appeal D1, and the county, college-district, transit-district, school and city contests) apply only to voters in those districts. The general election lists every certified finisher, so the candidate lists below are complete for each contest, not viability-filtered. Party labels are the printed party preference; nonpartisan contests show none. `[[slug]]` links appear only where a shared dossier exists in `data/candidates/2026/CA/`.
 
-## Candidate contests
+## Partisan and statewide candidate contests (ballot 1–10)
 
 ### Governor
 - Ballot order: 1 of 48
@@ -118,7 +118,7 @@ Manifest of the 48 contests on San Mateo County **ballot style BT-114**: 14 cand
 - Research: [state-and-federal-candidates.md](2026-11-03-CA-general/state-and-federal-candidates.md#state-assembly-district-23--marc-berman-democratic-and-david-g-johnson-republican)
 
 
-## Judicial retention
+## Judicial retention (ballot 11–23)
 
 - **Joshua Groban** — Associate Justice, supreme-court — District: STATEWIDE — Yes/No — [research](2026-11-03-CA-general/judicial-retention.md#joshua-groban)
 - **Kelli M. Evans** — Associate Justice, supreme-court — District: STATEWIDE — Yes/No — [research](2026-11-03-CA-general/judicial-retention.md#kelli-m-evans)
@@ -134,7 +134,7 @@ Manifest of the 48 contests on San Mateo County **ballot style BT-114**: 14 cand
 - **Mark Simons** — Associate Justice, appeal-d1-div5 — District: CA-APPEAL-D1 — Yes/No — [research](2026-11-03-CA-general/judicial-retention.md#mark-simons)
 - **Gordon Burns** — Associate Justice, appeal-d1-div5 — District: CA-APPEAL-D1 — Yes/No — [research](2026-11-03-CA-general/judicial-retention.md#gordon-burns)
 
-## Candidate contests
+## Nonpartisan candidate contests (ballot 24–27)
 
 ### Superintendent of Public Instruction
 - Ballot order: 24 of 48
@@ -156,7 +156,7 @@ Manifest of the 48 contests on San Mateo County **ballot style BT-114**: 14 cand
 
 ### Menlo Park City School Board
 - Ballot order: 26 of 48
-- District: MPCSD
+- District: MENLO-PARK-CSD
 - Seats: 3
 - Candidates (printed order):
   - Maya Herstein
@@ -175,7 +175,7 @@ Manifest of the 48 contests on San Mateo County **ballot style BT-114**: 14 cand
 - Research: [local-candidates.md](2026-11-03-CA-general/local-candidates.md#menlo-park-city-council-district-2)
 
 
-## Ballot measures
+## Ballot measures (ballot 28–48)
 
 - **Proposition 1** — Housing affordability bonds — *District: STATEWIDE* — [research](2026-11-03-CA-general/state-propositions.md#proposition-1)
 - **Proposition 2** — Rainy day fund — *District: STATEWIDE* — [research](2026-11-03-CA-general/state-propositions.md#proposition-2)
@@ -198,3 +198,14 @@ Manifest of the 48 contests on San Mateo County **ballot style BT-114**: 14 cand
 - **Measure J** — Vacancy filling procedures — *District: SM-COUNTY* — [research](2026-11-03-CA-general/local-measures.md#measure-j)
 - **Measure U** — Independent redistricting commission — *District: SM-COUNTY* — [research](2026-11-03-CA-general/local-measures.md#measure-u)
 - **Measure P** — Downtown parking plaza voter approval — *District: MENLO-PARK* — [research](2026-11-03-CA-general/local-measures.md#measure-p)
+
+## Sources
+
+- County reference ballot, style BT-114 (text transcription): [`sources/ballot-bt-114.txt`](2026-11-03-CA-general/sources/ballot-bt-114.txt); public tool: https://ca.omniballot.us/sites/06081/cvig/app/cvig/vig/ballot
+- San Mateo County November 3, 2026 election page: https://smcacre.gov/elections/november-3-2026-statewide-general-election
+- California Secretary of State voter guide: https://voterguide.sos.ca.gov/
+- Per-contest research and sources: [`2026-11-03-CA-general/sources.json`](2026-11-03-CA-general/sources.json)
+
+## Revisions
+
+- 2026-10-04 (post-review, mechanical; you-decide#15 boundary review): retagged `MPCSD` → `MENLO-PARK-CSD` to match the resolve-ballot tag vocabulary; split the duplicated "Candidate contests" heading by ballot range; added this Sources section. No contest, candidate, or party data changed.

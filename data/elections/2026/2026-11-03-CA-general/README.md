@@ -31,7 +31,7 @@ Research date: October 4, 2026. This is an initial research packet with explicit
 ## Ballot and sources
 
 - The original 25-page PDF export (county voter guide, 6:12 p.m. on October 4) is **not published**. The guide's export embeds the exporting voter's on-screen selections and account metadata, so it stays private. The county's own reference-ballot tool is public: [ca.omniballot.us (San Mateo)](https://ca.omniballot.us/sites/06081/cvig/app/cvig/vig/ballot).
-- [Extracted ballot text](sources/ballot-bt-114.txt): retains the PDF's line breaks and overlapping print elements; use the PDF if extraction looks ambiguous.
+- [Extracted ballot text](sources/ballot-bt-114.txt): retains the original export's line breaks and overlapping print elements; if extraction looks ambiguous, check the county's public [reference-ballot tool](https://ca.omniballot.us/sites/06081/cvig/app/cvig/vig/ballot).
 - [Structured ballot manifest](ballot.json): all 48 contests in printed order, with stable identifiers and references into the research reports.
 - [Source index](sources.json): deduplicated URLs cited by the reports, with the report filenames that cite each source. Claim-level attribution remains in the Markdown.
 
@@ -52,7 +52,7 @@ The JSON's `schema_version` is 1. An election is identified by `election_date`, 
 - `ballot_pages`: one-based page numbers of the county reference ballot (the "Page N of 25" markers in `sources/ballot-bt-114.txt`).
 - `research_file` and `research_anchor`: a report and its Markdown heading anchor. Candidate races also include the exact `research_heading`.
 
-Candidate ordering follows the PDF and is not a ranking. A null party preference means the nonpartisan ballot does not display one; it does not assert that the person has no party affiliation. Short measure descriptions are navigation labels, not official ballot titles. The manifest records printed choices; researched status changes belong in separate annotations rather than deleting names from the original ballot.
+Candidate ordering follows the printed reference ballot and is not a ranking. A null party preference means the nonpartisan ballot does not display one; it does not assert that the person has no party affiliation. Short measure descriptions are navigation labels, not official ballot titles. The manifest records printed choices; researched status changes belong in separate annotations rather than deleting names from the original ballot.
 
 No frontend or public deployment is included. These are local source files for the application you plan to build.
 
@@ -65,3 +65,4 @@ The reviews are spot checks, not an exhaustive fact-check. Review state is in ea
 ## Revisions
 
 - 2026-10-04: moved from the user's private dir into the public substrate (you-decide#15). Content unchanged apart from these location notes. Same-day fresh research is in [`supplement-2026-10-04.md`](supplement-2026-10-04.md).
+- 2026-10-04 (post-review, mechanical; #15 boundary review): replaced the two remaining pointers to the withheld PDF with the public county tool and "the printed reference ballot".

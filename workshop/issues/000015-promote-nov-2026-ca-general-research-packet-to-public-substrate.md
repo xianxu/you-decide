@@ -66,3 +66,8 @@ Out of scope (follow-up): folding the supplement into the individual `data/candi
   - The Gemini CLI is now unusable (ineligible tier); Codex 0.160 works for reviews.
 - Gates: `review-gate.sh` and `cross-stack-gate.sh` both pass over the branch range.
 - Follow-ups (not done here): fold the supplement into individual `data/candidates/` dossiers; add a `data/measures/` home; remove user-specific phrasing from office templates (`templates/*` cite "the user's stated values").
+
+## Revisions
+
+- 2026-10-04: **scope change.** The Spec planned to move `sources/` with the PDF and the text. Review found that the voter-exported PDF embeds the exporter's name (metadata) and on-screen selections (page image), so it is **withheld** from the public packet. Only the text transcription is published, and `ballot.json` `source.pdf = null`. The original stays in the user's private dir.
+- 2026-10-04: **boundary review BR-1, fixed at the class level.** The tag vocabulary is now single-sourced in `resolve-ballot.md` Stage 2, extended with BOE, Court of Appeal, trustee-area, community-college and transit-district patterns, with a rule that manifests draw from it. The manifest is retagged `MPCSD` → `MENLO-PARK-CSD`. Minor findings also fixed: duplicate manifest headings, missing Sources section, and stale PDF references in the README.
