@@ -1,6 +1,6 @@
 # you-decide
 
-AI-driven voter advisor. Clone, run against your address, decide.
+AI-driven voter adviser. Clone, run against your address, decide.
 
 ## Preamble
 
@@ -8,7 +8,7 @@ In a democracy, voter has the final say. However, everyone has a busy life, how 
 
 AI is particular great at running processes based on description in natural language. Properly leveraged, it can pierce through all the partisan messages, expose the bare core of candidates, positions and controversies, to allow you the user to decide on your own. 
 
-How to avoid partisan propaganda? All the "algorithms" here are open and transparent. You tweak it, run with different AI providers. All the opinions are traceable in logic and we strive to offer genesis of references that you can also verify yourselves. 
+How to avoid partisan propaganda? All the "algorithms" here are open and transparent. You inspect it, tweak it, run with different AI providers. All the opinions are traceable in logic and we strive to offer genesis of references that you can also verify yourselves. 
 
 Let there be light, democracy dies in darkness. 
 
@@ -18,12 +18,12 @@ An AI skill bundle that helps you decide how to vote by applying *your* view and
 
 The algorithm (see [SKILL.md](./SKILL.md)):
 
-1. **Discover what's on your ballot** from your address — federal, state, county, city, special districts, ballot initiatives
-2. **Research candidates** via parallel research subagents pulling from primary and authoritative-secondary sources (CalMatters, AP, official sites, court filings, FPPC, etc.) — every claim has an inline source URL. MVP is constructed to Menlo Park, CA, but will be expanded to whole country
+1. **Discover what's on your ballot** from your address — federal, state, county, city, special districts, ballot initiatives. You can also upload a sample local ballot for AI to parse
+2. **Research candidates and issues** via parallel research subagents pulling from primary and authoritative-secondary sources (CalMatters, AP, official sites, court filings, FPPC, etc.) — every claim has an inline source URL. MVP is constructed to Menlo Park, CA, but can be easily expanded to whole country
 3. **Identify controversies** that actually differentiate this cycle's candidates (vs. civics-textbook generic issues)
-4. **Bootstrap your philosophy** via a short survey (~5–15 questions, progressive disclosure — stop whenever) if you don't already have one. Those are conversation starters, best to type your thoughts in
+4. **Bootstrap your philosophy** via a short survey (~5–15 questions, progressive disclosure — stop whenever) if you don't already have one. Those are conversation starters, best to type your thoughts in plain language, describe what comes to your mind. The more you describe, the more nuances AI has to work with
 5. **Score candidates** against your philosophy, surfacing both a conscience vote (best fit) and a strategic vote (best polling-viable option among top 4)
-6. **Walk a disagreement loop** — when you push back on AI's read, the system crystallizes the rule into a calibration skill that fires automatically in future races
+6. **Walk a disagreement loop** — when you push back on AI's read, the system crystallizes the rule into a calibration skill that fires automatically in future races. You should always ask `claude` for clarification, and push back. All those are signals, feeding to your philosophy profile
 
 ## How to use it
 
@@ -44,9 +44,9 @@ export YOU_DECIDE_PRIVATE_DIR=~/voting
 **Where your private state lives.** The repo is read-only substrate; your philosophy, per-candidate reads, and votes are written to a **private dir outside the repo**, resolved by `scripts/private-dir.sh`:
 
 1. `$YOU_DECIDE_PRIVATE_DIR` if set, else
-2. `../who-to-vote-for` — a sibling of the repo root.
+2. `../who-to-vote-for` — a sibling of the repo root of where `you-decide` is cloned to.
 
-Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. **Brain users:** the brain's `construct/deps` already declares the you-decide mount (`data <url> data/life/politics/you-decide`), so the private dir resolves automatically as its `who-to-vote-for` sibling when the skill is invoked through the brain symlink — no env var needed; `YOU_DECIDE_PRIVATE_DIR` stays available as an override.
+Because the default is a sibling (never inside the repo), a `git push` of `you-decide` can't leak your private state. 
 
 The names + frontmatter of every artifact written into the private dir (ballot guide, candidate read, race vote, cast ballot) are defined in [`you-decide/artifacts.md`](you-decide/artifacts.md).
 
@@ -55,7 +55,7 @@ The names + frontmatter of every artifact written into the private dir (ballot g
 In a Claude Code session inside your brain (or with the standalone path configured):
 
 ```
-Load ./you-decide/ skill, and help me vote in Menlo Park, CA, 2026
+Load ./you-decide/ skill, and help me vote. My address is ...
 ```
 
 ### Updates
@@ -72,16 +72,16 @@ This is not Wikipedia. This is not crowdsourced. The candidate research, ballot 
 
 What that means:
 
-- **You can re-run the algorithm yourself.** Every run is reproducible — clone the repo, dispatch the same skill against the same sources, get equivalent results. Use whatever AI agent (tested with claude, codex) you want
+- **You can re-run the algorithm yourself.** Every run is reproducible (the the degree LLM answers are reproducible) — clone the repo, dispatch the same skill against the same sources, get equivalent results. Use whatever AI agent (tested with claude) you want
 - **Every factual claim has an inline source URL.** No genesis-untracked assertions; every line of candidate research links back to where it came from. We do plan to create local archive of the sources to avoid gas lighting later on
 - **Source preferences are stated.** Authoritative-primary (campaign sites, official campaign-finance filings, court documents, candidate social media) and authoritative-secondary (nonpartisan + mainstream regional outlets) are preferred over Wikipedia and AI aggregators for claims. The tier-classification principle lives in [`calibration-skills/source-hygiene-tier-list.md`](./calibration-skills/source-hygiene-tier-list.md); the concrete per-jurisdiction outlet lists live in [`data/sources/<state>.md`](./data/sources/) (currently `US.md` for federal, `CA.md` for California; more states added as coverage expands).
 - **The algorithm doesn't pick winners.** It applies *your* philosophy — your hard limits, your axis weights, your interpretation skills accumulated over cycles. The repo ships with algorithm + machinery; you bring your values.
-- **Candidate research** is generated by algorithm in this repo. It is provided to save other people AI computation cost, not to influence a particular view. If in doubt, just run it again with your own AI agent
-- **Contributions are algorithm-only, not facts.** PRs to the skill, sub-skills, templates, general calibration skills, and question bank are welcome. PRs to candidate research / controversy maps / ballot manifests are NOT accepted — to avoid the Wikipedia bias dynamic where contributors smuggle in their preferred framings. If you want a different read on a candidate, clone the repo and re-run the algorithm with your own philosophy.
+- **Candidate research** is generated by algorithm in this repo. It is provided to save other people AI computation cost, not to influence a particular view. If in doubt, just run it again with your own AI agent. As a matter of fact, outside Menlo Park CA where this was created, you will need to pay the AI computation cost.
+- **Contributions are algorithm-only, not facts.** PRs to the skill, sub-skills, templates, general calibration skills, and question bank are welcome. PRs to candidate research / controversy maps / ballot manifests are NOT accepted — to avoid the Wikipedia bias dynamic where contributors smuggle in their preferred framings. 
 
 ## Data request
 
-We meant to provide a cached candidate/issue profile that can be easily reused by anyone who want to get advice on how to vote. You can create an issue with title "Data request: {City}, {County}, {State}, {Year}", and we will try to add it on regular cadence to the repo. As a start, we only focus on California, to test out credibility first. 
+We meant to provide a cached candidate/issue profile that can be easily reused by anyone who want to get advice on how to vote. You can create an issue with title "Data request: {City}, {County}, {State}, {Year}", and we will try to add it to the repo. I pay the bill, but means you need to trust my word on this repo's neutrality. 
 
 ## Repo layout
 
@@ -147,4 +147,4 @@ MIT. See [LICENSE](./LICENSE).
 
 ## Issues + roadmap
 
-`workshop/issues/` (ariadne workshop conventions) for in-development design notes. GitHub Issues for outward-facing tracking.
+`workshop/issues/` (ariadne workshop conventions) for in-development design notes. GitHub Issues for feature requests. 
